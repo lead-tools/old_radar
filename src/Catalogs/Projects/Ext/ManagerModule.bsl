@@ -38,3 +38,20 @@ Function AttributeValues(Ref, AttributeNames) Export
 	Return AttributeValues;
 	
 EndFunction // AttributeValues()
+
+Procedure LoadModules(Ref) Export
+	
+	Path = AttributeValue(Ref, "Path");
+	Files = FindFiles(Path, "*.bsl", True);
+	
+	For Each File In Files Do
+		
+		Module = Catalogs.Modules.CreateItem();
+		Module.Owner = Ref;
+		Module.Path = Mid(File.FullName, StrLen(Path) + 1);
+		Module.Description = StrReplace(Right(Module.Path, 150), "\", ".");
+		Module.Write();
+		
+	EndDo; 
+	
+EndProcedure // LoadModules() 
