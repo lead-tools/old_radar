@@ -27,8 +27,8 @@
 		<Metadata name="CommonModule.Global.Module" id="bf9172d9-f4ca-47d6-9e5a-e226a9cb9bbf.0" configVersion="ac93c7c427529641894623c78bc0aab300000000"/>
 		<Metadata name="CommonModule.Jobs" id="d211b7cd-1399-4564-880d-91bd87487edc" configVersion="9d3875c9781063438a81e70d2b931b8200000000"/>
 		<Metadata name="CommonModule.Jobs.Module" id="d211b7cd-1399-4564-880d-91bd87487edc.0" configVersion="9d92d6672aed584ab4a141ef4b3da34700000000"/>
-		<Metadata name="CommonModule.Jobs_ServerCall" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="38c881a67cd5eb4a8b686f47731380b300000000"/>
-		<Metadata name="CommonModule.Jobs_ServerCall.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="65580d29febd3247aad4bda3a31b624400000000"/>
+		<Metadata name="CommonModule.Jobs_ServerCall" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="34d22132cc17794e8cd4726479c4140d00000000"/>
+		<Metadata name="CommonModule.Jobs_ServerCall.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="07192221a6b9a944b45eed709eee505b00000000"/>
 		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="654e87595fce474e94e9003d5a71ffef00000000"/>
 		<Metadata name="Constant.ExternalDataProcessorsPath" id="06a7e8dc-c92b-49ff-8577-1eb66614d63f" configVersion="5ec8c9fdc7e8cd40b2d9df2e708e6eeb00000000"/>
 		<Metadata name="InformationRegister.ModulesData" id="26ff9ef8-7f91-43a0-b1b1-db6354ba7136" configVersion="635d25c70070164d8457272fae4873a100000000">

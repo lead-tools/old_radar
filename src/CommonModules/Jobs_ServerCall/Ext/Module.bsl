@@ -34,6 +34,7 @@ Procedure ParseModule(Module) Export
 	
 	BSLParser = CommonUse.GetDataProcessor("BSLParser");
 	Parser = BSLParser.Parser(Mid(Source, 2));
+	Parser.Scanner.Path = FilePath;
 	ParsingStart = CurrentUniversalDateInMilliseconds();
 	BSLParser.ParseModule(Parser);
 	ParsingDuration = (CurrentUniversalDateInMilliseconds() - ParsingStart) / 1000;
