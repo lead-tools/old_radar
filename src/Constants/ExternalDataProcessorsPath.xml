@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Constant uuid="06a7e8dc-c92b-49ff-8577-1eb66614d63f">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ExternalDataProcessorsPath" category="Manager">
+				<xr:TypeId>b2a6a18f-6c54-4e7c-9bbf-35bc163f40be</xr:TypeId>
+				<xr:ValueId>cb6b08a7-3252-43e3-ba0a-3ec515fb21b3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ExternalDataProcessorsPath" category="ValueManager">
+				<xr:TypeId>8d392d6f-a806-4145-a853-356cd73ba09c</xr:TypeId>
+				<xr:ValueId>592bc1d7-3b81-43c4-b6f1-6d964212191b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ExternalDataProcessorsPath</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к внешним обработкам</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>External data processors path</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/>
+			<ExtendedPresentation/>
+			<Explanation/>
+			<PasswordMode>false</PasswordMode>
+			<Format/>
+			<EditFormat/>
+			<ToolTip/>
+			<MarkNegatives>false</MarkNegatives>
+			<Mask/>
+			<MultiLine>false</MultiLine>
+			<ExtendedEdit>false</ExtendedEdit>
+			<MinValue xsi:nil="true"/>
+			<MaxValue xsi:nil="true"/>
+			<FillChecking>DontCheck</FillChecking>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<ChoiceParameterLinks/>
+			<ChoiceParameters/>
+			<QuickChoice>Auto</QuickChoice>
+			<ChoiceForm/>
+			<LinkByType/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+			<DataLockControlMode>Managed</DataLockControlMode>
+		</Properties>
+	</Constant>
+</MetaDataObject>
