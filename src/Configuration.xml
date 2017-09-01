@@ -151,6 +151,7 @@
 			<CommonModule>Jobs</CommonModule>
 			<CommonModule>Jobs_ServerCall</CommonModule>
 			<Constant>ExternalDataProcessorsPath</Constant>
+			<Constant>MaxJobs</Constant>
 			<Catalog>Projects</Catalog>
 			<Catalog>Modules</Catalog>
 			<InformationRegister>ModulesData</InformationRegister>

@@ -12,7 +12,7 @@ Function Modules(Project) Export
 	|	Modules.Owner = &Project
 	|	AND NOT Modules.DeletionMark";
 	
-	Return Query.Execute().Unload();
+	Return Query.Execute().Unload().UnloadColumn("Ref");
 	
 EndFunction // Modules()
 

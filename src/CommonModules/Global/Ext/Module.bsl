@@ -12,3 +12,15 @@ Function JoinPath(Part1, Part2) Export
 	Return Part1 + Part2;
 	
 EndFunction // JoinPath()
+
+Function Slice(Array, Start, Count) Export
+
+	Slice = New Array;
+	
+	For Index = Start To Start + Count - 1 Do
+		Slice.Add(Array[Index]);
+	EndDo; 
+	
+	Return Slice;
+	
+EndFunction // Slice() 

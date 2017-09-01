@@ -9,16 +9,46 @@ Procedure StartParseProjectModules(Project) Export
 	
 	Modules = Catalogs.Projects.Modules(Project); 
 	
-	For Each Module In Modules Do
-		
+	MaxJobs = Max(Constants.MaxJobs.Get(), 1);
+	Total = Modules.Count();
+	NumberPerJob = Int(Total / MaxJobs);
+	Remain = Total - NumberPerJob * MaxJobs;
+	
+	Start = 0;
+	For JobNum = 1 To MaxJobs - 1 Do		
+		Chunk = Slice(Modules, Start, NumberPerJob);
 		Parameters = New Array;
-		Parameters.Add(Module.Ref);
-		
-		StartJob("Jobs_ServerCall.ParseModule", Parameters);
-		
+		Parameters.Add(Chunk);
+		StartJob("Jobs_ServerCall.StartParseModules", Parameters);
+		Start = Start + NumberPerJob;
 	EndDo; 
 	
+	NumberPerJob = NumberPerJob + Remain;
+	
+	Chunk = Slice(Modules, Start, NumberPerJob);
+	Parameters = New Array;
+	Parameters.Add(Chunk);
+	StartJob("Jobs_ServerCall.StartParseModules", Parameters);
+	
 EndProcedure // StartParseProjectModules()
+
+Procedure StartParseModules(Modules) Export
+	
+	For Each Module In Modules Do
+		Try
+			ParseModule(Module);
+		Except
+			WriteLogEvent(
+				"BSL-Parser",
+				EventLogLevel.Error,
+				Metadata.Catalogs.Modules,
+				Module,
+				ErrorDescription()
+			);
+		EndTry;
+	EndDo; 
+	
+EndProcedure // StartParseModules()
 
 Procedure ParseModule(Module) Export
 	
