@@ -12,4 +12,10 @@ Function GetDataProcessor(Name) Export
 	
 	Return DataProcessor;
 	
-EndFunction // GetDataProcessor() 
+EndFunction // GetDataProcessor()
+
+Function GetConstant(Name) Export
+	
+	Return Constants[Name].Get();
+	
+EndFunction // GetConstant()

@@ -15,23 +15,33 @@
 		<Metadata name="Catalog.Projects.Command.LoadModules.CommandModule" id="7c13a887-c8f6-4cbb-b9a3-8cc6d936c1bf.2" configVersion="2a395cf8b826ff449f402af1ae4ae9ec00000000"/>
 		<Metadata name="Catalog.Projects.Command.ParseModules.CommandModule" id="921f9704-555d-4c76-9024-cf3ecc91c48b.2" configVersion="b5f20c876edaeb45bb681ddc4ce75ead00000000"/>
 		<Metadata name="Catalog.Projects.ManagerModule" id="03e142ab-9045-42df-9bcc-b3b06c60ff6e.3" configVersion="7a2777a6c7de9541b674cea6a9581dd600000000"/>
-		<Metadata name="CommonModule.CommonUse" id="4c96fafd-b8c4-4bf9-8fe0-370e20925ab1" configVersion="17e441ab5cf4a34ba756f2838de3970e00000000"/>
-		<Metadata name="CommonModule.CommonUse.Module" id="4c96fafd-b8c4-4bf9-8fe0-370e20925ab1.0" configVersion="c1acf00553131042857e68ffad0edd5200000000"/>
-		<Metadata name="CommonModule.CommonUse_ServerCached" id="1d583df3-ee11-4289-aa04-5575cfddfe9b" configVersion="d64c94d2148f3741934c3780d5c63ad700000000"/>
-		<Metadata name="CommonModule.CommonUse_ServerCached.Module" id="1d583df3-ee11-4289-aa04-5575cfddfe9b.0" configVersion="f9c685bff599624eaac7cafa662e6fc000000000"/>
+		<Metadata name="CommonModule.CommonUse" id="4c96fafd-b8c4-4bf9-8fe0-370e20925ab1" configVersion="afb6c861fdbf194c84d9000f3dc8828600000000"/>
+		<Metadata name="CommonModule.CommonUse.Module" id="4c96fafd-b8c4-4bf9-8fe0-370e20925ab1.0" configVersion="8c79b4137a22a14fbef37d6392a0fbac00000000"/>
+		<Metadata name="CommonModule.CommonUse_ServerCached" id="1d583df3-ee11-4289-aa04-5575cfddfe9b" configVersion="4a7184d176567443a2843e03e60a952700000000"/>
+		<Metadata name="CommonModule.CommonUse_ServerCached.Module" id="1d583df3-ee11-4289-aa04-5575cfddfe9b.0" configVersion="0712cd39e0f5ef40b244d340fd9f54ad00000000"/>
+		<Metadata name="CommonModule.CommonUse_ServerCall" id="125cbc11-049f-4e23-a3a8-828576eabb93" configVersion="0591611030f9ad49a73082d52ff4f19c00000000"/>
+		<Metadata name="CommonModule.CommonUse_ServerCall.Module" id="125cbc11-049f-4e23-a3a8-828576eabb93.0" configVersion="5bbe85328b532d448e1d10745afa749d00000000"/>
 		<Metadata name="CommonModule.Git" id="5af47382-01d7-47a4-8c05-513d0d6f1651" configVersion="57d9e99a97dfdc42b067e00590ab4c1400000000"/>
 		<Metadata name="CommonModule.Git.Module" id="5af47382-01d7-47a4-8c05-513d0d6f1651.0" configVersion="c843901305d8a743a7aec4786202e8eb00000000"/>
 		<Metadata name="CommonModule.Git_ServerCall" id="e15eeee5-14da-434b-882b-4e12dbc2ccaf" configVersion="edd70bc5292def48a64491a1f4a1285300000000"/>
 		<Metadata name="CommonModule.Git_ServerCall.Module" id="e15eeee5-14da-434b-882b-4e12dbc2ccaf.0" configVersion="3b32e6046766194495c7702d76729fce00000000"/>
 		<Metadata name="CommonModule.Global" id="bf9172d9-f4ca-47d6-9e5a-e226a9cb9bbf" configVersion="cef5c072b354bd4b94e965c33492fdaa00000000"/>
 		<Metadata name="CommonModule.Global.Module" id="bf9172d9-f4ca-47d6-9e5a-e226a9cb9bbf.0" configVersion="45cc2d452b97a04f95a1e37a18334c1700000000"/>
-		<Metadata name="CommonModule.Jobs" id="d211b7cd-1399-4564-880d-91bd87487edc" configVersion="9d3875c9781063438a81e70d2b931b8200000000"/>
-		<Metadata name="CommonModule.Jobs.Module" id="d211b7cd-1399-4564-880d-91bd87487edc.0" configVersion="9d92d6672aed584ab4a141ef4b3da34700000000"/>
-		<Metadata name="CommonModule.Jobs_ServerCall" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="81112d6a92246040958507dc2c5950c500000000"/>
-		<Metadata name="CommonModule.Jobs_ServerCall.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="55ade3af2d9044478c9623f0cdeacbe000000000"/>
-		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="c2fcc529556080449d5a7388f52d992100000000"/>
+		<Metadata name="CommonModule.Jobs" id="d211b7cd-1399-4564-880d-91bd87487edc" configVersion="8f204062a0925746a80d0b62dcf437b200000000"/>
+		<Metadata name="CommonModule.Jobs.Module" id="d211b7cd-1399-4564-880d-91bd87487edc.0" configVersion="84b487406428964e8447ffeafce1f9c400000000"/>
+		<Metadata name="CommonModule.Jobs_ServerCall" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="48ae4885138ad546ba084a6010a18b1400000000"/>
+		<Metadata name="CommonModule.Jobs_ServerCall.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="eea97fc86e79e2488f19c93046e55f5a00000000"/>
+		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="08050469a48e234c83d8e2d7dd4b0fd500000000"/>
+		<Metadata name="Constant.ChunkSize" id="ed96ac09-764e-4003-ba7d-5edb924ec7ef" configVersion="158878961de44d43b33cfecb904ee0c000000000"/>
 		<Metadata name="Constant.ExternalDataProcessorsPath" id="06a7e8dc-c92b-49ff-8577-1eb66614d63f" configVersion="5ec8c9fdc7e8cd40b2d9df2e708e6eeb00000000"/>
-		<Metadata name="Constant.MaxJobs" id="df0dbc3c-1499-405e-9e4c-189af2f67c41" configVersion="544f900ba1d8f44c9a4900e7d61c746a00000000"/>
+		<Metadata name="Constant.MaxJobs" id="df0dbc3c-1499-405e-9e4c-189af2f67c41" configVersion="240c281f1279254b943c9fb5405f9dfc00000000"/>
+		<Metadata name="InformationRegister.JobQueue" id="e53dc0be-6e5c-405f-908d-c2a3fca1bfc0" configVersion="b3a5f207e7e533459c97de16ab5ddaf600000000">
+			<Metadata name="InformationRegister.JobQueue.Resource.Total" id="10365530-7c6b-4c3b-840d-67666a5a162b"/>
+			<Metadata name="InformationRegister.JobQueue.Resource.Taken" id="315e0877-c576-45a3-a677-6f03cd19a557"/>
+			<Metadata name="InformationRegister.JobQueue.Dimension.QueueID" id="d47ecc68-1177-4b60-acd8-896a896c40cc"/>
+		</Metadata>
+		<Metadata name="InformationRegister.JobQueue.Form.ListForm" id="973ffd4a-7304-4090-b220-50b86666e1b1" configVersion="8a24cf6480ba6246a01859e6e85aec5700000000"/>
+		<Metadata name="InformationRegister.JobQueue.Form.ListForm.Form" id="973ffd4a-7304-4090-b220-50b86666e1b1.0" configVersion="189375dfe6adab43b32e2cff1f0613b700000000"/>
 		<Metadata name="InformationRegister.ModulesData" id="26ff9ef8-7f91-43a0-b1b1-db6354ba7136" configVersion="d0ef132d31175d42b453a42feb2baa1300000000">
 			<Metadata name="InformationRegister.ModulesData.Attribute.ParsingDuration" id="13bf4f7a-975a-4989-8599-f2c2bf2fee4b"/>
 			<Metadata name="InformationRegister.ModulesData.Resource.AST" id="54581b21-07c5-47c3-a0d3-b4bc81f1029c"/>

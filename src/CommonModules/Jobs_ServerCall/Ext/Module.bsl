@@ -7,48 +7,77 @@ EndProcedure // StartJob()
 
 Procedure StartParseProjectModules(Project) Export
 	
-	Modules = Catalogs.Projects.Modules(Project); 
+	Modules = Catalogs.Projects.Modules(Project); 	
+	MaxJobs = Max(CommonUse.GetConstant("MaxJobs"), 1);
+	QueueID = New UUID;
 	
-	MaxJobs = Max(Constants.MaxJobs.Get(), 1);
-	Total = Modules.Count();
-	NumberPerJob = Int(Total / MaxJobs);
-	Remain = Total - NumberPerJob * MaxJobs;
+	Record = InformationRegisters.JobQueue.CreateRecordManager();
+	Record.QueueID = QueueID;
+	Record.Total = Modules.Count();
+	Record.Write();
 	
-	Start = 0;
-	For JobNum = 1 To MaxJobs - 1 Do		
-		Chunk = Slice(Modules, Start, NumberPerJob);
+	For JobNum = 1 To MaxJobs Do		
 		Parameters = New Array;
-		Parameters.Add(Chunk);
+		Parameters.Add(Modules);
+		Parameters.Add(QueueID);
 		StartJob("Jobs_ServerCall.StartParseModules", Parameters);
-		Start = Start + NumberPerJob;
 	EndDo; 
 	
-	NumberPerJob = NumberPerJob + Remain;
-	
-	Chunk = Slice(Modules, Start, NumberPerJob);
-	Parameters = New Array;
-	Parameters.Add(Chunk);
-	StartJob("Jobs_ServerCall.StartParseModules", Parameters);
-	
-EndProcedure // StartParseProjectModules()
+EndProcedure // StartParseProjectModules() 
 
-Procedure StartParseModules(Modules) Export
+Procedure StartParseModules(Modules, QueueID) Export
 	
-	For Each Module In Modules Do
-		Try
-			ParseModule(Module);
-		Except
-			WriteLogEvent(
-				"BSL-Parser",
-				EventLogLevel.Error,
-				Metadata.Catalogs.Modules,
-				Module,
-				ErrorDescription()
-			);
-		EndTry;
+	Chunk = TakeChunk(Modules, QueueID);
+	
+	While Chunk.Count() > 0 Do
+		
+		For Each Module In Chunk Do
+			Try
+				ParseModule(Module);
+			Except
+				WriteLogEvent(
+					"BSL-Parser",
+					EventLogLevel.Error,
+					Metadata.Catalogs.Modules,
+					Module,
+					ErrorDescription()
+				);
+			EndTry;
+		EndDo; 
+		
+		Chunk = TakeChunk(Modules, QueueID);
+		
 	EndDo; 
 	
 EndProcedure // StartParseModules()
+
+Function TakeChunk(Array, QueueID)
+	
+	ChunkSize = Max(CommonUse.GetConstant("ChunkSize"), 1);	
+	
+	DataLock = New DataLock;
+	LockItem = DataLock.Add("InformationRegister.JobQueue");
+	LockItem.SetValue("QueueID", QueueID);
+	
+	Record = InformationRegisters.JobQueue.CreateRecordManager();
+	Record.QueueID = QueueID;
+	
+	BeginTransaction();
+	
+	DataLock.Lock();
+	Record.Read();
+	
+	Taken = Record.Taken;
+	ChunkSize = Min(ChunkSize, Record.Total - Taken);
+	Record.Taken = Taken + ChunkSize;
+	
+	Record.Write(True);
+	
+	CommitTransaction();
+	
+	Return Slice(Array, Taken, ChunkSize);
+	
+EndFunction // TakeChunk()
 
 Procedure ParseModule(Module) Export
 	

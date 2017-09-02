@@ -145,6 +145,7 @@
 			<Role>Admin</Role>
 			<CommonModule>CommonUse</CommonModule>
 			<CommonModule>CommonUse_ServerCached</CommonModule>
+			<CommonModule>CommonUse_ServerCall</CommonModule>
 			<CommonModule>Git</CommonModule>
 			<CommonModule>Git_ServerCall</CommonModule>
 			<CommonModule>Global</CommonModule>
@@ -152,9 +153,11 @@
 			<CommonModule>Jobs_ServerCall</CommonModule>
 			<Constant>ExternalDataProcessorsPath</Constant>
 			<Constant>MaxJobs</Constant>
+			<Constant>ChunkSize</Constant>
 			<Catalog>Projects</Catalog>
 			<Catalog>Modules</Catalog>
 			<InformationRegister>ModulesData</InformationRegister>
+			<InformationRegister>JobQueue</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
