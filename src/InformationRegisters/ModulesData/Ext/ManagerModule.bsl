@@ -4,12 +4,24 @@ Function MarshalAST(Module, GitSHA1) Export
 	JSONWriter = New JSONWriter;
 	TempFileName = GetTempFileName(".json");
 	JSONWriter.OpenFile(TempFileName,,, New JSONWriterSettings(, Chars.Tab));
-	WriteJSON(JSONWriter, AST(Module, GitSHA1));
+	AST = AST(Module, GitSHA1);
+	Comments = New Map;
+	For Each Item In AST.Comments Do
+		Comments[Format(Item.Key, "NZ=0; NG=")] = Item.Value;
+	EndDo;
+	AST.Comments = Comments;
+	WriteJSON(JSONWriter, AST,, "ConvertJSON", InformationRegisters.ModulesData);
 	JSONWriter.Close();
 	TextReader = New TextReader(TempFileName, TextEncoding.UTF8);
 	
 	Return TextReader.Read();		
 EndFunction // MarshalAST()
+
+Function ConvertJSON(Property, Value, Other, Cancel) Export
+	If Value = Null Then
+		Return Undefined;
+	EndIf;
+EndFunction // ConvertJSON()
 
 Function AST(Module, GitSHA1)
 	
