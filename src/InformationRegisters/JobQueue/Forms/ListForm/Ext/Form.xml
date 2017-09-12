@@ -85,6 +85,16 @@
 					<ContextMenu name="TotalContextMenu" id="23"/>
 					<ExtendedTooltip name="TotalExtendedTooltip" id="24"/>
 				</LabelField>
+				<LabelField name="StartDate" id="25">
+					<DataPath>List.StartDate</DataPath>
+					<ContextMenu name="StartDateContextMenu" id="26"/>
+					<ExtendedTooltip name="StartDateExtendedTooltip" id="27"/>
+				</LabelField>
+				<LabelField name="EndDate" id="28">
+					<DataPath>List.EndDate</DataPath>
+					<ContextMenu name="EndDateContextMenu" id="29"/>
+					<ExtendedTooltip name="EndDateExtendedTooltip" id="30"/>
+				</LabelField>
 			</ChildItems>
 		</Table>
 	</ChildItems>

@@ -14,6 +14,7 @@ Procedure StartParseProjectModules(Project) Export
 	Record = InformationRegisters.JobQueue.CreateRecordManager();
 	Record.QueueID = QueueID;
 	Record.Total = Modules.Count();
+	Record.StartDate = CurrentDate();
 	Record.Write();
 	
 	For JobNum = 1 To MaxJobs Do		
@@ -70,6 +71,7 @@ Function TakeChunk(Array, QueueID)
 	Taken = Record.Taken;
 	ChunkSize = Min(ChunkSize, Record.Total - Taken);
 	Record.Taken = Taken + ChunkSize;
+	Record.EndDate = CurrentDate();
 	
 	Record.Write(True);
 	
@@ -92,6 +94,7 @@ Procedure ParseModule(Module) Export
 	GitSHA1 = Git.SHA1(Module, Source);
 	
 	BSLParser = CommonUse.GetDataProcessor("BSLParser");
+	BSLParser.Location = True;
 	Parser = BSLParser.Parser(Mid(Source, 2));
 	Parser.Scanner.Path = FilePath;
 	ParsingStart = CurrentUniversalDateInMilliseconds();
