@@ -156,7 +156,7 @@
 			<Constant>ChunkSize</Constant>
 			<Catalog>Catalogs</Catalog>
 			<Catalog>Projects</Catalog>
-			<Catalog>EnumValue</Catalog>
+			<Catalog>EnumValues</Catalog>
 			<Catalog>AccumulationRegisters</Catalog>
 			<Catalog>FunctionalOptions</Catalog>
 			<Catalog>Modules</Catalog>

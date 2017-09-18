@@ -2275,8 +2275,12 @@
 					<Name>InputByString</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Input by string</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ввод по строке</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -2318,8 +2322,12 @@
 							<Name>Object</Name>
 							<Synonym>
 								<v8:item>
-									<v8:lang>ru</v8:lang>
+									<v8:lang>en</v8:lang>
 									<v8:content>Object</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объект</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -2371,8 +2379,12 @@
 					<Name>BasedOn</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Based on</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вводится на основании</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -2414,8 +2426,12 @@
 							<Name>Object</Name>
 							<Synonym>
 								<v8:item>
-									<v8:lang>ru</v8:lang>
+									<v8:lang>en</v8:lang>
 									<v8:content>Object</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объект</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -2467,8 +2483,12 @@
 					<Name>DataLockFields</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Data lock fields</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поля блокировки данных</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -2510,8 +2530,12 @@
 							<Name>Object</Name>
 							<Synonym>
 								<v8:item>
-									<v8:lang>ru</v8:lang>
+									<v8:lang>en</v8:lang>
 									<v8:content>Object</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объект</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -2563,8 +2587,12 @@
 					<Name>Owners</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Owners</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Владельцы</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -2606,8 +2634,12 @@
 							<Name>Object</Name>
 							<Synonym>
 								<v8:item>
-									<v8:lang>ru</v8:lang>
+									<v8:lang>en</v8:lang>
 									<v8:content>Object</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объект</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>

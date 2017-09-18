@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.5">
 	<ConfigVersions>
-		<Metadata name="Catalog.AccumulationRegisters" id="ebf76014-7442-4d27-a658-f44eab01ea02" configVersion="8f6c73afd16fd344bb1c374edf347d1100000000">
+		<Metadata name="Catalog.AccumulationRegisters" id="ebf76014-7442-4d27-a658-f44eab01ea02" configVersion="f165b71fe0469a438ae711258621e91b00000000">
 			<Metadata name="Catalog.AccumulationRegisters.Attribute.EnableTotalsSplitting" id="03a20905-4720-48ca-a4f2-1877197da553"/>
 			<Metadata name="Catalog.AccumulationRegisters.Attribute.FullTextSearch" id="04a6b485-fff7-4951-bd62-f99e4d146f56"/>
 			<Metadata name="Catalog.AccumulationRegisters.Attribute.ListPresentation" id="053a989a-3713-4d1a-b998-eb6823559ebe"/>
@@ -46,7 +46,7 @@
 			<Metadata name="Catalog.Attributes.Attribute.MaxValue" id="ddd53a45-9c79-45b2-99f6-35c64871076f"/>
 			<Metadata name="Catalog.Attributes.Attribute.ChoiceForm" id="ece6d98d-7c65-4d09-9756-54a278268a31"/>
 		</Metadata>
-		<Metadata name="Catalog.Catalogs" id="84364d42-d5ba-4e4d-ba6b-e39716ec3fc0" configVersion="6b094a4caa34a44d8fef16185fcf974b00000000">
+		<Metadata name="Catalog.Catalogs" id="84364d42-d5ba-4e4d-ba6b-e39716ec3fc0" configVersion="e1d56c0931cff643bc0e5220e5a6b53000000000">
 			<Metadata name="Catalog.Catalogs.Attribute.LimitLevelCount" id="02880313-5800-4e43-bd55-685defbdd466"/>
 			<Metadata name="Catalog.Catalogs.Attribute.DefaultPresentation" id="14d04dc1-c63e-4c8c-a5c3-c3de8534389a"/>
 			<Metadata name="Catalog.Catalogs.Attribute.CreateOnInput" id="20309fd5-9fa7-41b4-93e5-da082b8d8496"/>
@@ -192,9 +192,9 @@
 			<Metadata name="Catalog.Documents.TabularSection.BasedOn" id="eb06d1e5-2f03-42b3-bc29-06fc6101166e"/>
 			<Metadata name="Catalog.Documents.Attribute.Synonym" id="f74a2865-fc9e-440a-aeb4-033ffa96d71a"/>
 		</Metadata>
-		<Metadata name="Catalog.EnumValue" id="8cecf069-f691-48f2-ade1-782283ec2c6f" configVersion="f3d9b2dce028bd4e882b60121f9b71f500000000">
-			<Metadata name="Catalog.EnumValue.Attribute.Comment" id="306e2ba9-fb2d-4e5c-8e22-f6b43195f4af"/>
-			<Metadata name="Catalog.EnumValue.Attribute.Synonym" id="797a1541-7cbc-4f82-aeeb-b6e47e989de1"/>
+		<Metadata name="Catalog.EnumValues" id="8cecf069-f691-48f2-ade1-782283ec2c6f" configVersion="68a8948a9fe69c4bb7850aa2db62c8a100000000">
+			<Metadata name="Catalog.EnumValues.Attribute.Comment" id="306e2ba9-fb2d-4e5c-8e22-f6b43195f4af"/>
+			<Metadata name="Catalog.EnumValues.Attribute.Synonym" id="797a1541-7cbc-4f82-aeeb-b6e47e989de1"/>
 		</Metadata>
 		<Metadata name="Catalog.Enums" id="b7576b48-6d0c-412d-aef1-f7e7bf5404fc" configVersion="95c718247192724e8c265f26872c251700000000">
 			<Metadata name="Catalog.Enums.Attribute.Comment" id="0d0b068f-4e5e-40c8-afe6-0c24b9a5d882"/>
@@ -261,7 +261,7 @@
 		<Metadata name="Catalog.Pictures" id="1d108624-9f40-41c3-b5e9-7ff03e3cb631" configVersion="f5a8465b59b2394d823bbc6c676a4c0400000000">
 			<Metadata name="Catalog.Pictures.Attribute.LoadTransparent" id="b6bff828-2b36-4ad2-aa6d-16b0d9573ee9"/>
 		</Metadata>
-		<Metadata name="Catalog.Projects" id="03e142ab-9045-42df-9bcc-b3b06c60ff6e" configVersion="f82e310ae8758c488a69f209201bb2f500000000">
+		<Metadata name="Catalog.Projects" id="03e142ab-9045-42df-9bcc-b3b06c60ff6e" configVersion="6bb8053a1f50cf45a71749714754c29800000000">
 			<Metadata name="Catalog.Projects.Command.LoadModules" id="7c13a887-c8f6-4cbb-b9a3-8cc6d936c1bf"/>
 			<Metadata name="Catalog.Projects.Command.ParseModules" id="921f9704-555d-4c76-9024-cf3ecc91c48b"/>
 			<Metadata name="Catalog.Projects.Attribute.Path" id="93794baf-e58b-4921-9fcc-35e8481e1dec"/>

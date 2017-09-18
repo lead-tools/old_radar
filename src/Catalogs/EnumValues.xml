@@ -2,37 +2,37 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
 	<Catalog uuid="8cecf069-f691-48f2-ade1-782283ec2c6f">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.EnumValue" category="Object">
+			<xr:GeneratedType name="CatalogObject.EnumValues" category="Object">
 				<xr:TypeId>5cbacba7-0028-4634-af1e-f3b27234bce1</xr:TypeId>
 				<xr:ValueId>d882a124-1473-4b5f-bd27-4a3ab6e91a05</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.EnumValue" category="Ref">
+			<xr:GeneratedType name="CatalogRef.EnumValues" category="Ref">
 				<xr:TypeId>bc74806a-fec7-4d49-a4a2-28391a9ef379</xr:TypeId>
 				<xr:ValueId>78f27830-f27a-413a-aa7d-42f343b31b23</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.EnumValue" category="Selection">
+			<xr:GeneratedType name="CatalogSelection.EnumValues" category="Selection">
 				<xr:TypeId>d76b434e-f2e7-4df3-82ee-d4ba37916119</xr:TypeId>
 				<xr:ValueId>d6758a0b-ed5c-4ba7-a9a2-f01b75cc14a5</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.EnumValue" category="List">
+			<xr:GeneratedType name="CatalogList.EnumValues" category="List">
 				<xr:TypeId>05676b62-8bb5-4e43-a113-8cda84de1d90</xr:TypeId>
 				<xr:ValueId>c844ccac-c056-4fe6-a67b-fa170b394971</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.EnumValue" category="Manager">
+			<xr:GeneratedType name="CatalogManager.EnumValues" category="Manager">
 				<xr:TypeId>931f201e-c910-45d1-ad5e-fb25add143b1</xr:TypeId>
 				<xr:ValueId>22f2d57c-fee8-492a-840f-d2862632417f</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>EnumValue</Name>
+			<Name>EnumValues</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Значение перечисления</v8:content>
+					<v8:lang>en</v8:lang>
+					<v8:content>Enum values</v8:content>
 				</v8:item>
 				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Enum value</v8:content>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значения перечислений</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -294,8 +294,8 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.EnumValue.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.EnumValue.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.EnumValues.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.EnumValues.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
@@ -330,12 +330,12 @@
 					<Name>Synonym</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Синоним</v8:content>
-						</v8:item>
-						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Synonym</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Синоним</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
