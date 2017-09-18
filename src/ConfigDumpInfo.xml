@@ -119,7 +119,7 @@
 			<Metadata name="Catalog.CommonCommands.Attribute.Picture" id="c72d05f4-3afa-412c-886e-3b9ed3f5fe08"/>
 			<Metadata name="Catalog.CommonCommands.Attribute.Shortcut" id="ce2c9e8f-8213-44df-8c42-1edb7e6d2f55"/>
 		</Metadata>
-		<Metadata name="Catalog.Constants" id="66a56acd-055c-4199-93ba-e6b268b59156" configVersion="fb2b93bc4ffa044487f9704a5494319200000000">
+		<Metadata name="Catalog.Constants" id="66a56acd-055c-4199-93ba-e6b268b59156" configVersion="61dfe0dfed98bd42924ce5426eb0167600000000">
 			<Metadata name="Catalog.Constants.Attribute.ExtendedPresentation" id="307ffcda-d1b9-48b7-bdf8-e782e2be2a53"/>
 			<Metadata name="Catalog.Constants.Attribute.ToolTip" id="32d29eca-a74e-4582-8684-e6ec376c589e"/>
 			<Metadata name="Catalog.Constants.Attribute.DefaultForm" id="40533fae-1763-4163-a93d-f3a375d46a44"/>
@@ -218,7 +218,7 @@
 			<Metadata name="Catalog.EventSubscriptions.Attribute.Comment" id="e0b8db84-d186-4e03-9325-b1bf985201ba"/>
 			<Metadata name="Catalog.EventSubscriptions.Attribute.Handler" id="f2890625-9adf-49aa-b945-8f7bebb4d528"/>
 		</Metadata>
-		<Metadata name="Catalog.FunctionalOptions" id="50149189-501d-4dcc-9b2f-afcc9120f46a" configVersion="640b44685cec5b4c89340e2896b360d700000000">
+		<Metadata name="Catalog.FunctionalOptions" id="50149189-501d-4dcc-9b2f-afcc9120f46a" configVersion="0f0276f291afca49af13fcda324efb0800000000">
 			<Metadata name="Catalog.FunctionalOptions.Attribute.Comment" id="0c0dc5ca-cd13-4d41-a598-b98bd8a3a2c9"/>
 			<Metadata name="Catalog.FunctionalOptions.TabularSection.Content" id="1fd2402f-49f9-4c3a-9f2a-01a48321f154"/>
 			<Metadata name="Catalog.FunctionalOptions.Attribute.Location" id="6657e947-7384-42a0-b085-b2141c7e5f8e"/>
@@ -248,7 +248,7 @@
 			<Metadata name="Catalog.InformationRegisters.Attribute.IncludeHelpInContents" id="f14dd2c2-38b7-4aa8-8eb3-33ceb430f1ad"/>
 			<Metadata name="Catalog.InformationRegisters.Attribute.EnableTotalsSliceLast" id="f92ac69d-8328-4c7f-bee4-4145edd11d55"/>
 		</Metadata>
-		<Metadata name="Catalog.Modules" id="082fc08e-dd77-4134-b389-f1219686fda6" configVersion="b909cecadf072049a5db85c71940659400000000">
+		<Metadata name="Catalog.Modules" id="082fc08e-dd77-4134-b389-f1219686fda6" configVersion="8716539da3c9684aac0418372964514700000000">
 			<Metadata name="Catalog.Modules.Command.Parse" id="59b47365-5926-409b-acba-bff0ed99e0d4"/>
 			<Metadata name="Catalog.Modules.Attribute.Path" id="adc0ca92-0fcf-45f7-819b-0ea3cc33f561"/>
 		</Metadata>
@@ -270,7 +270,7 @@
 		<Metadata name="Catalog.Projects.Command.ParseModules.CommandModule" id="921f9704-555d-4c76-9024-cf3ecc91c48b.2" configVersion="b5f20c876edaeb45bb681ddc4ce75ead00000000"/>
 		<Metadata name="Catalog.Projects.ManagerModule" id="03e142ab-9045-42df-9bcc-b3b06c60ff6e.3" configVersion="7a2777a6c7de9541b674cea6a9581dd600000000"/>
 		<Metadata name="Catalog.Rights" id="94315d1c-d81a-4e92-abc6-8909d23cac6a" configVersion="f956773a8f5930449b0c3255bd4db1b900000000"/>
-		<Metadata name="Catalog.Roles" id="58d6929b-fdfc-45bd-a9a7-a0ab95bdf338" configVersion="6819cc4237add747887b2ae33023141600000000">
+		<Metadata name="Catalog.Roles" id="58d6929b-fdfc-45bd-a9a7-a0ab95bdf338" configVersion="f06e2dbc76091d49b365cbaf12c7d86e00000000">
 			<Metadata name="Catalog.Roles.Attribute.Synonym" id="5dad6352-992e-41df-b4d2-d6fbe4f671c9"/>
 			<Metadata name="Catalog.Roles.Attribute.Comment" id="900a9e65-e67a-4a6d-a98b-1c0cb02cd40a"/>
 		</Metadata>

@@ -422,8 +422,12 @@
 					<Name>UseStandardCommands</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Use standard commands</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать стандартные команды</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -462,8 +466,12 @@
 					<Name>DefaultForm</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Default form</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная форма</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -506,8 +514,12 @@
 					<Name>ExtendedPresentation</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Extended presentation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расширенное представление</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -546,8 +558,12 @@
 					<Name>Explanation</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Explanation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пояснение</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -586,8 +602,12 @@
 					<Name>PasswordMode</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Password mode</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим пароля</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -626,8 +646,12 @@
 					<Name>Format</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Format</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формат</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -666,8 +690,12 @@
 					<Name>EditFormat</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Edit format</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формат редактирования</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -706,8 +734,12 @@
 					<Name>ToolTip</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Tool tip</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подсказка</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -746,8 +778,12 @@
 					<Name>MarkNegatives</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Mark negatives</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выделять отрицательные</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -786,8 +822,12 @@
 					<Name>Mask</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Mask</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Маска</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -830,8 +870,12 @@
 					<Name>MultiLine</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Multi line</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Многострочный режим</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -870,8 +914,12 @@
 					<Name>ExtendedEdit</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Extended edit</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расширенное редактирование</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -910,8 +958,12 @@
 					<Name>MinValue</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Min value</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Минимальное значение</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -950,8 +1002,12 @@
 					<Name>MaxValue</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Max value</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Максимальное значение</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -990,8 +1046,12 @@
 					<Name>FillChecking</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Fill checking</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверка заполнения</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1030,8 +1090,12 @@
 					<Name>ChoiceFoldersAndItems</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Choice folders and items</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор групп и элементов</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1074,8 +1138,12 @@
 					<Name>ChoiceParameterLinks</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Choice parameter links</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Связи параметров выбора</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1114,8 +1182,12 @@
 					<Name>ChoiceParameters</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Choice parameters</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры выбора</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1154,8 +1226,12 @@
 					<Name>QuickChoice</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Quick choice</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Быстрый выбор</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1198,8 +1274,12 @@
 					<Name>ChoiceForm</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Choice form</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Форма выбора</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1242,8 +1322,12 @@
 					<Name>LinkByType</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Link by type</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Связь по типу</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1286,8 +1370,12 @@
 					<Name>ChoiceHistoryOnInput</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Choice history on input</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>История выбора при вводе</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1326,8 +1414,12 @@
 					<Name>DataLockControlMode</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Data lock control mode</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим управления блокировкой данных</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

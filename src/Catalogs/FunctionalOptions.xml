@@ -422,8 +422,12 @@
 					<Name>Location</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Location</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Хранение</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -466,8 +470,12 @@
 					<Name>PrivilegedGetMode</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Privileged get mode</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Привилегированный режим при получении</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -516,8 +524,12 @@
 					<Name>Content</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Content</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состав</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -559,8 +571,12 @@
 							<Name>Object</Name>
 							<Synonym>
 								<v8:item>
-									<v8:lang>ru</v8:lang>
+									<v8:lang>en</v8:lang>
 									<v8:content>Object</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объект</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
