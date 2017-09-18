@@ -140,8 +140,8 @@
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
-			<Language>Русский</Language>
 			<Language>English</Language>
+			<Language>Русский</Language>
 			<Role>Admin</Role>
 			<CommonModule>CommonUse</CommonModule>
 			<CommonModule>CommonUse_ServerCached</CommonModule>
@@ -154,8 +154,51 @@
 			<Constant>ExternalDataProcessorsPath</Constant>
 			<Constant>MaxJobs</Constant>
 			<Constant>ChunkSize</Constant>
+			<Catalog>Catalogs</Catalog>
 			<Catalog>Projects</Catalog>
+			<Catalog>EnumValue</Catalog>
+			<Catalog>AccumulationRegisters</Catalog>
+			<Catalog>FunctionalOptions</Catalog>
 			<Catalog>Modules</Catalog>
+			<Catalog>Roles</Catalog>
+			<Catalog>Constants</Catalog>
+			<Catalog>Attributes</Catalog>
+			<Catalog>InformationRegisters</Catalog>
+			<Catalog>Enums</Catalog>
+			<Catalog>CommonCommands</Catalog>
+			<Catalog>EventSubscriptions</Catalog>
+			<Catalog>Rights</Catalog>
+			<Catalog>Documents</Catalog>
+			<Catalog>TabularSections</Catalog>
+			<Catalog>Versions</Catalog>
+			<Catalog>Types</Catalog>
+			<Catalog>MultilingualStrings</Catalog>
+			<Catalog>Values</Catalog>
+			<Catalog>ChoiceParameterLinks</Catalog>
+			<Catalog>ChoiceParameters</Catalog>
+			<Catalog>Pictures</Catalog>
+			<Enum>AttributeRoles</Enum>
+			<Enum>Boolean</Enum>
+			<Enum>ChoiceDataGetModeOnInputByString</Enum>
+			<Enum>ChoiceFoldersAndItems</Enum>
+			<Enum>ChoiceHistoryOnInput</Enum>
+			<Enum>ChoiceMode</Enum>
+			<Enum>CreateOnInput</Enum>
+			<Enum>DataLockControlMode</Enum>
+			<Enum>FillChecking</Enum>
+			<Enum>FullTextSearch</Enum>
+			<Enum>FullTextSearchOnInputByString</Enum>
+			<Enum>Indexing</Enum>
+			<Enum>QuickChoice</Enum>
+			<Enum>SearchStringModeOnInputByString</Enum>
+			<Enum>NumberType</Enum>
+			<Enum>NumberAllowedLength</Enum>
+			<Enum>NumberPeriodicity</Enum>
+			<Enum>Posting</Enum>
+			<Enum>RealTimePosting</Enum>
+			<Enum>RegisterRecordsDeletion</Enum>
+			<Enum>RegisterRecordsWritingOnPost</Enum>
+			<Enum>SequenceFilling</Enum>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
 		</ChildObjects>
