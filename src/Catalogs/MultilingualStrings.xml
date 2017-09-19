@@ -329,6 +329,10 @@
 					<Name>Ru</Name>
 					<Synonym>
 						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Ru</v8:content>
+						</v8:item>
+						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Ru</v8:content>
 						</v8:item>
@@ -372,6 +376,10 @@
 				<Properties>
 					<Name>En</Name>
 					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>En</v8:content>
+						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>En</v8:content>

@@ -330,6 +330,10 @@
 					<Name>DataPath</Name>
 					<Synonym>
 						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Data path</v8:content>
+						</v8:item>
+						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Data path</v8:content>
 						</v8:item>
@@ -369,6 +373,10 @@
 				<Properties>
 					<Name>ValueChange</Name>
 					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Value change</v8:content>
+						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Value change</v8:content>

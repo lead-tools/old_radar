@@ -422,8 +422,12 @@
 					<Name>Group</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Group</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -466,8 +470,12 @@
 					<Name>Representation</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Representation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отображение</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -510,8 +518,12 @@
 					<Name>ToolTip</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Tool tip</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подсказка</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -550,8 +562,12 @@
 					<Name>Picture</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Picture</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -590,8 +606,12 @@
 					<Name>Shortcut</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Shortcut</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сочетание клавиш</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -634,8 +654,12 @@
 					<Name>IncludeHelpInContents</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Include help in contents</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включать в содержание справки</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -674,8 +698,12 @@
 					<Name>ParameterUseMode</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Parameter use mode</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим использования параметра</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -718,8 +746,12 @@
 					<Name>ModifiesData</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Modifies data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменяет данные</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -768,8 +800,12 @@
 					<Name>Types</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Types</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Типы</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -811,8 +847,12 @@
 							<Name>Type</Name>
 							<Synonym>
 								<v8:item>
-									<v8:lang>ru</v8:lang>
+									<v8:lang>en</v8:lang>
 									<v8:content>Type</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тип</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>

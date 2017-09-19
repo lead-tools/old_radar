@@ -422,8 +422,12 @@
 					<Name>UseStandardCommands</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Use standard commands</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать стандартные команды</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -462,8 +466,12 @@
 					<Name>DefaultRecordForm</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Default record form</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Форма редактирования записи</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -506,8 +514,12 @@
 					<Name>DefaultListForm</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Default list form</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основная форма списка</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -550,8 +562,12 @@
 					<Name>AuxiliaryRecordForm</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Auxiliary record form</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительная форма редактирования записи</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -594,8 +610,12 @@
 					<Name>AuxiliaryListForm</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Auxiliary list form</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительная форма списка</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -638,8 +658,12 @@
 					<Name>InformationRegisterPeriodicity</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Information register periodicity</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Периодичность</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -682,8 +706,12 @@
 					<Name>WriteMode</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Write mode</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим записи</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -726,8 +754,12 @@
 					<Name>MainFilterOnPeriod</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Main filter on period</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основной отбор по периоду</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -766,8 +798,12 @@
 					<Name>IncludeHelpInContents</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Include help in contents</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включать в содержание справки</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -806,8 +842,12 @@
 					<Name>DataLockControlMode</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Data lock control mode</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Режим управления блокировкой данных</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -846,8 +886,12 @@
 					<Name>FullTextSearch</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Full text search</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полнотекстовый поиск</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -886,8 +930,12 @@
 					<Name>EnableTotalsSliceFirst</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Enable totals slice first</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разрешить итоги: срез первых</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -926,8 +974,12 @@
 					<Name>EnableTotalsSliceLast</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Enable totals slice last</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разрешить итоги: срез последних</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -966,8 +1018,12 @@
 					<Name>RecordPresentation</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Record presentation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление записи</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1006,8 +1062,12 @@
 					<Name>ExtendedRecordPresentation</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Extended record presentation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расширенное представление записи</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1046,8 +1106,12 @@
 					<Name>ListPresentation</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>List presentation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление списка</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1086,8 +1150,12 @@
 					<Name>ExtendedListPresentation</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Extended list presentation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расширенное представление списка</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1126,8 +1194,12 @@
 					<Name>Explanation</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Explanation</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пояснение</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
