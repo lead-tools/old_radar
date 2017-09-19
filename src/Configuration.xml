@@ -162,7 +162,6 @@
 			<Catalog>Modules</Catalog>
 			<Catalog>Roles</Catalog>
 			<Catalog>Constants</Catalog>
-			<Catalog>Attributes</Catalog>
 			<Catalog>InformationRegisters</Catalog>
 			<Catalog>Enums</Catalog>
 			<Catalog>CommonCommands</Catalog>

@@ -51,7 +51,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Enums</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EnumValues</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonCommands</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Attributes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TabularSections</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
