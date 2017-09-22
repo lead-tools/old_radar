@@ -22,6 +22,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Posting</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Posting</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>false</UseStandardCommands>
@@ -98,6 +102,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Разрешить</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Allow</v8:content>
 						</v8:item>
 					</Synonym>
@@ -110,6 +118,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Запретить</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Deny</v8:content>
 						</v8:item>
 					</Synonym>

@@ -20,6 +20,10 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка заполнения</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Fill checking</v8:content>
 				</v8:item>
 			</Synonym>
@@ -100,6 +104,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Dont check</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Dont check</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
@@ -110,6 +118,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Show error</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Show error</v8:content>
 						</v8:item>
 					</Synonym>

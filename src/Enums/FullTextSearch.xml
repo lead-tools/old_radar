@@ -20,6 +20,10 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Полнотекстовый поиск</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Full text search</v8:content>
 				</v8:item>
 			</Synonym>
@@ -98,6 +102,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Use</v8:content>
 						</v8:item>
 					</Synonym>

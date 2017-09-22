@@ -38,6 +38,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Job queue</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очередь заданий</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
@@ -166,6 +170,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Start date</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
@@ -207,6 +215,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>End date</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата окончания</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

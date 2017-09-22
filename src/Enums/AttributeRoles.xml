@@ -20,6 +20,10 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
+					<v8:content>Роли реквизитов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
 					<v8:content>Attribute roles</v8:content>
 				</v8:item>
 			</Synonym>
@@ -98,6 +102,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизит</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Attribute</v8:content>
 						</v8:item>
 					</Synonym>
@@ -112,6 +120,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Standard attribute</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Standard attribute</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
@@ -124,6 +136,10 @@
 							<v8:lang>ru</v8:lang>
 							<v8:content>Dimension</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Dimension</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
@@ -134,6 +150,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Resource</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Resource</v8:content>
 						</v8:item>
 					</Synonym>

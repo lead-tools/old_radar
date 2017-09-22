@@ -22,6 +22,10 @@
 					<v8:lang>ru</v8:lang>
 					<v8:content>Register records deletion</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Register records deletion</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>false</UseStandardCommands>
@@ -98,6 +102,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Не удалять автоматически</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Auto delete off</v8:content>
 						</v8:item>
 					</Synonym>
@@ -110,6 +118,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Удалять автоматически</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Auto delete</v8:content>
 						</v8:item>
 					</Synonym>
@@ -122,6 +134,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Удалять автоматически при отмене проведения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
 							<v8:content>Auto delete on unpost</v8:content>
 						</v8:item>
 					</Synonym>
