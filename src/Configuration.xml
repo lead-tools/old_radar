@@ -154,50 +154,63 @@
 			<Constant>ExternalDataProcessorsPath</Constant>
 			<Constant>MaxJobs</Constant>
 			<Constant>ChunkSize</Constant>
-			<Catalog>Catalogs</Catalog>
-			<Catalog>Projects</Catalog>
-			<Catalog>EnumValues</Catalog>
+			<Catalog>Forms</Catalog>
 			<Catalog>AccumulationRegisters</Catalog>
-			<Catalog>FunctionalOptions</Catalog>
-			<Catalog>Modules</Catalog>
-			<Catalog>Roles</Catalog>
-			<Catalog>Constants</Catalog>
-			<Catalog>InformationRegisters</Catalog>
-			<Catalog>Enums</Catalog>
-			<Catalog>CommonCommands</Catalog>
-			<Catalog>EventSubscriptions</Catalog>
-			<Catalog>Rights</Catalog>
-			<Catalog>Documents</Catalog>
-			<Catalog>TabularSections</Catalog>
-			<Catalog>Versions</Catalog>
-			<Catalog>Types</Catalog>
-			<Catalog>MultilingualStrings</Catalog>
-			<Catalog>Values</Catalog>
+			<Catalog>Catalogs</Catalog>
 			<Catalog>ChoiceParameterLinks</Catalog>
 			<Catalog>ChoiceParameters</Catalog>
+			<Catalog>CommonCommands</Catalog>
+			<Catalog>Constants</Catalog>
+			<Catalog>Documents</Catalog>
+			<Catalog>Enums</Catalog>
+			<Catalog>EnumValues</Catalog>
+			<Catalog>EventSubscriptions</Catalog>
+			<Catalog>FunctionalOptions</Catalog>
+			<Catalog>InformationRegisters</Catalog>
+			<Catalog>Modules</Catalog>
+			<Catalog>MultilingualStrings</Catalog>
 			<Catalog>Pictures</Catalog>
+			<Catalog>Projects</Catalog>
+			<Catalog>Rights</Catalog>
+			<Catalog>Roles</Catalog>
+			<Catalog>TabularSections</Catalog>
+			<Catalog>Types</Catalog>
+			<Catalog>Values</Catalog>
+			<Catalog>Versions</Catalog>
+			<Catalog>Commands</Catalog>
+			<Catalog>Attributes</Catalog>
+			<Catalog>Templates</Catalog>
+			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>
 			<Enum>Boolean</Enum>
+			<Enum>BusinessProcessNumberType</Enum>
 			<Enum>ChoiceDataGetModeOnInputByString</Enum>
 			<Enum>ChoiceFoldersAndItems</Enum>
 			<Enum>ChoiceHistoryOnInput</Enum>
 			<Enum>ChoiceMode</Enum>
 			<Enum>CreateOnInput</Enum>
-			<Enum>DataLockControlMode</Enum>
+			<Enum>DefaultDataLockControlMode</Enum>
 			<Enum>FillChecking</Enum>
-			<Enum>FullTextSearch</Enum>
+			<Enum>UseFullTextSearch</Enum>
 			<Enum>FullTextSearchOnInputByString</Enum>
 			<Enum>Indexing</Enum>
-			<Enum>UseQuickChoice</Enum>
-			<Enum>SearchStringModeOnInputByString</Enum>
-			<Enum>BusinessProcessNumberType</Enum>
-			<Enum>AllowedLength</Enum>
-			<Enum>NumberPeriodicity</Enum>
+			<Enum>DocumentNumberPeriodicity</Enum>
+			<Enum>ObjectBelonging</Enum>
 			<Enum>Posting</Enum>
 			<Enum>RealTimePosting</Enum>
 			<Enum>RegisterRecordsDeletion</Enum>
 			<Enum>RegisterRecordsWritingOnPost</Enum>
+			<Enum>SearchStringModeOnInputByString</Enum>
 			<Enum>SequenceFilling</Enum>
+			<Enum>UseQuickChoice</Enum>
+			<Enum>HierarchyType</Enum>
+			<Enum>SubordinationUse</Enum>
+			<Enum>DataHistoryUse</Enum>
+			<Enum>PredefinedDataUpdate</Enum>
+			<Enum>CatalogMainPresentation</Enum>
+			<Enum>CatalogCodesSeries</Enum>
+			<Enum>EditType</Enum>
+			<Enum>CatalogCodeType</Enum>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
 		</ChildObjects>

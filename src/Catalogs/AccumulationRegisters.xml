@@ -664,7 +664,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.DataLockControlMode</v8:Type>
+						<v8:Type>cfg:EnumRef.DefaultDataLockControlMode</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -708,7 +708,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.FullTextSearch</v8:Type>
+						<v8:Type>cfg:EnumRef.UseFullTextSearch</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -2034,7 +2034,7 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>cfg:EnumRef.FullTextSearch</v8:Type>
+								<v8:Type>cfg:EnumRef.UseFullTextSearch</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>

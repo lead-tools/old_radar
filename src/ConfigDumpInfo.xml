@@ -43,12 +43,15 @@
 			<Metadata name="Catalog.AccumulationRegisters.Attribute.DataLockControlMode" id="fd12d416-e810-45ab-a646-c094b1f6be9d"/>
 			<Metadata name="Catalog.AccumulationRegisters.Attribute.Synonym" id="ffac1af5-2ad9-465f-8777-1cf2fac5d15d"/>
 		</Metadata>
-		<Metadata name="Catalog.Catalogs" id="84364d42-d5ba-4e4d-ba6b-e39716ec3fc0" configVersion="713fdfcc06f1344493d7bbfdbcd0244300000000">
+		<Metadata name="Catalog.Attributes" id="1676a895-51c7-4690-8651-5a24b706edf7" configVersion="149d7db19e0fc444af6b7290f402e3d600000000"/>
+		<Metadata name="Catalog.Catalogs" id="84364d42-d5ba-4e4d-ba6b-e39716ec3fc0" configVersion="c2613542c13f5e44aeb71ea190054fcc00000000">
+			<Metadata name="Catalog.Catalogs.TabularSection.TabularSections" id="02240b92-9ff4-495b-b69e-d373dcbf3006"/>
 			<Metadata name="Catalog.Catalogs.Attribute.LimitLevelCount" id="02880313-5800-4e43-bd55-685defbdd466"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.ChoiceFoldersAndItems" id="0d505942-95a9-459c-a2b2-49c5653b0733"/>
 			<Metadata name="Catalog.Catalogs.Attribute.DefaultPresentation" id="14d04dc1-c63e-4c8c-a5c3-c3de8534389a"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.ChoiceForm" id="14e0278f-83aa-4667-8ece-6f38a97d8ed7"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes" id="15840ae1-cccb-406b-8f05-b5922b532a61"/>
+			<Metadata name="Catalog.Catalogs.TabularSection.Templates.Attribute.Object" id="1ffdfa6b-e5a3-4ee7-bf99-3f4e738d8067"/>
 			<Metadata name="Catalog.Catalogs.Attribute.CreateOnInput" id="20309fd5-9fa7-41b4-93e5-da082b8d8496"/>
 			<Metadata name="Catalog.Catalogs.Attribute.DefaultListForm" id="2337d96c-9886-493e-acae-a23c760e42d5"/>
 			<Metadata name="Catalog.Catalogs.Attribute.FoldersOnTop" id="25e3732a-17af-4d59-aa17-624bb3212c12"/>
@@ -57,13 +60,17 @@
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.LinkByType" id="2a6da0ef-13e1-4a88-9117-55bd96049e0d"/>
 			<Metadata name="Catalog.Catalogs.Attribute.IncludeHelpInContents" id="2c912299-6de0-459c-b401-e9feea26dea7"/>
 			<Metadata name="Catalog.Catalogs.Attribute.CheckUnique" id="2f1deb89-8433-4ed1-93b8-7ac291feb0b9"/>
+			<Metadata name="Catalog.Catalogs.TabularSection.Characteristics" id="2f8eb9fc-5db3-43c1-90ba-638430b0d315"/>
 			<Metadata name="Catalog.Catalogs.Attribute.Hierarchical" id="31be6d97-5f74-4e21-911b-2d14796e41c3"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.Comment" id="32726c65-d218-4888-9d03-1b57da57c322"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.BasedOn" id="341100c5-e607-4747-a9b1-7d45fdaa1a73"/>
+			<Metadata name="Catalog.Catalogs.TabularSection.Forms.Attribute.Object" id="39a160ae-0e87-407d-8deb-4a087600665c"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.FillChecking" id="3a2bd0ea-8432-4536-b195-89b2a4ad51cd"/>
 			<Metadata name="Catalog.Catalogs.Attribute.DescriptionLength" id="3d7d0829-4f2a-45a4-b0ca-30fd3e01cc58"/>
 			<Metadata name="Catalog.Catalogs.Attribute.DefaultFolderChoiceForm" id="3e0acffe-1a90-48fa-be38-db4685f5c1dc"/>
 			<Metadata name="Catalog.Catalogs.Attribute.AuxiliaryListForm" id="4451aea9-06d5-4d7d-a3e8-04f568102687"/>
+			<Metadata name="Catalog.Catalogs.Attribute.ObjectModule" id="4cef37a7-c3f4-4145-a5c7-f9f25c72e697"/>
+			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.Attribute" id="4d7906e3-c7c4-476f-b0c3-229b57388212"/>
 			<Metadata name="Catalog.Catalogs.Attribute.SearchStringModeOnInputByString" id="4ef33ac5-66d9-458a-8d60-a0018cb36f8d"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.Role" id="57f9dabf-c20d-4ac0-9bb5-df0e4263bb6b"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Owners" id="6105ac01-1d03-43da-b070-f496f04d03fa"/>
@@ -72,26 +79,34 @@
 			<Metadata name="Catalog.Catalogs.Attribute.DataLockControlMode" id="6b933af1-239d-4ec6-a39e-0a41a59f7cf3"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.QuickChoice" id="6bb6a083-fe65-4ecc-80f8-71acfaa4a69e"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.ChoiceParameterLinks" id="710b5e42-903b-4623-902e-be08cd63c07a"/>
+			<Metadata name="Catalog.Catalogs.Attribute.DataHistory" id="72aa2679-ecbd-429c-9eca-3fd6612aab6a"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.Mask" id="74e3f990-feea-427c-9c30-933e60df9ad2"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.FullTextSearch" id="74fcc42b-93b1-4e12-b6a5-7a9217367305"/>
+			<Metadata name="Catalog.Catalogs.Attribute.Help" id="78265249-16a5-45d7-b534-53a638563352"/>
 			<Metadata name="Catalog.Catalogs.Attribute.ListPresentation" id="7d0934f6-e334-4499-9dfe-8ffaee0ac391"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.CreateOnInput" id="7e78c6e5-4929-4f01-884f-f5c5c15ecdfc"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.BasedOn.Attribute.Object" id="81cd5f15-f60d-468d-85da-10301649e0cf"/>
 			<Metadata name="Catalog.Catalogs.Attribute.CodeSeries" id="82a75d3e-95d8-416e-883d-50c7f8e93a56"/>
+			<Metadata name="Catalog.Catalogs.TabularSection.Predefined" id="850448fe-2ef7-4304-8aca-2543b1d405b5"/>
+			<Metadata name="Catalog.Catalogs.TabularSection.Templates" id="85339b45-6898-4cef-be29-c87ab619c132"/>
+			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.Name" id="87723e39-3d92-4e92-b01e-c68c7d71f047"/>
 			<Metadata name="Catalog.Catalogs.Attribute.Synonym" id="8906da64-8c37-434c-9e75-3f786d98085e"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.InputByString" id="8ccc65a2-b9bf-43c1-ab9f-7dd5fa47901b"/>
 			<Metadata name="Catalog.Catalogs.Attribute.ChoiceMode" id="90769567-4bff-4038-8dd2-93f9203cbd0a"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.Indexing" id="951029a7-bbd8-45f6-a259-b14c77bcb214"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.FillValue" id="95a4ff86-9f48-4d97-9aaf-78a196391f1c"/>
+			<Metadata name="Catalog.Catalogs.TabularSection.Forms" id="95a97b97-c031-4bd3-afd8-6edc3d7537aa"/>
 			<Metadata name="Catalog.Catalogs.Attribute.EditType" id="9677f0d0-e11d-48ef-a462-ae2dd2b44d33"/>
 			<Metadata name="Catalog.Catalogs.Attribute.FullTextSearch" id="96b11d96-5577-4daf-8e61-15ede45abf7d"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Owners.Attribute.Object" id="9a5e9624-7f25-4278-9c39-abdd44a24bd7"/>
 			<Metadata name="Catalog.Catalogs.Attribute.AuxiliaryObjectForm" id="9e44f9dc-f93e-4987-8d15-db04c1f245da"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.ToolTip" id="a042c448-5241-465d-9d7a-eefb0d088492"/>
+			<Metadata name="Catalog.Catalogs.TabularSection.TabularSections.Attribute.Object" id="a169cf4f-ef53-4931-98a5-3c5dce3194a9"/>
 			<Metadata name="Catalog.Catalogs.Attribute.CodeType" id="a515ae81-7f9f-4ca7-a6ca-ecefbe821b2d"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.ChoiceHistoryOnInput" id="a5b225e7-db23-4ca9-a23a-ed5ea4e64bf2"/>
 			<Metadata name="Catalog.Catalogs.Attribute.SubordinationUse" id="a6b92db1-8769-4230-a0a2-5237958e60d5"/>
 			<Metadata name="Catalog.Catalogs.Attribute.Explanation" id="a743478f-7a81-4f99-a323-1009940316ad"/>
+			<Metadata name="Catalog.Catalogs.TabularSection.Commands.Attribute.Object" id="a7d23361-8796-428b-86b0-ce37aea92388"/>
 			<Metadata name="Catalog.Catalogs.Attribute.ChoiceHistoryOnInput" id="a86c57c4-329f-4ec5-a003-d38f64983344"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.MinValue" id="ab695112-c661-40af-a8d9-ce69249aed1e"/>
 			<Metadata name="Catalog.Catalogs.Attribute.ExtendedObjectPresentation" id="abaebf18-4a0d-45e5-826b-022c61e12feb"/>
@@ -100,12 +115,15 @@
 			<Metadata name="Catalog.Catalogs.Attribute.ObjectPresentation" id="b82425b1-215c-4c1e-b6b0-c73667049ceb"/>
 			<Metadata name="Catalog.Catalogs.Attribute.DefaultChoiceForm" id="b9090939-95f9-4fd7-995e-25bbd83cdc8b"/>
 			<Metadata name="Catalog.Catalogs.Attribute.CodeAllowedLength" id="baf11d9c-4e81-4261-a313-45454d68e573"/>
+			<Metadata name="Catalog.Catalogs.Attribute.ManagerModule" id="bdd980bb-0235-4fae-9ba1-a8926e4684f3"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.Synonym" id="c02c1fba-b1c5-44e0-93e9-597b4a08def5"/>
 			<Metadata name="Catalog.Catalogs.Attribute.ChoiceDataGetModeOnInputByString" id="c4173bc3-fb99-497f-a35a-538e0151f986"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.ChoiceParameters" id="ce85d122-28ea-4ee0-af29-0010e5cf03fa"/>
+			<Metadata name="Catalog.Catalogs.TabularSection.Commands" id="cfbf4224-7e62-473c-83c9-2f4adb4faac7"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.DataLockFields" id="d15c7bff-65a0-4e3a-af84-0bc4278b6a26"/>
 			<Metadata name="Catalog.Catalogs.Attribute.AuxiliaryFolderChoiceForm" id="d3333ac2-f7cb-4f7a-949c-f27061bbdd8d"/>
 			<Metadata name="Catalog.Catalogs.Attribute.DefaultObjectForm" id="dd5c03c2-b6bc-4948-afc5-9d95e03dcaf0"/>
+			<Metadata name="Catalog.Catalogs.Attribute.ObjectBelonging" id="de2671ae-8e99-4dbe-b597-a77e47d6b87f"/>
 			<Metadata name="Catalog.Catalogs.Attribute.Comment" id="dfab1a53-40ee-4faf-9c1e-63f956be1444"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.InputByString.Attribute.Object" id="e46dda24-d4f5-48bd-9287-678837eb26ee"/>
 			<Metadata name="Catalog.Catalogs.Attribute.UseStandardCommands" id="e8f81904-98fd-49fe-8fc4-a3fc89ac14d2"/>
@@ -129,6 +147,7 @@
 		<Metadata name="Catalog.ChoiceParameters" id="10698ec1-9cf5-41f9-ac1a-a49d7719a08d" configVersion="9059db4f934dcd49a478536f14bf083700000000">
 			<Metadata name="Catalog.ChoiceParameters.Attribute.Value" id="ea852bc6-906c-4372-a7f8-0bc06c55ac77"/>
 		</Metadata>
+		<Metadata name="Catalog.Commands" id="c7e708ce-8107-47bc-953b-8b2acf8a7f6e" configVersion="691efc20907ee840afa02182e18a8e1e00000000"/>
 		<Metadata name="Catalog.CommonCommands" id="7a76b807-af42-44b7-8830-1f63f4b7a0c5" configVersion="b735b92659c3384384969fbc1f8abf1900000000">
 			<Metadata name="Catalog.CommonCommands.Attribute.Synonym" id="1dec5eca-95e7-423a-8c03-b8068720fc12"/>
 			<Metadata name="Catalog.CommonCommands.TabularSection.Types.Attribute.Type" id="5e99df96-e45c-442b-9e41-709cfb57514d"/>
@@ -170,7 +189,7 @@
 			<Metadata name="Catalog.Constants.Attribute.LinkByType" id="f02f97ad-cd55-499c-86d4-8cb7418299e1"/>
 			<Metadata name="Catalog.Constants.Attribute.FillChecking" id="f14ccd68-d8dc-42b6-b3ea-b30fcf34c357"/>
 		</Metadata>
-		<Metadata name="Catalog.Documents" id="c3e18190-5921-4b1f-8fca-89e2312e6dd8" configVersion="42cb33b04739f9419ff7377b2b17becb00000000">
+		<Metadata name="Catalog.Documents" id="c3e18190-5921-4b1f-8fca-89e2312e6dd8" configVersion="a11a686395c1994b9c1b445f496a269e00000000">
 			<Metadata name="Catalog.Documents.TabularSection.Attributes.Attribute.MinValue" id="03f65737-68e9-4192-8595-5be1ae00d860"/>
 			<Metadata name="Catalog.Documents.Attribute.Posting" id="0b5bf2ea-6bf8-4963-86e3-721c67fa64c9"/>
 			<Metadata name="Catalog.Documents.TabularSection.Attributes.Attribute.ChoiceHistoryOnInput" id="0dc74f2b-cfd0-4a91-8cd1-1a2ed6f0532e"/>
@@ -269,6 +288,7 @@
 			<Metadata name="Catalog.EventSubscriptions.Attribute.Comment" id="e0b8db84-d186-4e03-9325-b1bf985201ba"/>
 			<Metadata name="Catalog.EventSubscriptions.Attribute.Handler" id="f2890625-9adf-49aa-b945-8f7bebb4d528"/>
 		</Metadata>
+		<Metadata name="Catalog.Forms" id="62a6b324-3cde-4f57-bdf7-2aa62b4acc9f" configVersion="78cd45a44df2e345bb5a72eccfdbfce700000000"/>
 		<Metadata name="Catalog.FunctionalOptions" id="50149189-501d-4dcc-9b2f-afcc9120f46a" configVersion="0f0276f291afca49af13fcda324efb0800000000">
 			<Metadata name="Catalog.FunctionalOptions.Attribute.Comment" id="0c0dc5ca-cd13-4d41-a598-b98bd8a3a2c9"/>
 			<Metadata name="Catalog.FunctionalOptions.TabularSection.Content" id="1fd2402f-49f9-4c3a-9f2a-01a48321f154"/>
@@ -385,6 +405,7 @@
 			<Metadata name="Catalog.TabularSections.TabularSection.Attributes.Attribute.Mask" id="f17afb2e-a37c-4c85-ac57-e2535767b971"/>
 			<Metadata name="Catalog.TabularSections.TabularSection.Attributes.Attribute.ChoiceParameterLinks" id="f28407fe-caa7-4e85-921b-c0af83b7cc2e"/>
 		</Metadata>
+		<Metadata name="Catalog.Templates" id="d2cc696e-c250-4eee-b6ca-1cf17ce99f42" configVersion="ded48212dd653c44885489c0eab5889b00000000"/>
 		<Metadata name="Catalog.Types" id="269b9d38-cd9b-435e-8317-5f452c56bd45" configVersion="358e3d5996e54f4c95b2212173a3eae700000000"/>
 		<Metadata name="Catalog.Values" id="08abe14c-f52d-48ac-9645-74ad68e64943" configVersion="21e6e3908057a745bd75ccb6153b541200000000">
 			<Metadata name="Catalog.Values.TabularSection.Array.Attribute.Value" id="67b968a1-d24e-47e5-bea4-697db78c3d32"/>
@@ -407,7 +428,7 @@
 		<Metadata name="CommonModule.Jobs.Module" id="d211b7cd-1399-4564-880d-91bd87487edc.0" configVersion="84b487406428964e8447ffeafce1f9c400000000"/>
 		<Metadata name="CommonModule.Jobs_ServerCall" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="8651e958229c8a48b264ed1e7d0bd85800000000"/>
 		<Metadata name="CommonModule.Jobs_ServerCall.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="ffde179d32b9e445a562480bf3afcfda00000000"/>
-		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="63553f628102124bbb41717d2e1abcd800000000"/>
+		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="cd4624614f403a458f069311546990b500000000"/>
 		<Metadata name="Constant.ChunkSize" id="ed96ac09-764e-4003-ba7d-5edb924ec7ef" configVersion="158878961de44d43b33cfecb904ee0c000000000"/>
 		<Metadata name="Constant.ExternalDataProcessorsPath" id="06a7e8dc-c92b-49ff-8577-1eb66614d63f" configVersion="5ec8c9fdc7e8cd40b2d9df2e708e6eeb00000000"/>
 		<Metadata name="Constant.MaxJobs" id="df0dbc3c-1499-405e-9e4c-189af2f67c41" configVersion="240c281f1279254b943c9fb5405f9dfc00000000"/>
@@ -428,6 +449,19 @@
 		<Metadata name="Enum.BusinessProcessNumberType" id="6bfc6981-6ea7-4b9d-a8db-d5264859b342" configVersion="0ab55e73d9c7b14c9094a784d71f6dc400000000">
 			<Metadata name="Enum.BusinessProcessNumberType.EnumValue.String" id="37702e2d-11e1-4b1e-acf1-67d71b3b600d"/>
 			<Metadata name="Enum.BusinessProcessNumberType.EnumValue.Number" id="6cafc992-b954-434e-906c-e693430dcb13"/>
+		</Metadata>
+		<Metadata name="Enum.CatalogCodeType" id="79b780c7-369b-4e68-8e51-0f0a2b62fb8a" configVersion="f683d832c442b746a2ae4564a4433c2a00000000">
+			<Metadata name="Enum.CatalogCodeType.EnumValue.Number" id="a1d47bb7-ff41-472b-91de-a6fe182e256f"/>
+			<Metadata name="Enum.CatalogCodeType.EnumValue.String" id="c3bff5fb-20f8-443a-8799-ff615f853b83"/>
+		</Metadata>
+		<Metadata name="Enum.CatalogCodesSeries" id="5a9f40eb-d67d-4224-8822-f2b567a7a04f" configVersion="0fc844a8d89a2043918d2f84e3195cfd00000000">
+			<Metadata name="Enum.CatalogCodesSeries.EnumValue.WholeCatalog" id="25b4950d-7b0f-492d-9842-0a019dc9e9bc"/>
+			<Metadata name="Enum.CatalogCodesSeries.EnumValue.WithinSubordination" id="7d5d92c5-0afb-4640-b320-728f97b272a8"/>
+			<Metadata name="Enum.CatalogCodesSeries.EnumValue.WithinOwnerSubordination" id="a37b8a0f-706d-438c-a6df-58a8eaa302ef"/>
+		</Metadata>
+		<Metadata name="Enum.CatalogMainPresentation" id="e23c990b-5757-43bd-b70e-dedb525b626e" configVersion="c4d783f0ea3a724d92b29ae74b0c076400000000">
+			<Metadata name="Enum.CatalogMainPresentation.EnumValue.AsCode" id="02b57ab0-1a57-4b96-95ab-f9b867e0a8d4"/>
+			<Metadata name="Enum.CatalogMainPresentation.EnumValue.AsDescription" id="f105823f-b6be-4168-b05b-1596359ce93d"/>
 		</Metadata>
 		<Metadata name="Enum.ChoiceDataGetModeOnInputByString" id="fcaefc96-94c5-4389-9279-a3298fa56475" configVersion="bc9481d92affda488404777c80888e8600000000">
 			<Metadata name="Enum.ChoiceDataGetModeOnInputByString.EnumValue.Directly" id="09a230d8-5fbf-4339-9b3a-8fafe1c85d3c"/>
@@ -452,37 +486,56 @@
 			<Metadata name="Enum.CreateOnInput.EnumValue.Use" id="39c45a87-489e-4c48-82f7-f1e5d847c556"/>
 			<Metadata name="Enum.CreateOnInput.EnumValue.DontUse" id="cb6f4e57-163c-4174-92e6-1532045f2eed"/>
 		</Metadata>
-		<Metadata name="Enum.DataLockControlMode" id="c2c48f8f-3f29-41ef-96fc-4075a56a1e85" configVersion="61040a05fb8f6b4d844c80a7f8ab8c4b00000000">
-			<Metadata name="Enum.DataLockControlMode.EnumValue.Automatic" id="9b3c254b-f4da-4f38-9610-784be6f536d3"/>
-			<Metadata name="Enum.DataLockControlMode.EnumValue.Managed" id="af4b9ea5-d126-4eac-8bad-090abadca54c"/>
+		<Metadata name="Enum.DataHistoryUse" id="d4fc9480-f379-4e97-a29d-e84c0a30b3d8" configVersion="9ec5c126b0b51f4ebc1ef27248b0de3300000000">
+			<Metadata name="Enum.DataHistoryUse.EnumValue.Use" id="015e84ab-eb19-4e82-a8a4-35d7d88eaf63"/>
+			<Metadata name="Enum.DataHistoryUse.EnumValue.DontUse" id="4bc106d0-68c8-427f-b1c1-0f5303d5feda"/>
+		</Metadata>
+		<Metadata name="Enum.DefaultDataLockControlMode" id="c2c48f8f-3f29-41ef-96fc-4075a56a1e85" configVersion="65a348cc3f1e74498ed5c7801cf00e0e00000000">
+			<Metadata name="Enum.DefaultDataLockControlMode.EnumValue.AutomaticAndManaged" id="5f6cb936-bb56-4bb5-b94d-74aecacf1dc5"/>
+			<Metadata name="Enum.DefaultDataLockControlMode.EnumValue.Automatic" id="9b3c254b-f4da-4f38-9610-784be6f536d3"/>
+			<Metadata name="Enum.DefaultDataLockControlMode.EnumValue.Managed" id="af4b9ea5-d126-4eac-8bad-090abadca54c"/>
+		</Metadata>
+		<Metadata name="Enum.DocumentNumberPeriodicity" id="1774eec9-33ec-46cc-b33c-9f903c50e4fd" configVersion="cf0fcb8b5adef040a2d7ef494e81352200000000">
+			<Metadata name="Enum.DocumentNumberPeriodicity.EnumValue.Day" id="2d9d5179-8fe3-4d2a-b305-99fb238dba7d"/>
+			<Metadata name="Enum.DocumentNumberPeriodicity.EnumValue.Year" id="393a17c0-4b34-4efd-b177-8f65e4cd89a6"/>
+			<Metadata name="Enum.DocumentNumberPeriodicity.EnumValue.Quarter" id="5b9207be-0b1b-400d-b5d9-2938cfa7dc18"/>
+			<Metadata name="Enum.DocumentNumberPeriodicity.EnumValue.Nonperiodical" id="7f1ac708-264d-48f2-9007-bd322977b963"/>
+			<Metadata name="Enum.DocumentNumberPeriodicity.EnumValue.Month" id="fa8a25cf-b267-45d4-9d03-6b788d849c93"/>
+		</Metadata>
+		<Metadata name="Enum.EditType" id="9c8d49cd-2517-44fa-952b-5ea6b3a1932b" configVersion="8dd2e53b4ee96e4b8f6809a3806e629000000000">
+			<Metadata name="Enum.EditType.EnumValue.BothWays" id="6d94334f-5ca3-4f6c-a182-91addba1bd1a"/>
+			<Metadata name="Enum.EditType.EnumValue.InDialog" id="f259e806-8bf4-43a9-ad72-f722ab0a0979"/>
+			<Metadata name="Enum.EditType.EnumValue.InList" id="fd9176ff-7435-45aa-9be3-426425ace865"/>
 		</Metadata>
 		<Metadata name="Enum.FillChecking" id="8991c98f-14db-4ed8-8cf4-5d435b29f71e" configVersion="9bfe5fbe15c1ee469e16f4eaa13957cf00000000">
 			<Metadata name="Enum.FillChecking.EnumValue.DontCheck" id="bc7e9981-ceb3-49ae-acf5-21fafb3b233b"/>
 			<Metadata name="Enum.FillChecking.EnumValue.ShowError" id="f8c2c78c-64ce-4a4f-9c49-d2a66e94486e"/>
 		</Metadata>
-		<Metadata name="Enum.FullTextSearch" id="275afd49-cd29-4023-a484-c4a135b12200" configVersion="037c3eac7ea0af4c936e80c58366e69e00000000">
-			<Metadata name="Enum.FullTextSearch.EnumValue.Use" id="5bccce95-5cf2-4496-8914-59bc0be5906b"/>
-			<Metadata name="Enum.FullTextSearch.EnumValue.DontUse" id="e73eb524-84f7-46ab-bcb2-aa117158525d"/>
-		</Metadata>
 		<Metadata name="Enum.FullTextSearchOnInputByString" id="e3c25b32-b2f9-4e11-b1b4-9c67bea0bfda" configVersion="5ca5566b4b3171458df49de341bab6e900000000">
 			<Metadata name="Enum.FullTextSearchOnInputByString.EnumValue.Use" id="1c5ecd2b-a0c2-4f12-bff7-cccdb97e90db"/>
 			<Metadata name="Enum.FullTextSearchOnInputByString.EnumValue.DontUse" id="3e4b6cb1-0bfc-4e38-96bb-562b7362cba4"/>
+		</Metadata>
+		<Metadata name="Enum.HierarchyType" id="a3e077ae-f464-456f-b30b-947e9ee97615" configVersion="31f41f5680311e4cbd71776b4f4e7ab600000000">
+			<Metadata name="Enum.HierarchyType.EnumValue.HierarchyFoldersAndItems" id="294e1791-88e3-4736-b3ea-a0ec2360744e"/>
+			<Metadata name="Enum.HierarchyType.EnumValue.HierarchyOfItems" id="e14cfa38-1cf3-47cf-9401-0e50b0bce504"/>
 		</Metadata>
 		<Metadata name="Enum.Indexing" id="b7b7ba9c-d8d7-4a90-9dea-1eed4750ea3b" configVersion="b8d11801fdab9942ab18cbed2229d89600000000">
 			<Metadata name="Enum.Indexing.EnumValue.Index" id="5253b11a-a409-4e3a-b2d4-8eb16837d5a6"/>
 			<Metadata name="Enum.Indexing.EnumValue.DontIndex" id="cac509bb-587c-4722-9ba4-272fdc0c1add"/>
 			<Metadata name="Enum.Indexing.EnumValue.IndexWithAdditionalOrder" id="dd0f4e85-9d37-43cd-9f11-7464b9c8cfc4"/>
 		</Metadata>
-		<Metadata name="Enum.NumberPeriodicity" id="1774eec9-33ec-46cc-b33c-9f903c50e4fd" configVersion="4b68ed705badef48a9b4f281630db95d00000000">
-			<Metadata name="Enum.NumberPeriodicity.EnumValue.Day" id="2d9d5179-8fe3-4d2a-b305-99fb238dba7d"/>
-			<Metadata name="Enum.NumberPeriodicity.EnumValue.Year" id="393a17c0-4b34-4efd-b177-8f65e4cd89a6"/>
-			<Metadata name="Enum.NumberPeriodicity.EnumValue.Quarter" id="5b9207be-0b1b-400d-b5d9-2938cfa7dc18"/>
-			<Metadata name="Enum.NumberPeriodicity.EnumValue.Nonperiodical" id="7f1ac708-264d-48f2-9007-bd322977b963"/>
-			<Metadata name="Enum.NumberPeriodicity.EnumValue.Month" id="fa8a25cf-b267-45d4-9d03-6b788d849c93"/>
+		<Metadata name="Enum.ObjectBelonging" id="f30d5558-2217-4908-96f6-ac351afe86fa" configVersion="73f3183f489eb2438a2b56d119832ea200000000">
+			<Metadata name="Enum.ObjectBelonging.EnumValue.Adopted" id="010299df-9808-48cc-ad59-ee651ba57f1d"/>
+			<Metadata name="Enum.ObjectBelonging.EnumValue.Native" id="0d4d77fe-71a4-4780-8c57-2f5ce7091130"/>
 		</Metadata>
 		<Metadata name="Enum.Posting" id="5131acf5-c5a7-4559-be26-62b61e188065" configVersion="fa821df9e5c670449419cf33bd9963db00000000">
 			<Metadata name="Enum.Posting.EnumValue.Allow" id="14c45f26-2205-4b15-b606-5ba4c6b017e9"/>
 			<Metadata name="Enum.Posting.EnumValue.Deny" id="f1c7cb40-625b-4998-8e41-0192ee1cf4ae"/>
+		</Metadata>
+		<Metadata name="Enum.PredefinedDataUpdate" id="5a1e4ce9-a3ec-4e02-98e5-09ad25ac6a21" configVersion="1d9c856104931d45b3849f4b2352285c00000000">
+			<Metadata name="Enum.PredefinedDataUpdate.EnumValue.Auto" id="03047a49-b4bd-40ec-b187-61b636f3e43f"/>
+			<Metadata name="Enum.PredefinedDataUpdate.EnumValue.AutoUpdate" id="3e4ddd49-368f-4bd2-bf98-584f483db0b1"/>
+			<Metadata name="Enum.PredefinedDataUpdate.EnumValue.DontAutoUpdate" id="5cd4e5ea-54f8-4405-b2b1-fdeb4afcf048"/>
 		</Metadata>
 		<Metadata name="Enum.RealTimePosting" id="96595ab3-458c-4483-acd2-1c5dd56805fb" configVersion="83ef4defb2e97c4481d931ef1530924b00000000">
 			<Metadata name="Enum.RealTimePosting.EnumValue.Deny" id="5f2d5115-85de-46b0-87e5-1cf7a36d16ee"/>
@@ -504,6 +557,15 @@
 		<Metadata name="Enum.SequenceFilling" id="adfab9dd-8cd9-4c5e-999f-42adc090ff95" configVersion="abc4be60d50ffa4cb946300d70cdcb6000000000">
 			<Metadata name="Enum.SequenceFilling.EnumValue.AutoFillOff" id="4c1b75f3-22ce-42bb-b424-d319600ca30b"/>
 			<Metadata name="Enum.SequenceFilling.EnumValue.AutoFill" id="aed6d38b-a93b-4fb8-abc6-aae42a27fb07"/>
+		</Metadata>
+		<Metadata name="Enum.SubordinationUse" id="47f5e2e1-7727-4c46-a748-10700131ad18" configVersion="fff8746657620447bfb4d8de93dd3ea300000000">
+			<Metadata name="Enum.SubordinationUse.EnumValue.ToFolders" id="0936f227-98e1-4fe8-b0af-db4a827f867c"/>
+			<Metadata name="Enum.SubordinationUse.EnumValue.ToItems" id="1f75bfb0-545f-4744-858c-e2852b57c26a"/>
+			<Metadata name="Enum.SubordinationUse.EnumValue.ToFoldersAndItems" id="4bf42a16-da8b-424f-bca0-621798583d32"/>
+		</Metadata>
+		<Metadata name="Enum.UseFullTextSearch" id="275afd49-cd29-4023-a484-c4a135b12200" configVersion="2fe3ce63a7574d479e95d3bf806b0f4200000000">
+			<Metadata name="Enum.UseFullTextSearch.EnumValue.Use" id="5bccce95-5cf2-4496-8914-59bc0be5906b"/>
+			<Metadata name="Enum.UseFullTextSearch.EnumValue.DontUse" id="e73eb524-84f7-46ab-bcb2-aa117158525d"/>
 		</Metadata>
 		<Metadata name="Enum.UseQuickChoice" id="86803896-d68a-4b40-9bc3-32f68efebd0e" configVersion="b64cff40d094344681c3e5cc1550591d00000000">
 			<Metadata name="Enum.UseQuickChoice.EnumValue.Auto" id="24dd12cd-9982-4dac-9ce9-ac974e5a0abe"/>

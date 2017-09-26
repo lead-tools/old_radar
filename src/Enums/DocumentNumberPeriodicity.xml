@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
-	<Enum uuid="275afd49-cd29-4023-a484-c4a135b12200">
+	<Enum uuid="1774eec9-33ec-46cc-b33c-9f903c50e4fd">
 		<InternalInfo>
-			<xr:GeneratedType name="EnumRef.FullTextSearch" category="Ref">
-				<xr:TypeId>e9183998-ba74-469d-afcc-9327b1bb5442</xr:TypeId>
-				<xr:ValueId>afd96ab9-41e4-4027-a5ce-31b4c69adc4e</xr:ValueId>
+			<xr:GeneratedType name="EnumRef.DocumentNumberPeriodicity" category="Ref">
+				<xr:TypeId>a66ca573-c07e-4b6b-82b3-dce46f12f627</xr:TypeId>
+				<xr:ValueId>5c79f5e9-e2d0-4e23-98fc-b712a7a8c506</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumManager.FullTextSearch" category="Manager">
-				<xr:TypeId>0df034c2-4968-4454-8c0a-bdc5ebb9f67a</xr:TypeId>
-				<xr:ValueId>82f99d16-bf95-42f7-8213-28044a7b8b7b</xr:ValueId>
+			<xr:GeneratedType name="EnumManager.DocumentNumberPeriodicity" category="Manager">
+				<xr:TypeId>b8a24ad0-b62d-4d91-84df-caec059e8e04</xr:TypeId>
+				<xr:ValueId>29b7e19b-eff1-4d70-b2e7-0bc4d490a391</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumList.FullTextSearch" category="List">
-				<xr:TypeId>6e51899c-ba1d-4a5d-aced-976932df99d1</xr:TypeId>
-				<xr:ValueId>42380cb9-acb0-4a6f-a6e1-7a8c228536c4</xr:ValueId>
+			<xr:GeneratedType name="EnumList.DocumentNumberPeriodicity" category="List">
+				<xr:TypeId>d2b4f12d-7231-414d-8af4-cdf33913de9a</xr:TypeId>
+				<xr:ValueId>3bb04936-b5a6-4cf5-b670-64c7259f462b</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>FullTextSearch</Name>
+			<Name>DocumentNumberPeriodicity</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Full text search</v8:content>
+					<v8:content>Document number periodicity</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Использование полнотекстового поиска </v8:content>
+					<v8:content>Периодичность номера документа</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -96,33 +96,81 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
-			<EnumValue uuid="5bccce95-5cf2-4496-8914-59bc0be5906b">
+			<EnumValue uuid="393a17c0-4b34-4efd-b177-8f65e4cd89a6">
 				<Properties>
-					<Name>Use</Name>
+					<Name>Year</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Использовать</v8:content>
+							<v8:content>Year</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Use</v8:content>
+							<v8:content>Year</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="e73eb524-84f7-46ab-bcb2-aa117158525d">
+			<EnumValue uuid="2d9d5179-8fe3-4d2a-b305-99fb238dba7d">
 				<Properties>
-					<Name>DontUse</Name>
+					<Name>Day</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Dont use</v8:content>
+							<v8:content>Day</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Не использовать</v8:content>
+							<v8:content>День</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5b9207be-0b1b-400d-b5d9-2938cfa7dc18">
+				<Properties>
+					<Name>Quarter</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Quarter</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Квартал</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fa8a25cf-b267-45d4-9d03-6b788d849c93">
+				<Properties>
+					<Name>Month</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Month</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Месяц</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7f1ac708-264d-48f2-9007-bd322977b963">
+				<Properties>
+					<Name>Nonperiodical</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Непериодический</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Nonperiodical</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
