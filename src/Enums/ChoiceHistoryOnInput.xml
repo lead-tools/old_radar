@@ -19,12 +19,12 @@
 			<Name>ChoiceHistoryOnInput</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
+					<v8:lang>en</v8:lang>
 					<v8:content>Choice history on input</v8:content>
 				</v8:item>
 				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Choice history on input</v8:content>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История выбора при вводе </v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -107,6 +107,22 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Auto</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="58440307-c256-4282-9430-e5361a06fb87">
+				<Properties>
+					<Name>DontUse</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Dont use</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не использовать </v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

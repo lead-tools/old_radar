@@ -19,12 +19,12 @@
 			<Name>RegisterRecordsWritingOnPost</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
+					<v8:lang>en</v8:lang>
 					<v8:content>Register records writing on post</v8:content>
 				</v8:item>
 				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Register records writing on post</v8:content>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запись движений при проведении </v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -101,12 +101,12 @@
 					<Name>WriteSelected</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Write selected</v8:content>
 						</v8:item>
 						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Write selected</v8:content>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Записывать выбранные </v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -117,12 +117,12 @@
 					<Name>WriteModified</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Write modified</v8:content>
 						</v8:item>
 						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Write modified</v8:content>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Записывать модифицированные </v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

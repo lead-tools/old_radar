@@ -19,12 +19,12 @@
 			<Name>FullTextSearch</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Полнотекстовый поиск</v8:content>
-				</v8:item>
-				<v8:item>
 					<v8:lang>en</v8:lang>
 					<v8:content>Full text search</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использование полнотекстового поиска </v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -107,6 +107,22 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Use</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e73eb524-84f7-46ab-bcb2-aa117158525d">
+				<Properties>
+					<Name>DontUse</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Dont use</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не использовать</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

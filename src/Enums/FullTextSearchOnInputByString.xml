@@ -19,12 +19,12 @@
 			<Name>FullTextSearchOnInputByString</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Полнотекстовый поиск при вводе по строке</v8:content>
-				</v8:item>
-				<v8:item>
 					<v8:lang>en</v8:lang>
 					<v8:content>Full text search on input by string</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полнотекстовый поиск при вводе по строке</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -101,12 +101,28 @@
 					<Name>DontUse</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Dont use</v8:content>
 						</v8:item>
 						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не использовать </v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1c5ecd2b-a0c2-4f12-bff7-cccdb97e90db">
+				<Properties>
+					<Name>Use</Name>
+					<Synonym>
+						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Dont use</v8:content>
+							<v8:content>Use</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

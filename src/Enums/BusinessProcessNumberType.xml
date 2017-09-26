@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
-	<Enum uuid="ff7d2a64-e092-4d57-93c7-7a9c0f93d4be">
+	<Enum uuid="6bfc6981-6ea7-4b9d-a8db-d5264859b342">
 		<InternalInfo>
-			<xr:GeneratedType name="EnumRef.QuickChoice" category="Ref">
-				<xr:TypeId>0a83d3f1-ac11-4bf4-bd54-4dd76fecdd42</xr:TypeId>
-				<xr:ValueId>94f9c7dd-51be-469a-9ca2-a07285f73a42</xr:ValueId>
+			<xr:GeneratedType name="EnumRef.BusinessProcessNumberType" category="Ref">
+				<xr:TypeId>a0cb5850-fb1c-4936-b951-243a3aaf5a87</xr:TypeId>
+				<xr:ValueId>2877a908-2e97-47fe-894e-bb593c89128f</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumManager.QuickChoice" category="Manager">
-				<xr:TypeId>59014d96-6740-4cb1-b50a-313240a12782</xr:TypeId>
-				<xr:ValueId>b56a3a2f-c351-48d5-ae6f-e160a7bf8e43</xr:ValueId>
+			<xr:GeneratedType name="EnumManager.BusinessProcessNumberType" category="Manager">
+				<xr:TypeId>3bc69ebe-2006-460b-a771-a04a374896c5</xr:TypeId>
+				<xr:ValueId>afdd8d19-91e3-46eb-af50-4c869d9a9383</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumList.QuickChoice" category="List">
-				<xr:TypeId>9cd3b41b-65e5-45f4-a60e-bfdca501005d</xr:TypeId>
-				<xr:ValueId>a11326fd-6b48-4007-b86f-6555dfc6c9b9</xr:ValueId>
+			<xr:GeneratedType name="EnumList.BusinessProcessNumberType" category="List">
+				<xr:TypeId>48ecfa9c-d98f-4432-8027-ad6c9fb1638e</xr:TypeId>
+				<xr:ValueId>00c120b1-1f04-4272-bb74-a1d4c7115d46</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>QuickChoice</Name>
+			<Name>BusinessProcessNumberType</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Quick choice</v8:content>
+					<v8:lang>en</v8:lang>
+					<v8:content>Business process number type</v8:content>
 				</v8:item>
 				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Quick choice</v8:content>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип номера бизнес процесса </v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -96,17 +96,33 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
-			<EnumValue uuid="31e6484a-7db9-470f-8c03-49a6d028af55">
+			<EnumValue uuid="37702e2d-11e1-4b1e-acf1-67d71b3b600d">
 				<Properties>
-					<Name>Auto</Name>
+					<Name>String</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Авто</v8:content>
+							<v8:content>Строка</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Auto</v8:content>
+							<v8:content>String</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6cafc992-b954-434e-906c-e693430dcb13">
+				<Properties>
+					<Name>Number</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Number</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Число</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

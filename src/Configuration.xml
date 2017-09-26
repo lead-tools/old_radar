@@ -188,10 +188,10 @@
 			<Enum>FullTextSearch</Enum>
 			<Enum>FullTextSearchOnInputByString</Enum>
 			<Enum>Indexing</Enum>
-			<Enum>QuickChoice</Enum>
+			<Enum>UseQuickChoice</Enum>
 			<Enum>SearchStringModeOnInputByString</Enum>
-			<Enum>NumberType</Enum>
-			<Enum>NumberAllowedLength</Enum>
+			<Enum>BusinessProcessNumberType</Enum>
+			<Enum>AllowedLength</Enum>
 			<Enum>NumberPeriodicity</Enum>
 			<Enum>Posting</Enum>
 			<Enum>RealTimePosting</Enum>

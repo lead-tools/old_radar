@@ -19,12 +19,12 @@
 			<Name>ChoiceFoldersAndItems</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выбор групп и элементов</v8:content>
-				</v8:item>
-				<v8:item>
 					<v8:lang>en</v8:lang>
 					<v8:content>Choice folders and items</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использование групп и элементов</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -107,6 +107,38 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Items</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="189eea46-ec5f-4d2e-944b-a5d4c77e01cb">
+				<Properties>
+					<Name>FoldersAndItems</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Folders and items</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группы и элементы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="77322ac7-ae76-419c-b8bf-81c1ae2d43d6">
+				<Properties>
+					<Name>Folders</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Folders</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группы</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

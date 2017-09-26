@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.5">
 	<ConfigVersions>
-		<Metadata name="Catalog.AccumulationRegisters" id="ebf76014-7442-4d27-a658-f44eab01ea02" configVersion="088213e4cb9db049a5c02d829887910f00000000">
+		<Metadata name="Catalog.AccumulationRegisters" id="ebf76014-7442-4d27-a658-f44eab01ea02" configVersion="109270da54aae642a7134e25a66d50bf00000000">
 			<Metadata name="Catalog.AccumulationRegisters.Attribute.EnableTotalsSplitting" id="03a20905-4720-48ca-a4f2-1877197da553"/>
 			<Metadata name="Catalog.AccumulationRegisters.Attribute.FullTextSearch" id="04a6b485-fff7-4951-bd62-f99e4d146f56"/>
 			<Metadata name="Catalog.AccumulationRegisters.Attribute.ListPresentation" id="053a989a-3713-4d1a-b998-eb6823559ebe"/>
@@ -43,7 +43,7 @@
 			<Metadata name="Catalog.AccumulationRegisters.Attribute.DataLockControlMode" id="fd12d416-e810-45ab-a646-c094b1f6be9d"/>
 			<Metadata name="Catalog.AccumulationRegisters.Attribute.Synonym" id="ffac1af5-2ad9-465f-8777-1cf2fac5d15d"/>
 		</Metadata>
-		<Metadata name="Catalog.Catalogs" id="84364d42-d5ba-4e4d-ba6b-e39716ec3fc0" configVersion="8661e3a242745048820e90c43baafb9400000000">
+		<Metadata name="Catalog.Catalogs" id="84364d42-d5ba-4e4d-ba6b-e39716ec3fc0" configVersion="713fdfcc06f1344493d7bbfdbcd0244300000000">
 			<Metadata name="Catalog.Catalogs.Attribute.LimitLevelCount" id="02880313-5800-4e43-bd55-685defbdd466"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.ChoiceFoldersAndItems" id="0d505942-95a9-459c-a2b2-49c5653b0733"/>
 			<Metadata name="Catalog.Catalogs.Attribute.DefaultPresentation" id="14d04dc1-c63e-4c8c-a5c3-c3de8534389a"/>
@@ -143,7 +143,7 @@
 			<Metadata name="Catalog.CommonCommands.Attribute.Picture" id="c72d05f4-3afa-412c-886e-3b9ed3f5fe08"/>
 			<Metadata name="Catalog.CommonCommands.Attribute.Shortcut" id="ce2c9e8f-8213-44df-8c42-1edb7e6d2f55"/>
 		</Metadata>
-		<Metadata name="Catalog.Constants" id="66a56acd-055c-4199-93ba-e6b268b59156" configVersion="61dfe0dfed98bd42924ce5426eb0167600000000">
+		<Metadata name="Catalog.Constants" id="66a56acd-055c-4199-93ba-e6b268b59156" configVersion="c34a01fc555a5f41894feb803af7bce300000000">
 			<Metadata name="Catalog.Constants.Attribute.ExtendedPresentation" id="307ffcda-d1b9-48b7-bdf8-e782e2be2a53"/>
 			<Metadata name="Catalog.Constants.Attribute.ToolTip" id="32d29eca-a74e-4582-8684-e6ec376c589e"/>
 			<Metadata name="Catalog.Constants.Attribute.DefaultForm" id="40533fae-1763-4163-a93d-f3a375d46a44"/>
@@ -170,7 +170,7 @@
 			<Metadata name="Catalog.Constants.Attribute.LinkByType" id="f02f97ad-cd55-499c-86d4-8cb7418299e1"/>
 			<Metadata name="Catalog.Constants.Attribute.FillChecking" id="f14ccd68-d8dc-42b6-b3ea-b30fcf34c357"/>
 		</Metadata>
-		<Metadata name="Catalog.Documents" id="c3e18190-5921-4b1f-8fca-89e2312e6dd8" configVersion="055bdbe97730c042b15eddcecf5f561c00000000">
+		<Metadata name="Catalog.Documents" id="c3e18190-5921-4b1f-8fca-89e2312e6dd8" configVersion="42cb33b04739f9419ff7377b2b17becb00000000">
 			<Metadata name="Catalog.Documents.TabularSection.Attributes.Attribute.MinValue" id="03f65737-68e9-4192-8595-5be1ae00d860"/>
 			<Metadata name="Catalog.Documents.Attribute.Posting" id="0b5bf2ea-6bf8-4963-86e3-721c67fa64c9"/>
 			<Metadata name="Catalog.Documents.TabularSection.Attributes.Attribute.ChoiceHistoryOnInput" id="0dc74f2b-cfd0-4a91-8cd1-1a2ed6f0532e"/>
@@ -277,7 +277,7 @@
 			<Metadata name="Catalog.FunctionalOptions.Attribute.PrivilegedGetMode" id="a43d6ad8-b006-43c4-9a06-d5827bba49ad"/>
 			<Metadata name="Catalog.FunctionalOptions.TabularSection.Content.Attribute.Object" id="b4e8e2a0-7396-4021-8e27-af488699a4ab"/>
 		</Metadata>
-		<Metadata name="Catalog.InformationRegisters" id="022cc390-dae6-4d04-8cc1-2362fe1387e9" configVersion="d9b8ac1e1efeec4488f069bcb61bb4b300000000">
+		<Metadata name="Catalog.InformationRegisters" id="022cc390-dae6-4d04-8cc1-2362fe1387e9" configVersion="9fdc5e98f3815a4fa79cdf2cbb61b4ac00000000">
 			<Metadata name="Catalog.InformationRegisters.TabularSection.Attributes.Attribute.FillValue" id="033c69f5-236a-4eb4-a1e4-f5d27d96330e"/>
 			<Metadata name="Catalog.InformationRegisters.Attribute.FullTextSearch" id="082b6812-2c00-4a78-8ee5-9f35c076503d"/>
 			<Metadata name="Catalog.InformationRegisters.Attribute.AuxiliaryRecordForm" id="0d955f5a-a0dd-43e8-af68-0564e0d38901"/>
@@ -352,7 +352,7 @@
 			<Metadata name="Catalog.Roles.Attribute.Synonym" id="5dad6352-992e-41df-b4d2-d6fbe4f671c9"/>
 			<Metadata name="Catalog.Roles.Attribute.Comment" id="900a9e65-e67a-4a6d-a98b-1c0cb02cd40a"/>
 		</Metadata>
-		<Metadata name="Catalog.TabularSections" id="8f4c3275-28bf-494c-9dcc-39023bc594c7" configVersion="7bd8d9ab8367784c9b97858c938a290800000000">
+		<Metadata name="Catalog.TabularSections" id="8f4c3275-28bf-494c-9dcc-39023bc594c7" configVersion="a210e6803a41e94cbd78b02576b5e80a00000000">
 			<Metadata name="Catalog.TabularSections.TabularSection.Attributes.Attribute.MinValue" id="03b0fda1-579f-4fb9-b7a2-e7ad998f95f7"/>
 			<Metadata name="Catalog.TabularSections.TabularSection.Attributes.Attribute.Indexing" id="097ddd45-31df-40dc-8de2-a3ef7a3b0e98"/>
 			<Metadata name="Catalog.TabularSections.Attribute.ToolTip" id="2594421c-734e-4380-bb84-f19d483f5689"/>
@@ -407,10 +407,14 @@
 		<Metadata name="CommonModule.Jobs.Module" id="d211b7cd-1399-4564-880d-91bd87487edc.0" configVersion="84b487406428964e8447ffeafce1f9c400000000"/>
 		<Metadata name="CommonModule.Jobs_ServerCall" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="8651e958229c8a48b264ed1e7d0bd85800000000"/>
 		<Metadata name="CommonModule.Jobs_ServerCall.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="ffde179d32b9e445a562480bf3afcfda00000000"/>
-		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="5115e6c8015e5a42ab386397e5c0e56800000000"/>
+		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="63553f628102124bbb41717d2e1abcd800000000"/>
 		<Metadata name="Constant.ChunkSize" id="ed96ac09-764e-4003-ba7d-5edb924ec7ef" configVersion="158878961de44d43b33cfecb904ee0c000000000"/>
 		<Metadata name="Constant.ExternalDataProcessorsPath" id="06a7e8dc-c92b-49ff-8577-1eb66614d63f" configVersion="5ec8c9fdc7e8cd40b2d9df2e708e6eeb00000000"/>
 		<Metadata name="Constant.MaxJobs" id="df0dbc3c-1499-405e-9e4c-189af2f67c41" configVersion="240c281f1279254b943c9fb5405f9dfc00000000"/>
+		<Metadata name="Enum.AllowedLength" id="15586a95-8262-4cee-83e5-5c5f2e5a4b5c" configVersion="639f6a54f378014ca45185def417792200000000">
+			<Metadata name="Enum.AllowedLength.EnumValue.Variable" id="3c03c6c6-2a06-4e48-92c9-6790cd439070"/>
+			<Metadata name="Enum.AllowedLength.EnumValue.Fixed" id="995a229b-51ed-4b53-b67c-a9140a6bdf7a"/>
+		</Metadata>
 		<Metadata name="Enum.AttributeRoles" id="06bf9294-61bb-4643-8525-25bf48e46358" configVersion="92cfd0942218a542877242bcc15a5ed400000000">
 			<Metadata name="Enum.AttributeRoles.EnumValue.Attribute" id="4da7cdfd-f6d6-4b22-aa21-d7c2f3d2b8ed"/>
 			<Metadata name="Enum.AttributeRoles.EnumValue.Dimension" id="80bbc802-47a3-46e1-8430-9477b539c0db"/>
@@ -421,77 +425,90 @@
 			<Metadata name="Enum.Boolean.EnumValue.True" id="34955a49-5e96-4fa6-aab7-0e5c1ffedb3e"/>
 			<Metadata name="Enum.Boolean.EnumValue.False" id="c9470510-cb36-4b74-b4f9-24d7cb97e64e"/>
 		</Metadata>
-		<Metadata name="Enum.ChoiceDataGetModeOnInputByString" id="fcaefc96-94c5-4389-9279-a3298fa56475" configVersion="81e244748d70bc4f8a92035168f6842a00000000">
-			<Metadata name="Enum.ChoiceDataGetModeOnInputByString.EnumValue.Directly" id="09a230d8-5fbf-4339-9b3a-8fafe1c85d3c"/>
+		<Metadata name="Enum.BusinessProcessNumberType" id="6bfc6981-6ea7-4b9d-a8db-d5264859b342" configVersion="0ab55e73d9c7b14c9094a784d71f6dc400000000">
+			<Metadata name="Enum.BusinessProcessNumberType.EnumValue.String" id="37702e2d-11e1-4b1e-acf1-67d71b3b600d"/>
+			<Metadata name="Enum.BusinessProcessNumberType.EnumValue.Number" id="6cafc992-b954-434e-906c-e693430dcb13"/>
 		</Metadata>
-		<Metadata name="Enum.ChoiceFoldersAndItems" id="98323c6d-68f4-4a9a-baf4-6c6a951a98cd" configVersion="182adb2573d9fd45ba8306a67e99b0f900000000">
+		<Metadata name="Enum.ChoiceDataGetModeOnInputByString" id="fcaefc96-94c5-4389-9279-a3298fa56475" configVersion="bc9481d92affda488404777c80888e8600000000">
+			<Metadata name="Enum.ChoiceDataGetModeOnInputByString.EnumValue.Directly" id="09a230d8-5fbf-4339-9b3a-8fafe1c85d3c"/>
+			<Metadata name="Enum.ChoiceDataGetModeOnInputByString.EnumValue.Background" id="f923f77d-824c-4ce6-9a44-3c7a6a0621d1"/>
+		</Metadata>
+		<Metadata name="Enum.ChoiceFoldersAndItems" id="98323c6d-68f4-4a9a-baf4-6c6a951a98cd" configVersion="d2df4167decc9d4e871ccc15a104c02f00000000">
+			<Metadata name="Enum.ChoiceFoldersAndItems.EnumValue.FoldersAndItems" id="189eea46-ec5f-4d2e-944b-a5d4c77e01cb"/>
+			<Metadata name="Enum.ChoiceFoldersAndItems.EnumValue.Folders" id="77322ac7-ae76-419c-b8bf-81c1ae2d43d6"/>
 			<Metadata name="Enum.ChoiceFoldersAndItems.EnumValue.Items" id="ae00af12-f5b4-49fe-b278-7369d97191af"/>
 		</Metadata>
-		<Metadata name="Enum.ChoiceHistoryOnInput" id="5fab3825-49e2-4524-897b-af687c399067" configVersion="f96f0760c849f64889944a120954964e00000000">
+		<Metadata name="Enum.ChoiceHistoryOnInput" id="5fab3825-49e2-4524-897b-af687c399067" configVersion="147533a1adb2c04a86cf91d13ca0058000000000">
+			<Metadata name="Enum.ChoiceHistoryOnInput.EnumValue.DontUse" id="58440307-c256-4282-9430-e5361a06fb87"/>
 			<Metadata name="Enum.ChoiceHistoryOnInput.EnumValue.Auto" id="f029ea1e-9052-4702-9a12-e7be35cb37fc"/>
 		</Metadata>
-		<Metadata name="Enum.ChoiceMode" id="a672494b-4e07-431d-941c-2fcd975c1e65" configVersion="751494771d98f347ac2e947eee54e0f400000000">
+		<Metadata name="Enum.ChoiceMode" id="a672494b-4e07-431d-941c-2fcd975c1e65" configVersion="33581f62ab8c7344ac3083521b72bf0900000000">
+			<Metadata name="Enum.ChoiceMode.EnumValue.FromForm" id="2769ff58-4225-4817-b2b9-e564e8808bda"/>
 			<Metadata name="Enum.ChoiceMode.EnumValue.BothWays" id="90068333-cda6-4359-babb-d3622aea6f31"/>
+			<Metadata name="Enum.ChoiceMode.EnumValue.QuickChoice" id="d613737a-5b4e-47a3-926f-736c0f4ecc0d"/>
 		</Metadata>
-		<Metadata name="Enum.CreateOnInput" id="46bbb6d0-a8a0-49ef-b539-20ac65a96410" configVersion="3a14d3c0e6cd0141b21d00672183929800000000">
+		<Metadata name="Enum.CreateOnInput" id="46bbb6d0-a8a0-49ef-b539-20ac65a96410" configVersion="b16b7dd9097a474ba1e009592124a4cd00000000">
 			<Metadata name="Enum.CreateOnInput.EnumValue.Auto" id="117e46c2-c018-4ee0-8187-40d094c54830"/>
 			<Metadata name="Enum.CreateOnInput.EnumValue.Use" id="39c45a87-489e-4c48-82f7-f1e5d847c556"/>
+			<Metadata name="Enum.CreateOnInput.EnumValue.DontUse" id="cb6f4e57-163c-4174-92e6-1532045f2eed"/>
 		</Metadata>
-		<Metadata name="Enum.DataLockControlMode" id="c2c48f8f-3f29-41ef-96fc-4075a56a1e85" configVersion="4d8f213ac2c23e418e767d8524f5099200000000">
+		<Metadata name="Enum.DataLockControlMode" id="c2c48f8f-3f29-41ef-96fc-4075a56a1e85" configVersion="61040a05fb8f6b4d844c80a7f8ab8c4b00000000">
 			<Metadata name="Enum.DataLockControlMode.EnumValue.Automatic" id="9b3c254b-f4da-4f38-9610-784be6f536d3"/>
 			<Metadata name="Enum.DataLockControlMode.EnumValue.Managed" id="af4b9ea5-d126-4eac-8bad-090abadca54c"/>
 		</Metadata>
-		<Metadata name="Enum.FillChecking" id="8991c98f-14db-4ed8-8cf4-5d435b29f71e" configVersion="6cd1d0884c26ef4cbe1c63f59787b2e700000000">
+		<Metadata name="Enum.FillChecking" id="8991c98f-14db-4ed8-8cf4-5d435b29f71e" configVersion="9bfe5fbe15c1ee469e16f4eaa13957cf00000000">
 			<Metadata name="Enum.FillChecking.EnumValue.DontCheck" id="bc7e9981-ceb3-49ae-acf5-21fafb3b233b"/>
 			<Metadata name="Enum.FillChecking.EnumValue.ShowError" id="f8c2c78c-64ce-4a4f-9c49-d2a66e94486e"/>
 		</Metadata>
-		<Metadata name="Enum.FullTextSearch" id="275afd49-cd29-4023-a484-c4a135b12200" configVersion="507f233beca819418f61d178ed51530200000000">
+		<Metadata name="Enum.FullTextSearch" id="275afd49-cd29-4023-a484-c4a135b12200" configVersion="037c3eac7ea0af4c936e80c58366e69e00000000">
 			<Metadata name="Enum.FullTextSearch.EnumValue.Use" id="5bccce95-5cf2-4496-8914-59bc0be5906b"/>
+			<Metadata name="Enum.FullTextSearch.EnumValue.DontUse" id="e73eb524-84f7-46ab-bcb2-aa117158525d"/>
 		</Metadata>
-		<Metadata name="Enum.FullTextSearchOnInputByString" id="e3c25b32-b2f9-4e11-b1b4-9c67bea0bfda" configVersion="52914e06779ce54c9871c71c6f4f297a00000000">
+		<Metadata name="Enum.FullTextSearchOnInputByString" id="e3c25b32-b2f9-4e11-b1b4-9c67bea0bfda" configVersion="5ca5566b4b3171458df49de341bab6e900000000">
+			<Metadata name="Enum.FullTextSearchOnInputByString.EnumValue.Use" id="1c5ecd2b-a0c2-4f12-bff7-cccdb97e90db"/>
 			<Metadata name="Enum.FullTextSearchOnInputByString.EnumValue.DontUse" id="3e4b6cb1-0bfc-4e38-96bb-562b7362cba4"/>
 		</Metadata>
-		<Metadata name="Enum.Indexing" id="b7b7ba9c-d8d7-4a90-9dea-1eed4750ea3b" configVersion="5d243070294c5748ad7258e0cf74cf1200000000">
+		<Metadata name="Enum.Indexing" id="b7b7ba9c-d8d7-4a90-9dea-1eed4750ea3b" configVersion="b8d11801fdab9942ab18cbed2229d89600000000">
 			<Metadata name="Enum.Indexing.EnumValue.Index" id="5253b11a-a409-4e3a-b2d4-8eb16837d5a6"/>
 			<Metadata name="Enum.Indexing.EnumValue.DontIndex" id="cac509bb-587c-4722-9ba4-272fdc0c1add"/>
+			<Metadata name="Enum.Indexing.EnumValue.IndexWithAdditionalOrder" id="dd0f4e85-9d37-43cd-9f11-7464b9c8cfc4"/>
 		</Metadata>
-		<Metadata name="Enum.NumberAllowedLength" id="15586a95-8262-4cee-83e5-5c5f2e5a4b5c" configVersion="501796783e074a47bc6f73ed0a9c270100000000">
-			<Metadata name="Enum.NumberAllowedLength.EnumValue.Variable" id="3c03c6c6-2a06-4e48-92c9-6790cd439070"/>
-			<Metadata name="Enum.NumberAllowedLength.EnumValue.Fixed" id="995a229b-51ed-4b53-b67c-a9140a6bdf7a"/>
-		</Metadata>
-		<Metadata name="Enum.NumberPeriodicity" id="1774eec9-33ec-46cc-b33c-9f903c50e4fd" configVersion="272aa5e306cf0c4ba14ba5b83704f1ba00000000">
+		<Metadata name="Enum.NumberPeriodicity" id="1774eec9-33ec-46cc-b33c-9f903c50e4fd" configVersion="4b68ed705badef48a9b4f281630db95d00000000">
+			<Metadata name="Enum.NumberPeriodicity.EnumValue.Day" id="2d9d5179-8fe3-4d2a-b305-99fb238dba7d"/>
 			<Metadata name="Enum.NumberPeriodicity.EnumValue.Year" id="393a17c0-4b34-4efd-b177-8f65e4cd89a6"/>
+			<Metadata name="Enum.NumberPeriodicity.EnumValue.Quarter" id="5b9207be-0b1b-400d-b5d9-2938cfa7dc18"/>
 			<Metadata name="Enum.NumberPeriodicity.EnumValue.Nonperiodical" id="7f1ac708-264d-48f2-9007-bd322977b963"/>
+			<Metadata name="Enum.NumberPeriodicity.EnumValue.Month" id="fa8a25cf-b267-45d4-9d03-6b788d849c93"/>
 		</Metadata>
-		<Metadata name="Enum.NumberType" id="6bfc6981-6ea7-4b9d-a8db-d5264859b342" configVersion="dd5ecc3cc3586a4c85f25cff5cff66e000000000">
-			<Metadata name="Enum.NumberType.EnumValue.String" id="37702e2d-11e1-4b1e-acf1-67d71b3b600d"/>
-		</Metadata>
-		<Metadata name="Enum.Posting" id="5131acf5-c5a7-4559-be26-62b61e188065" configVersion="30639ea68f64aa43987254de0537d87a00000000">
+		<Metadata name="Enum.Posting" id="5131acf5-c5a7-4559-be26-62b61e188065" configVersion="fa821df9e5c670449419cf33bd9963db00000000">
 			<Metadata name="Enum.Posting.EnumValue.Allow" id="14c45f26-2205-4b15-b606-5ba4c6b017e9"/>
 			<Metadata name="Enum.Posting.EnumValue.Deny" id="f1c7cb40-625b-4998-8e41-0192ee1cf4ae"/>
 		</Metadata>
-		<Metadata name="Enum.QuickChoice" id="ff7d2a64-e092-4d57-93c7-7a9c0f93d4be" configVersion="6d827f96c2fffe4d98e4f5a1339b8d7600000000">
-			<Metadata name="Enum.QuickChoice.EnumValue.Auto" id="31e6484a-7db9-470f-8c03-49a6d028af55"/>
-		</Metadata>
-		<Metadata name="Enum.RealTimePosting" id="96595ab3-458c-4483-acd2-1c5dd56805fb" configVersion="df09bffecbd1904680e1cfe3e5395f4500000000">
+		<Metadata name="Enum.RealTimePosting" id="96595ab3-458c-4483-acd2-1c5dd56805fb" configVersion="83ef4defb2e97c4481d931ef1530924b00000000">
 			<Metadata name="Enum.RealTimePosting.EnumValue.Deny" id="5f2d5115-85de-46b0-87e5-1cf7a36d16ee"/>
 			<Metadata name="Enum.RealTimePosting.EnumValue.Allow" id="dbcdcdbd-1086-4b63-9a16-3001032a9c16"/>
 		</Metadata>
-		<Metadata name="Enum.RegisterRecordsDeletion" id="4663a307-0d4c-4f67-9bca-3e70506c8f8e" configVersion="01207dcabd73ca478120511d31e2275600000000">
+		<Metadata name="Enum.RegisterRecordsDeletion" id="4663a307-0d4c-4f67-9bca-3e70506c8f8e" configVersion="4fe2d38916ee2c4881facf0f71ee07b500000000">
 			<Metadata name="Enum.RegisterRecordsDeletion.EnumValue.AutoDeleteOnUnpost" id="1ecc74cd-0cf1-4807-a98d-6fccfd110379"/>
 			<Metadata name="Enum.RegisterRecordsDeletion.EnumValue.AutoDeleteOff" id="bcbd868d-38d9-466e-800d-817f6a1b7651"/>
 			<Metadata name="Enum.RegisterRecordsDeletion.EnumValue.AutoDelete" id="e84578ff-bc73-44f7-a0d2-2009e8c73cd6"/>
 		</Metadata>
-		<Metadata name="Enum.RegisterRecordsWritingOnPost" id="22ff518f-6619-4fe2-b6a9-135cecf2ad88" configVersion="85a52bc0db0ec94899fbfdb08557a02900000000">
+		<Metadata name="Enum.RegisterRecordsWritingOnPost" id="22ff518f-6619-4fe2-b6a9-135cecf2ad88" configVersion="6d87e6d68417fa4a8d10858e1353ef2b00000000">
 			<Metadata name="Enum.RegisterRecordsWritingOnPost.EnumValue.WriteModified" id="07d65f3e-46c6-4640-a2ad-23a8d3a653c5"/>
 			<Metadata name="Enum.RegisterRecordsWritingOnPost.EnumValue.WriteSelected" id="a17da582-f24c-4887-956c-86c5fa78d955"/>
 		</Metadata>
-		<Metadata name="Enum.SearchStringModeOnInputByString" id="25d37798-b452-402d-be77-b07d39c893c3" configVersion="26ebbcf0beed8b46abc53d2f52bca49700000000">
+		<Metadata name="Enum.SearchStringModeOnInputByString" id="25d37798-b452-402d-be77-b07d39c893c3" configVersion="8a43ddda466aa04d935f6d6dd7c7309900000000">
 			<Metadata name="Enum.SearchStringModeOnInputByString.EnumValue.Begin" id="bf945d69-a102-4222-ac03-b29b5491636e"/>
 			<Metadata name="Enum.SearchStringModeOnInputByString.EnumValue.AnyPart" id="c56ae8d9-29e9-4cf5-ac93-f756f83139a9"/>
 		</Metadata>
-		<Metadata name="Enum.SequenceFilling" id="adfab9dd-8cd9-4c5e-999f-42adc090ff95" configVersion="d4f73fbd1ac422459e2532edb29f0eba00000000">
+		<Metadata name="Enum.SequenceFilling" id="adfab9dd-8cd9-4c5e-999f-42adc090ff95" configVersion="abc4be60d50ffa4cb946300d70cdcb6000000000">
+			<Metadata name="Enum.SequenceFilling.EnumValue.AutoFillOff" id="4c1b75f3-22ce-42bb-b424-d319600ca30b"/>
 			<Metadata name="Enum.SequenceFilling.EnumValue.AutoFill" id="aed6d38b-a93b-4fb8-abc6-aae42a27fb07"/>
+		</Metadata>
+		<Metadata name="Enum.UseQuickChoice" id="86803896-d68a-4b40-9bc3-32f68efebd0e" configVersion="b64cff40d094344681c3e5cc1550591d00000000">
+			<Metadata name="Enum.UseQuickChoice.EnumValue.Auto" id="24dd12cd-9982-4dac-9ce9-ac974e5a0abe"/>
+			<Metadata name="Enum.UseQuickChoice.EnumValue.DontUse" id="4fed2255-ea05-43a6-b489-c0c3a72cabec"/>
+			<Metadata name="Enum.UseQuickChoice.EnumValue.Use" id="b6add0d3-e561-4d36-89a1-8e3792e702d7"/>
 		</Metadata>
 		<Metadata name="InformationRegister.JobQueue" id="e53dc0be-6e5c-405f-908d-c2a3fca1bfc0" configVersion="ae282f96add584418e7727d729d94c1300000000">
 			<Metadata name="InformationRegister.JobQueue.Resource.Total" id="10365530-7c6b-4c3b-840d-67666a5a162b"/>

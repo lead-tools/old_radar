@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
-	<Enum uuid="6bfc6981-6ea7-4b9d-a8db-d5264859b342">
+	<Enum uuid="15586a95-8262-4cee-83e5-5c5f2e5a4b5c">
 		<InternalInfo>
-			<xr:GeneratedType name="EnumRef.NumberType" category="Ref">
-				<xr:TypeId>a0cb5850-fb1c-4936-b951-243a3aaf5a87</xr:TypeId>
-				<xr:ValueId>2877a908-2e97-47fe-894e-bb593c89128f</xr:ValueId>
+			<xr:GeneratedType name="EnumRef.AllowedLength" category="Ref">
+				<xr:TypeId>5e48eda5-da61-44ee-87f4-2ddd92f63847</xr:TypeId>
+				<xr:ValueId>36eea3d2-d329-46fa-9ca2-517c7e2ea451</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumManager.NumberType" category="Manager">
-				<xr:TypeId>3bc69ebe-2006-460b-a771-a04a374896c5</xr:TypeId>
-				<xr:ValueId>afdd8d19-91e3-46eb-af50-4c869d9a9383</xr:ValueId>
+			<xr:GeneratedType name="EnumManager.AllowedLength" category="Manager">
+				<xr:TypeId>6648c625-e4c5-4293-84e9-62c589d04c73</xr:TypeId>
+				<xr:ValueId>9666df9b-9a2c-48e5-bcb9-827b85ae8883</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumList.NumberType" category="List">
-				<xr:TypeId>48ecfa9c-d98f-4432-8027-ad6c9fb1638e</xr:TypeId>
-				<xr:ValueId>00c120b1-1f04-4272-bb74-a1d4c7115d46</xr:ValueId>
+			<xr:GeneratedType name="EnumList.AllowedLength" category="List">
+				<xr:TypeId>363be8d5-21b2-4d08-a149-fc9ddbb911fd</xr:TypeId>
+				<xr:ValueId>cd2a736b-c381-48fc-95da-24009f29fcd2</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>NumberType</Name>
+			<Name>AllowedLength</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Number type</v8:content>
+					<v8:lang>en</v8:lang>
+					<v8:content>Allowed length</v8:content>
 				</v8:item>
 				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Number type</v8:content>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Допустимая длина</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -96,17 +96,33 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
-			<EnumValue uuid="37702e2d-11e1-4b1e-acf1-67d71b3b600d">
+			<EnumValue uuid="3c03c6c6-2a06-4e48-92c9-6790cd439070">
 				<Properties>
-					<Name>String</Name>
+					<Name>Variable</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Строка</v8:content>
+							<v8:lang>en</v8:lang>
+							<v8:content>Variable</v8:content>
 						</v8:item>
 						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Переменная</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="995a229b-51ed-4b53-b67c-a9140a6bdf7a">
+				<Properties>
+					<Name>Fixed</Name>
+					<Synonym>
+						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>String</v8:content>
+							<v8:content>Fixed</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фиксированная</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

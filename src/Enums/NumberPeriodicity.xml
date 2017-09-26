@@ -19,12 +19,12 @@
 			<Name>NumberPeriodicity</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
+					<v8:lang>en</v8:lang>
 					<v8:content>Number periodicity</v8:content>
 				</v8:item>
 				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Number periodicity</v8:content>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Периодичность номера</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -107,6 +107,54 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Year</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2d9d5179-8fe3-4d2a-b305-99fb238dba7d">
+				<Properties>
+					<Name>Day</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Day</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>День</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5b9207be-0b1b-400d-b5d9-2938cfa7dc18">
+				<Properties>
+					<Name>Quarter</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Quarter</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Квартал</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fa8a25cf-b267-45d4-9d03-6b788d849c93">
+				<Properties>
+					<Name>Month</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Month</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Месяц</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

@@ -19,12 +19,12 @@
 			<Name>SearchStringModeOnInputByString</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
+					<v8:lang>en</v8:lang>
 					<v8:content>Search string mode on input by string</v8:content>
 				</v8:item>
 				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Search string mode on input by string</v8:content>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ поиска строки при вводе по строке </v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>

@@ -19,12 +19,12 @@
 			<Name>SequenceFilling</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
+					<v8:lang>en</v8:lang>
 					<v8:content>Sequence filling</v8:content>
 				</v8:item>
 				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Sequence filling</v8:content>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнение последовательностей </v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -107,6 +107,22 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Auto fill</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4c1b75f3-22ce-42bb-b424-d319600ca30b">
+				<Properties>
+					<Name>AutoFillOff</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Auto fill off</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не заполнять автоматически </v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

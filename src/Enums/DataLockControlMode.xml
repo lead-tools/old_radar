@@ -19,12 +19,12 @@
 			<Name>DataLockControlMode</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
+					<v8:lang>en</v8:lang>
 					<v8:content>Data lock control mode</v8:content>
 				</v8:item>
 				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Data lock control mode</v8:content>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим управления блокировкой данных </v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -101,12 +101,12 @@
 					<Name>Managed</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Managed</v8:content>
 						</v8:item>
 						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Managed</v8:content>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управляемый</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -117,12 +117,12 @@
 					<Name>Automatic</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Автоматический</v8:content>
-						</v8:item>
-						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Automatic</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автоматический</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

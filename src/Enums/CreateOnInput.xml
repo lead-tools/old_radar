@@ -19,12 +19,12 @@
 			<Name>CreateOnInput</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
+					<v8:lang>en</v8:lang>
 					<v8:content>Create on input</v8:content>
 				</v8:item>
 				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Create on input</v8:content>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создание при вводе </v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -123,6 +123,22 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Auto</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="cb6f4e57-163c-4174-92e6-1532045f2eed">
+				<Properties>
+					<Name>DontUse</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Dont use</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не использовать </v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

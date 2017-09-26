@@ -19,12 +19,12 @@
 			<Name>ChoiceDataGetModeOnInputByString</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
+					<v8:lang>en</v8:lang>
 					<v8:content>Choice data get mode on input by string</v8:content>
 				</v8:item>
 				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Choice data get mode on input by string</v8:content>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим получения данных выбора при вводе по строке </v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -101,12 +101,28 @@
 					<Name>Directly</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Directly</v8:content>
 						</v8:item>
 						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Непосредственно</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f923f77d-824c-4ce6-9a44-3c7a6a0621d1">
+				<Properties>
+					<Name>Background</Name>
+					<Synonym>
+						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Directly</v8:content>
+							<v8:content>Background</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фоновый</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

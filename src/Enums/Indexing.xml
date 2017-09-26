@@ -19,12 +19,12 @@
 			<Name>Indexing</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Индексировать</v8:content>
-				</v8:item>
-				<v8:item>
 					<v8:lang>en</v8:lang>
 					<v8:content>Indexing</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Индексирование</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -101,12 +101,12 @@
 					<Name>DontIndex</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
+							<v8:lang>en</v8:lang>
 							<v8:content>Dont index</v8:content>
 						</v8:item>
 						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Dont index</v8:content>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не индексировать </v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -117,12 +117,28 @@
 					<Name>Index</Name>
 					<Synonym>
 						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Index</v8:content>
+						</v8:item>
+						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Индексировать</v8:content>
 						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="dd0f4e85-9d37-43cd-9f11-7464b9c8cfc4">
+				<Properties>
+					<Name>IndexWithAdditionalOrder</Name>
+					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Index</v8:content>
+							<v8:content>Index with additional order</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индексировать с доп. упорядочиванием</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
