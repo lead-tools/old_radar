@@ -142,6 +142,7 @@
 		<ChildObjects>
 			<Language>English</Language>
 			<Language>Русский</Language>
+			<Subsystem>Meta</Subsystem>
 			<Role>Admin</Role>
 			<CommonModule>CommonUse</CommonModule>
 			<CommonModule>CommonUse_ServerCached</CommonModule>
@@ -154,17 +155,19 @@
 			<Constant>ExternalDataProcessorsPath</Constant>
 			<Constant>MaxJobs</Constant>
 			<Constant>ChunkSize</Constant>
-			<Catalog>Forms</Catalog>
 			<Catalog>AccumulationRegisters</Catalog>
+			<Catalog>Attributes</Catalog>
 			<Catalog>Catalogs</Catalog>
 			<Catalog>ChoiceParameterLinks</Catalog>
 			<Catalog>ChoiceParameters</Catalog>
+			<Catalog>Commands</Catalog>
 			<Catalog>CommonCommands</Catalog>
 			<Catalog>Constants</Catalog>
 			<Catalog>Documents</Catalog>
 			<Catalog>Enums</Catalog>
 			<Catalog>EnumValues</Catalog>
 			<Catalog>EventSubscriptions</Catalog>
+			<Catalog>Forms</Catalog>
 			<Catalog>FunctionalOptions</Catalog>
 			<Catalog>InformationRegisters</Catalog>
 			<Catalog>Modules</Catalog>
@@ -174,43 +177,41 @@
 			<Catalog>Rights</Catalog>
 			<Catalog>Roles</Catalog>
 			<Catalog>TabularSections</Catalog>
+			<Catalog>Templates</Catalog>
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
-			<Catalog>Commands</Catalog>
-			<Catalog>Attributes</Catalog>
-			<Catalog>Templates</Catalog>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>
 			<Enum>Boolean</Enum>
 			<Enum>BusinessProcessNumberType</Enum>
+			<Enum>CatalogCodesSeries</Enum>
+			<Enum>CatalogCodeType</Enum>
+			<Enum>CatalogMainPresentation</Enum>
 			<Enum>ChoiceDataGetModeOnInputByString</Enum>
 			<Enum>ChoiceFoldersAndItems</Enum>
 			<Enum>ChoiceHistoryOnInput</Enum>
 			<Enum>ChoiceMode</Enum>
 			<Enum>CreateOnInput</Enum>
+			<Enum>DataHistoryUse</Enum>
 			<Enum>DefaultDataLockControlMode</Enum>
-			<Enum>FillChecking</Enum>
-			<Enum>UseFullTextSearch</Enum>
-			<Enum>FullTextSearchOnInputByString</Enum>
-			<Enum>Indexing</Enum>
 			<Enum>DocumentNumberPeriodicity</Enum>
+			<Enum>EditType</Enum>
+			<Enum>FillChecking</Enum>
+			<Enum>FullTextSearchOnInputByString</Enum>
+			<Enum>HierarchyType</Enum>
+			<Enum>Indexing</Enum>
 			<Enum>ObjectBelonging</Enum>
 			<Enum>Posting</Enum>
+			<Enum>PredefinedDataUpdate</Enum>
 			<Enum>RealTimePosting</Enum>
 			<Enum>RegisterRecordsDeletion</Enum>
 			<Enum>RegisterRecordsWritingOnPost</Enum>
 			<Enum>SearchStringModeOnInputByString</Enum>
 			<Enum>SequenceFilling</Enum>
-			<Enum>UseQuickChoice</Enum>
-			<Enum>HierarchyType</Enum>
 			<Enum>SubordinationUse</Enum>
-			<Enum>DataHistoryUse</Enum>
-			<Enum>PredefinedDataUpdate</Enum>
-			<Enum>CatalogMainPresentation</Enum>
-			<Enum>CatalogCodesSeries</Enum>
-			<Enum>EditType</Enum>
-			<Enum>CatalogCodeType</Enum>
+			<Enum>UseFullTextSearch</Enum>
+			<Enum>UseQuickChoice</Enum>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
 		</ChildObjects>
