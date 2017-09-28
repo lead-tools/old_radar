@@ -37,7 +37,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.FillChecking</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.DefaultDataLockControlMode</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.EditType</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.MultilingualStrings</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Strings</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.UseFullTextSearch</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.FullTextSearchOnInputByString</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">d2cc696e-c250-4eee-b6ca-1cf17ce99f42</xr:Item>

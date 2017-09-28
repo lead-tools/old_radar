@@ -34,7 +34,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.DefaultDataLockControlMode</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.FullTextSearchOnInputByString</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ChoiceDataGetModeOnInputByString</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.MultilingualStrings</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Strings</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ChoiceHistoryOnInput</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Modules</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.RealTimePosting</xr:Item>

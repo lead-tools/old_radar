@@ -174,7 +174,7 @@
 			<Catalog>FunctionalOptions</Catalog>
 			<Catalog>InformationRegisters</Catalog>
 			<Catalog>Modules</Catalog>
-			<Catalog>MultilingualStrings</Catalog>
+			<Catalog>Strings</Catalog>
 			<Catalog>Pictures</Catalog>
 			<Catalog>Projects</Catalog>
 			<Catalog>Rights</Catalog>
@@ -203,18 +203,21 @@
 			<Enum>FullTextSearchOnInputByString</Enum>
 			<Enum>HierarchyType</Enum>
 			<Enum>Indexing</Enum>
+			<Enum>InformationRegisterPeriodicity</Enum>
 			<Enum>ObjectBelonging</Enum>
 			<Enum>Posting</Enum>
 			<Enum>PredefinedDataUpdate</Enum>
 			<Enum>RealTimePosting</Enum>
 			<Enum>RegisterRecordsDeletion</Enum>
 			<Enum>RegisterRecordsWritingOnPost</Enum>
+			<Enum>RegisterWriteMode</Enum>
 			<Enum>SearchStringModeOnInputByString</Enum>
 			<Enum>SequenceFilling</Enum>
 			<Enum>SubordinationUse</Enum>
 			<Enum>Undefined</Enum>
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UseQuickChoice</Enum>
+			<Enum>LinkByType</Enum>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
 		</ChildObjects>
