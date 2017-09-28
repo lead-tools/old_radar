@@ -293,20 +293,29 @@
 			<Metadata name="Catalog.EnumValues.Attribute.Comment" id="306e2ba9-fb2d-4e5c-8e22-f6b43195f4af"/>
 			<Metadata name="Catalog.EnumValues.Attribute.Synonym" id="797a1541-7cbc-4f82-aeeb-b6e47e989de1"/>
 		</Metadata>
-		<Metadata name="Catalog.Enums" id="b7576b48-6d0c-412d-aef1-f7e7bf5404fc" configVersion="b994bfec10b00d48ac4139ba4f48ab1800000000">
+		<Metadata name="Catalog.Enums" id="b7576b48-6d0c-412d-aef1-f7e7bf5404fc" configVersion="65b6847a70840044af601bb0b9cc9c9400000000">
+			<Metadata name="Catalog.Enums.TabularSection.Forms" id="02db46d5-7e50-4d96-bfc0-99848b43aca0"/>
+			<Metadata name="Catalog.Enums.TabularSection.Commands.Attribute.Object" id="0c085cbd-25c0-4bf6-88d9-22a9b4adc529"/>
 			<Metadata name="Catalog.Enums.Attribute.Comment" id="0d0b068f-4e5e-40c8-afe6-0c24b9a5d882"/>
 			<Metadata name="Catalog.Enums.Attribute.Explanation" id="0e189276-94cf-406f-a117-8e2257dae4d8"/>
 			<Metadata name="Catalog.Enums.Attribute.ChoiceMode" id="19d0454f-3494-46bc-bafd-50024dce4ceb"/>
+			<Metadata name="Catalog.Enums.TabularSection.EnumValues" id="1f8e9835-0182-4ab2-ac44-31d16f963355"/>
 			<Metadata name="Catalog.Enums.Attribute.AuxiliaryListForm" id="24284b07-7a22-4c3a-91e7-d6d67a64f5cb"/>
+			<Metadata name="Catalog.Enums.TabularSection.Forms.Attribute.Object" id="497c25e3-9de2-473c-ba21-65714bd89a30"/>
 			<Metadata name="Catalog.Enums.Attribute.ChoiceHistoryOnInput" id="5209ac36-a0c6-4cd7-adcd-48ba08fce83f"/>
 			<Metadata name="Catalog.Enums.Attribute.ExtendedListPresentation" id="5d117961-7de1-43f3-8670-628636d4e680"/>
+			<Metadata name="Catalog.Enums.TabularSection.Templates" id="5edddc5d-9011-4c0f-b48e-72e08b211975"/>
 			<Metadata name="Catalog.Enums.Attribute.AuxiliaryChoiceForm" id="5f5942c7-9fa2-4148-ac3c-18bed83c7edc"/>
 			<Metadata name="Catalog.Enums.Attribute.UseStandardCommands" id="6c2229be-fe6a-4afc-8fe2-98247bc03d6f"/>
+			<Metadata name="Catalog.Enums.TabularSection.Templates.Attribute.Object" id="6f4c2965-0d7d-4200-b3c5-0b9b6ea90934"/>
+			<Metadata name="Catalog.Enums.TabularSection.EnumValues.Attribute.Object" id="78d50ddd-7f5d-4c28-8f75-f75c5d956cbb"/>
 			<Metadata name="Catalog.Enums.Attribute.Synonym" id="8824d91e-abf4-4e04-86b1-f17ff6dcd60e"/>
+			<Metadata name="Catalog.Enums.TabularSection.Commands" id="9477dbd6-603a-4e66-9ca3-aaec4cd440b2"/>
 			<Metadata name="Catalog.Enums.Attribute.ListPresentation" id="a658c481-0fc9-4f39-95d1-088277cb07ed"/>
 			<Metadata name="Catalog.Enums.Attribute.DefaultChoiceForm" id="c3666294-00c5-4dbb-b37a-d9bca46f5d51"/>
 			<Metadata name="Catalog.Enums.Attribute.QuickChoice" id="dd7af34e-25af-416b-ae53-a9a3f7cc16f6"/>
 			<Metadata name="Catalog.Enums.Attribute.DefaultListForm" id="eda043c9-0177-45f4-9473-a6464432a587"/>
+			<Metadata name="Catalog.Enums.Attribute.ManagerModule" id="f9a53fee-61ac-4ad0-b1cb-47438d78c8bc"/>
 		</Metadata>
 		<Metadata name="Catalog.EventSubscriptions" id="7f40b57c-e6de-4787-a60d-5d86febd3e24" configVersion="2a6765a20a5c034b9765c00d94f0921700000000">
 			<Metadata name="Catalog.EventSubscriptions.Attribute.Synonym" id="22cab47d-bbf2-4ec0-a721-b5f135ed565a"/>
@@ -655,10 +664,11 @@
 		<Metadata name="Language.Русский" id="562bba67-1c23-4b76-95d4-8c4b9e6e14d8" configVersion="fd6ef2f1aa52784992a11236fb75857c00000000"/>
 		<Metadata name="Role.Admin" id="667d9ee4-fae2-4d91-bf90-485eceff21e3" configVersion="de4c8717bf38df46aed540df235bb00c00000000"/>
 		<Metadata name="Role.Admin.Rights" id="667d9ee4-fae2-4d91-bf90-485eceff21e3.0" configVersion="c91e8c7750bd104fb34ee5b671f8a6b400000000"/>
-		<Metadata name="Subsystem.Meta" id="1756909f-7da2-4a37-9e16-7ac74c8ba4fb" configVersion="45aa6c8f36e09d4db2b521c1db3f002100000000"/>
+		<Metadata name="Subsystem.Meta" id="1756909f-7da2-4a37-9e16-7ac74c8ba4fb" configVersion="123695aaf669f246b62a8c347d12bc5c00000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.AccumulationRegisters" id="f3e6e447-32cb-48c2-a80b-a59111d238c2" configVersion="10bacadc21b0f5479dcd92fd0e890ea500000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.Catalogs" id="8748fefe-6f2d-4d1d-ad06-7b6425538259" configVersion="f01c082f1e82774a8ca4471790de28da00000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.Documents" id="ffa7cdce-3aae-4677-a4ea-72d1f19d2647" configVersion="110ffc5a4b05e14296828ce341ae3a0a00000000"/>
+		<Metadata name="Subsystem.Meta.Subsystem.Enums" id="f46c9c4d-81c8-42c9-a95d-f7e299c622d0" configVersion="664a4ac3479eae47af4439d94ec1802b00000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.InformationRegisters" id="a4a75aec-85d7-4689-bb48-131ae0e50ef9" configVersion="13895e457588cd4d85dbac95aadfa5b300000000"/>
 		<Metadata name="Subsystem.Radar" id="60fb9d92-6eee-4e2d-8f51-3028e258df02" configVersion="add1b5ea5679b7419646c299ac08bd4c00000000"/>
 	</ConfigVersions>
