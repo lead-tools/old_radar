@@ -46,6 +46,7 @@
 			<Subsystem>Catalogs</Subsystem>
 			<Subsystem>Documents</Subsystem>
 			<Subsystem>InformationRegisters</Subsystem>
+			<Subsystem>AccumulationRegisters</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
