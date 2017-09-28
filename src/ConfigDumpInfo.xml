@@ -185,7 +185,8 @@
 			<Metadata name="Catalog.CommonModules.Attribute.Privileged" id="adec2091-4fe1-475c-8a32-ebc2355d77ee"/>
 			<Metadata name="Catalog.CommonModules.Attribute.Server" id="bee73e0b-471a-40a1-9b6d-f0ba9aaa39ea"/>
 		</Metadata>
-		<Metadata name="Catalog.Constants" id="66a56acd-055c-4199-93ba-e6b268b59156" configVersion="c34a01fc555a5f41894feb803af7bce300000000">
+		<Metadata name="Catalog.Constants" id="66a56acd-055c-4199-93ba-e6b268b59156" configVersion="9896f1d7aaf06f4698c2c8fae130bba400000000">
+			<Metadata name="Catalog.Constants.Attribute.ValueManagerModule" id="0f5fe1da-bcbb-4f09-b476-bad4af3b1fac"/>
 			<Metadata name="Catalog.Constants.Attribute.ExtendedPresentation" id="307ffcda-d1b9-48b7-bdf8-e782e2be2a53"/>
 			<Metadata name="Catalog.Constants.Attribute.ToolTip" id="32d29eca-a74e-4582-8684-e6ec376c589e"/>
 			<Metadata name="Catalog.Constants.Attribute.DefaultForm" id="40533fae-1763-4163-a93d-f3a375d46a44"/>
@@ -530,11 +531,6 @@
 			<Metadata name="Enum.ChoiceDataGetModeOnInputByString.EnumValue.Directly" id="09a230d8-5fbf-4339-9b3a-8fafe1c85d3c"/>
 			<Metadata name="Enum.ChoiceDataGetModeOnInputByString.EnumValue.Background" id="f923f77d-824c-4ce6-9a44-3c7a6a0621d1"/>
 		</Metadata>
-		<Metadata name="Enum.ChoiceFoldersAndItems" id="98323c6d-68f4-4a9a-baf4-6c6a951a98cd" configVersion="d2df4167decc9d4e871ccc15a104c02f00000000">
-			<Metadata name="Enum.ChoiceFoldersAndItems.EnumValue.FoldersAndItems" id="189eea46-ec5f-4d2e-944b-a5d4c77e01cb"/>
-			<Metadata name="Enum.ChoiceFoldersAndItems.EnumValue.Folders" id="77322ac7-ae76-419c-b8bf-81c1ae2d43d6"/>
-			<Metadata name="Enum.ChoiceFoldersAndItems.EnumValue.Items" id="ae00af12-f5b4-49fe-b278-7369d97191af"/>
-		</Metadata>
 		<Metadata name="Enum.ChoiceHistoryOnInput" id="5fab3825-49e2-4524-897b-af687c399067" configVersion="147533a1adb2c04a86cf91d13ca0058000000000">
 			<Metadata name="Enum.ChoiceHistoryOnInput.EnumValue.DontUse" id="58440307-c256-4282-9430-e5361a06fb87"/>
 			<Metadata name="Enum.ChoiceHistoryOnInput.EnumValue.Auto" id="f029ea1e-9052-4702-9a12-e7be35cb37fc"/>
@@ -573,6 +569,11 @@
 		<Metadata name="Enum.FillChecking" id="8991c98f-14db-4ed8-8cf4-5d435b29f71e" configVersion="9bfe5fbe15c1ee469e16f4eaa13957cf00000000">
 			<Metadata name="Enum.FillChecking.EnumValue.DontCheck" id="bc7e9981-ceb3-49ae-acf5-21fafb3b233b"/>
 			<Metadata name="Enum.FillChecking.EnumValue.ShowError" id="f8c2c78c-64ce-4a4f-9c49-d2a66e94486e"/>
+		</Metadata>
+		<Metadata name="Enum.FoldersAndItemsUse" id="98323c6d-68f4-4a9a-baf4-6c6a951a98cd" configVersion="87638552bb5a2f45847cf82dccbd009f00000000">
+			<Metadata name="Enum.FoldersAndItemsUse.EnumValue.FoldersAndItems" id="189eea46-ec5f-4d2e-944b-a5d4c77e01cb"/>
+			<Metadata name="Enum.FoldersAndItemsUse.EnumValue.Folders" id="77322ac7-ae76-419c-b8bf-81c1ae2d43d6"/>
+			<Metadata name="Enum.FoldersAndItemsUse.EnumValue.Items" id="ae00af12-f5b4-49fe-b278-7369d97191af"/>
 		</Metadata>
 		<Metadata name="Enum.FullTextSearchOnInputByString" id="e3c25b32-b2f9-4e11-b1b4-9c67bea0bfda" configVersion="5ca5566b4b3171458df49de341bab6e900000000">
 			<Metadata name="Enum.FullTextSearchOnInputByString.EnumValue.Use" id="1c5ecd2b-a0c2-4f12-bff7-cccdb97e90db"/>
@@ -680,13 +681,14 @@
 		<Metadata name="Language.Русский" id="562bba67-1c23-4b76-95d4-8c4b9e6e14d8" configVersion="fd6ef2f1aa52784992a11236fb75857c00000000"/>
 		<Metadata name="Role.Admin" id="667d9ee4-fae2-4d91-bf90-485eceff21e3" configVersion="de4c8717bf38df46aed540df235bb00c00000000"/>
 		<Metadata name="Role.Admin.Rights" id="667d9ee4-fae2-4d91-bf90-485eceff21e3.0" configVersion="c91e8c7750bd104fb34ee5b671f8a6b400000000"/>
-		<Metadata name="Subsystem.Meta" id="1756909f-7da2-4a37-9e16-7ac74c8ba4fb" configVersion="5aacf78a0a507442a8aaceaf11cf0be300000000"/>
-		<Metadata name="Subsystem.Meta.Subsystem.AccumulationRegisters" id="f3e6e447-32cb-48c2-a80b-a59111d238c2" configVersion="10bacadc21b0f5479dcd92fd0e890ea500000000"/>
-		<Metadata name="Subsystem.Meta.Subsystem.Catalogs" id="8748fefe-6f2d-4d1d-ad06-7b6425538259" configVersion="f01c082f1e82774a8ca4471790de28da00000000"/>
+		<Metadata name="Subsystem.Meta" id="1756909f-7da2-4a37-9e16-7ac74c8ba4fb" configVersion="83a0fa9df708eb46b5f471429a49caee00000000"/>
+		<Metadata name="Subsystem.Meta.Subsystem.AccumulationRegisters" id="f3e6e447-32cb-48c2-a80b-a59111d238c2" configVersion="c76194fc28b98c4a92da5a61da827c5600000000"/>
+		<Metadata name="Subsystem.Meta.Subsystem.Catalogs" id="8748fefe-6f2d-4d1d-ad06-7b6425538259" configVersion="85589b67377ae040aeaeab750032abde00000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.CommonModules" id="3686d760-5601-49e1-bf84-4b4887b5ef1a" configVersion="030d6986ca25954c87079815b413401f00000000"/>
-		<Metadata name="Subsystem.Meta.Subsystem.Documents" id="ffa7cdce-3aae-4677-a4ea-72d1f19d2647" configVersion="110ffc5a4b05e14296828ce341ae3a0a00000000"/>
-		<Metadata name="Subsystem.Meta.Subsystem.Enums" id="f46c9c4d-81c8-42c9-a95d-f7e299c622d0" configVersion="664a4ac3479eae47af4439d94ec1802b00000000"/>
-		<Metadata name="Subsystem.Meta.Subsystem.InformationRegisters" id="a4a75aec-85d7-4689-bb48-131ae0e50ef9" configVersion="13895e457588cd4d85dbac95aadfa5b300000000"/>
+		<Metadata name="Subsystem.Meta.Subsystem.Constants" id="b56e44ea-bc0e-4f66-858f-70cfb8822b30" configVersion="e723ac75d693164391d970dc3a320bee00000000"/>
+		<Metadata name="Subsystem.Meta.Subsystem.Documents" id="ffa7cdce-3aae-4677-a4ea-72d1f19d2647" configVersion="cc79af5586bcd34b93621def6ab7814e00000000"/>
+		<Metadata name="Subsystem.Meta.Subsystem.Enums" id="f46c9c4d-81c8-42c9-a95d-f7e299c622d0" configVersion="4f1290d9f2506544a70d18199cc2b6b700000000"/>
+		<Metadata name="Subsystem.Meta.Subsystem.InformationRegisters" id="a4a75aec-85d7-4689-bb48-131ae0e50ef9" configVersion="b625e32de145ca4e97b978c34e5daffd00000000"/>
 		<Metadata name="Subsystem.Radar" id="60fb9d92-6eee-4e2d-8f51-3028e258df02" configVersion="add1b5ea5679b7419646c299ac08bd4c00000000"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

@@ -50,6 +50,7 @@
 			<Subsystem>AccumulationRegisters</Subsystem>
 			<Subsystem>Enums</Subsystem>
 			<Subsystem>CommonModules</Subsystem>
+			<Subsystem>Constants</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

@@ -43,7 +43,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TabularSections</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.BusinessProcessNumberType</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.CreateOnInput</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.ChoiceFoldersAndItems</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.FoldersAndItemsUse</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChoiceParameterLinks</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Values</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.Indexing</xr:Item>
@@ -53,6 +53,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChoiceParameters</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.FillChecking</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.UseQuickChoice</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Documents</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -32,7 +32,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Modules</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.RegisterWriteMode</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Attributes</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.ChoiceFoldersAndItems</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.FoldersAndItemsUse</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ChoiceHistoryOnInput</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChoiceParameterLinks</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChoiceParameters</xr:Item>
@@ -42,6 +42,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.AttributeRoles</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Values</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.CreateOnInput</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.InformationRegisters</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

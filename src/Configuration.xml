@@ -193,7 +193,7 @@
 			<Enum>CatalogCodeType</Enum>
 			<Enum>CatalogMainPresentation</Enum>
 			<Enum>ChoiceDataGetModeOnInputByString</Enum>
-			<Enum>ChoiceFoldersAndItems</Enum>
+			<Enum>FoldersAndItemsUse</Enum>
 			<Enum>ChoiceHistoryOnInput</Enum>
 			<Enum>ChoiceMode</Enum>
 			<Enum>CreateOnInput</Enum>
