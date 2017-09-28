@@ -183,6 +183,7 @@
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
+			<Catalog>CommonModules</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>
@@ -219,6 +220,7 @@
 			<Enum>Undefined</Enum>
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UseQuickChoice</Enum>
+			<Enum>ReturnValuesReuse</Enum>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
 		</ChildObjects>

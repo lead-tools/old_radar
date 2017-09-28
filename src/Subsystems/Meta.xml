@@ -40,6 +40,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Types</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Values</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.DocumentNumerator</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonModules</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
@@ -48,6 +49,7 @@
 			<Subsystem>InformationRegisters</Subsystem>
 			<Subsystem>AccumulationRegisters</Subsystem>
 			<Subsystem>Enums</Subsystem>
+			<Subsystem>CommonModules</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

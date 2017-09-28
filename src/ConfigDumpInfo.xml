@@ -174,6 +174,17 @@
 			<Metadata name="Catalog.CommonCommands.Attribute.Picture" id="c72d05f4-3afa-412c-886e-3b9ed3f5fe08"/>
 			<Metadata name="Catalog.CommonCommands.Attribute.Shortcut" id="ce2c9e8f-8213-44df-8c42-1edb7e6d2f55"/>
 		</Metadata>
+		<Metadata name="Catalog.CommonModules" id="8ad81188-b377-4b9b-8197-b64cb177ad22" configVersion="6db088e2c585774a8c3d61c7570cab1d00000000">
+			<Metadata name="Catalog.CommonModules.Attribute.ClientManagedApllication" id="117b0b50-6a65-40c2-9e09-91b4246690f0"/>
+			<Metadata name="Catalog.CommonModules.Attribute.ClientOrdinaryApplication" id="2b00f90f-446c-4c9e-9747-7a43a206fcf5"/>
+			<Metadata name="Catalog.CommonModules.Attribute.ServerCall" id="318fde30-4385-43c3-b4eb-b5b81182fe43"/>
+			<Metadata name="Catalog.CommonModules.Attribute.Module" id="4cd5e970-a124-487c-be99-869e4c257a93"/>
+			<Metadata name="Catalog.CommonModules.Attribute.ReturnValuesReuse" id="4d72cf73-c297-4912-8249-9cc1dbcd66a5"/>
+			<Metadata name="Catalog.CommonModules.Attribute.Global" id="867b401b-f46f-436d-a7e7-5c6ae4a16307"/>
+			<Metadata name="Catalog.CommonModules.Attribute.ExternalConnection" id="acd2486a-0db6-42d9-bb5a-6e1e17f83814"/>
+			<Metadata name="Catalog.CommonModules.Attribute.Privileged" id="adec2091-4fe1-475c-8a32-ebc2355d77ee"/>
+			<Metadata name="Catalog.CommonModules.Attribute.Server" id="bee73e0b-471a-40a1-9b6d-f0ba9aaa39ea"/>
+		</Metadata>
 		<Metadata name="Catalog.Constants" id="66a56acd-055c-4199-93ba-e6b268b59156" configVersion="c34a01fc555a5f41894feb803af7bce300000000">
 			<Metadata name="Catalog.Constants.Attribute.ExtendedPresentation" id="307ffcda-d1b9-48b7-bdf8-e782e2be2a53"/>
 			<Metadata name="Catalog.Constants.Attribute.ToolTip" id="32d29eca-a74e-4582-8684-e6ec376c589e"/>
@@ -476,7 +487,7 @@
 		<Metadata name="CommonModule.Jobs.Module" id="d211b7cd-1399-4564-880d-91bd87487edc.0" configVersion="84b487406428964e8447ffeafce1f9c400000000"/>
 		<Metadata name="CommonModule.Jobs_ServerCall" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="8651e958229c8a48b264ed1e7d0bd85800000000"/>
 		<Metadata name="CommonModule.Jobs_ServerCall.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="ffde179d32b9e445a562480bf3afcfda00000000"/>
-		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="37b6de5ac3cc374b97b7de3eda08156000000000"/>
+		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="4ad459c41561de4d859c478bc0a82c9f00000000"/>
 		<Metadata name="Constant.ChunkSize" id="ed96ac09-764e-4003-ba7d-5edb924ec7ef" configVersion="158878961de44d43b33cfecb904ee0c000000000"/>
 		<Metadata name="Constant.ExternalDataProcessorsPath" id="06a7e8dc-c92b-49ff-8577-1eb66614d63f" configVersion="5ec8c9fdc7e8cd40b2d9df2e708e6eeb00000000"/>
 		<Metadata name="Constant.MaxJobs" id="df0dbc3c-1499-405e-9e4c-189af2f67c41" configVersion="240c281f1279254b943c9fb5405f9dfc00000000"/>
@@ -619,6 +630,11 @@
 			<Metadata name="Enum.RegisterWriteMode.EnumValue.RecorderSubordinate" id="0a49d443-dc17-4523-a7a3-5a318c6bea55"/>
 			<Metadata name="Enum.RegisterWriteMode.EnumValue.Independent" id="fca34da4-18d2-4bb3-b59e-833fb75307ec"/>
 		</Metadata>
+		<Metadata name="Enum.ReturnValuesReuse" id="1355e5c3-8fab-4bc2-8c19-c55cbd1e919c" configVersion="30f1a8262320fd40bfa33749efa3939100000000">
+			<Metadata name="Enum.ReturnValuesReuse.EnumValue.DuringRequest" id="26061533-6193-46fd-b229-bc81abc96b15"/>
+			<Metadata name="Enum.ReturnValuesReuse.EnumValue.DuringSession" id="5274a421-c60c-45d8-8303-11aa9b2e8a07"/>
+			<Metadata name="Enum.ReturnValuesReuse.EnumValue.DontUse" id="f08ddea5-6e26-4056-bfba-df3ec2e43004"/>
+		</Metadata>
 		<Metadata name="Enum.SearchStringModeOnInputByString" id="25d37798-b452-402d-be77-b07d39c893c3" configVersion="8a43ddda466aa04d935f6d6dd7c7309900000000">
 			<Metadata name="Enum.SearchStringModeOnInputByString.EnumValue.Begin" id="bf945d69-a102-4222-ac03-b29b5491636e"/>
 			<Metadata name="Enum.SearchStringModeOnInputByString.EnumValue.AnyPart" id="c56ae8d9-29e9-4cf5-ac93-f756f83139a9"/>
@@ -664,9 +680,10 @@
 		<Metadata name="Language.Русский" id="562bba67-1c23-4b76-95d4-8c4b9e6e14d8" configVersion="fd6ef2f1aa52784992a11236fb75857c00000000"/>
 		<Metadata name="Role.Admin" id="667d9ee4-fae2-4d91-bf90-485eceff21e3" configVersion="de4c8717bf38df46aed540df235bb00c00000000"/>
 		<Metadata name="Role.Admin.Rights" id="667d9ee4-fae2-4d91-bf90-485eceff21e3.0" configVersion="c91e8c7750bd104fb34ee5b671f8a6b400000000"/>
-		<Metadata name="Subsystem.Meta" id="1756909f-7da2-4a37-9e16-7ac74c8ba4fb" configVersion="123695aaf669f246b62a8c347d12bc5c00000000"/>
+		<Metadata name="Subsystem.Meta" id="1756909f-7da2-4a37-9e16-7ac74c8ba4fb" configVersion="5aacf78a0a507442a8aaceaf11cf0be300000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.AccumulationRegisters" id="f3e6e447-32cb-48c2-a80b-a59111d238c2" configVersion="10bacadc21b0f5479dcd92fd0e890ea500000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.Catalogs" id="8748fefe-6f2d-4d1d-ad06-7b6425538259" configVersion="f01c082f1e82774a8ca4471790de28da00000000"/>
+		<Metadata name="Subsystem.Meta.Subsystem.CommonModules" id="3686d760-5601-49e1-bf84-4b4887b5ef1a" configVersion="030d6986ca25954c87079815b413401f00000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.Documents" id="ffa7cdce-3aae-4677-a4ea-72d1f19d2647" configVersion="110ffc5a4b05e14296828ce341ae3a0a00000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.Enums" id="f46c9c4d-81c8-42c9-a95d-f7e299c622d0" configVersion="664a4ac3479eae47af4439d94ec1802b00000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.InformationRegisters" id="a4a75aec-85d7-4689-bb48-131ae0e50ef9" configVersion="13895e457588cd4d85dbac95aadfa5b300000000"/>
