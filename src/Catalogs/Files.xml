@@ -1,38 +1,38 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
-	<Catalog uuid="d2cc696e-c250-4eee-b6ca-1cf17ce99f42">
+	<Catalog uuid="dae06c68-ec45-44a9-8e49-8ad71ecea3ca">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.Templates" category="Object">
-				<xr:TypeId>7a1ad273-967d-4580-bc54-8fd65a6a2246</xr:TypeId>
-				<xr:ValueId>38ba3e7a-a712-492b-9b18-cd01ff304324</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.Files" category="Object">
+				<xr:TypeId>62ab5c5f-bfb5-458c-a04d-7523a99ebb70</xr:TypeId>
+				<xr:ValueId>f8593523-23d9-48e9-b7e9-cff33ea3ba39</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.Templates" category="Ref">
-				<xr:TypeId>b8ff9f50-6bba-4e71-8d9b-4c50fc1fcfbb</xr:TypeId>
-				<xr:ValueId>2fcb25e0-6ad2-4ed5-b695-e107b4e31751</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.Files" category="Ref">
+				<xr:TypeId>8f5bbd05-74b4-439a-8f2c-7b8e20f865ca</xr:TypeId>
+				<xr:ValueId>94d7c41b-1ccb-4251-88ad-06f0ad649476</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.Templates" category="Selection">
-				<xr:TypeId>328ff5bf-b91b-49f3-bdb7-7f188b276a01</xr:TypeId>
-				<xr:ValueId>c906bec5-7e70-455d-adbd-f5c528d2576b</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.Files" category="Selection">
+				<xr:TypeId>c35e86b7-d22c-4002-af3e-fabb6707b4bc</xr:TypeId>
+				<xr:ValueId>1d2dcc3e-736f-457a-a954-5c0f23057f48</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.Templates" category="List">
-				<xr:TypeId>02c7f5be-bd39-4255-8def-7a6c6fbaf043</xr:TypeId>
-				<xr:ValueId>21339934-b794-484f-9b9f-85d994d1625f</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.Files" category="List">
+				<xr:TypeId>541ae091-3033-4cdf-b71b-90b74c78d27a</xr:TypeId>
+				<xr:ValueId>5b7aeae9-e84b-4a7d-8295-0bb578893283</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.Templates" category="Manager">
-				<xr:TypeId>0fc1bfe0-6faf-4320-82e7-d0191aa9920d</xr:TypeId>
-				<xr:ValueId>4bd8afaa-0c7d-4da3-ba18-213935f159a1</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.Files" category="Manager">
+				<xr:TypeId>19972613-05c9-48dc-86c6-bfa14ce7e7fa</xr:TypeId>
+				<xr:ValueId>d3c93f26-b6ee-4efb-8ea6-52f55e6119b0</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Templates</Name>
+			<Name>Files</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Templates</v8:content>
+					<v8:content>Files</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Макеты</v8:content>
+					<v8:content>Файлы</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -58,8 +58,8 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.Templates.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.Templates.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.Files.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Files.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>

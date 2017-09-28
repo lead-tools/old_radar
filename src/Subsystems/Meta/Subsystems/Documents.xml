@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Subsystem uuid="ffa7cdce-3aae-4677-a4ea-72d1f19d2647">
+		<Properties>
+			<Name>Documents</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Documents</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.DocumentNumerator</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.RegisterRecordsWritingOnPost</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Forms</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Attributes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.Posting</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.SearchStringModeOnInputByString</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.SequenceFilling</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.DocumentNumberPeriodicity</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Commands</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Files</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.AllowedLength</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.UseFullTextSearch</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.DefaultDataLockControlMode</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.FullTextSearchOnInputByString</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ChoiceDataGetModeOnInputByString</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.MultilingualStrings</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ChoiceHistoryOnInput</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Modules</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.RealTimePosting</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.Boolean</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.RegisterRecordsDeletion</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TabularSections</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.BusinessProcessNumberType</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.CreateOnInput</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

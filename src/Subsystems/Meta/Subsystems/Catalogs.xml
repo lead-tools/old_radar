@@ -40,7 +40,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.MultilingualStrings</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.UseFullTextSearch</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.FullTextSearchOnInputByString</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Templates</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">d2cc696e-c250-4eee-b6ca-1cf17ce99f42</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.HierarchyType</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.SearchStringModeOnInputByString</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ObjectBelonging</xr:Item>
@@ -52,6 +52,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Values</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.AttributeRoles</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TabularSections</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Files</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
