@@ -184,6 +184,7 @@
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
 			<Catalog>CommonModules</Catalog>
+			<Catalog>SessionParameters</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>
