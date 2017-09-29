@@ -188,6 +188,7 @@
 			<Catalog>DataProcessors</Catalog>
 			<Catalog>Reports</Catalog>
 			<Catalog>SettingsStorages</Catalog>
+			<Catalog>CommonAttributes</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>
@@ -225,6 +226,12 @@
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UseQuickChoice</Enum>
 			<Enum>ReturnValuesReuse</Enum>
+			<Enum>CommonAttributeAuthenticationSeparation</Enum>
+			<Enum>CommonAttributeAutoUse</Enum>
+			<Enum>CommonAttributeConfigurationExtensionsSeparation</Enum>
+			<Enum>CommonAttributeDataSeparation</Enum>
+			<Enum>CommonAttributeSeparatedDataUse</Enum>
+			<Enum>CommonAttributeUsersSeparation</Enum>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
 		</ChildObjects>

@@ -160,6 +160,36 @@
 			<Metadata name="Catalog.ChoiceParameters.Attribute.Value" id="ea852bc6-906c-4372-a7f8-0bc06c55ac77"/>
 		</Metadata>
 		<Metadata name="Catalog.Commands" id="c7e708ce-8107-47bc-953b-8b2acf8a7f6e" configVersion="691efc20907ee840afa02182e18a8e1e00000000"/>
+		<Metadata name="Catalog.CommonAttributes" id="54db8582-6b39-4f35-b6e9-23e804de31a3" configVersion="9e9227b4853a0946b03e7ef3ef22a59900000000">
+			<Metadata name="Catalog.CommonAttributes.TabularSection.Content" id="0fa446af-1d5f-458b-a089-51878482e95d"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.EditFormat" id="1fe15bda-e340-44ea-be1c-c16c01d2a9ba"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.UsersSeparation" id="20bff706-2703-400f-985e-123ed3bb40cc"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.ChoiceHistoryOnInput" id="25ba2a5c-4b3e-4c53-965b-757f572efd17"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.FillValue" id="48b849fb-1115-4b79-a7e7-2d9ef298089a"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.AutoUse" id="4b6842b3-b6ec-473e-a871-e9053421a16f"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.ConditionalSeparation" id="4bb9273f-d098-4930-b7d2-1d4ce8fabca1"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.ChoiceForm" id="52d304b2-7140-48bd-a9f8-210438bace8c"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.ConfigurationExtensionsSeparation" id="5bc9afc8-4c46-49b6-a014-b83e6c50f8f3"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.ToolTip" id="65096459-54fa-4c41-a7b5-4d4ecbf49003"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.Format" id="6d844cb8-cc7d-4113-b281-85fcd3f4156c"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.MarkNegatives" id="88b37b9b-614a-42a5-a8b1-b1f74e44ee35"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.QuickChoice" id="89669415-ac3d-4157-aa61-80c7f5250332"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.AuthenticationSeparation" id="8c6f073e-a364-4a8c-a699-4fa470ea5b7c"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.DataSeparationValue" id="8e30fa2b-f636-47c3-ab26-029012203486"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.Type" id="97d2d115-d099-433c-ac26-238e0a72b1d8"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.FullTextSearch" id="98048f30-213f-479d-99a8-a0a84cee61aa"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.FillChecking" id="9d8f246a-fb0f-461d-b875-c9ed9bbde5ad"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.PasswordMode" id="b35fbca2-b7a2-4edd-90bb-cec631475eda"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.Indexing" id="b64da572-0457-4229-9732-462cc01ad691"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.DataSeparation" id="bba3e743-0fbd-4320-aac9-c58b0556767d"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.MultiLine" id="c456ca37-9cd5-40c3-a33b-6477316a19d9"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.DataSeparationUse" id="d208c7a8-8db1-46e4-b79c-0a560112a48f"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.Mask" id="d76583df-4e97-44fe-8b07-c5772195354b"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.CreateOnInput" id="e300dedb-cb24-47d5-a201-50003606f5b9"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.FillFromFillingValue" id="e91d016e-faec-4b51-bd16-b6e00de6081c"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.ExtendedEdit" id="ed3771ab-f79b-47f3-9656-7837fc6d2ee9"/>
+			<Metadata name="Catalog.CommonAttributes.Attribute.SeparatedDataUse" id="f6555447-43e9-4fac-b30d-6110dd1b3569"/>
+		</Metadata>
 		<Metadata name="Catalog.CommonCommands" id="7a76b807-af42-44b7-8830-1f63f4b7a0c5" configVersion="b735b92659c3384384969fbc1f8abf1900000000">
 			<Metadata name="Catalog.CommonCommands.Attribute.Synonym" id="1dec5eca-95e7-423a-8c03-b8068720fc12"/>
 			<Metadata name="Catalog.CommonCommands.TabularSection.Types.Attribute.Type" id="5e99df96-e45c-442b-9e41-709cfb57514d"/>
@@ -609,7 +639,7 @@
 		<Metadata name="CommonModule.Jobs.Module" id="d211b7cd-1399-4564-880d-91bd87487edc.0" configVersion="84b487406428964e8447ffeafce1f9c400000000"/>
 		<Metadata name="CommonModule.Jobs_ServerCall" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="8651e958229c8a48b264ed1e7d0bd85800000000"/>
 		<Metadata name="CommonModule.Jobs_ServerCall.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="ffde179d32b9e445a562480bf3afcfda00000000"/>
-		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="697f6f73d4a7d042b847d244a5ed9e1400000000"/>
+		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="694d565d54da9e48ac16fddf98b956e200000000"/>
 		<Metadata name="Constant.ChunkSize" id="ed96ac09-764e-4003-ba7d-5edb924ec7ef" configVersion="158878961de44d43b33cfecb904ee0c000000000"/>
 		<Metadata name="Constant.ExternalDataProcessorsPath" id="06a7e8dc-c92b-49ff-8577-1eb66614d63f" configVersion="5ec8c9fdc7e8cd40b2d9df2e708e6eeb00000000"/>
 		<Metadata name="Constant.MaxJobs" id="df0dbc3c-1499-405e-9e4c-189af2f67c41" configVersion="240c281f1279254b943c9fb5405f9dfc00000000"/>
@@ -661,6 +691,31 @@
 			<Metadata name="Enum.ChoiceMode.EnumValue.BothWays" id="90068333-cda6-4359-babb-d3622aea6f31"/>
 			<Metadata name="Enum.ChoiceMode.EnumValue.QuickChoice" id="d613737a-5b4e-47a3-926f-736c0f4ecc0d"/>
 		</Metadata>
+		<Metadata name="Enum.CommonAttributeAuthenticationSeparation" id="61520207-344d-4f36-a5c0-c383fc87e0aa" configVersion="1988adbb28a9fa419def009765f171ff00000000">
+			<Metadata name="Enum.CommonAttributeAuthenticationSeparation.EnumValue.DontUse" id="4504bfbb-0285-400f-a5f2-4c710726e172"/>
+			<Metadata name="Enum.CommonAttributeAuthenticationSeparation.EnumValue.Separate" id="99ef0933-75a2-4a60-90a4-c882b5a331a5"/>
+		</Metadata>
+		<Metadata name="Enum.CommonAttributeAutoUse" id="e239f100-e1e4-4e24-8b40-0f5380839ac0" configVersion="b621bdb138d21a4eb1b97d2f26c8c7b600000000">
+			<Metadata name="Enum.CommonAttributeAutoUse.EnumValue.Use" id="a68ed03b-68bd-483e-9fba-3a5bbb88078b"/>
+			<Metadata name="Enum.CommonAttributeAutoUse.EnumValue.DontUse" id="eba0443b-b890-42bd-941a-095af3ecfa6a"/>
+		</Metadata>
+		<Metadata name="Enum.CommonAttributeConfigurationExtensionsSeparation" id="7478b43c-184f-4bce-9850-3b9cfe3b54bc" configVersion="5df2f61a7d05db4c97a83b1ab61bbf9900000000">
+			<Metadata name="Enum.CommonAttributeConfigurationExtensionsSeparation.EnumValue.DontUse" id="43e67666-0acc-4e5f-91f8-048ce23c84be"/>
+			<Metadata name="Enum.CommonAttributeConfigurationExtensionsSeparation.EnumValue.Separate" id="df20d799-c2e7-4b82-98ee-29a06e593683"/>
+		</Metadata>
+		<Metadata name="Enum.CommonAttributeDataSeparation" id="a7419d9c-9b01-4af9-8af9-c96e9c2cd4fe" configVersion="e178e7f8d5f69540a503adc193dd4a8b00000000">
+			<Metadata name="Enum.CommonAttributeDataSeparation.EnumValue.Separate" id="790f8d9e-b95d-4fa0-88d1-2dd1d2ce29f5"/>
+			<Metadata name="Enum.CommonAttributeDataSeparation.EnumValue.DontUse" id="d1d0a675-4bdb-48b5-bf55-a1c7a8b8db88"/>
+		</Metadata>
+		<Metadata name="Enum.CommonAttributeSeparatedDataUse" id="82b45f40-65e7-4b48-a00e-8a96be9d4d60" configVersion="e8e7039df6a4d74c90735524eeb81ec900000000">
+			<Metadata name="Enum.CommonAttributeSeparatedDataUse.EnumValue.Independently" id="585a52a0-a71e-48b4-8046-21f93d813a65"/>
+			<Metadata name="Enum.CommonAttributeSeparatedDataUse.EnumValue.IndependentlyAndSimultaneously" id="f3c25d46-1b30-4255-8afb-ef5aa3c90afd"/>
+		</Metadata>
+		<Metadata name="Enum.CommonAttributeUsersSeparation" id="539985e5-cbe1-4b84-9640-8dee932b7b88" configVersion="0a3ac97681512f498f8561929fae803d00000000">
+			<Metadata name="Enum.CommonAttributeUsersSeparation.EnumValue.Separate" id="3af3fbd8-2194-49ab-b612-b42192320466"/>
+			<Metadata name="Enum.CommonAttributeUsersSeparation.EnumValue.DontUse" id="9a56c764-9739-4d2e-b079-44401adf3036"/>
+		</Metadata>
+		<Metadata name="Enum.CommonAttributeUsersSeparation.ManagerModule" id="539985e5-cbe1-4b84-9640-8dee932b7b88.0" configVersion="577680d5de10d34f8e0f9be7fa89be7400000000"/>
 		<Metadata name="Enum.CreateOnInput" id="46bbb6d0-a8a0-49ef-b539-20ac65a96410" configVersion="b16b7dd9097a474ba1e009592124a4cd00000000">
 			<Metadata name="Enum.CreateOnInput.EnumValue.Auto" id="117e46c2-c018-4ee0-8187-40d094c54830"/>
 			<Metadata name="Enum.CreateOnInput.EnumValue.Use" id="39c45a87-489e-4c48-82f7-f1e5d847c556"/>
@@ -802,9 +857,10 @@
 		<Metadata name="Language.Русский" id="562bba67-1c23-4b76-95d4-8c4b9e6e14d8" configVersion="fd6ef2f1aa52784992a11236fb75857c00000000"/>
 		<Metadata name="Role.Admin" id="667d9ee4-fae2-4d91-bf90-485eceff21e3" configVersion="de4c8717bf38df46aed540df235bb00c00000000"/>
 		<Metadata name="Role.Admin.Rights" id="667d9ee4-fae2-4d91-bf90-485eceff21e3.0" configVersion="c91e8c7750bd104fb34ee5b671f8a6b400000000"/>
-		<Metadata name="Subsystem.Meta" id="1756909f-7da2-4a37-9e16-7ac74c8ba4fb" configVersion="923a8d8fd3f863488c945bd5ec0a285900000000"/>
+		<Metadata name="Subsystem.Meta" id="1756909f-7da2-4a37-9e16-7ac74c8ba4fb" configVersion="029eda16cfe2ca4cb11c0f7a02d106c300000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.AccumulationRegisters" id="f3e6e447-32cb-48c2-a80b-a59111d238c2" configVersion="c76194fc28b98c4a92da5a61da827c5600000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.Catalogs" id="8748fefe-6f2d-4d1d-ad06-7b6425538259" configVersion="85589b67377ae040aeaeab750032abde00000000"/>
+		<Metadata name="Subsystem.Meta.Subsystem.CommonAttributes" id="90a3592d-9ed7-49af-8a20-978d395191fe" configVersion="03d2f0b46732fd4d9f4c7c8518bf3be400000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.CommonModules" id="3686d760-5601-49e1-bf84-4b4887b5ef1a" configVersion="3e773d338912724d83fed15a49fbda8900000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.Constants" id="b56e44ea-bc0e-4f66-858f-70cfb8822b30" configVersion="e723ac75d693164391d970dc3a320bee00000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.DataProcessors" id="09044146-c255-468c-9acf-d31fda472c64" configVersion="786e9285371f104ea6c915905bd55f3300000000"/>
