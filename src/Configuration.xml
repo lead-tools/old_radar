@@ -186,6 +186,8 @@
 			<Catalog>CommonModules</Catalog>
 			<Catalog>SessionParameters</Catalog>
 			<Catalog>DataProcessors</Catalog>
+			<Catalog>Reports</Catalog>
+			<Catalog>SettingsStorages</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>
