@@ -162,8 +162,12 @@
 			<Catalog>ChoiceParameterLinks</Catalog>
 			<Catalog>ChoiceParameters</Catalog>
 			<Catalog>Commands</Catalog>
+			<Catalog>CommonAttributes</Catalog>
 			<Catalog>CommonCommands</Catalog>
+			<Catalog>CommonForms</Catalog>
+			<Catalog>CommonModules</Catalog>
 			<Catalog>Constants</Catalog>
+			<Catalog>DataProcessors</Catalog>
 			<Catalog>DocumentNumerator</Catalog>
 			<Catalog>Documents</Catalog>
 			<Catalog>Enums</Catalog>
@@ -174,21 +178,18 @@
 			<Catalog>FunctionalOptions</Catalog>
 			<Catalog>InformationRegisters</Catalog>
 			<Catalog>Modules</Catalog>
-			<Catalog>Strings</Catalog>
 			<Catalog>Pictures</Catalog>
 			<Catalog>Projects</Catalog>
+			<Catalog>Reports</Catalog>
 			<Catalog>Rights</Catalog>
 			<Catalog>Roles</Catalog>
+			<Catalog>SessionParameters</Catalog>
+			<Catalog>SettingsStorages</Catalog>
+			<Catalog>Strings</Catalog>
 			<Catalog>TabularSections</Catalog>
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
-			<Catalog>CommonModules</Catalog>
-			<Catalog>SessionParameters</Catalog>
-			<Catalog>DataProcessors</Catalog>
-			<Catalog>Reports</Catalog>
-			<Catalog>SettingsStorages</Catalog>
-			<Catalog>CommonAttributes</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>
@@ -198,15 +199,21 @@
 			<Enum>CatalogCodeType</Enum>
 			<Enum>CatalogMainPresentation</Enum>
 			<Enum>ChoiceDataGetModeOnInputByString</Enum>
-			<Enum>FoldersAndItemsUse</Enum>
 			<Enum>ChoiceHistoryOnInput</Enum>
 			<Enum>ChoiceMode</Enum>
+			<Enum>CommonAttributeAuthenticationSeparation</Enum>
+			<Enum>CommonAttributeAutoUse</Enum>
+			<Enum>CommonAttributeConfigurationExtensionsSeparation</Enum>
+			<Enum>CommonAttributeDataSeparation</Enum>
+			<Enum>CommonAttributeSeparatedDataUse</Enum>
+			<Enum>CommonAttributeUsersSeparation</Enum>
 			<Enum>CreateOnInput</Enum>
 			<Enum>DataHistoryUse</Enum>
 			<Enum>DefaultDataLockControlMode</Enum>
 			<Enum>DocumentNumberPeriodicity</Enum>
 			<Enum>EditType</Enum>
 			<Enum>FillChecking</Enum>
+			<Enum>FoldersAndItemsUse</Enum>
 			<Enum>FullTextSearchOnInputByString</Enum>
 			<Enum>HierarchyType</Enum>
 			<Enum>Indexing</Enum>
@@ -219,19 +226,14 @@
 			<Enum>RegisterRecordsDeletion</Enum>
 			<Enum>RegisterRecordsWritingOnPost</Enum>
 			<Enum>RegisterWriteMode</Enum>
+			<Enum>ReturnValuesReuse</Enum>
 			<Enum>SearchStringModeOnInputByString</Enum>
 			<Enum>SequenceFilling</Enum>
 			<Enum>SubordinationUse</Enum>
 			<Enum>Undefined</Enum>
 			<Enum>UseFullTextSearch</Enum>
+			<Enum>UsePurposes</Enum>
 			<Enum>UseQuickChoice</Enum>
-			<Enum>ReturnValuesReuse</Enum>
-			<Enum>CommonAttributeAuthenticationSeparation</Enum>
-			<Enum>CommonAttributeAutoUse</Enum>
-			<Enum>CommonAttributeConfigurationExtensionsSeparation</Enum>
-			<Enum>CommonAttributeDataSeparation</Enum>
-			<Enum>CommonAttributeSeparatedDataUse</Enum>
-			<Enum>CommonAttributeUsersSeparation</Enum>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
 		</ChildObjects>

@@ -44,6 +44,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.SessionParameters</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.SettingsStorages</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonAttributes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonForms</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
@@ -58,6 +59,7 @@
 			<Subsystem>DataProcessors</Subsystem>
 			<Subsystem>Reports</Subsystem>
 			<Subsystem>CommonAttributes</Subsystem>
+			<Subsystem>CommonForms</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
