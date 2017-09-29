@@ -53,6 +53,7 @@
 			<Subsystem>CommonModules</Subsystem>
 			<Subsystem>Constants</Subsystem>
 			<Subsystem>SessionParameters</Subsystem>
+			<Subsystem>DataProcessors</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
