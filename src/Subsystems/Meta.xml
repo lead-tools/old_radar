@@ -50,27 +50,30 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccountingRegisters</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Languages</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommandGroups</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.FunctionalOptionsParameters</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
-			<Subsystem>Catalogs</Subsystem>
-			<Subsystem>Documents</Subsystem>
-			<Subsystem>InformationRegisters</Subsystem>
+			<Subsystem>AccountingRegisters</Subsystem>
 			<Subsystem>AccumulationRegisters</Subsystem>
-			<Subsystem>Enums</Subsystem>
+			<Subsystem>Catalogs</Subsystem>
+			<Subsystem>ChartsOfAccounts</Subsystem>
+			<Subsystem>ChartsOfCharacteristicTypes</Subsystem>
+			<Subsystem>CommandGroups</Subsystem>
+			<Subsystem>CommonAttributes</Subsystem>
+			<Subsystem>CommonCommands</Subsystem>
+			<Subsystem>CommonForms</Subsystem>
 			<Subsystem>CommonModules</Subsystem>
 			<Subsystem>Constants</Subsystem>
-			<Subsystem>SessionParameters</Subsystem>
 			<Subsystem>DataProcessors</Subsystem>
-			<Subsystem>Reports</Subsystem>
-			<Subsystem>CommonAttributes</Subsystem>
-			<Subsystem>CommonForms</Subsystem>
-			<Subsystem>ChartsOfCharacteristicTypes</Subsystem>
-			<Subsystem>ChartsOfAccounts</Subsystem>
-			<Subsystem>AccountingRegisters</Subsystem>
-			<Subsystem>CommonCommands</Subsystem>
-			<Subsystem>CommandGroups</Subsystem>
+			<Subsystem>Documents</Subsystem>
+			<Subsystem>Enums</Subsystem>
 			<Subsystem>EventSubscriptions</Subsystem>
+			<Subsystem>FunctionalOptions</Subsystem>
+			<Subsystem>FunctionalOptionsParameters</Subsystem>
+			<Subsystem>InformationRegisters</Subsystem>
+			<Subsystem>Reports</Subsystem>
+			<Subsystem>SessionParameters</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

@@ -176,10 +176,13 @@
 			<Catalog>Documents</Catalog>
 			<Catalog>Enums</Catalog>
 			<Catalog>EnumValues</Catalog>
+			<Catalog>Events</Catalog>
 			<Catalog>EventSubscriptions</Catalog>
 			<Catalog>Files</Catalog>
 			<Catalog>Forms</Catalog>
 			<Catalog>FunctionalOptions</Catalog>
+			<Catalog>FunctionalOptionsParameters</Catalog>
+			<Catalog>Handlers</Catalog>
 			<Catalog>InformationRegisters</Catalog>
 			<Catalog>Languages</Catalog>
 			<Catalog>Modules</Catalog>
@@ -195,8 +198,6 @@
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
-			<Catalog>Events</Catalog>
-			<Catalog>Handlers</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>
