@@ -38,6 +38,10 @@
 					<v8:lang>en</v8:lang>
 					<v8:content>Modules data</v8:content>
 				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные модулей</v8:content>
+				</v8:item>
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
@@ -68,6 +72,10 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>AST</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
 							<v8:content>AST</v8:content>
 						</v8:item>
 					</Synonym>
@@ -156,6 +164,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Module</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Модуль</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

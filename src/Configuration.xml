@@ -31,12 +31,12 @@
 			<Name>Radar</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Радар</v8:content>
-				</v8:item>
-				<v8:item>
 					<v8:lang>en</v8:lang>
 					<v8:content>Radar</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Радар</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -140,8 +140,10 @@
 			<DefaultConstantsForm/>
 		</Properties>
 		<ChildObjects>
-			<Language>Русский</Language>
 			<Language>English</Language>
+			<Language>Русский</Language>
+			<Subsystem>Configurations</Subsystem>
+			<Subsystem>Radar</Subsystem>
 			<Role>Admin</Role>
 			<CommonModule>CommonUse</CommonModule>
 			<CommonModule>CommonUse_ServerCached</CommonModule>
@@ -154,8 +156,96 @@
 			<Constant>ExternalDataProcessorsPath</Constant>
 			<Constant>MaxJobs</Constant>
 			<Constant>ChunkSize</Constant>
-			<Catalog>Projects</Catalog>
+			<Catalog>AccountingRegisters</Catalog>
+			<Catalog>AccumulationRegisters</Catalog>
+			<Catalog>Attributes</Catalog>
+			<Catalog>Catalogs</Catalog>
+			<Catalog>ChartsOfAccounts</Catalog>
+			<Catalog>ChartsOfCharacteristicTypes</Catalog>
+			<Catalog>ChoiceParameterLinks</Catalog>
+			<Catalog>ChoiceParameters</Catalog>
+			<Catalog>CommandGroups</Catalog>
+			<Catalog>Commands</Catalog>
+			<Catalog>CommonAttributes</Catalog>
+			<Catalog>CommonCommands</Catalog>
+			<Catalog>CommonForms</Catalog>
+			<Catalog>CommonModules</Catalog>
+			<Catalog>Configurations</Catalog>
+			<Catalog>Constants</Catalog>
+			<Catalog>DataProcessors</Catalog>
+			<Catalog>DocumentNumerator</Catalog>
+			<Catalog>Documents</Catalog>
+			<Catalog>Enums</Catalog>
+			<Catalog>EnumValues</Catalog>
+			<Catalog>Events</Catalog>
+			<Catalog>EventSubscriptions</Catalog>
+			<Catalog>Files</Catalog>
+			<Catalog>Forms</Catalog>
+			<Catalog>FunctionalOptions</Catalog>
+			<Catalog>FunctionalOptionsParameters</Catalog>
+			<Catalog>Handlers</Catalog>
+			<Catalog>InformationRegisters</Catalog>
+			<Catalog>Languages</Catalog>
 			<Catalog>Modules</Catalog>
+			<Catalog>Pictures</Catalog>
+			<Catalog>Projects</Catalog>
+			<Catalog>Reports</Catalog>
+			<Catalog>Rights</Catalog>
+			<Catalog>Roles</Catalog>
+			<Catalog>SessionParameters</Catalog>
+			<Catalog>SettingsStorages</Catalog>
+			<Catalog>Strings</Catalog>
+			<Catalog>TabularSections</Catalog>
+			<Catalog>Types</Catalog>
+			<Catalog>Values</Catalog>
+			<Catalog>Versions</Catalog>
+			<Enum>AccumulationRegisterType</Enum>
+			<Enum>AllowedLength</Enum>
+			<Enum>AttributeRoles</Enum>
+			<Enum>Boolean</Enum>
+			<Enum>BusinessProcessNumberType</Enum>
+			<Enum>ButtonRepresentation</Enum>
+			<Enum>CatalogCodesSeries</Enum>
+			<Enum>CatalogCodeType</Enum>
+			<Enum>CatalogMainPresentation</Enum>
+			<Enum>ChoiceDataGetModeOnInputByString</Enum>
+			<Enum>ChoiceHistoryOnInput</Enum>
+			<Enum>ChoiceMode</Enum>
+			<Enum>CommandGroupCategory</Enum>
+			<Enum>CommandParameterUseMode</Enum>
+			<Enum>CommonAttributeAuthenticationSeparation</Enum>
+			<Enum>CommonAttributeAutoUse</Enum>
+			<Enum>CommonAttributeConfigurationExtensionsSeparation</Enum>
+			<Enum>CommonAttributeDataSeparation</Enum>
+			<Enum>CommonAttributeSeparatedDataUse</Enum>
+			<Enum>CommonAttributeUsersSeparation</Enum>
+			<Enum>CreateOnInput</Enum>
+			<Enum>DataHistoryUse</Enum>
+			<Enum>DefaultDataLockControlMode</Enum>
+			<Enum>DocumentNumberPeriodicity</Enum>
+			<Enum>EditType</Enum>
+			<Enum>FillChecking</Enum>
+			<Enum>FoldersAndItemsUse</Enum>
+			<Enum>FullTextSearchOnInputByString</Enum>
+			<Enum>HierarchyType</Enum>
+			<Enum>Indexing</Enum>
+			<Enum>InformationRegisterPeriodicity</Enum>
+			<Enum>LinkByType</Enum>
+			<Enum>ObjectBelonging</Enum>
+			<Enum>Posting</Enum>
+			<Enum>PredefinedDataUpdate</Enum>
+			<Enum>RealTimePosting</Enum>
+			<Enum>RegisterRecordsDeletion</Enum>
+			<Enum>RegisterRecordsWritingOnPost</Enum>
+			<Enum>RegisterWriteMode</Enum>
+			<Enum>ReturnValuesReuse</Enum>
+			<Enum>SearchStringModeOnInputByString</Enum>
+			<Enum>SequenceFilling</Enum>
+			<Enum>SubordinationUse</Enum>
+			<Enum>Undefined</Enum>
+			<Enum>UseFullTextSearch</Enum>
+			<Enum>UsePurposes</Enum>
+			<Enum>UseQuickChoice</Enum>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
 		</ChildObjects>

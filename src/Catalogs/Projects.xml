@@ -339,12 +339,12 @@
 					<Name>Path</Name>
 					<Synonym>
 						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Путь</v8:content>
-						</v8:item>
-						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Path</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -390,6 +390,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Parse modules</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разобрать модули</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Group>FormCommandBarImportant</Group>
@@ -411,6 +415,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Load modules</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузить модули</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

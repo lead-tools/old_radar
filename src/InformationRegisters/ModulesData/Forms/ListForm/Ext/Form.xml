@@ -14,6 +14,10 @@
 			<Title>
 				<v8:item>
 					<v8:lang>en</v8:lang>
+					<v8:content>User settings group</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
 					<v8:content>Группа пользовательских настроек</v8:content>
 				</v8:item>
 			</Title>
@@ -141,6 +145,10 @@
 				<v8:item>
 					<v8:lang>en</v8:lang>
 					<v8:content>Show AST</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать AST</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ShowAST</Action>

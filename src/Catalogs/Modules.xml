@@ -43,6 +43,19 @@
 			<FoldersOnTop>true</FoldersOnTop>
 			<UseStandardCommands>true</UseStandardCommands>
 			<Owners>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccountingRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccumulationRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Catalogs</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfAccounts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfCharacteristicTypes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonCommands</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonModules</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Constants</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.DataProcessors</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Documents</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Enums</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.InformationRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Reports</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Projects</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
@@ -155,6 +168,10 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Parse</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разобрать</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

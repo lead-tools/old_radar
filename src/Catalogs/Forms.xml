@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Catalog uuid="62a6b324-3cde-4f57-bdf7-2aa62b4acc9f">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Forms" category="Object">
+				<xr:TypeId>b28b0272-ed9e-4b81-bbe0-10291f4c65fb</xr:TypeId>
+				<xr:ValueId>c3c0c41c-8b83-401e-82fd-6cadb9f6fc30</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Forms" category="Ref">
+				<xr:TypeId>5d496ed0-2573-4625-b80e-6df642e7c588</xr:TypeId>
+				<xr:ValueId>039dfe6a-62a9-4630-b1b2-2929a79082c8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Forms" category="Selection">
+				<xr:TypeId>df15fe4b-88a0-4c1c-a10b-d58b7f6f641d</xr:TypeId>
+				<xr:ValueId>c7769088-c6af-4b43-9666-43f926dfbe14</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Forms" category="List">
+				<xr:TypeId>64381286-cf22-4305-8f51-9a958f18c1c9</xr:TypeId>
+				<xr:ValueId>e99805a9-6c42-40f2-af44-f906e9d9900e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Forms" category="Manager">
+				<xr:TypeId>4f2d1be0-0554-4ebe-a30c-96384db64f5c</xr:TypeId>
+				<xr:ValueId>1b0d43cf-b954-4411-89e3-dbfa9f40f9d7</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Forms</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Forms</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Hierarchical>false</Hierarchical>
+			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
+			<LimitLevelCount>false</LimitLevelCount>
+			<LevelCount>2</LevelCount>
+			<FoldersOnTop>true</FoldersOnTop>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Owners>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccountingRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccumulationRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Catalogs</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfAccounts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfCharacteristicTypes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonForms</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.DataProcessors</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Documents</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Enums</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.InformationRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Reports</xr:Item>
+			</Owners>
+			<SubordinationUse>ToItems</SubordinationUse>
+			<CodeLength>9</CodeLength>
+			<DescriptionLength>25</DescriptionLength>
+			<CodeType>String</CodeType>
+			<CodeAllowedLength>Variable</CodeAllowedLength>
+			<CodeSeries>WholeCatalog</CodeSeries>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
+			<DefaultPresentation>AsDescription</DefaultPresentation>
+			<Characteristics/>
+			<PredefinedDataUpdate>Auto</PredefinedDataUpdate>
+			<EditType>InDialog</EditType>
+			<QuickChoice>false</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<InputByString>
+				<xr:Field>Catalog.Forms.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Forms.StandardAttribute.Code</xr:Field>
+			</InputByString>
+			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<DefaultObjectForm/>
+			<DefaultFolderForm/>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<DefaultFolderChoiceForm/>
+			<AuxiliaryObjectForm/>
+			<AuxiliaryFolderForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<AuxiliaryFolderChoiceForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<BasedOn/>
+			<DataLockFields/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>Use</FullTextSearch>
+			<ObjectPresentation/>
+			<ExtendedObjectPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<CreateOnInput>Use</CreateOnInput>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>
