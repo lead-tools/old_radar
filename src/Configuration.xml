@@ -164,6 +164,7 @@
 			<Catalog>ChartsOfCharacteristicTypes</Catalog>
 			<Catalog>ChoiceParameterLinks</Catalog>
 			<Catalog>ChoiceParameters</Catalog>
+			<Catalog>CommandGroups</Catalog>
 			<Catalog>Commands</Catalog>
 			<Catalog>CommonAttributes</Catalog>
 			<Catalog>CommonCommands</Catalog>
@@ -199,12 +200,15 @@
 			<Enum>AttributeRoles</Enum>
 			<Enum>Boolean</Enum>
 			<Enum>BusinessProcessNumberType</Enum>
+			<Enum>ButtonRepresentation</Enum>
 			<Enum>CatalogCodesSeries</Enum>
 			<Enum>CatalogCodeType</Enum>
 			<Enum>CatalogMainPresentation</Enum>
 			<Enum>ChoiceDataGetModeOnInputByString</Enum>
 			<Enum>ChoiceHistoryOnInput</Enum>
 			<Enum>ChoiceMode</Enum>
+			<Enum>CommandGroupCategory</Enum>
+			<Enum>CommandParameterUseMode</Enum>
 			<Enum>CommonAttributeAuthenticationSeparation</Enum>
 			<Enum>CommonAttributeAutoUse</Enum>
 			<Enum>CommonAttributeConfigurationExtensionsSeparation</Enum>
