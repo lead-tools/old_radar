@@ -48,6 +48,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfCharacteristicTypes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfAccounts</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccountingRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Languages</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

@@ -744,6 +744,7 @@
 			<Metadata name="Catalog.InformationRegisters.Attribute.EnableTotalsSliceLast" id="f92ac69d-8328-4c7f-bee4-4145edd11d55"/>
 			<Metadata name="Catalog.InformationRegisters.Attribute.ManagerModule" id="fcd5ef56-74ce-442b-b410-88e6e9e174d4"/>
 		</Metadata>
+		<Metadata name="Catalog.Languages" id="4a9d9f84-13d1-4535-afdb-f30174efa0c6" configVersion="15d207652761c345babc6f616c4d4e9200000000"/>
 		<Metadata name="Catalog.Modules" id="082fc08e-dd77-4134-b389-f1219686fda6" configVersion="8716539da3c9684aac0418372964514700000000">
 			<Metadata name="Catalog.Modules.Command.Parse" id="59b47365-5926-409b-acba-bff0ed99e0d4"/>
 			<Metadata name="Catalog.Modules.Attribute.Path" id="adc0ca92-0fcf-45f7-819b-0ea3cc33f561"/>
@@ -833,8 +834,11 @@
 			<Metadata name="Catalog.SessionParameters.Attribute.Synonym" id="c6d5d0af-a16d-4c7c-aba3-e4bdc739f920"/>
 		</Metadata>
 		<Metadata name="Catalog.SettingsStorages" id="3a97adee-63f7-4a44-8fb4-8492693c2a1e" configVersion="831c8ce55f238144a48b9cd0cdffcdb600000000"/>
-		<Metadata name="Catalog.Strings" id="e756f39f-ccbc-4f06-b744-122dd5c3d2d7" configVersion="d700b5ec4c28b345b29b4ddd2916d0ac00000000">
+		<Metadata name="Catalog.Strings" id="e756f39f-ccbc-4f06-b744-122dd5c3d2d7" configVersion="9c5e86482bff984a9a28e639d275173900000000">
+			<Metadata name="Catalog.Strings.TabularSection.Values.Attribute.Lang" id="05ac5d4f-6e13-4a47-bb04-a74541b199e6"/>
 			<Metadata name="Catalog.Strings.Attribute.En" id="5e816535-d292-4b37-be18-a5a374448d21"/>
+			<Metadata name="Catalog.Strings.TabularSection.Values" id="86211900-d572-40c1-af07-f87236b4e02f"/>
+			<Metadata name="Catalog.Strings.TabularSection.Values.Attribute.Value" id="91161288-cc01-4c90-9f55-e872d2d22331"/>
 			<Metadata name="Catalog.Strings.Attribute.Ru" id="c51ea4f5-af78-4125-98f3-6dab4864af6d"/>
 		</Metadata>
 		<Metadata name="Catalog.TabularSections" id="8f4c3275-28bf-494c-9dcc-39023bc594c7" configVersion="a210e6803a41e94cbd78b02576b5e80a00000000">
@@ -892,7 +896,7 @@
 		<Metadata name="CommonModule.Jobs.Module" id="d211b7cd-1399-4564-880d-91bd87487edc.0" configVersion="84b487406428964e8447ffeafce1f9c400000000"/>
 		<Metadata name="CommonModule.Jobs_ServerCall" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="8651e958229c8a48b264ed1e7d0bd85800000000"/>
 		<Metadata name="CommonModule.Jobs_ServerCall.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="ffde179d32b9e445a562480bf3afcfda00000000"/>
-		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="bd47941f9e3f9c469435b9c8d6b1616a00000000"/>
+		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="4397a0e0f6f9ee40a7f5d124c84a550700000000"/>
 		<Metadata name="Constant.ChunkSize" id="ed96ac09-764e-4003-ba7d-5edb924ec7ef" configVersion="158878961de44d43b33cfecb904ee0c000000000"/>
 		<Metadata name="Constant.ExternalDataProcessorsPath" id="06a7e8dc-c92b-49ff-8577-1eb66614d63f" configVersion="5ec8c9fdc7e8cd40b2d9df2e708e6eeb00000000"/>
 		<Metadata name="Constant.MaxJobs" id="df0dbc3c-1499-405e-9e4c-189af2f67c41" configVersion="240c281f1279254b943c9fb5405f9dfc00000000"/>
@@ -1114,7 +1118,7 @@
 		<Metadata name="Language.Русский" id="562bba67-1c23-4b76-95d4-8c4b9e6e14d8" configVersion="fd6ef2f1aa52784992a11236fb75857c00000000"/>
 		<Metadata name="Role.Admin" id="667d9ee4-fae2-4d91-bf90-485eceff21e3" configVersion="de4c8717bf38df46aed540df235bb00c00000000"/>
 		<Metadata name="Role.Admin.Rights" id="667d9ee4-fae2-4d91-bf90-485eceff21e3.0" configVersion="c91e8c7750bd104fb34ee5b671f8a6b400000000"/>
-		<Metadata name="Subsystem.Meta" id="1756909f-7da2-4a37-9e16-7ac74c8ba4fb" configVersion="ecd451de42656e48bf177e62acd0a30c00000000"/>
+		<Metadata name="Subsystem.Meta" id="1756909f-7da2-4a37-9e16-7ac74c8ba4fb" configVersion="3648e13927cba346bdcd5cc05a9550ed00000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.AccountingRegisters" id="b3fc6045-21b9-4cdc-9b53-2a194deec7b7" configVersion="78a7f325f1d8b44995895c4661a89e4900000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.AccumulationRegisters" id="f3e6e447-32cb-48c2-a80b-a59111d238c2" configVersion="c76194fc28b98c4a92da5a61da827c5600000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.Catalogs" id="8748fefe-6f2d-4d1d-ad06-7b6425538259" configVersion="85589b67377ae040aeaeab750032abde00000000"/>
