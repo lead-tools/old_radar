@@ -45,6 +45,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.SettingsStorages</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonAttributes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonForms</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfCharacteristicTypes</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
@@ -60,6 +61,7 @@
 			<Subsystem>Reports</Subsystem>
 			<Subsystem>CommonAttributes</Subsystem>
 			<Subsystem>CommonForms</Subsystem>
+			<Subsystem>ChartsOfCharacteristicTypes</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

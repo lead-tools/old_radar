@@ -190,6 +190,7 @@
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
+			<Catalog>ChartsOfCharacteristicTypes</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>

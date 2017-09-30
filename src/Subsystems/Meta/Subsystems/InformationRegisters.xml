@@ -43,6 +43,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Values</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.CreateOnInput</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.InformationRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.DataHistoryUse</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
