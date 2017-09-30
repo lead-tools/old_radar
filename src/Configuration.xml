@@ -159,6 +159,7 @@
 			<Catalog>AccumulationRegisters</Catalog>
 			<Catalog>Attributes</Catalog>
 			<Catalog>Catalogs</Catalog>
+			<Catalog>ChartsOfCharacteristicTypes</Catalog>
 			<Catalog>ChoiceParameterLinks</Catalog>
 			<Catalog>ChoiceParameters</Catalog>
 			<Catalog>Commands</Catalog>
@@ -190,7 +191,7 @@
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
-			<Catalog>ChartsOfCharacteristicTypes</Catalog>
+			<Catalog>ChartsOfAccounts</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>

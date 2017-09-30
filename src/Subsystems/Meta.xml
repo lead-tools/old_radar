@@ -46,6 +46,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonAttributes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonForms</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfCharacteristicTypes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfAccounts</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
@@ -62,6 +63,7 @@
 			<Subsystem>CommonAttributes</Subsystem>
 			<Subsystem>CommonForms</Subsystem>
 			<Subsystem>ChartsOfCharacteristicTypes</Subsystem>
+			<Subsystem>ChartsOfAccounts</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
