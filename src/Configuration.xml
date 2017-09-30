@@ -156,9 +156,11 @@
 			<Constant>ExternalDataProcessorsPath</Constant>
 			<Constant>MaxJobs</Constant>
 			<Constant>ChunkSize</Constant>
+			<Catalog>AccountingRegisters</Catalog>
 			<Catalog>AccumulationRegisters</Catalog>
 			<Catalog>Attributes</Catalog>
 			<Catalog>Catalogs</Catalog>
+			<Catalog>ChartsOfAccounts</Catalog>
 			<Catalog>ChartsOfCharacteristicTypes</Catalog>
 			<Catalog>ChoiceParameterLinks</Catalog>
 			<Catalog>ChoiceParameters</Catalog>
@@ -191,7 +193,6 @@
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
-			<Catalog>ChartsOfAccounts</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>

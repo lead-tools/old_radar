@@ -1,6 +1,61 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.5">
 	<ConfigVersions>
+		<Metadata name="Catalog.AccountingRegisters" id="a1c0e335-963a-4d16-a1ec-a7c5a6ed3904" configVersion="140687ed12bdab4cb6a67308fa46dd5200000000">
+			<Metadata name="Catalog.AccountingRegisters.Attribute.ManagerModule" id="03d12f80-0216-45f7-88d9-687c12a84360"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Commands" id="03e8ce8a-5525-47c9-9c61-dbf5022c7642"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.Synonym" id="048997de-0b39-4694-a7e7-8212ea5c6a89"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.ExtendedEdit" id="0b3a9cdd-4f77-4d0b-964d-d129593cc977"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.FullTextSearch" id="0b6f4a63-8350-4e7f-960c-4c10b0f6c0a5"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.Comment" id="0bfa3c9a-8bf7-4518-9aa2-4595b473b58b"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.DataLockControlMode" id="0c3a9e2d-2353-4b7e-af73-88d1a62c440a"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.ToolTip" id="0c8df934-f6ac-4db1-9648-4b5971999803"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.ChoiceParameterLinks" id="0ecf5251-c265-49d8-9a8a-a31aba6d0419"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.MinValue" id="11a2cab0-053f-46e6-9970-b85cc4ded956"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.CreateOnInput" id="13e54ed1-aa79-4833-b278-f713e2ec0abc"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.ChartOfAccounts" id="18e2f21a-aa5e-4e82-a15e-db0ca81c3ce6"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.DefaultListForm" id="1d0c2136-a4be-4f47-b2b4-21956d462579"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Forms" id="28fca551-eb08-4aed-ac5e-2b5a233a71ed"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.LinkByType" id="2b9acecd-9731-4f92-8301-2891d6fe74e5"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.ChoiceHistoryOnInput" id="2c7a813a-c420-4f49-bec7-4e238477df39"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.Attribute" id="33c9a31b-64e4-4d7d-8a69-81e256d3b29e"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.ChoiceFoldersAndItems" id="37325bcf-ff4b-4088-bff3-d17a364d1985"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.RecordSetModule" id="380b214c-ef74-48a3-873e-230a23551e44"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.Explanation" id="3933fb96-1f76-47ca-94d4-75433fb67977"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.Name" id="4da5f80c-c27d-45da-8f60-c020b73c3340"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.Format" id="52184487-a790-4747-8c0b-b2fc0dcd4a9b"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Commands.Attribute.Object" id="547296ee-dba9-4af5-86c4-8cf934912020"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.UseStandardCommands" id="5a7516fb-a67c-4bbb-b57d-1270dda1a5c9"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.ListPresentation" id="5df7b00a-19dc-44de-9c40-71a1e8f31802"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Templates.Attribute.Object" id="5e062379-0a56-4f62-8c48-39bb1fad645f"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.MarkNegatives" id="62864f40-9069-40fc-9f36-098f6834052d"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.MultiLine" id="6a4113ac-5908-4afb-9d08-eaa70ca84af9"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.FillFromFillingValue" id="6d7460e3-79b2-4b73-9a3c-39808a2b9d6b"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.ChoiceParameters" id="6f2f09ce-454f-47a3-8e1d-fa5a0843a19d"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.Mask" id="787f9ab0-a2e3-4271-9d24-ffb5428ba24f"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.EditFormat" id="8469edcd-c7b3-48c0-bca9-a456d435c634"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.MaxValue" id="890fb4bf-3766-4f21-bd12-5501c32821e6"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.Help" id="90417c0e-f3d7-4aca-a8aa-82a39cd7f3cc"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Templates" id="9251ccb9-dc02-4fe2-a31d-f47991512e52"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Forms.Attribute.Object" id="990610ea-f950-46a9-bd98-eec71cb70f54"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.FillChecking" id="9b7caa03-6077-4916-a2c9-d21217a90d22"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.QuickChoice" id="a135c2a2-b605-482f-971f-e262915d3bd9"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.IncludeHelpInContents" id="a3b2546a-c4b7-4fa7-b40c-e53e189189d6"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.AuxiliaryListForm" id="a4f44a4f-03e1-480c-8fc2-1018df7e9b50"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.EnableTotalsSplitting" id="a878a3cc-efea-4154-97d9-a4aea9f0fc79"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.ExtendedListPresentation" id="b57d303c-e882-4d53-a254-6fafbf38db60"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.Role" id="bd9d6131-654b-40c3-ac60-19a8fc13dc97"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.PeriodAdjustmentLength" id="c74ec5dd-9cbb-4882-a898-aca9099e934b"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.ChoiceForm" id="ccbcd6f2-878c-4cbf-b40f-69cd54490f39"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.Comment" id="dc85c80c-5a96-4327-b93e-2ac185a99d4b"/>
+			<Metadata name="Catalog.AccountingRegisters.Attribute.Correspondence" id="debc44b5-a70c-483a-b6cc-137686b77a5a"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.FullTextSearch" id="e7e68fc4-6dec-43ae-b8b9-49409ad1fe99"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.PasswordMode" id="e8504859-52d3-440c-8767-ed00b5c49281"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.Synonym" id="f1e45469-9bd2-4060-b19e-f0f4ba48216f"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.Indexing" id="f7a966e4-7a16-4cff-b757-1376017d7cf2"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes.Attribute.FillValue" id="f9414e6a-cd56-4b0c-9ac3-5d1c1be94535"/>
+			<Metadata name="Catalog.AccountingRegisters.TabularSection.Attributes" id="fdc9ac1e-6376-4db3-bdf2-190a3761ab86"/>
+		</Metadata>
 		<Metadata name="Catalog.AccumulationRegisters" id="ebf76014-7442-4d27-a658-f44eab01ea02" configVersion="0a1cd239b12d4140a6e8e91379ef7bc200000000">
 			<Metadata name="Catalog.AccumulationRegisters.Attribute.EnableTotalsSplitting" id="03a20905-4720-48ca-a4f2-1877197da553"/>
 			<Metadata name="Catalog.AccumulationRegisters.TabularSection.Attributes" id="049aa596-7df5-4b55-9d0f-d6c163436f37"/>
@@ -837,7 +892,7 @@
 		<Metadata name="CommonModule.Jobs.Module" id="d211b7cd-1399-4564-880d-91bd87487edc.0" configVersion="84b487406428964e8447ffeafce1f9c400000000"/>
 		<Metadata name="CommonModule.Jobs_ServerCall" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="8651e958229c8a48b264ed1e7d0bd85800000000"/>
 		<Metadata name="CommonModule.Jobs_ServerCall.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="ffde179d32b9e445a562480bf3afcfda00000000"/>
-		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="e31f7e0a66f662448aa2df6fe81f305c00000000"/>
+		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="bd47941f9e3f9c469435b9c8d6b1616a00000000"/>
 		<Metadata name="Constant.ChunkSize" id="ed96ac09-764e-4003-ba7d-5edb924ec7ef" configVersion="158878961de44d43b33cfecb904ee0c000000000"/>
 		<Metadata name="Constant.ExternalDataProcessorsPath" id="06a7e8dc-c92b-49ff-8577-1eb66614d63f" configVersion="5ec8c9fdc7e8cd40b2d9df2e708e6eeb00000000"/>
 		<Metadata name="Constant.MaxJobs" id="df0dbc3c-1499-405e-9e4c-189af2f67c41" configVersion="240c281f1279254b943c9fb5405f9dfc00000000"/>
@@ -1059,7 +1114,8 @@
 		<Metadata name="Language.Русский" id="562bba67-1c23-4b76-95d4-8c4b9e6e14d8" configVersion="fd6ef2f1aa52784992a11236fb75857c00000000"/>
 		<Metadata name="Role.Admin" id="667d9ee4-fae2-4d91-bf90-485eceff21e3" configVersion="de4c8717bf38df46aed540df235bb00c00000000"/>
 		<Metadata name="Role.Admin.Rights" id="667d9ee4-fae2-4d91-bf90-485eceff21e3.0" configVersion="c91e8c7750bd104fb34ee5b671f8a6b400000000"/>
-		<Metadata name="Subsystem.Meta" id="1756909f-7da2-4a37-9e16-7ac74c8ba4fb" configVersion="29c2e46c3395844581f8ffa1131bed3d00000000"/>
+		<Metadata name="Subsystem.Meta" id="1756909f-7da2-4a37-9e16-7ac74c8ba4fb" configVersion="ecd451de42656e48bf177e62acd0a30c00000000"/>
+		<Metadata name="Subsystem.Meta.Subsystem.AccountingRegisters" id="b3fc6045-21b9-4cdc-9b53-2a194deec7b7" configVersion="78a7f325f1d8b44995895c4661a89e4900000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.AccumulationRegisters" id="f3e6e447-32cb-48c2-a80b-a59111d238c2" configVersion="c76194fc28b98c4a92da5a61da827c5600000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.Catalogs" id="8748fefe-6f2d-4d1d-ad06-7b6425538259" configVersion="85589b67377ae040aeaeab750032abde00000000"/>
 		<Metadata name="Subsystem.Meta.Subsystem.ChartsOfAccounts" id="35fa77e8-4f5c-4ea0-908a-3464dc76f497" configVersion="9a24a3c87004004886ac9e1434ea057300000000"/>
