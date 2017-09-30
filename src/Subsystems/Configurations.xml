@@ -2,11 +2,15 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
 	<Subsystem uuid="1756909f-7da2-4a37-9e16-7ac74c8ba4fb">
 		<Properties>
-			<Name>Meta</Name>
+			<Name>Configurations</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Meta</v8:content>
+					<v8:content>Configurations</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конфигурации</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -16,29 +20,16 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccumulationRegisters</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Attributes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Catalogs</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChoiceParameterLinks</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChoiceParameters</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Commands</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonCommands</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Constants</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Documents</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Enums</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EnumValues</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EventSubscriptions</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Files</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Forms</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.FunctionalOptions</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.InformationRegisters</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Modules</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Strings</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Pictures</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Rights</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Roles</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TabularSections</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Types</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Values</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.DocumentNumerator</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonModules</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.SessionParameters</xr:Item>
@@ -51,6 +42,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Languages</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommandGroups</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.FunctionalOptionsParameters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Configurations</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
