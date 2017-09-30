@@ -27,12 +27,12 @@
 			<Name>Types</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Типы</v8:content>
+					<v8:lang>en</v8:lang>
+					<v8:content>TypeDescriptions</v8:content>
 				</v8:item>
 				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Types</v8:content>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описания типов</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>

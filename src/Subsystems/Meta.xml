@@ -70,6 +70,7 @@
 			<Subsystem>AccountingRegisters</Subsystem>
 			<Subsystem>CommonCommands</Subsystem>
 			<Subsystem>CommandGroups</Subsystem>
+			<Subsystem>EventSubscriptions</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
