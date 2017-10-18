@@ -3857,17 +3857,17 @@
 			</TabularSection>
 			<TabularSection uuid="7e87d78a-2e78-40a6-9b30-8cd6a1a36990">
 				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.ChartsOfCharacteristicTypes.Predefined" category="TabularSection">
+					<xr:GeneratedType name="CatalogTabularSection.ChartsOfCharacteristicTypes.PredefinedItems" category="TabularSection">
 						<xr:TypeId>2eea6a75-558b-4edd-bf92-297def1db242</xr:TypeId>
 						<xr:ValueId>a5365cbc-40c2-4e81-af2c-b559dd267257</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.ChartsOfCharacteristicTypes.Predefined" category="TabularSectionRow">
+					<xr:GeneratedType name="CatalogTabularSectionRow.ChartsOfCharacteristicTypes.PredefinedItems" category="TabularSectionRow">
 						<xr:TypeId>18233795-786f-4677-8c2b-380a123f0939</xr:TypeId>
 						<xr:ValueId>1cffd009-c35f-4ee6-a928-3e389fe99efd</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>Predefined</Name>
+					<Name>PredefinedItems</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
