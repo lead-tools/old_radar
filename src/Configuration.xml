@@ -156,6 +156,7 @@
 			<Constant>ExternalDataProcessorsPath</Constant>
 			<Constant>MaxJobs</Constant>
 			<Constant>ChunkSize</Constant>
+			<CommonForm>MainPage</CommonForm>
 			<Catalog>AccountingRegisters</Catalog>
 			<Catalog>AccumulationRegisters</Catalog>
 			<Catalog>Attributes</Catalog>

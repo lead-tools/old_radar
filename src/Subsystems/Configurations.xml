@@ -43,6 +43,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommandGroups</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.FunctionalOptionsParameters</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Configurations</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Reports</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

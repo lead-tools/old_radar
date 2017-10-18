@@ -54,6 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.LinkByType</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.AttributeRoles</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TabularSections</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfCharacteristicTypes</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
