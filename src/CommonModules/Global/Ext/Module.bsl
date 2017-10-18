@@ -1,4 +1,8 @@
 ﻿
+///////////////////////////////////////////////////////////////////////////////
+
+#Region ClientServer
+
 Function JoinPath(Part1, Part2) Export
 	
 	If Right(Part1, 1) = "\" And Left(Part2, 1) = "\" Then
@@ -23,4 +27,22 @@ Function Slice(Array, Start, Count) Export
 	
 	Return Slice;
 	
-EndFunction // Slice() 
+EndFunction // Slice()
+
+#EndRegion // ClientServer
+
+///////////////////////////////////////////////////////////////////////////////
+
+#Region Server
+
+
+
+#EndRegion // Server
+
+///////////////////////////////////////////////////////////////////////////////
+
+#Region Client
+
+
+
+#EndRegion // Client

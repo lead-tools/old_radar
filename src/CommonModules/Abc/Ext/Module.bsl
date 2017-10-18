@@ -3,11 +3,15 @@
 
 #Region ClientServer
 
-Function SHA1(Module, Source) Export
+Function GetConstant(Name) Export
 	
-	Return Git_sc.SHA1(Module, Source); 
+	#If Server Then
+		Return Abc_sr.GetConstant(Name);
+	#Else
+		Return Abc_sc.GetConstant(Name);
+	#EndIf // Server
 	
-EndFunction // SHA1()
+EndFunction // GetConstant()
 
 #EndRegion // ClientServer
 
@@ -15,7 +19,12 @@ EndFunction // SHA1()
 
 #Region Server
 
-
+&AtServer	
+Function GetDataProcessor(Name) Export
+	
+	Return Abc_sr.GetDataProcessor(Name);
+	
+EndFunction // GetDataProcessor()
 
 #EndRegion // Server
 

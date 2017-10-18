@@ -898,23 +898,23 @@
 		<Metadata name="Catalog.Versions" id="c4186bb5-8fd8-46c3-88cc-2b5710c81431" configVersion="7bb32c00e8c37e42a40b21e89fc9735700000000"/>
 		<Metadata name="CommonForm.MainPage" id="4c290d2d-45e7-4413-b116-3871fd4717f9" configVersion="c181d77fbf006a4b88885933654a11f800000000"/>
 		<Metadata name="CommonForm.MainPage.Form" id="4c290d2d-45e7-4413-b116-3871fd4717f9.0" configVersion="4efdf993b094a445834d504c369dd5d300000000"/>
-		<Metadata name="CommonModule.CommonUse" id="4c96fafd-b8c4-4bf9-8fe0-370e20925ab1" configVersion="afb6c861fdbf194c84d9000f3dc8828600000000"/>
-		<Metadata name="CommonModule.CommonUse.Module" id="4c96fafd-b8c4-4bf9-8fe0-370e20925ab1.0" configVersion="8c79b4137a22a14fbef37d6392a0fbac00000000"/>
-		<Metadata name="CommonModule.CommonUse_ServerCached" id="1d583df3-ee11-4289-aa04-5575cfddfe9b" configVersion="c49a8b066dfa9c45a7e1366624d8f6f900000000"/>
-		<Metadata name="CommonModule.CommonUse_ServerCached.Module" id="1d583df3-ee11-4289-aa04-5575cfddfe9b.0" configVersion="56fb431686dad6488fef11687df4ec1200000000"/>
-		<Metadata name="CommonModule.CommonUse_ServerCall" id="125cbc11-049f-4e23-a3a8-828576eabb93" configVersion="c066cd58aba6a7469af3862b1228e88c00000000"/>
-		<Metadata name="CommonModule.CommonUse_ServerCall.Module" id="125cbc11-049f-4e23-a3a8-828576eabb93.0" configVersion="5bbe85328b532d448e1d10745afa749d00000000"/>
-		<Metadata name="CommonModule.Git" id="5af47382-01d7-47a4-8c05-513d0d6f1651" configVersion="57d9e99a97dfdc42b067e00590ab4c1400000000"/>
-		<Metadata name="CommonModule.Git.Module" id="5af47382-01d7-47a4-8c05-513d0d6f1651.0" configVersion="c843901305d8a743a7aec4786202e8eb00000000"/>
-		<Metadata name="CommonModule.Git_ServerCall" id="e15eeee5-14da-434b-882b-4e12dbc2ccaf" configVersion="edd70bc5292def48a64491a1f4a1285300000000"/>
-		<Metadata name="CommonModule.Git_ServerCall.Module" id="e15eeee5-14da-434b-882b-4e12dbc2ccaf.0" configVersion="3b32e6046766194495c7702d76729fce00000000"/>
-		<Metadata name="CommonModule.Global" id="bf9172d9-f4ca-47d6-9e5a-e226a9cb9bbf" configVersion="cef5c072b354bd4b94e965c33492fdaa00000000"/>
-		<Metadata name="CommonModule.Global.Module" id="bf9172d9-f4ca-47d6-9e5a-e226a9cb9bbf.0" configVersion="45cc2d452b97a04f95a1e37a18334c1700000000"/>
-		<Metadata name="CommonModule.Jobs" id="d211b7cd-1399-4564-880d-91bd87487edc" configVersion="2e8136fef4510a4a876b7eaae46fea4900000000"/>
-		<Metadata name="CommonModule.Jobs.Module" id="d211b7cd-1399-4564-880d-91bd87487edc.0" configVersion="84b487406428964e8447ffeafce1f9c400000000"/>
-		<Metadata name="CommonModule.Jobs_ServerCall" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="8651e958229c8a48b264ed1e7d0bd85800000000"/>
-		<Metadata name="CommonModule.Jobs_ServerCall.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="ffde179d32b9e445a562480bf3afcfda00000000"/>
-		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="8f942c7deee7af4db91660acc3a1c6a400000000"/>
+		<Metadata name="CommonModule.Abc" id="4c96fafd-b8c4-4bf9-8fe0-370e20925ab1" configVersion="67f8faca8ddfc241ba663dd9ee896b7100000000"/>
+		<Metadata name="CommonModule.Abc.Module" id="4c96fafd-b8c4-4bf9-8fe0-370e20925ab1.0" configVersion="86d8a23b6edefa4eba2e2dfee274ca8000000000"/>
+		<Metadata name="CommonModule.Abc_sc" id="125cbc11-049f-4e23-a3a8-828576eabb93" configVersion="6eec98970d50b344900b9dfdd74f518300000000"/>
+		<Metadata name="CommonModule.Abc_sc.Module" id="125cbc11-049f-4e23-a3a8-828576eabb93.0" configVersion="349e7afb645c8b4db3cd576df62a727000000000"/>
+		<Metadata name="CommonModule.Abc_sr" id="1d583df3-ee11-4289-aa04-5575cfddfe9b" configVersion="e3469a2660e2b54988a4fba998f7d50500000000"/>
+		<Metadata name="CommonModule.Abc_sr.Module" id="1d583df3-ee11-4289-aa04-5575cfddfe9b.0" configVersion="56fb431686dad6488fef11687df4ec1200000000"/>
+		<Metadata name="CommonModule.Git" id="5af47382-01d7-47a4-8c05-513d0d6f1651" configVersion="cddf6fbfdea4c142a520b07a97e8d09400000000"/>
+		<Metadata name="CommonModule.Git.Module" id="5af47382-01d7-47a4-8c05-513d0d6f1651.0" configVersion="f8ce17879fd3ec43a36cd1de639dbc8d00000000"/>
+		<Metadata name="CommonModule.Git_sc" id="e15eeee5-14da-434b-882b-4e12dbc2ccaf" configVersion="c66401263e807a4aba07a6d222fc06d500000000"/>
+		<Metadata name="CommonModule.Git_sc.Module" id="e15eeee5-14da-434b-882b-4e12dbc2ccaf.0" configVersion="3b32e6046766194495c7702d76729fce00000000"/>
+		<Metadata name="CommonModule.Global" id="bf9172d9-f4ca-47d6-9e5a-e226a9cb9bbf" configVersion="d9a9feda6291d94897eb491b0cfb539f00000000"/>
+		<Metadata name="CommonModule.Global.Module" id="bf9172d9-f4ca-47d6-9e5a-e226a9cb9bbf.0" configVersion="24c80652c37e1847b6ed7ea1e19649b700000000"/>
+		<Metadata name="CommonModule.Jobs" id="d211b7cd-1399-4564-880d-91bd87487edc" configVersion="64cb3792b5fc704699e84e45e7ff188300000000"/>
+		<Metadata name="CommonModule.Jobs.Module" id="d211b7cd-1399-4564-880d-91bd87487edc.0" configVersion="6710b1b932c7494597ab49f4135c5e7300000000"/>
+		<Metadata name="CommonModule.Jobs_sc" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="cecf3dcaa242b54f972213b326564eb200000000"/>
+		<Metadata name="CommonModule.Jobs_sc.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="4c14f4d1be1fbf4f827127735990d62300000000"/>
+		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="07abea9f7f29724ba69dfcef724eac9400000000"/>
 		<Metadata name="Configuration.Radar.ClientApplicationInterface" id="ae33f108-a64b-420a-95b0-a3a260a403e9.b" configVersion="a177049b24824c4baf656ce8a94a29ea00000000"/>
 		<Metadata name="Configuration.Radar.HomePageWorkArea" id="ae33f108-a64b-420a-95b0-a3a260a403e9.8" configVersion="8aa31517af7fe04488213263076eca6500000000"/>
 		<Metadata name="Constant.ChunkSize" id="ed96ac09-764e-4003-ba7d-5edb924ec7ef" configVersion="158878961de44d43b33cfecb904ee0c000000000"/>
