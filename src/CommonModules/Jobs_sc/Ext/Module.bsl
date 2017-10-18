@@ -8,7 +8,7 @@ EndProcedure // StartJob()
 Procedure StartParseProjectModules(Project) Export
 	
 	Modules = Catalogs.Projects.Modules(Project); 	
-	MaxJobs = Max(CommonUse.GetConstant("MaxJobs"), 1);
+	MaxJobs = Max(Abc.GetConstant("MaxJobs"), 1);
 	QueueID = New UUID;
 	
 	Record = InformationRegisters.JobQueue.CreateRecordManager();
@@ -21,7 +21,7 @@ Procedure StartParseProjectModules(Project) Export
 		Parameters = New Array;
 		Parameters.Add(Modules);
 		Parameters.Add(QueueID);
-		StartJob("Jobs_ServerCall.StartParseModules", Parameters);
+		StartJob("Jobs_sc.StartParseModules", Parameters);
 	EndDo; 
 	
 EndProcedure // StartParseProjectModules() 
@@ -54,7 +54,7 @@ EndProcedure // StartParseModules()
 
 Function TakeChunk(Array, QueueID)
 	
-	ChunkSize = Max(CommonUse.GetConstant("ChunkSize"), 1);	
+	ChunkSize = Max(Abc.GetConstant("ChunkSize"), 1);	
 	
 	DataLock = New DataLock;
 	LockItem = DataLock.Add("InformationRegister.JobQueue");
@@ -93,7 +93,7 @@ Procedure ParseModule(Module) Export
 		
 	GitSHA1 = Git.SHA1(Module, Source);
 	
-	BSLParser = CommonUse.GetDataProcessor("BSLParser");
+	BSLParser = Abc.GetDataProcessor("BSLParser");
 	BSLParser.Location = True;
 	Parser = BSLParser.Parser(Mid(Source, 2));
 	Parser.Scanner.Path = FilePath;

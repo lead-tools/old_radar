@@ -145,14 +145,14 @@
 			<Subsystem>Configurations</Subsystem>
 			<Subsystem>Radar</Subsystem>
 			<Role>Admin</Role>
-			<CommonModule>CommonUse</CommonModule>
-			<CommonModule>CommonUse_ServerCached</CommonModule>
-			<CommonModule>CommonUse_ServerCall</CommonModule>
+			<CommonModule>Abc</CommonModule>
+			<CommonModule>Abc_sc</CommonModule>
+			<CommonModule>Abc_sr</CommonModule>
 			<CommonModule>Git</CommonModule>
-			<CommonModule>Git_ServerCall</CommonModule>
+			<CommonModule>Git_sc</CommonModule>
 			<CommonModule>Global</CommonModule>
 			<CommonModule>Jobs</CommonModule>
-			<CommonModule>Jobs_ServerCall</CommonModule>
+			<CommonModule>Jobs_sc</CommonModule>
 			<Constant>ExternalDataProcessorsPath</Constant>
 			<Constant>MaxJobs</Constant>
 			<Constant>ChunkSize</Constant>
