@@ -26,6 +26,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ChunkSize</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Projects</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Versions</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.MetaUUID</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
