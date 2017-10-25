@@ -150,7 +150,6 @@
 			<CommonModule>Abc_sr</CommonModule>
 			<CommonModule>Git</CommonModule>
 			<CommonModule>Git_sc</CommonModule>
-			<CommonModule>Global</CommonModule>
 			<CommonModule>Jobs</CommonModule>
 			<CommonModule>Jobs_sc</CommonModule>
 			<CommonModule>Meta</CommonModule>

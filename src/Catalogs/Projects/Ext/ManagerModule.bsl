@@ -24,7 +24,7 @@ EndFunction // AttributeValue()
 
 Function AttributeValues(Ref, AttributeNames) Export
 	
-	Return Abc.AttributeValues(Ref, AttributeNames, "Catalog.Projects");
+	Return Abc.AttributeValues(Ref, AttributeNames);
 	
 EndFunction // AttributeValues()
 
