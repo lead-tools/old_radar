@@ -77,7 +77,7 @@ Function TakeChunk(Array, QueueID)
 	
 	CommitTransaction();
 	
-	Return Slice(Array, Taken, ChunkSize);
+	Return Abc.Slice(Array, Taken, ChunkSize);
 	
 EndFunction // TakeChunk()
 
@@ -86,7 +86,7 @@ Procedure ParseModule(Module) Export
 	ModuleAttributes = Catalogs.Modules.AttributeValues(Module, "Owner, Path");
 	ProjectPath = Catalogs.Projects.AttributeValue(ModuleAttributes.Owner, "Path"); 
 	
-	FilePath = JoinPath(ProjectPath, ModuleAttributes.Path);
+	FilePath = Abc.JoinPath(ProjectPath, ModuleAttributes.Path);
 	
 	DataReader = New DataReader(FilePath, TextEncoding.UTF8); 
 	Source = DataReader.ReadChars();

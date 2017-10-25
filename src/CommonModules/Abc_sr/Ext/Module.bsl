@@ -5,7 +5,7 @@ Function GetDataProcessor(Name) Export
 		DataProcessor = DataProcessors[Name].Create();
 	Else
 		ExternalDataProcessorsPath = Constants.ExternalDataProcessorsPath.Get();
-		DataProcessor = ExternalDataProcessors.Create(JoinPath(ExternalDataProcessorsPath, Name) + ".epf");
+		DataProcessor = ExternalDataProcessors.Create(Abc.JoinPath(ExternalDataProcessorsPath, Name) + ".epf");
 	EndIf; 
 		
 	Return DataProcessor;

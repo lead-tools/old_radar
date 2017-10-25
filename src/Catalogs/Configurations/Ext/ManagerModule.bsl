@@ -7,13 +7,13 @@ EndFunction // AttributeValue()
 
 Function AttributeValues(Ref, AttributeNames) Export
 	
-	Return Abc.AttributeValues(Ref, AttributeNames, "Catalog.Configurations");
+	Return Abc.AttributeValues(Ref, AttributeNames);
 	
 EndFunction // AttributeValues()
 
 Procedure Load(Configuration, Path) Export
 		
-	Data = Abc.ReadMetadataXML(JoinPath(Path, "Configuration.xml"));
+	Data = Abc.ReadMetadataXML(Abc.JoinPath(Path, "Configuration.xml"));
 	
 	LoadCatalogs(Configuration, Path, Data.Configuration.ChildObjects.Catalog);
 	
@@ -21,16 +21,16 @@ EndProcedure // Load()
 
 Procedure LoadCatalogs(Configuration, Path, List)
 	
-	CatalogsPath = JoinPath(Path, "Catalogs");
+	CatalogsPath = Abc.JoinPath(Path, "Catalogs");
 	
 	If TypeOf(List) = Type("String") Then
 		
-		Catalogs.Catalogs.Load(Configuration, JoinPath(CatalogsPath, List));
+		Catalogs.Catalogs.Load(Configuration, Abc.JoinPath(CatalogsPath, List));
 		
 	ElsIf TypeOf(List) = Type("XDTOList") Then
 		
 		For Each Item In List Do
-			Catalogs.Catalogs.Load(Configuration, JoinPath(CatalogsPath, Item));
+			Catalogs.Catalogs.Load(Configuration, Abc.JoinPath(CatalogsPath, Item));
 		EndDo; 
 		
 	Else

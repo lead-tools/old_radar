@@ -111,7 +111,7 @@
 			<Metadata name="Catalog.AccumulationRegisters.Attribute.Synonym" id="ffac1af5-2ad9-465f-8777-1cf2fac5d15d"/>
 		</Metadata>
 		<Metadata name="Catalog.Attributes" id="1676a895-51c7-4690-8651-5a24b706edf7" configVersion="7f54cc0db2dde9489ede3766695da91c00000000"/>
-		<Metadata name="Catalog.Catalogs" id="84364d42-d5ba-4e4d-ba6b-e39716ec3fc0" configVersion="c7b8679acc57ab4d91efb55ae877c4b000000000">
+		<Metadata name="Catalog.Catalogs" id="84364d42-d5ba-4e4d-ba6b-e39716ec3fc0" configVersion="91ca79c8785c264ba5cd6181e3c48dde00000000">
 			<Metadata name="Catalog.Catalogs.TabularSection.TabularSections" id="02240b92-9ff4-495b-b69e-d373dcbf3006"/>
 			<Metadata name="Catalog.Catalogs.Attribute.LimitLevelCount" id="02880313-5800-4e43-bd55-685defbdd466"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.ChoiceFoldersAndItems" id="0d505942-95a9-459c-a2b2-49c5653b0733"/>
@@ -209,7 +209,7 @@
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.PasswordMode" id="fcf34b0d-8bc3-4ea8-8028-1cba441fdd2b"/>
 			<Metadata name="Catalog.Catalogs.Attribute.Autonumbering" id="fdb04486-3b44-49c0-91e4-481f1adac886"/>
 		</Metadata>
-		<Metadata name="Catalog.Catalogs.ManagerModule" id="84364d42-d5ba-4e4d-ba6b-e39716ec3fc0.3" configVersion="561845bdbc14da4cbeb89c8fe368420f00000000"/>
+		<Metadata name="Catalog.Catalogs.ManagerModule" id="84364d42-d5ba-4e4d-ba6b-e39716ec3fc0.3" configVersion="02f848896c781c4c93680ddc2d03d71700000000"/>
 		<Metadata name="Catalog.ChartsOfAccounts" id="98e0a856-34a4-407b-9f4d-9df630f1282d" configVersion="7d8ab5674bcb4940a0171581926d111300000000">
 			<Metadata name="Catalog.ChartsOfAccounts.Attribute.AuxiliaryObjectForm" id="0bf79291-4bb2-4f57-a20e-fa1bcc2da07f"/>
 			<Metadata name="Catalog.ChartsOfAccounts.TabularSection.Attributes.Attribute.ChoiceFoldersAndItems" id="0d5b37c2-9b67-4f5b-93af-49c8c05ab2e7"/>
@@ -478,12 +478,12 @@
 			<Metadata name="Catalog.CommonModules.Attribute.Comment" id="b4bdf516-1e49-4c6d-b682-70740285df5c"/>
 			<Metadata name="Catalog.CommonModules.Attribute.Server" id="bee73e0b-471a-40a1-9b6d-f0ba9aaa39ea"/>
 		</Metadata>
-		<Metadata name="Catalog.Configurations" id="99c3da49-f6a7-4e6b-aba1-fcd2d3180c4f" configVersion="af0835885e98d8459d9c8b557593698d00000000">
+		<Metadata name="Catalog.Configurations" id="99c3da49-f6a7-4e6b-aba1-fcd2d3180c4f" configVersion="f6d183250cfc484fa2bc584bb883082c00000000">
 			<Metadata name="Catalog.Configurations.Attribute.Path" id="57fde8a5-563a-4a6c-9165-ae39bbfa865f"/>
 			<Metadata name="Catalog.Configurations.Command.Load" id="d0d1bded-34c6-4685-af35-ecd12763ef1e"/>
 		</Metadata>
 		<Metadata name="Catalog.Configurations.Command.Load.CommandModule" id="d0d1bded-34c6-4685-af35-ecd12763ef1e.2" configVersion="446cb4ff72d1334aaa3de3393ff509bd00000000"/>
-		<Metadata name="Catalog.Configurations.ManagerModule" id="99c3da49-f6a7-4e6b-aba1-fcd2d3180c4f.3" configVersion="90b06bff95f6f44580cb41ee6b2e15fd00000000"/>
+		<Metadata name="Catalog.Configurations.ManagerModule" id="99c3da49-f6a7-4e6b-aba1-fcd2d3180c4f.3" configVersion="770972860d98f94dad150fcc9bfa57df00000000"/>
 		<Metadata name="Catalog.Constants" id="66a56acd-055c-4199-93ba-e6b268b59156" configVersion="9a77cc05dd7cb14b9797e35b3828492900000000">
 			<Metadata name="Catalog.Constants.Attribute.ValueManagerModule" id="0f5fe1da-bcbb-4f09-b476-bad4af3b1fac"/>
 			<Metadata name="Catalog.Constants.Attribute.ExtendedPresentation" id="307ffcda-d1b9-48b7-bdf8-e782e2be2a53"/>
@@ -767,23 +767,23 @@
 			<Metadata name="Catalog.InformationRegisters.Attribute.ManagerModule" id="fcd5ef56-74ce-442b-b410-88e6e9e174d4"/>
 		</Metadata>
 		<Metadata name="Catalog.Languages" id="4a9d9f84-13d1-4535-afdb-f30174efa0c6" configVersion="baeccd339c62fa4ca1bc34561291114e00000000"/>
-		<Metadata name="Catalog.Modules" id="082fc08e-dd77-4134-b389-f1219686fda6" configVersion="3eb998cb8fea96418342421a92f3928c00000000">
+		<Metadata name="Catalog.Modules" id="082fc08e-dd77-4134-b389-f1219686fda6" configVersion="2e0444a3d6498747bd6163e54bfb0fed00000000">
 			<Metadata name="Catalog.Modules.Command.Parse" id="59b47365-5926-409b-acba-bff0ed99e0d4"/>
 			<Metadata name="Catalog.Modules.Attribute.Path" id="adc0ca92-0fcf-45f7-819b-0ea3cc33f561"/>
 		</Metadata>
 		<Metadata name="Catalog.Modules.Command.Parse.CommandModule" id="59b47365-5926-409b-acba-bff0ed99e0d4.2" configVersion="51011bff7c540a4bbeaf0ba30f9f241300000000"/>
-		<Metadata name="Catalog.Modules.ManagerModule" id="082fc08e-dd77-4134-b389-f1219686fda6.3" configVersion="f31664f4f9bf70408f08a7cc8a51f88c00000000"/>
+		<Metadata name="Catalog.Modules.ManagerModule" id="082fc08e-dd77-4134-b389-f1219686fda6.3" configVersion="af157fbc25571343baaa95c2c261c32100000000"/>
 		<Metadata name="Catalog.Pictures" id="1d108624-9f40-41c3-b5e9-7ff03e3cb631" configVersion="1c227b0f5d9c2a4fac36404f558e6a2c00000000">
 			<Metadata name="Catalog.Pictures.Attribute.LoadTransparent" id="b6bff828-2b36-4ad2-aa6d-16b0d9573ee9"/>
 		</Metadata>
-		<Metadata name="Catalog.Projects" id="03e142ab-9045-42df-9bcc-b3b06c60ff6e" configVersion="006a8784cd74d94fb49b0418af6968f300000000">
+		<Metadata name="Catalog.Projects" id="03e142ab-9045-42df-9bcc-b3b06c60ff6e" configVersion="0aafe56931760d41ace454a21f7c98c800000000">
 			<Metadata name="Catalog.Projects.Command.LoadModules" id="7c13a887-c8f6-4cbb-b9a3-8cc6d936c1bf"/>
 			<Metadata name="Catalog.Projects.Command.ParseModules" id="921f9704-555d-4c76-9024-cf3ecc91c48b"/>
 			<Metadata name="Catalog.Projects.Attribute.Path" id="93794baf-e58b-4921-9fcc-35e8481e1dec"/>
 		</Metadata>
 		<Metadata name="Catalog.Projects.Command.LoadModules.CommandModule" id="7c13a887-c8f6-4cbb-b9a3-8cc6d936c1bf.2" configVersion="2a395cf8b826ff449f402af1ae4ae9ec00000000"/>
 		<Metadata name="Catalog.Projects.Command.ParseModules.CommandModule" id="921f9704-555d-4c76-9024-cf3ecc91c48b.2" configVersion="b5f20c876edaeb45bb681ddc4ce75ead00000000"/>
-		<Metadata name="Catalog.Projects.ManagerModule" id="03e142ab-9045-42df-9bcc-b3b06c60ff6e.3" configVersion="5572ef507f99d14a98744b42f4d1679800000000"/>
+		<Metadata name="Catalog.Projects.ManagerModule" id="03e142ab-9045-42df-9bcc-b3b06c60ff6e.3" configVersion="9d89f2ca97afc645b69029c9c566930c00000000"/>
 		<Metadata name="Catalog.Reports" id="e4771d28-a342-472a-af3f-ed84d1ea46ff" configVersion="f8fa9f4a3b778f4385e59d1d0eeb73e500000000">
 			<Metadata name="Catalog.Reports.Attribute.IncludeHelpInContents" id="095a5e82-7310-45cf-b211-fc7e1fb55fb9"/>
 			<Metadata name="Catalog.Reports.Attribute.VariantsStorage" id="0ddc2c59-5af2-46bd-bcb3-d142a4c38726"/>
@@ -904,27 +904,25 @@
 		<Metadata name="Catalog.Versions" id="c4186bb5-8fd8-46c3-88cc-2b5710c81431" configVersion="7bb32c00e8c37e42a40b21e89fc9735700000000"/>
 		<Metadata name="CommonForm.MainPage" id="4c290d2d-45e7-4413-b116-3871fd4717f9" configVersion="c181d77fbf006a4b88885933654a11f800000000"/>
 		<Metadata name="CommonForm.MainPage.Form" id="4c290d2d-45e7-4413-b116-3871fd4717f9.0" configVersion="4efdf993b094a445834d504c369dd5d300000000"/>
-		<Metadata name="CommonModule.Abc" id="4c96fafd-b8c4-4bf9-8fe0-370e20925ab1" configVersion="b56f0cd47fbadf4eb276e6b7318e7e7a00000000"/>
-		<Metadata name="CommonModule.Abc.Module" id="4c96fafd-b8c4-4bf9-8fe0-370e20925ab1.0" configVersion="0d7cda9579fd994b9bf8458fd62387ec00000000"/>
+		<Metadata name="CommonModule.Abc" id="4c96fafd-b8c4-4bf9-8fe0-370e20925ab1" configVersion="93d819daa327f541a3893c8132799a6700000000"/>
+		<Metadata name="CommonModule.Abc.Module" id="4c96fafd-b8c4-4bf9-8fe0-370e20925ab1.0" configVersion="9b3b6e62f8a29a4798d8b67e35d6c99200000000"/>
 		<Metadata name="CommonModule.Abc_sc" id="125cbc11-049f-4e23-a3a8-828576eabb93" configVersion="aeb099754c65b94ea18031568ad2524500000000"/>
 		<Metadata name="CommonModule.Abc_sc.Module" id="125cbc11-049f-4e23-a3a8-828576eabb93.0" configVersion="349e7afb645c8b4db3cd576df62a727000000000"/>
-		<Metadata name="CommonModule.Abc_sr" id="1d583df3-ee11-4289-aa04-5575cfddfe9b" configVersion="3dcbb1172deed545a8a3aa13d75a89ac00000000"/>
-		<Metadata name="CommonModule.Abc_sr.Module" id="1d583df3-ee11-4289-aa04-5575cfddfe9b.0" configVersion="c130be5a9cdcca4dad252a3fe620f79500000000"/>
+		<Metadata name="CommonModule.Abc_sr" id="1d583df3-ee11-4289-aa04-5575cfddfe9b" configVersion="8e37c49fdb15f245872276d4be9937a800000000"/>
+		<Metadata name="CommonModule.Abc_sr.Module" id="1d583df3-ee11-4289-aa04-5575cfddfe9b.0" configVersion="4659fa5e1c9242448ad76b306974c71b00000000"/>
 		<Metadata name="CommonModule.Git" id="5af47382-01d7-47a4-8c05-513d0d6f1651" configVersion="cddf6fbfdea4c142a520b07a97e8d09400000000"/>
 		<Metadata name="CommonModule.Git.Module" id="5af47382-01d7-47a4-8c05-513d0d6f1651.0" configVersion="f8ce17879fd3ec43a36cd1de639dbc8d00000000"/>
 		<Metadata name="CommonModule.Git_sc" id="e15eeee5-14da-434b-882b-4e12dbc2ccaf" configVersion="c66401263e807a4aba07a6d222fc06d500000000"/>
 		<Metadata name="CommonModule.Git_sc.Module" id="e15eeee5-14da-434b-882b-4e12dbc2ccaf.0" configVersion="3b32e6046766194495c7702d76729fce00000000"/>
-		<Metadata name="CommonModule.Global" id="bf9172d9-f4ca-47d6-9e5a-e226a9cb9bbf" configVersion="d9a9feda6291d94897eb491b0cfb539f00000000"/>
-		<Metadata name="CommonModule.Global.Module" id="bf9172d9-f4ca-47d6-9e5a-e226a9cb9bbf.0" configVersion="24c80652c37e1847b6ed7ea1e19649b700000000"/>
 		<Metadata name="CommonModule.Jobs" id="d211b7cd-1399-4564-880d-91bd87487edc" configVersion="64cb3792b5fc704699e84e45e7ff188300000000"/>
 		<Metadata name="CommonModule.Jobs.Module" id="d211b7cd-1399-4564-880d-91bd87487edc.0" configVersion="6710b1b932c7494597ab49f4135c5e7300000000"/>
-		<Metadata name="CommonModule.Jobs_sc" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="cecf3dcaa242b54f972213b326564eb200000000"/>
-		<Metadata name="CommonModule.Jobs_sc.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="4c14f4d1be1fbf4f827127735990d62300000000"/>
+		<Metadata name="CommonModule.Jobs_sc" id="4df8b38a-482b-48b1-8438-a7a7376475ee" configVersion="e7118c63e0bcc34da594ac1f47f12d4700000000"/>
+		<Metadata name="CommonModule.Jobs_sc.Module" id="4df8b38a-482b-48b1-8438-a7a7376475ee.0" configVersion="7835608cfcbd6a4ab1bd70c218bfe97f00000000"/>
 		<Metadata name="CommonModule.Meta" id="d2ba8b03-5a4b-4b32-aaad-b1dfdf763480" configVersion="c48411ffc7650f47b6b8de77b54e922900000000"/>
 		<Metadata name="CommonModule.Meta.Module" id="d2ba8b03-5a4b-4b32-aaad-b1dfdf763480.0" configVersion="de1147a2c401084c92e227c8dbc1947000000000"/>
 		<Metadata name="CommonModule.Meta_sr" id="7f9aa882-817e-4f06-9743-517a3fa20fe1" configVersion="af9b751bf9e19945837bc542891f359800000000"/>
 		<Metadata name="CommonModule.Meta_sr.Module" id="7f9aa882-817e-4f06-9743-517a3fa20fe1.0" configVersion="ab7cc9d93a04fa4c9386c6c94ebfa14c00000000"/>
-		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="6df3a63088099142ab74f9192fb27dd300000000"/>
+		<Metadata name="Configuration.Radar" id="9fa63b69-ff7e-4334-837f-8ebd77b362fb" configVersion="fcacdb623eeb8849bc5ab5b5bd50c78100000000"/>
 		<Metadata name="Configuration.Radar.ClientApplicationInterface" id="ae33f108-a64b-420a-95b0-a3a260a403e9.b" configVersion="a177049b24824c4baf656ce8a94a29ea00000000"/>
 		<Metadata name="Configuration.Radar.HomePageWorkArea" id="ae33f108-a64b-420a-95b0-a3a260a403e9.8" configVersion="8aa31517af7fe04488213263076eca6500000000"/>
 		<Metadata name="Constant.ChunkSize" id="ed96ac09-764e-4003-ba7d-5edb924ec7ef" configVersion="158878961de44d43b33cfecb904ee0c000000000"/>
