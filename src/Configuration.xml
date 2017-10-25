@@ -153,6 +153,8 @@
 			<CommonModule>Global</CommonModule>
 			<CommonModule>Jobs</CommonModule>
 			<CommonModule>Jobs_sc</CommonModule>
+			<CommonModule>Meta</CommonModule>
+			<CommonModule>Meta_sr</CommonModule>
 			<Constant>ExternalDataProcessorsPath</Constant>
 			<Constant>MaxJobs</Constant>
 			<Constant>ChunkSize</Constant>
@@ -249,6 +251,7 @@
 			<Enum>UseQuickChoice</Enum>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
+			<InformationRegister>MetaUUID</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
