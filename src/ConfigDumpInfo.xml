@@ -111,7 +111,7 @@
 			<Metadata name="Catalog.AccumulationRegisters.Attribute.Synonym" id="ffac1af5-2ad9-465f-8777-1cf2fac5d15d"/>
 		</Metadata>
 		<Metadata name="Catalog.Attributes" id="1676a895-51c7-4690-8651-5a24b706edf7" configVersion="7f54cc0db2dde9489ede3766695da91c00000000"/>
-		<Metadata name="Catalog.Catalogs" id="84364d42-d5ba-4e4d-ba6b-e39716ec3fc0" configVersion="91ca79c8785c264ba5cd6181e3c48dde00000000">
+		<Metadata name="Catalog.Catalogs" id="84364d42-d5ba-4e4d-ba6b-e39716ec3fc0" configVersion="ff7c17ca37a3994387b4bf96f9e2459800000000">
 			<Metadata name="Catalog.Catalogs.TabularSection.TabularSections" id="02240b92-9ff4-495b-b69e-d373dcbf3006"/>
 			<Metadata name="Catalog.Catalogs.Attribute.LimitLevelCount" id="02880313-5800-4e43-bd55-685defbdd466"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.ChoiceFoldersAndItems" id="0d505942-95a9-459c-a2b2-49c5653b0733"/>
@@ -155,7 +155,7 @@
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.CreateOnInput" id="7e78c6e5-4929-4f01-884f-f5c5c15ecdfc"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.BasedOn.Attribute.Object" id="81cd5f15-f60d-468d-85da-10301649e0cf"/>
 			<Metadata name="Catalog.Catalogs.Attribute.CodeSeries" id="82a75d3e-95d8-416e-883d-50c7f8e93a56"/>
-			<Metadata name="Catalog.Catalogs.TabularSection.PredefinedItems" id="850448fe-2ef7-4304-8aca-2543b1d405b5"/>
+			<Metadata name="Catalog.Catalogs.TabularSection.PredefinedData" id="850448fe-2ef7-4304-8aca-2543b1d405b5"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Templates" id="85339b45-6898-4cef-be29-c87ab619c132"/>
 			<Metadata name="Catalog.Catalogs.TabularSection.Attributes.Attribute.Name" id="87723e39-3d92-4e92-b01e-c68c7d71f047"/>
 			<Metadata name="Catalog.Catalogs.Attribute.AuxiliaryFolderForm" id="88365cb9-da6a-489e-9809-5af763e13a7b"/>
@@ -210,7 +210,7 @@
 			<Metadata name="Catalog.Catalogs.Attribute.Autonumbering" id="fdb04486-3b44-49c0-91e4-481f1adac886"/>
 		</Metadata>
 		<Metadata name="Catalog.Catalogs.ManagerModule" id="84364d42-d5ba-4e4d-ba6b-e39716ec3fc0.3" configVersion="02f848896c781c4c93680ddc2d03d71700000000"/>
-		<Metadata name="Catalog.ChartsOfAccounts" id="98e0a856-34a4-407b-9f4d-9df630f1282d" configVersion="7d8ab5674bcb4940a0171581926d111300000000">
+		<Metadata name="Catalog.ChartsOfAccounts" id="98e0a856-34a4-407b-9f4d-9df630f1282d" configVersion="d97d0dbebf414844add4226643f3b64100000000">
 			<Metadata name="Catalog.ChartsOfAccounts.Attribute.AuxiliaryObjectForm" id="0bf79291-4bb2-4f57-a20e-fa1bcc2da07f"/>
 			<Metadata name="Catalog.ChartsOfAccounts.TabularSection.Attributes.Attribute.ChoiceFoldersAndItems" id="0d5b37c2-9b67-4f5b-93af-49c8c05ab2e7"/>
 			<Metadata name="Catalog.ChartsOfAccounts.TabularSection.Attributes" id="0e5af61e-f759-4b33-a487-93c35c3d20c4"/>
@@ -224,7 +224,7 @@
 			<Metadata name="Catalog.ChartsOfAccounts.TabularSection.Attributes.Attribute.CreateOnInput" id="2563b7a6-dbc5-4352-bb5b-57824af74b58"/>
 			<Metadata name="Catalog.ChartsOfAccounts.Attribute.ObjectBelonging" id="25c5112a-7236-4de9-86c2-3f7c0b6cbcfb"/>
 			<Metadata name="Catalog.ChartsOfAccounts.TabularSection.InputByString" id="2b7db417-e35a-4f6d-b900-4512ff845889"/>
-			<Metadata name="Catalog.ChartsOfAccounts.TabularSection.PredefinedItems" id="2d375db6-1086-4cb9-8bd7-61347c12da5c"/>
+			<Metadata name="Catalog.ChartsOfAccounts.TabularSection.PredefinedData" id="2d375db6-1086-4cb9-8bd7-61347c12da5c"/>
 			<Metadata name="Catalog.ChartsOfAccounts.TabularSection.Attributes.Attribute.Comment" id="2e77287c-4841-49f1-83b7-c04d9c88d3b5"/>
 			<Metadata name="Catalog.ChartsOfAccounts.TabularSection.Forms" id="306d59a9-811a-40ca-895e-9a08971461cc"/>
 			<Metadata name="Catalog.ChartsOfAccounts.TabularSection.Templates.Attribute.Object" id="31a9d48d-759d-46ae-bc51-c4cb5514ad8d"/>
@@ -300,7 +300,7 @@
 			<Metadata name="Catalog.ChartsOfAccounts.TabularSection.Attributes.Attribute.Role" id="f7105d68-e255-4cf1-8117-f8ff36f88e2b"/>
 			<Metadata name="Catalog.ChartsOfAccounts.Attribute.CheckUnique" id="ffa97b43-713b-45ac-9984-faecf7b4747f"/>
 		</Metadata>
-		<Metadata name="Catalog.ChartsOfCharacteristicTypes" id="dc9fca6f-e532-4426-9b86-e64fe2b3be29" configVersion="7de25af60e914b45a3e7b155f600bfa000000000">
+		<Metadata name="Catalog.ChartsOfCharacteristicTypes" id="dc9fca6f-e532-4426-9b86-e64fe2b3be29" configVersion="dcee40f0485c46459cfbe1aa5245501300000000">
 			<Metadata name="Catalog.ChartsOfCharacteristicTypes.Attribute.QuickChoice" id="07c1d8f8-0a96-4f76-b830-fcbbfe5a0881"/>
 			<Metadata name="Catalog.ChartsOfCharacteristicTypes.Attribute.FullTextSearch" id="0c9cc46c-10d1-476f-83c0-d158815b95a7"/>
 			<Metadata name="Catalog.ChartsOfCharacteristicTypes.Attribute.CodeAllowedLength" id="1006c13e-3be8-4b8e-ab9a-7e74ab010d7d"/>
@@ -337,7 +337,7 @@
 			<Metadata name="Catalog.ChartsOfCharacteristicTypes.TabularSection.Attributes.Attribute.ChoiceForm" id="718cda35-aed4-4767-a6f1-ed0f155584b3"/>
 			<Metadata name="Catalog.ChartsOfCharacteristicTypes.TabularSection.Characteristics" id="759d14b8-db71-4330-86d8-248a2f18ca33"/>
 			<Metadata name="Catalog.ChartsOfCharacteristicTypes.TabularSection.InputByString.Attribute.Object" id="7907ef6d-d822-4db8-9941-05828d9e632b"/>
-			<Metadata name="Catalog.ChartsOfCharacteristicTypes.TabularSection.PredefinedItems" id="7e87d78a-2e78-40a6-9b30-8cd6a1a36990"/>
+			<Metadata name="Catalog.ChartsOfCharacteristicTypes.TabularSection.PredefinedData" id="7e87d78a-2e78-40a6-9b30-8cd6a1a36990"/>
 			<Metadata name="Catalog.ChartsOfCharacteristicTypes.Attribute.FoldersOnTop" id="7f7fdf0d-09b6-4329-bc87-985c12ecf391"/>
 			<Metadata name="Catalog.ChartsOfCharacteristicTypes.TabularSection.Attributes.Attribute.CreateOnInput" id="7f88ba2b-668b-476f-ae01-d59510ef9b9e"/>
 			<Metadata name="Catalog.ChartsOfCharacteristicTypes.Attribute.AuxiliaryListForm" id="805d42e7-9b4a-4c73-ab09-cb6e537a3f8d"/>
