@@ -161,6 +161,7 @@
 			<Catalog>AccountingRegisters</Catalog>
 			<Catalog>AccumulationRegisters</Catalog>
 			<Catalog>Attributes</Catalog>
+			<Catalog>BusinessProcesses</Catalog>
 			<Catalog>CalculationRegisters</Catalog>
 			<Catalog>Catalogs</Catalog>
 			<Catalog>ChartsOfAccounts</Catalog>
@@ -205,6 +206,7 @@
 			<Catalog>Strings</Catalog>
 			<Catalog>Subsystems</Catalog>
 			<Catalog>TabularSections</Catalog>
+			<Catalog>Tasks</Catalog>
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
@@ -212,6 +214,7 @@
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>
 			<Enum>Boolean</Enum>
+			<Enum>BusinessProcessNumberPeriodicity</Enum>
 			<Enum>BusinessProcessNumberType</Enum>
 			<Enum>ButtonRepresentation</Enum>
 			<Enum>CalculationRegisterPeriodicity</Enum>
@@ -254,6 +257,7 @@
 			<Enum>SearchStringModeOnInputByString</Enum>
 			<Enum>SequenceFilling</Enum>
 			<Enum>SubordinationUse</Enum>
+			<Enum>TaskNumberAutoPrefix</Enum>
 			<Enum>TemplateType</Enum>
 			<Enum>Undefined</Enum>
 			<Enum>UseFullTextSearch</Enum>
