@@ -181,6 +181,7 @@
 			<Catalog>Configurations</Catalog>
 			<Catalog>Constants</Catalog>
 			<Catalog>DataProcessors</Catalog>
+			<Catalog>DocumentJournals</Catalog>
 			<Catalog>DocumentNumerator</Catalog>
 			<Catalog>Documents</Catalog>
 			<Catalog>Enums</Catalog>
