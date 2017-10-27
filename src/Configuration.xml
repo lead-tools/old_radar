@@ -142,7 +142,7 @@
 		<ChildObjects>
 			<Language>English</Language>
 			<Language>Русский</Language>
-			<Subsystem>Configurations</Subsystem>
+			<Subsystem>Meta</Subsystem>
 			<Subsystem>Radar</Subsystem>
 			<Role>Admin</Role>
 			<CommonModule>Abc</CommonModule>
@@ -181,6 +181,7 @@
 			<Catalog>EnumValues</Catalog>
 			<Catalog>Events</Catalog>
 			<Catalog>EventSubscriptions</Catalog>
+			<Catalog>ExchangePlans</Catalog>
 			<Catalog>Files</Catalog>
 			<Catalog>Forms</Catalog>
 			<Catalog>FunctionalOptions</Catalog>

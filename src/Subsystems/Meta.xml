@@ -2,15 +2,15 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
 	<Subsystem uuid="1756909f-7da2-4a37-9e16-7ac74c8ba4fb">
 		<Properties>
-			<Name>Configurations</Name>
+			<Name>Meta</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Configurations</v8:content>
+					<v8:content>Meta</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Конфигурации</v8:content>
+					<v8:content>Мета</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -44,29 +44,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.FunctionalOptionsParameters</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Configurations</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Reports</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ExchangePlans</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.DataProcessors</xr:Item>
 			</Content>
 		</Properties>
-		<ChildObjects>
-			<Subsystem>AccountingRegisters</Subsystem>
-			<Subsystem>AccumulationRegisters</Subsystem>
-			<Subsystem>Catalogs</Subsystem>
-			<Subsystem>ChartsOfAccounts</Subsystem>
-			<Subsystem>ChartsOfCharacteristicTypes</Subsystem>
-			<Subsystem>CommandGroups</Subsystem>
-			<Subsystem>CommonAttributes</Subsystem>
-			<Subsystem>CommonCommands</Subsystem>
-			<Subsystem>CommonForms</Subsystem>
-			<Subsystem>CommonModules</Subsystem>
-			<Subsystem>Constants</Subsystem>
-			<Subsystem>DataProcessors</Subsystem>
-			<Subsystem>Documents</Subsystem>
-			<Subsystem>Enums</Subsystem>
-			<Subsystem>EventSubscriptions</Subsystem>
-			<Subsystem>FunctionalOptions</Subsystem>
-			<Subsystem>FunctionalOptionsParameters</Subsystem>
-			<Subsystem>InformationRegisters</Subsystem>
-			<Subsystem>Reports</Subsystem>
-			<Subsystem>SessionParameters</Subsystem>
-		</ChildObjects>
+		<ChildObjects/>
 	</Subsystem>
 </MetaDataObject>
