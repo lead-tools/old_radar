@@ -161,8 +161,10 @@
 			<Catalog>AccountingRegisters</Catalog>
 			<Catalog>AccumulationRegisters</Catalog>
 			<Catalog>Attributes</Catalog>
+			<Catalog>CalculationRegisters</Catalog>
 			<Catalog>Catalogs</Catalog>
 			<Catalog>ChartsOfAccounts</Catalog>
+			<Catalog>ChartsOfCalculationTypes</Catalog>
 			<Catalog>ChartsOfCharacteristicTypes</Catalog>
 			<Catalog>ChoiceParameterLinks</Catalog>
 			<Catalog>ChoiceParameters</Catalog>
@@ -172,6 +174,7 @@
 			<Catalog>CommonCommands</Catalog>
 			<Catalog>CommonForms</Catalog>
 			<Catalog>CommonModules</Catalog>
+			<Catalog>CommonTemplates</Catalog>
 			<Catalog>Configurations</Catalog>
 			<Catalog>Constants</Catalog>
 			<Catalog>DataProcessors</Catalog>
@@ -195,6 +198,7 @@
 			<Catalog>Reports</Catalog>
 			<Catalog>Rights</Catalog>
 			<Catalog>Roles</Catalog>
+			<Catalog>ScheduledJobs</Catalog>
 			<Catalog>SessionParameters</Catalog>
 			<Catalog>SettingsStorages</Catalog>
 			<Catalog>Strings</Catalog>
@@ -208,9 +212,12 @@
 			<Enum>Boolean</Enum>
 			<Enum>BusinessProcessNumberType</Enum>
 			<Enum>ButtonRepresentation</Enum>
+			<Enum>CalculationRegisterPeriodicity</Enum>
 			<Enum>CatalogCodesSeries</Enum>
 			<Enum>CatalogCodeType</Enum>
 			<Enum>CatalogMainPresentation</Enum>
+			<Enum>ChartOfCalculationTypesBaseUse</Enum>
+			<Enum>ChartOfCalculationTypesCodeType</Enum>
 			<Enum>ChoiceDataGetModeOnInputByString</Enum>
 			<Enum>ChoiceHistoryOnInput</Enum>
 			<Enum>ChoiceMode</Enum>
@@ -245,6 +252,7 @@
 			<Enum>SearchStringModeOnInputByString</Enum>
 			<Enum>SequenceFilling</Enum>
 			<Enum>SubordinationUse</Enum>
+			<Enum>TemplateType</Enum>
 			<Enum>Undefined</Enum>
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UsePurposes</Enum>
