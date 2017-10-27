@@ -161,6 +161,7 @@
 			<Catalog>AccountingRegisters</Catalog>
 			<Catalog>AccumulationRegisters</Catalog>
 			<Catalog>Attributes</Catalog>
+			<Catalog>CalculationRegisters</Catalog>
 			<Catalog>Catalogs</Catalog>
 			<Catalog>ChartsOfAccounts</Catalog>
 			<Catalog>ChartsOfCalculationTypes</Catalog>
@@ -196,6 +197,7 @@
 			<Catalog>Reports</Catalog>
 			<Catalog>Rights</Catalog>
 			<Catalog>Roles</Catalog>
+			<Catalog>ScheduledJobs</Catalog>
 			<Catalog>SessionParameters</Catalog>
 			<Catalog>SettingsStorages</Catalog>
 			<Catalog>Strings</Catalog>
@@ -203,13 +205,13 @@
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
-			<Catalog>CalculationRegisters</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>
 			<Enum>Boolean</Enum>
 			<Enum>BusinessProcessNumberType</Enum>
 			<Enum>ButtonRepresentation</Enum>
+			<Enum>CalculationRegisterPeriodicity</Enum>
 			<Enum>CatalogCodesSeries</Enum>
 			<Enum>CatalogCodeType</Enum>
 			<Enum>CatalogMainPresentation</Enum>
@@ -253,7 +255,6 @@
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UsePurposes</Enum>
 			<Enum>UseQuickChoice</Enum>
-			<Enum>CalculationRegisterPeriodicity</Enum>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
 			<InformationRegister>MetaUUID</InformationRegister>
