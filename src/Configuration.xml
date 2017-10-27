@@ -203,6 +203,7 @@
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
+			<Catalog>CalculationRegisters</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>
@@ -252,6 +253,7 @@
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UsePurposes</Enum>
 			<Enum>UseQuickChoice</Enum>
+			<Enum>CalculationRegisterPeriodicity</Enum>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
 			<InformationRegister>MetaUUID</InformationRegister>
