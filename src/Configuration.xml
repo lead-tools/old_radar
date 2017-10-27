@@ -190,6 +190,7 @@
 			<Catalog>EventSubscriptions</Catalog>
 			<Catalog>ExchangePlans</Catalog>
 			<Catalog>Files</Catalog>
+			<Catalog>FilterCriteria</Catalog>
 			<Catalog>Forms</Catalog>
 			<Catalog>FunctionalOptions</Catalog>
 			<Catalog>FunctionalOptionsParameters</Catalog>
