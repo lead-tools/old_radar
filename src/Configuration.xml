@@ -158,6 +158,7 @@
 			<Constant>MaxJobs</Constant>
 			<Constant>ChunkSize</Constant>
 			<CommonForm>MainPage</CommonForm>
+			<Catalog>AccountingFlags</Catalog>
 			<Catalog>AccountingRegisters</Catalog>
 			<Catalog>AccumulationRegisters</Catalog>
 			<Catalog>Attributes</Catalog>
@@ -173,11 +174,7 @@
 			<Catalog>CommandInterfaces</Catalog>
 			<Catalog>Commands</Catalog>
 			<Catalog>CommonAttributes</Catalog>
-			<Catalog>CommonCommands</Catalog>
-			<Catalog>CommonForms</Catalog>
 			<Catalog>CommonModules</Catalog>
-			<Catalog>CommonPictures</Catalog>
-			<Catalog>CommonTemplates</Catalog>
 			<Catalog>Configurations</Catalog>
 			<Catalog>Constants</Catalog>
 			<Catalog>DataProcessors</Catalog>
@@ -189,6 +186,7 @@
 			<Catalog>Events</Catalog>
 			<Catalog>EventSubscriptions</Catalog>
 			<Catalog>ExchangePlans</Catalog>
+			<Catalog>ExtDimensionAccountingFlags</Catalog>
 			<Catalog>Files</Catalog>
 			<Catalog>FilterCriteria</Catalog>
 			<Catalog>Forms</Catalog>
@@ -210,6 +208,7 @@
 			<Catalog>Subsystems</Catalog>
 			<Catalog>TabularSections</Catalog>
 			<Catalog>Tasks</Catalog>
+			<Catalog>Templates</Catalog>
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>

@@ -1,38 +1,38 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
-	<Catalog uuid="b646352d-5a04-4e56-bedc-5dac21ad9020">
+	<Catalog uuid="2f35090d-c2da-47b9-9c12-dc09a87a8926">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.Files" category="Object">
-				<xr:TypeId>5f64528e-5d6e-4f96-968c-832188816329</xr:TypeId>
-				<xr:ValueId>aa6e3478-bbbf-45a8-8d60-94dccbd43b6a</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.ExtDimensionAccountingFlags" category="Object">
+				<xr:TypeId>1e001b65-1bc0-4193-9fd0-7e126ded2802</xr:TypeId>
+				<xr:ValueId>8fde70e0-86c0-40e1-ae60-7696ee4b2b8b</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.Files" category="Ref">
-				<xr:TypeId>a81170a5-2aed-446c-ac20-6e2a931f6439</xr:TypeId>
-				<xr:ValueId>58fbf346-cb43-4b3e-a05b-a2c81199a08d</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.ExtDimensionAccountingFlags" category="Ref">
+				<xr:TypeId>bde1600a-8466-43d5-868e-18d4c4708901</xr:TypeId>
+				<xr:ValueId>d3b9b327-461d-43f2-9ad0-ddb18b3a6af1</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.Files" category="Selection">
-				<xr:TypeId>ce2477b9-abc9-4d2b-a2b4-17cae98fee6e</xr:TypeId>
-				<xr:ValueId>8ab0d062-b27f-452a-b4d8-97ee6422ded4</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.ExtDimensionAccountingFlags" category="Selection">
+				<xr:TypeId>67144259-3f78-4e63-ab53-36937e0d7e1b</xr:TypeId>
+				<xr:ValueId>c82c7dac-fb0e-49e7-b461-810224ba8f47</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.Files" category="List">
-				<xr:TypeId>c7817ca0-eb08-42e3-9053-de9ceef3b6b0</xr:TypeId>
-				<xr:ValueId>adac5a08-99c0-4b75-9f73-cee09169d3b2</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.ExtDimensionAccountingFlags" category="List">
+				<xr:TypeId>1bca552d-e8fe-47ae-98e2-30986cf94582</xr:TypeId>
+				<xr:ValueId>6667563e-b949-4f46-833a-f79eeb8fbf42</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.Files" category="Manager">
-				<xr:TypeId>16a56a3a-3429-4d6c-bf59-a29c6643e8e4</xr:TypeId>
-				<xr:ValueId>deea89fa-c624-47f6-bfac-8596da546db0</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.ExtDimensionAccountingFlags" category="Manager">
+				<xr:TypeId>6470a84f-429e-49bf-adaf-a2a9c9fac0ca</xr:TypeId>
+				<xr:ValueId>5711838b-4ccc-4bb6-a478-c81e05526fe2</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Files</Name>
+			<Name>ExtDimensionAccountingFlags</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Files</v8:content>
+					<v8:content>Ext dimension accounting flags</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Файлы</v8:content>
+					<v8:content>Признаки учета субконто</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -58,8 +58,8 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.Files.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.Files.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.ExtDimensionAccountingFlags.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.ExtDimensionAccountingFlags.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
