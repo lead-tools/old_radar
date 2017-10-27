@@ -169,6 +169,7 @@
 			<Catalog>ChoiceParameterLinks</Catalog>
 			<Catalog>ChoiceParameters</Catalog>
 			<Catalog>CommandGroups</Catalog>
+			<Catalog>CommandInterfaces</Catalog>
 			<Catalog>Commands</Catalog>
 			<Catalog>CommonAttributes</Catalog>
 			<Catalog>CommonCommands</Catalog>
@@ -202,6 +203,7 @@
 			<Catalog>SessionParameters</Catalog>
 			<Catalog>SettingsStorages</Catalog>
 			<Catalog>Strings</Catalog>
+			<Catalog>Subsystems</Catalog>
 			<Catalog>TabularSections</Catalog>
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
