@@ -3795,25 +3795,25 @@
 			</TabularSection>
 			<TabularSection uuid="2d375db6-1086-4cb9-8bd7-61347c12da5c">
 				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.ChartsOfAccounts.PredefinedItems" category="TabularSection">
+					<xr:GeneratedType name="CatalogTabularSection.ChartsOfAccounts.PredefinedData" category="TabularSection">
 						<xr:TypeId>43dd0cb7-a7fe-4c2d-add4-b8c9a93c5c94</xr:TypeId>
 						<xr:ValueId>9e2efc84-f046-492a-b319-f971a1c19097</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.ChartsOfAccounts.PredefinedItems" category="TabularSectionRow">
+					<xr:GeneratedType name="CatalogTabularSectionRow.ChartsOfAccounts.PredefinedData" category="TabularSectionRow">
 						<xr:TypeId>a1ba34ab-a392-48e9-abe8-0e1b8877c230</xr:TypeId>
 						<xr:ValueId>a00c6402-6a2e-4464-88c5-0765b8b5ac16</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>PredefinedItems</Name>
+					<Name>PredefinedData</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Predefined</v8:content>
+							<v8:content>Predefined data</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Предопределенные</v8:content>
+							<v8:content>Предопределенные данные</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
