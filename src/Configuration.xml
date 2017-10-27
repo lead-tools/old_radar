@@ -174,6 +174,7 @@
 			<Catalog>CommonCommands</Catalog>
 			<Catalog>CommonForms</Catalog>
 			<Catalog>CommonModules</Catalog>
+			<Catalog>CommonTemplates</Catalog>
 			<Catalog>Configurations</Catalog>
 			<Catalog>Constants</Catalog>
 			<Catalog>DataProcessors</Catalog>
@@ -251,6 +252,7 @@
 			<Enum>SearchStringModeOnInputByString</Enum>
 			<Enum>SequenceFilling</Enum>
 			<Enum>SubordinationUse</Enum>
+			<Enum>TemplateType</Enum>
 			<Enum>Undefined</Enum>
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UsePurposes</Enum>

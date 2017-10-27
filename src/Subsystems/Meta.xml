@@ -49,6 +49,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfCalculationTypes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CalculationRegisters</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ScheduledJobs</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonTemplates</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
