@@ -48,7 +48,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Catalogs</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfAccounts</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfCharacteristicTypes</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonCommands</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonModules</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Constants</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.DataProcessors</xr:Item>
@@ -57,6 +56,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.InformationRegisters</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Reports</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Projects</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Commands</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
