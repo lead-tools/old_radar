@@ -161,6 +161,7 @@
 			<Catalog>AccountingRegisters</Catalog>
 			<Catalog>AccumulationRegisters</Catalog>
 			<Catalog>Attributes</Catalog>
+			<Catalog>BusinessProcesses</Catalog>
 			<Catalog>CalculationRegisters</Catalog>
 			<Catalog>Catalogs</Catalog>
 			<Catalog>ChartsOfAccounts</Catalog>
@@ -169,15 +170,18 @@
 			<Catalog>ChoiceParameterLinks</Catalog>
 			<Catalog>ChoiceParameters</Catalog>
 			<Catalog>CommandGroups</Catalog>
+			<Catalog>CommandInterfaces</Catalog>
 			<Catalog>Commands</Catalog>
 			<Catalog>CommonAttributes</Catalog>
 			<Catalog>CommonCommands</Catalog>
 			<Catalog>CommonForms</Catalog>
 			<Catalog>CommonModules</Catalog>
+			<Catalog>CommonPictures</Catalog>
 			<Catalog>CommonTemplates</Catalog>
 			<Catalog>Configurations</Catalog>
 			<Catalog>Constants</Catalog>
 			<Catalog>DataProcessors</Catalog>
+			<Catalog>DocumentJournals</Catalog>
 			<Catalog>DocumentNumerator</Catalog>
 			<Catalog>Documents</Catalog>
 			<Catalog>Enums</Catalog>
@@ -186,6 +190,7 @@
 			<Catalog>EventSubscriptions</Catalog>
 			<Catalog>ExchangePlans</Catalog>
 			<Catalog>Files</Catalog>
+			<Catalog>FilterCriteria</Catalog>
 			<Catalog>Forms</Catalog>
 			<Catalog>FunctionalOptions</Catalog>
 			<Catalog>FunctionalOptionsParameters</Catalog>
@@ -202,7 +207,9 @@
 			<Catalog>SessionParameters</Catalog>
 			<Catalog>SettingsStorages</Catalog>
 			<Catalog>Strings</Catalog>
+			<Catalog>Subsystems</Catalog>
 			<Catalog>TabularSections</Catalog>
+			<Catalog>Tasks</Catalog>
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
@@ -210,6 +217,7 @@
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeRoles</Enum>
 			<Enum>Boolean</Enum>
+			<Enum>BusinessProcessNumberPeriodicity</Enum>
 			<Enum>BusinessProcessNumberType</Enum>
 			<Enum>ButtonRepresentation</Enum>
 			<Enum>CalculationRegisterPeriodicity</Enum>
@@ -252,6 +260,7 @@
 			<Enum>SearchStringModeOnInputByString</Enum>
 			<Enum>SequenceFilling</Enum>
 			<Enum>SubordinationUse</Enum>
+			<Enum>TaskNumberAutoPrefix</Enum>
 			<Enum>TemplateType</Enum>
 			<Enum>Undefined</Enum>
 			<Enum>UseFullTextSearch</Enum>
