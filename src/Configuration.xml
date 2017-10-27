@@ -163,6 +163,7 @@
 			<Catalog>Attributes</Catalog>
 			<Catalog>Catalogs</Catalog>
 			<Catalog>ChartsOfAccounts</Catalog>
+			<Catalog>ChartsOfCalculationTypes</Catalog>
 			<Catalog>ChartsOfCharacteristicTypes</Catalog>
 			<Catalog>ChoiceParameterLinks</Catalog>
 			<Catalog>ChoiceParameters</Catalog>
@@ -211,6 +212,8 @@
 			<Enum>CatalogCodesSeries</Enum>
 			<Enum>CatalogCodeType</Enum>
 			<Enum>CatalogMainPresentation</Enum>
+			<Enum>ChartOfCalculationTypesBaseUse</Enum>
+			<Enum>ChartOfCalculationTypesCodeType</Enum>
 			<Enum>ChoiceDataGetModeOnInputByString</Enum>
 			<Enum>ChoiceHistoryOnInput</Enum>
 			<Enum>ChoiceMode</Enum>
