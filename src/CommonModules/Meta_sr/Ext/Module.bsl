@@ -41,6 +41,7 @@ Function SkipProperties() Export
 		"DataHistory,"
 		"ManagerModule,"
 		"ObjectModule,"
+		"RecordSetModule,"
 		"UUID,"
 	);
 	

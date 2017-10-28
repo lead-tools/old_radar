@@ -15,26 +15,58 @@ Procedure Load(Configuration, Path) Export
 		
 	Data = Abc.ReadMetadataXML(Abc.JoinPath(Path, "Configuration.xml"));
 	
-	LoadCatalogs(Configuration, Path, Data.Configuration.ChildObjects.Catalog);
+	ChildObjects = Data.Configuration.ChildObjects;
+	Items = New Structure;
+	For Each Property In ChildObjects.Properties() Do
+		Items.Insert(Property.Name, ChildObjects[Property.Name]);
+	EndDo; 
+	
+	List = Undefined;
+	
+	If Items.Property("Language", List) Then
+		LoadMetadata(Configuration, Path, "Languages", ChildObjects.Language);
+	EndIf; 
+	
+	If Items.Property("AccountingRegister", List) Then
+		LoadMetadata(Configuration, Path, "AccountingRegisters", ChildObjects.AccountingRegister);
+	EndIf; 
+	
+	If Items.Property("AccumulationRegister", List) Then
+		LoadMetadata(Configuration, Path, "AccumulationRegisters", ChildObjects.AccumulationRegister);
+	EndIf;
+	
+	If Items.Property("BusinessProcess", List) Then
+		LoadMetadata(Configuration, Path, "BusinessProcesses", ChildObjects.BusinessProcess);
+	EndIf; 
+	
+	If Items.Property("CalculationRegister", List) Then
+		LoadMetadata(Configuration, Path, "CalculationRegisters", List);
+	EndIf;
+	
+	If Items.Property("Catalog", List) Then
+		LoadMetadata(Configuration, Path, "Catalogs", ChildObjects.Catalog);
+	EndIf;
+	
+	If Items.Property("ChartOfAccounts", List) Then
+		LoadMetadata(Configuration, Path, "ChartsOfAccounts", List);
+	EndIf;
 	
 EndProcedure // Load()
 
-Procedure LoadCatalogs(Configuration, Path, List)
+Procedure LoadMetadata(Configuration, Path, Name, List)
 	
-	CatalogsPath = Abc.JoinPath(Path, "Catalogs");
+	MetadataPath = Abc.JoinPath(Path, Name);
+	MetadataManager = Catalogs[Name];
 	
 	If TypeOf(List) = Type("String") Then
-		
-		Catalogs.Catalogs.Load(Configuration, Abc.JoinPath(CatalogsPath, List));
-		
+		MetadataManager.Load(Configuration, Abc.JoinPath(MetadataPath, List));
 	ElsIf TypeOf(List) = Type("XDTOList") Then
-		
 		For Each Item In List Do
-			Catalogs.Catalogs.Load(Configuration, Abc.JoinPath(CatalogsPath, Item));
+			MetadataManager.Load(Configuration, Abc.JoinPath(MetadataPath, Item));
 		EndDo; 
-		
 	Else
 		Raise "Call in violation of protocol";
 	EndIf; 
 	
-EndProcedure // LoadCatalogs() 
+EndProcedure // LoadMetadata()
+ 

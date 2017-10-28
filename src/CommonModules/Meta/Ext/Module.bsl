@@ -25,6 +25,36 @@ Function TypeManager(Type) Export
 EndFunction // TypeManager() 
 
 &AtServer
+Procedure GenericLoad(Configuration, Path, MetadataObject, Ref = Undefined) Export
+	
+	Manager = Catalogs[MetadataObject.Name];
+	
+	Data = Abc.ReadMetadataXML(Path + ".xml");
+	XDTOObject = Data.Sequence().GetValue(0);
+	XDTOProperties = XDTOObject.Properties;
+	UUID = New UUID(XDTOObject.UUID);
+	
+	If Ref = Undefined Then
+		Ref = Manager.FindByAttribute("UUID", UUID,, Configuration);
+	EndIf; 
+	
+	If Not ValueIsFilled(Ref) Then
+		Object = Manager.CreateItem();
+	Else
+		Object = Ref.GetObject();
+	EndIf; 
+	
+	Object.UUID = UUID;
+	Object.Owner = Configuration;
+	Object.Description = XDTOProperties.Name;
+	
+	Meta.FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties); 
+	
+	Object.Write();
+	
+EndProcedure // GenericLoad()
+
+&AtServer
 Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) Export
 	
 	AttributeTypes = AttributeTypes(Object.Metadata());
@@ -39,7 +69,7 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 			Try
 				XDTOValue = XDTOProperties[Name];
 			Except
-				Message(StrTemplate("Property %1 not found", Name));
+				Message(StrTemplate("Property `%1` not found", Name));
 				Continue;
 			EndTry;
 		EndIf; 
@@ -56,8 +86,14 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 			
 		ElsIf Type = Type("CatalogRef.Strings") Then
 			UpdateString(Configuration, Object[Name], XDTOValue.Sequence())
+		ElsIf Type = Type("CatalogRef.ChartsOfAccounts") Then
+			
+		ElsIf Type = Type("CatalogRef.Tasks") Then
+			
+		ElsIf Type = Type("CatalogRef.ChartsOfCharacteristicTypes") Then
+		
 		ElsIf Type = Type("EnumRef.DataHistoryUse") Then	
-			// skip
+			// 8.3.11
 		ElsIf Type = Type("UUID") Then	
 			// skip
 		Else
