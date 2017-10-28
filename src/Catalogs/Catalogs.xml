@@ -2414,36 +2414,46 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<TabularSection uuid="850448fe-2ef7-4304-8aca-2543b1d405b5">
-				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.Catalogs.PredefinedData" category="TabularSection">
-						<xr:TypeId>d25448e7-400f-49bb-babf-b7554b844f0f</xr:TypeId>
-						<xr:ValueId>17a22773-9c33-4121-a68c-77a88161020a</xr:ValueId>
-					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.Catalogs.PredefinedData" category="TabularSectionRow">
-						<xr:TypeId>368be12a-a207-4e71-8e62-51b53e86ed3f</xr:TypeId>
-						<xr:ValueId>17a32790-ac92-428a-bf52-17660a9bbcf4</xr:ValueId>
-					</xr:GeneratedType>
-				</InternalInfo>
+			<Attribute uuid="55a0f09e-0b82-4b59-b324-7af66688cec6">
 				<Properties>
-					<Name>PredefinedData</Name>
+					<Name>UUID</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Predefined data</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Предопределенные данные</v8:content>
+							<v8:content>UUID</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
 					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Use>ForItem</Use>
+					<Indexing>Index</Indexing>
+					<FullTextSearch>DontUse</FullTextSearch>
+					<DataHistory>Use</DataHistory>
 				</Properties>
-				<ChildObjects/>
-			</TabularSection>
+			</Attribute>
 			<TabularSection uuid="e75d8945-a814-4499-8e30-9bbe6533f5e1">
 				<InternalInfo>
 					<xr:GeneratedType name="CatalogTabularSection.Catalogs.AttributeOrder" category="TabularSection">
@@ -2515,6 +2525,36 @@
 						</Properties>
 					</Attribute>
 				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="850448fe-2ef7-4304-8aca-2543b1d405b5">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.Catalogs.PredefinedData" category="TabularSection">
+						<xr:TypeId>d25448e7-400f-49bb-babf-b7554b844f0f</xr:TypeId>
+						<xr:ValueId>17a22773-9c33-4121-a68c-77a88161020a</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.Catalogs.PredefinedData" category="TabularSectionRow">
+						<xr:TypeId>368be12a-a207-4e71-8e62-51b53e86ed3f</xr:TypeId>
+						<xr:ValueId>17a32790-ac92-428a-bf52-17660a9bbcf4</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>PredefinedData</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Predefined data</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предопределенные данные</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<Use>ForItem</Use>
+				</Properties>
+				<ChildObjects/>
 			</TabularSection>
 		</ChildObjects>
 	</Catalog>

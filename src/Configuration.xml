@@ -272,7 +272,6 @@
 			<InformationRegister>Help</InformationRegister>
 			<InformationRegister>InputByString</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
-			<InformationRegister>MetaUUID</InformationRegister>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>Owners</InformationRegister>
 			<InformationRegister>RegisterRecords</InformationRegister>

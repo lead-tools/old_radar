@@ -23,14 +23,7 @@ Function TypeManager(Type) Export
 	
 	Return Meta_sr.TypeManagers()[Type];
 	
-EndFunction // TypeManager()  
-
-&AtServer
-Function RefByUUID(Configuration, UUID) Export
-	
-	Return InformationRegisters.MetaUUID.RefByUUID(Configuration, UUID);
-	
-EndFunction // RefByUUID() 
+EndFunction // TypeManager() 
 
 &AtServer
 Procedure FillAttributesByXDTOProperties(Object, XDTOProperties) Export
