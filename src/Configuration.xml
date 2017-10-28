@@ -278,6 +278,7 @@
 			<InformationRegister>RegisterRecords</InformationRegister>
 			<InformationRegister>BaseCalculationTypes</InformationRegister>
 			<InformationRegister>SubordinateSubsystems</InformationRegister>
+			<InformationRegister>Help</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

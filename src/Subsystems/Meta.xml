@@ -63,6 +63,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.BaseCalculationTypes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.SubordinateSubsystems</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Aggregates</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Help</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
