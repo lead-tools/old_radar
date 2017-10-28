@@ -211,6 +211,7 @@
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
+			<Catalog>Aggregates</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeKinds</Enum>
@@ -272,6 +273,11 @@
 			<InformationRegister>Characteristics</InformationRegister>
 			<InformationRegister>DataLockFields</InformationRegister>
 			<InformationRegister>InputByString</InformationRegister>
+			<InformationRegister>Content</InformationRegister>
+			<InformationRegister>Owners</InformationRegister>
+			<InformationRegister>RegisterRecords</InformationRegister>
+			<InformationRegister>BaseCalculationTypes</InformationRegister>
+			<InformationRegister>SubordinateSubsystems</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

@@ -1035,36 +1035,6 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<TabularSection uuid="a63548fb-8421-40dc-bdaa-81dadb657f4d">
-				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.AccumulationRegisters.Aggregates" category="TabularSection">
-						<xr:TypeId>bb14a2b8-4f13-49ae-bec4-e0f08001db8f</xr:TypeId>
-						<xr:ValueId>2c1d763b-77be-43c3-a5cf-42f9d92daa84</xr:ValueId>
-					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.AccumulationRegisters.Aggregates" category="TabularSectionRow">
-						<xr:TypeId>73b866b6-b3ac-4670-aa51-c42bd07d6d59</xr:TypeId>
-						<xr:ValueId>93e03f77-d954-41da-b631-ee95d0d25e14</xr:ValueId>
-					</xr:GeneratedType>
-				</InternalInfo>
-				<Properties>
-					<Name>Aggregates</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Aggregates</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Агрегаты</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<ToolTip/>
-					<FillChecking>DontCheck</FillChecking>
-					<Use>ForItem</Use>
-				</Properties>
-				<ChildObjects/>
-			</TabularSection>
 			<TabularSection uuid="06420c9e-7603-4bdd-a25b-c134001d5b5b">
 				<InternalInfo>
 					<xr:GeneratedType name="CatalogTabularSection.AccumulationRegisters.AttributeOrder" category="TabularSection">

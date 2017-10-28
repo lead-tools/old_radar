@@ -949,25 +949,25 @@
 			</Attribute>
 			<TabularSection uuid="1f8e9835-0182-4ab2-ac44-31d16f963355">
 				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.Enums.EnumValues" category="TabularSection">
+					<xr:GeneratedType name="CatalogTabularSection.Enums.ValueOrder" category="TabularSection">
 						<xr:TypeId>632d9773-18ad-4020-b63a-f55706a3729a</xr:TypeId>
 						<xr:ValueId>e6015a25-69af-4f87-a793-8e555bb615d1</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.Enums.EnumValues" category="TabularSectionRow">
+					<xr:GeneratedType name="CatalogTabularSectionRow.Enums.ValueOrder" category="TabularSectionRow">
 						<xr:TypeId>2787a578-b2e8-42e7-ae85-f490e555cbb5</xr:TypeId>
 						<xr:ValueId>78e54cc7-3d5f-48fd-9ec0-75849f4af2d8</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>EnumValues</Name>
+					<Name>ValueOrder</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Enum values</v8:content>
+							<v8:content>Value order</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Значения перечисления</v8:content>
+							<v8:content>Порядок значений</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
