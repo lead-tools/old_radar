@@ -1379,64 +1379,6 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<TabularSection uuid="0fa446af-1d5f-458b-a089-51878482e95d">
-				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.CommonAttributes.Content" category="TabularSection">
-						<xr:TypeId>b85e9f3a-7799-492f-b056-f31f60aa9702</xr:TypeId>
-						<xr:ValueId>eef0de6f-ccc1-43f1-8eb4-ad0cb4099ddc</xr:ValueId>
-					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.CommonAttributes.Content" category="TabularSectionRow">
-						<xr:TypeId>249c9453-9de3-4442-a5e2-16e711a61d25</xr:TypeId>
-						<xr:ValueId>52ccd59b-81b9-45d4-8ac1-a38da36534b5</xr:ValueId>
-					</xr:GeneratedType>
-				</InternalInfo>
-				<Properties>
-					<Name>Content</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Content</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Состав</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<ToolTip/>
-					<FillChecking>DontCheck</FillChecking>
-					<StandardAttributes>
-						<xr:StandardAttribute name="LineNumber">
-							<xr:LinkByType/>
-							<xr:FillChecking>DontCheck</xr:FillChecking>
-							<xr:MultiLine>false</xr:MultiLine>
-							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
-							<xr:CreateOnInput>Auto</xr:CreateOnInput>
-							<xr:MaxValue xsi:nil="true"/>
-							<xr:ToolTip/>
-							<xr:ExtendedEdit>false</xr:ExtendedEdit>
-							<xr:Format/>
-							<xr:ChoiceForm/>
-							<xr:QuickChoice>Auto</xr:QuickChoice>
-							<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
-							<xr:EditFormat/>
-							<xr:PasswordMode>false</xr:PasswordMode>
-							<xr:DataHistory>Use</xr:DataHistory>
-							<xr:MarkNegatives>false</xr:MarkNegatives>
-							<xr:MinValue xsi:nil="true"/>
-							<xr:Synonym/>
-							<xr:Comment/>
-							<xr:FullTextSearch>Use</xr:FullTextSearch>
-							<xr:ChoiceParameterLinks/>
-							<xr:FillValue xsi:nil="true"/>
-							<xr:Mask/>
-							<xr:ChoiceParameters/>
-						</xr:StandardAttribute>
-					</StandardAttributes>
-					<Use>ForItem</Use>
-				</Properties>
-				<ChildObjects/>
-			</TabularSection>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

@@ -445,64 +445,6 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<TabularSection uuid="c357cffb-a5c8-4b29-bbfa-08fdd0dd262e">
-				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.Subsystems.Content" category="TabularSection">
-						<xr:TypeId>85d14441-01f4-425c-841c-5722d31d88be</xr:TypeId>
-						<xr:ValueId>ea9bea71-2be4-4823-aab3-6842bb24a967</xr:ValueId>
-					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.Subsystems.Content" category="TabularSectionRow">
-						<xr:TypeId>7ecee7fa-bec0-4af3-8ac8-e7106d9069c7</xr:TypeId>
-						<xr:ValueId>62a90e94-a2a4-4cca-9af2-9ea7d87ca9e0</xr:ValueId>
-					</xr:GeneratedType>
-				</InternalInfo>
-				<Properties>
-					<Name>Content</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Content</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Состав</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<ToolTip/>
-					<FillChecking>DontCheck</FillChecking>
-					<StandardAttributes>
-						<xr:StandardAttribute name="LineNumber">
-							<xr:LinkByType/>
-							<xr:FillChecking>DontCheck</xr:FillChecking>
-							<xr:MultiLine>false</xr:MultiLine>
-							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
-							<xr:CreateOnInput>Auto</xr:CreateOnInput>
-							<xr:MaxValue xsi:nil="true"/>
-							<xr:ToolTip/>
-							<xr:ExtendedEdit>false</xr:ExtendedEdit>
-							<xr:Format/>
-							<xr:ChoiceForm/>
-							<xr:QuickChoice>Auto</xr:QuickChoice>
-							<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
-							<xr:EditFormat/>
-							<xr:PasswordMode>false</xr:PasswordMode>
-							<xr:DataHistory>Use</xr:DataHistory>
-							<xr:MarkNegatives>false</xr:MarkNegatives>
-							<xr:MinValue xsi:nil="true"/>
-							<xr:Synonym/>
-							<xr:Comment/>
-							<xr:FullTextSearch>Use</xr:FullTextSearch>
-							<xr:ChoiceParameterLinks/>
-							<xr:FillValue xsi:nil="true"/>
-							<xr:Mask/>
-							<xr:ChoiceParameters/>
-						</xr:StandardAttribute>
-					</StandardAttributes>
-					<Use>ForItem</Use>
-				</Properties>
-				<ChildObjects/>
-			</TabularSection>
 			<TabularSection uuid="8ddfaa66-6551-4090-8f26-9f9f13d8c6cb">
 				<InternalInfo>
 					<xr:GeneratedType name="CatalogTabularSection.Subsystems.Subsystems" category="TabularSection">

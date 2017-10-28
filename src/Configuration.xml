@@ -272,6 +272,9 @@
 			<InformationRegister>Characteristics</InformationRegister>
 			<InformationRegister>DataLockFields</InformationRegister>
 			<InformationRegister>InputByString</InformationRegister>
+			<InformationRegister>Content</InformationRegister>
+			<InformationRegister>Owners</InformationRegister>
+			<InformationRegister>RegisterRecords</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
