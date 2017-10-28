@@ -199,7 +199,6 @@
 			<Catalog>Pictures</Catalog>
 			<Catalog>Projects</Catalog>
 			<Catalog>Reports</Catalog>
-			<Catalog>Rights</Catalog>
 			<Catalog>Roles</Catalog>
 			<Catalog>ScheduledJobs</Catalog>
 			<Catalog>SessionParameters</Catalog>
@@ -256,6 +255,7 @@
 			<Enum>RegisterRecordsWritingOnPost</Enum>
 			<Enum>RegisterWriteMode</Enum>
 			<Enum>ReturnValuesReuse</Enum>
+			<Enum>Rights</Enum>
 			<Enum>SearchStringModeOnInputByString</Enum>
 			<Enum>SequenceFilling</Enum>
 			<Enum>SubordinationUse</Enum>
@@ -265,9 +265,10 @@
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UsePurposes</Enum>
 			<Enum>UseQuickChoice</Enum>
-			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
 			<InformationRegister>MetaUUID</InformationRegister>
+			<InformationRegister>ModulesData</InformationRegister>
+			<InformationRegister>Rights</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

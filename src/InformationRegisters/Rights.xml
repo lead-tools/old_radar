@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<InformationRegister uuid="5fe27374-7abc-46e8-b026-503292f02a9c">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.Rights" category="Record">
+				<xr:TypeId>aec56f82-e1a8-497d-aa83-9aac54503bb4</xr:TypeId>
+				<xr:ValueId>8a980fad-227c-4f65-afbb-93b87ace7981</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.Rights" category="Manager">
+				<xr:TypeId>9b0662d3-2a31-42ef-93e2-6fbf0d9a28ce</xr:TypeId>
+				<xr:ValueId>33a38f81-7ac7-402a-a69e-ce2e1fa693e5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.Rights" category="Selection">
+				<xr:TypeId>36aaf35b-5c4f-4e27-bc9d-bb4b169d262e</xr:TypeId>
+				<xr:ValueId>e710eab1-47e8-4f4c-b21c-38d0394ce306</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.Rights" category="List">
+				<xr:TypeId>7d642be0-783d-401b-a430-02ff3ee7ea98</xr:TypeId>
+				<xr:ValueId>88723001-d053-498f-9452-76d3a336e1c4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.Rights" category="RecordSet">
+				<xr:TypeId>34b7df3a-0fb8-4f35-afe0-4f060983abba</xr:TypeId>
+				<xr:ValueId>5eb20765-2fc0-4c8c-a4b6-b96c43852ec2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.Rights" category="RecordKey">
+				<xr:TypeId>2764989e-c686-4932-b0c1-588886b0e6ee</xr:TypeId>
+				<xr:ValueId>11dbd9e7-9c05-432d-9781-101c487e1a24</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.Rights" category="RecordManager">
+				<xr:TypeId>56b7da3c-1991-49dc-b8c9-6d75cb5d5ab1</xr:TypeId>
+				<xr:ValueId>4208568f-3c1d-4ecb-8d1c-1a05865d80fd</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Rights</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Rights</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Права</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<EditType>InDialog</EditType>
+			<DefaultRecordForm/>
+			<DefaultListForm/>
+			<AuxiliaryRecordForm/>
+			<AuxiliaryListForm/>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+			<MainFilterOnPeriod>false</MainFilterOnPeriod>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>DontUse</FullTextSearch>
+			<EnableTotalsSliceFirst>false</EnableTotalsSliceFirst>
+			<EnableTotalsSliceLast>false</EnableTotalsSliceLast>
+			<RecordPresentation/>
+			<ExtendedRecordPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="1a8d7afb-667e-455c-90e8-a730e4864834">
+				<Properties>
+					<Name>Ref</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Ref</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.AccumulationRegisters</v8:Type>
+						<v8:Type>cfg:CatalogRef.Tasks</v8:Type>
+						<v8:Type>cfg:CatalogRef.Reports</v8:Type>
+						<v8:Type>cfg:CatalogRef.Documents</v8:Type>
+						<v8:Type>cfg:CatalogRef.Commands</v8:Type>
+						<v8:Type>cfg:CatalogRef.Forms</v8:Type>
+						<v8:Type>cfg:CatalogRef.ExchangePlans</v8:Type>
+						<v8:Type>cfg:CatalogRef.ChartsOfCharacteristicTypes</v8:Type>
+						<v8:Type>cfg:CatalogRef.AccountingFlags</v8:Type>
+						<v8:Type>cfg:CatalogRef.ChartsOfAccounts</v8:Type>
+						<v8:Type>cfg:CatalogRef.Constants</v8:Type>
+						<v8:Type>cfg:CatalogRef.Configurations</v8:Type>
+						<v8:Type>cfg:CatalogRef.DocumentJournals</v8:Type>
+						<v8:Type>cfg:CatalogRef.Catalogs</v8:Type>
+						<v8:Type>cfg:CatalogRef.CommonAttributes</v8:Type>
+						<v8:Type>cfg:CatalogRef.DataProcessors</v8:Type>
+						<v8:Type>cfg:CatalogRef.Attributes</v8:Type>
+						<v8:Type>cfg:CatalogRef.ChartsOfCalculationTypes</v8:Type>
+						<v8:Type>cfg:CatalogRef.ExtDimensionAccountingFlags</v8:Type>
+						<v8:Type>cfg:CatalogRef.InformationRegisters</v8:Type>
+						<v8:Type>cfg:CatalogRef.BusinessProcesses</v8:Type>
+						<v8:Type>cfg:CatalogRef.Enums</v8:Type>
+						<v8:Type>cfg:CatalogRef.TabularSections</v8:Type>
+						<v8:Type>cfg:CatalogRef.AccountingRegisters</v8:Type>
+						<v8:Type>cfg:CatalogRef.CalculationRegisters</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>false</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="2ebae764-c2ff-4406-b6f5-5e6bd256c58e">
+				<Properties>
+					<Name>Role</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Role</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Роль</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Roles</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>false</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="2a9e59cc-4326-49f3-a61a-6764d4d1ef80">
+				<Properties>
+					<Name>Right</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Right</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Право</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:EnumRef.Rights</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>false</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>
