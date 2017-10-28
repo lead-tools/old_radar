@@ -261,7 +261,6 @@
 			<Enum>SubordinationUse</Enum>
 			<Enum>TaskNumberAutoPrefix</Enum>
 			<Enum>TemplateType</Enum>
-			<Enum>Undefined</Enum>
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UsePurposes</Enum>
 			<Enum>UseQuickChoice</Enum>
@@ -269,6 +268,10 @@
 			<InformationRegister>MetaUUID</InformationRegister>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>Rights</InformationRegister>
+			<InformationRegister>BasedOn</InformationRegister>
+			<InformationRegister>Characteristics</InformationRegister>
+			<InformationRegister>DataLockFields</InformationRegister>
+			<InformationRegister>InputByString</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

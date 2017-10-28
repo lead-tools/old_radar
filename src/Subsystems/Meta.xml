@@ -21,7 +21,6 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccumulationRegisters</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Catalogs</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">7a76b807-af42-44b7-8830-1f63f4b7a0c5</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Constants</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Documents</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Enums</xr:Item>
@@ -35,7 +34,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.SessionParameters</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.SettingsStorages</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonAttributes</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">38a7d97a-4340-4417-9a6f-13ab25a1198a</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfCharacteristicTypes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfAccounts</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccountingRegisters</xr:Item>
@@ -49,13 +47,16 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfCalculationTypes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CalculationRegisters</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ScheduledJobs</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">77696251-59b6-4e34-8442-4e49c2f712af</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Subsystems</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.BusinessProcesses</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Tasks</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">26656acc-bb32-4a04-a38c-2c878182b7d3</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.DocumentJournals</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.FilterCriteria</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.BasedOn</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Rights</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Characteristics</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.DataLockFields</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.InputByString</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
