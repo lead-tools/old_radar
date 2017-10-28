@@ -213,7 +213,7 @@
 			<Catalog>Versions</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
-			<Enum>AttributeRoles</Enum>
+			<Enum>AttributeKinds</Enum>
 			<Enum>Boolean</Enum>
 			<Enum>BusinessProcessNumberPeriodicity</Enum>
 			<Enum>BusinessProcessNumberType</Enum>
