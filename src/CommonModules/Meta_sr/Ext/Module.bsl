@@ -33,4 +33,41 @@ Function TypeManagers() Export
 	
 	Return New FixedMap(TypeManagers);
 	
-EndFunction // TypeManagers() 
+EndFunction // TypeManagers()
+
+Function SkipProperties() Export
+	
+	SkipProperties = New Structure(
+		"DataHistory,"
+		"ManagerModule,"
+		"ObjectModule,"
+		"UUID,"
+	);
+	
+	Return New FixedStructure(SkipProperties);
+	
+EndFunction // SkipProperties()
+
+Function LanguageByCode(Configuration, LanguageCode) Export
+	
+	Query = New Query;
+	Query.SetParameter("Owner", Configuration);
+	Query.SetParameter("LanguageCode", LanguageCode);
+	Query.Text =
+	"SELECT
+	|	Languages.Ref AS Ref
+	|FROM
+	|	Catalog.Languages AS Languages
+	|WHERE
+	|	Languages.Owner = &Owner
+	|	AND Languages.LanguageCode = &LanguageCode";
+	
+	QueryResult = Query.Execute(); 
+	
+	If QueryResult.IsEmpty() Then
+		Return Undefined;
+	EndIf; 
+	
+	Return QueryResult.Unload()[0].Ref;
+	
+EndFunction // LanguageByCode() 

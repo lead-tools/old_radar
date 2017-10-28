@@ -57,6 +57,13 @@ Function AttributeValue(Ref, AttributeName) Export
 EndFunction // AttributeValue() 
 
 &AtServer
+Function AttributeValueFromCache(Ref, AttributeName) Export
+	
+	Return Abc_sr.AttributeValue(Ref, AttributeName); 
+	
+EndFunction // AttributeValue()
+
+&AtServer
 Function AttributeValues(Ref, AttributeNames) Export
 	
 	AttributeValues = New Structure(AttributeNames);
@@ -87,6 +94,11 @@ Function ReadMetadataXML(Path) Export
 	Return XDTOFactory.ReadXML(XMLReader);
 	
 EndFunction // ReadMetadataXML()
+
+&AtServer
+Procedure RefreshAllReusableValues() Export
+	RefreshReusableValues();
+EndProcedure // RefreshAllReusableValues() 
 
 #EndRegion // Server
 

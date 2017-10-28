@@ -31,7 +31,7 @@ Procedure Load(Configuration, Path, Catalog = Undefined) Export
 	CatalogObject.Owner = Configuration;
 	CatalogObject.Description = XDTOProperties.Name;
 	
-	Meta.FillAttributesByXDTOProperties(CatalogObject, XDTOProperties); 
+	Meta.FillAttributesByXDTOProperties(Configuration, CatalogObject, XDTOProperties); 
 	
 	CatalogObject.Write();
 	

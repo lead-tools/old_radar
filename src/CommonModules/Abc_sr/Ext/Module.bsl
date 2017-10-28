@@ -17,3 +17,10 @@ Function GetConstant(Name) Export
 	Return Constants[Name].Get();
 	
 EndFunction // GetConstant()
+
+&AtServer
+Function AttributeValue(Ref, AttributeName) Export
+	
+	Return Abc.AttributeValue(Ref, AttributeName); 
+	
+EndFunction // AttributeValue()
