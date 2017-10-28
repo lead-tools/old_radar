@@ -161,6 +161,7 @@
 			<Catalog>AccountingFlags</Catalog>
 			<Catalog>AccountingRegisters</Catalog>
 			<Catalog>AccumulationRegisters</Catalog>
+			<Catalog>Aggregates</Catalog>
 			<Catalog>Attributes</Catalog>
 			<Catalog>BusinessProcesses</Catalog>
 			<Catalog>CalculationRegisters</Catalog>
@@ -211,7 +212,6 @@
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
-			<Catalog>Aggregates</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeKinds</Enum>
@@ -248,7 +248,6 @@
 			<Enum>Indexing</Enum>
 			<Enum>InformationRegisterPeriodicity</Enum>
 			<Enum>LinkByType</Enum>
-			<Enum>ObjectBelonging</Enum>
 			<Enum>Posting</Enum>
 			<Enum>PredefinedDataUpdate</Enum>
 			<Enum>RealTimePosting</Enum>
@@ -265,20 +264,20 @@
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UsePurposes</Enum>
 			<Enum>UseQuickChoice</Enum>
+			<InformationRegister>BaseCalculationTypes</InformationRegister>
+			<InformationRegister>BasedOn</InformationRegister>
+			<InformationRegister>Characteristics</InformationRegister>
+			<InformationRegister>Content</InformationRegister>
+			<InformationRegister>DataLockFields</InformationRegister>
+			<InformationRegister>Help</InformationRegister>
+			<InformationRegister>InputByString</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
 			<InformationRegister>MetaUUID</InformationRegister>
 			<InformationRegister>ModulesData</InformationRegister>
-			<InformationRegister>Rights</InformationRegister>
-			<InformationRegister>BasedOn</InformationRegister>
-			<InformationRegister>Characteristics</InformationRegister>
-			<InformationRegister>DataLockFields</InformationRegister>
-			<InformationRegister>InputByString</InformationRegister>
-			<InformationRegister>Content</InformationRegister>
 			<InformationRegister>Owners</InformationRegister>
 			<InformationRegister>RegisterRecords</InformationRegister>
-			<InformationRegister>BaseCalculationTypes</InformationRegister>
+			<InformationRegister>Rights</InformationRegister>
 			<InformationRegister>SubordinateSubsystems</InformationRegister>
-			<InformationRegister>Help</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
