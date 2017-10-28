@@ -14,18 +14,25 @@ EndFunction // AttributeValues()
 Procedure Load(Configuration, Path, Catalog = Undefined) Export
 	
 	Data = Abc.ReadMetadataXML(Path + ".xml");
+	XDTOProperties = Data.Catalog.Properties;
 	UUID = New UUID(Data.Catalog.UUID);
 	
 	If Catalog = Undefined Then
-		Catalog = Meta.RefByUUID(Configuration, UUID); 
+		Catalog = Catalogs.Catalogs.FindByAttribute("UUID", UUID,, Configuration);
 	EndIf; 
 	
-	If Catalog = Undefined Then
+	If Not ValueIsFilled(Catalog) Then
 		CatalogObject = Catalogs.Catalogs.CreateItem();
 	Else
 		CatalogObject = Catalog.GetObject();
 	EndIf; 
 	
-	Meta.FillAttributesByXDTOProperties(CatalogObject, Data.Catalog.Properties); 
+	CatalogObject.UUID = UUID;
+	CatalogObject.Owner = Configuration;
+	CatalogObject.Description = XDTOProperties.Name;
+	
+	Meta.FillAttributesByXDTOProperties(CatalogObject, XDTOProperties); 
+	
+	CatalogObject.Write();
 	
 EndProcedure // Load()
