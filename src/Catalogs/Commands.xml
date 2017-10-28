@@ -202,7 +202,7 @@
 			</Attribute>
 			<Attribute uuid="7c95f0bc-ab35-49ac-9f5f-3d22e9c42c9a">
 				<Properties>
-					<Name>Group</Name>
+					<Name>CommandGroup</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
