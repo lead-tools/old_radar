@@ -62,8 +62,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.RegisterRecords</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.BaseCalculationTypes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.SubordinateSubsystems</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Aggregates</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Help</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Meta</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Meta_sr</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

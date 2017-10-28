@@ -61,7 +61,7 @@ Function AttributeValueFromCache(Ref, AttributeName) Export
 	
 	Return Abc_sr.AttributeValue(Ref, AttributeName); 
 	
-EndFunction // AttributeValue()
+EndFunction // AttributeValueFromCache()
 
 &AtServer
 Function AttributeValues(Ref, AttributeNames) Export

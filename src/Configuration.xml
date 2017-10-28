@@ -223,6 +223,7 @@
 			<Enum>CatalogCodesSeries</Enum>
 			<Enum>CatalogCodeType</Enum>
 			<Enum>CatalogMainPresentation</Enum>
+			<Enum>CharOfAccountCodeSeries</Enum>
 			<Enum>ChartOfCalculationTypesBaseUse</Enum>
 			<Enum>ChartOfCalculationTypesCodeType</Enum>
 			<Enum>ChoiceDataGetModeOnInputByString</Enum>

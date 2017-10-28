@@ -791,7 +791,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.CatalogCodesSeries</v8:Type>
+						<v8:Type>cfg:EnumRef.CharOfAccountCodeSeries</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
