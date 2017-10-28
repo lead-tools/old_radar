@@ -1435,20 +1435,20 @@
 			</Attribute>
 			<Attribute uuid="a467e84c-8564-405a-bdd2-59d9a83a7fd2">
 				<Properties>
-					<Name>Role</Name>
+					<Name>Kind</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Role</v8:content>
+							<v8:content>Kind</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Роль</v8:content>
+							<v8:content>Вид</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.AttributeRoles</v8:Type>
+						<v8:Type>cfg:EnumRef.AttributeKinds</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

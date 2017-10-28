@@ -2,29 +2,29 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
 	<Enum uuid="06bf9294-61bb-4643-8525-25bf48e46358">
 		<InternalInfo>
-			<xr:GeneratedType name="EnumRef.AttributeRoles" category="Ref">
+			<xr:GeneratedType name="EnumRef.AttributeKinds" category="Ref">
 				<xr:TypeId>ea65fd5f-cd0c-4332-b567-9c13fbc0c6e3</xr:TypeId>
 				<xr:ValueId>5336144e-ecaa-49b3-bdad-d0f46cca0d8f</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumManager.AttributeRoles" category="Manager">
+			<xr:GeneratedType name="EnumManager.AttributeKinds" category="Manager">
 				<xr:TypeId>dd7d84ed-3891-4cf7-9b84-71bda093ac00</xr:TypeId>
 				<xr:ValueId>f3ffd632-006b-4768-ba16-562be78de8da</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumList.AttributeRoles" category="List">
+			<xr:GeneratedType name="EnumList.AttributeKinds" category="List">
 				<xr:TypeId>c5022fb0-8924-4ee5-a572-5ed38947a5b3</xr:TypeId>
 				<xr:ValueId>58494ea7-6b89-4af7-9d79-f7c13f2fe6b4</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>AttributeRoles</Name>
+			<Name>AttributeKinds</Name>
 			<Synonym>
 				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Роли реквизитов</v8:content>
+					<v8:lang>en</v8:lang>
+					<v8:content>Attribute kinds</v8:content>
 				</v8:item>
 				<v8:item>
-					<v8:lang>en</v8:lang>
-					<v8:content>Attribute roles</v8:content>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды реквизитов</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>

@@ -119,17 +119,17 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="fc6cdfeb-0da2-4007-a210-e82750bb3e25">
+			<Dimension uuid="b69c1e7a-3589-4fe8-b7df-1736b5a16385">
 				<Properties>
-					<Name>Field</Name>
+					<Name>Attribute</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Field</v8:content>
+							<v8:content>Attribute</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Поле</v8:content>
+							<v8:content>Атрибут</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
