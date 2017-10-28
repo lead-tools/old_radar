@@ -60,6 +60,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Content</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Owners</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.RegisterRecords</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.BaseCalculationTypes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.SubordinateSubsystems</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Aggregates</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
