@@ -1760,13 +1760,17 @@
 					<Use>ForItem</Use>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="73721347-c63d-4cab-ac08-ab34339f3f8c">
+					<Attribute uuid="a445d5e3-97fc-4f4f-83d4-061806efdb22">
 						<Properties>
-							<Name>Object</Name>
+							<Name>Attribute</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>en</v8:lang>
-									<v8:content>Object</v8:content>
+									<v8:content>Attribute</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Атрибут</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
