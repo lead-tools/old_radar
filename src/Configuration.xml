@@ -179,6 +179,7 @@
 			<Catalog>Configurations</Catalog>
 			<Catalog>Constants</Catalog>
 			<Catalog>DataProcessors</Catalog>
+			<Catalog>DefinedTypes</Catalog>
 			<Catalog>DocumentJournals</Catalog>
 			<Catalog>DocumentNumerators</Catalog>
 			<Catalog>Documents</Catalog>
