@@ -85,6 +85,7 @@
 						<v8:Type>cfg:CatalogRef.FunctionalOptions</v8:Type>
 						<v8:Type>cfg:CatalogRef.ExchangePlans</v8:Type>
 						<v8:Type>cfg:CatalogRef.DocumentJournals</v8:Type>
+						<v8:Type>cfg:CatalogRef.Sequences</v8:Type>
 						<v8:Type>cfg:CatalogRef.CommonAttributes</v8:Type>
 						<v8:Type>cfg:CatalogRef.Subsystems</v8:Type>
 					</Type>

@@ -78,6 +78,7 @@
 					<Comment/>
 					<Type>
 						<v8:Type>cfg:CatalogRef.Documents</v8:Type>
+						<v8:Type>cfg:CatalogRef.Sequences</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

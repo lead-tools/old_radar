@@ -203,6 +203,7 @@
 			<Catalog>Reports</Catalog>
 			<Catalog>Roles</Catalog>
 			<Catalog>ScheduledJobs</Catalog>
+			<Catalog>Sequences</Catalog>
 			<Catalog>SessionParameters</Catalog>
 			<Catalog>SettingsStorages</Catalog>
 			<Catalog>Strings</Catalog>
@@ -251,6 +252,7 @@
 			<Enum>HierarchyType</Enum>
 			<Enum>Indexing</Enum>
 			<Enum>InformationRegisterPeriodicity</Enum>
+			<Enum>MoveBoundaryOnPosting</Enum>
 			<Enum>Posting</Enum>
 			<Enum>PredefinedDataUpdate</Enum>
 			<Enum>RealTimePosting</Enum>
