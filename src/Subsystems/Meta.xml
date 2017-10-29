@@ -74,6 +74,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.StyleItems</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.HTTPServices</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ExternalDataSources</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.PredefinedData</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.PredefinedData</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
