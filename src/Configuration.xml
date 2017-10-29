@@ -215,6 +215,7 @@
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
+			<Catalog>WebServices</Catalog>
 			<Catalog>WSReferences</Catalog>
 			<Catalog>XDTOPackages</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
@@ -265,6 +266,7 @@
 			<Enum>Rights</Enum>
 			<Enum>SearchStringModeOnInputByString</Enum>
 			<Enum>SequenceFilling</Enum>
+			<Enum>SessionReuseMode</Enum>
 			<Enum>SubordinationUse</Enum>
 			<Enum>TaskNumberAutoPrefix</Enum>
 			<Enum>TemplateType</Enum>
@@ -284,6 +286,7 @@
 			<InformationRegister>RegisterRecords</InformationRegister>
 			<InformationRegister>Rights</InformationRegister>
 			<InformationRegister>SubordinateSubsystems</InformationRegister>
+			<InformationRegister>XDTOPackages</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

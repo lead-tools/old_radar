@@ -68,6 +68,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Sequences</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.XDTOPackages</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.WSReferences</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.WebServices</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.XDTOPackages</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
