@@ -215,6 +215,7 @@
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
+			<Catalog>WSReferences</Catalog>
 			<Catalog>XDTOPackages</Catalog>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
