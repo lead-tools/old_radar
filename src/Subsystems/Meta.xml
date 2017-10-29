@@ -77,6 +77,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.PredefinedData</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.PredefinedData</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Recalculations</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccumulationRegisterAggregates</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.AccumulationRegisterAggregateDimensions</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

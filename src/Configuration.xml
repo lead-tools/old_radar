@@ -160,6 +160,7 @@
 			<CommonForm>MainPage</CommonForm>
 			<Catalog>AccountingFlags</Catalog>
 			<Catalog>AccountingRegisters</Catalog>
+			<Catalog>AccumulationRegisterAggregates</Catalog>
 			<Catalog>AccumulationRegisters</Catalog>
 			<Catalog>Aggregates</Catalog>
 			<Catalog>Attributes</Catalog>
@@ -224,6 +225,8 @@
 			<Catalog>WebServices</Catalog>
 			<Catalog>WSReferences</Catalog>
 			<Catalog>XDTOPackages</Catalog>
+			<Enum>AccumulationRegisterAggregatePeriodicity</Enum>
+			<Enum>AccumulationRegisterAggregateUse</Enum>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeKinds</Enum>
@@ -280,6 +283,7 @@
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UsePurposes</Enum>
 			<Enum>UseQuickChoice</Enum>
+			<InformationRegister>AccumulationRegisterAggregateDimensions</InformationRegister>
 			<InformationRegister>BaseCalculationTypes</InformationRegister>
 			<InformationRegister>BasedOn</InformationRegister>
 			<InformationRegister>Characteristics</InformationRegister>
