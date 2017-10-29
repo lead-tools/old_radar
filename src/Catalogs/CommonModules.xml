@@ -329,11 +329,11 @@
 		<ChildObjects>
 			<Attribute uuid="117b0b50-6a65-40c2-9e09-91b4246690f0">
 				<Properties>
-					<Name>ClientManagedApllication</Name>
+					<Name>ClientManagedApplication</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Client managed apllication</v8:content>
+							<v8:content>Client managed application</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

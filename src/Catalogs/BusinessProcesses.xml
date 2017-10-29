@@ -1790,11 +1790,11 @@
 			</Attribute>
 			<Attribute uuid="e5bdf661-e8a3-4f23-8b80-735c7226cb35">
 				<Properties>
-					<Name>TaskCreatingPrivilegedMode</Name>
+					<Name>CreateTaskInPrivilegedMode</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Task creating privileged mode</v8:content>
+							<v8:content>Create task in privileged mode</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

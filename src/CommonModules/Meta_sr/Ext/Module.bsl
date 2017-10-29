@@ -42,6 +42,11 @@ Function SkipProperties() Export
 		"ManagerModule,"
 		"ObjectModule,"
 		"RecordSetModule,"
+		"Module,"
+		"ValueManagerModule,"
+		"Flowchart,"
+		"Schedule,"
+		"CommandInterface,"
 		"UUID,"
 	);
 	

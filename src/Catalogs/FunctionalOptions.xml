@@ -390,8 +390,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Constants</v8:Type>
-						<v8:Type>cfg:CatalogRef.Attributes</v8:Type>
+						<v8:Type>cfg:CatalogRef.Locations</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

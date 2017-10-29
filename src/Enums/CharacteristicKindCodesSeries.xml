@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
-	<Enum uuid="a2c4ec3b-5b3d-49f9-b04c-8781563847eb">
+	<Enum uuid="b0fb9308-fdf9-4d57-9104-257a0a0122c6">
 		<InternalInfo>
-			<xr:GeneratedType name="EnumRef.LinkByType" category="Ref">
-				<xr:TypeId>9f8e97a3-b1d5-4ba8-8b19-1252ff666b53</xr:TypeId>
-				<xr:ValueId>760762fd-33d2-454d-adc5-837e805eb7db</xr:ValueId>
+			<xr:GeneratedType name="EnumRef.CharacteristicKindCodesSeries" category="Ref">
+				<xr:TypeId>f3fb02ea-f401-4a34-a4c1-eba69f7d8192</xr:TypeId>
+				<xr:ValueId>cd8ebcc0-07a4-4186-9588-d06b8fd16fcc</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumManager.LinkByType" category="Manager">
-				<xr:TypeId>05f51081-c3e1-4b83-acb6-125a2aba2260</xr:TypeId>
-				<xr:ValueId>424994f5-e9ff-4cbc-b74a-c0e0e46c8de0</xr:ValueId>
+			<xr:GeneratedType name="EnumManager.CharacteristicKindCodesSeries" category="Manager">
+				<xr:TypeId>34851998-9e46-4969-980a-067ad4855484</xr:TypeId>
+				<xr:ValueId>4b1098d4-492f-4241-be6c-e6cd20b00a25</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumList.LinkByType" category="List">
-				<xr:TypeId>1c3c1602-f218-4895-8458-0a246379800d</xr:TypeId>
-				<xr:ValueId>6301302c-6062-4f84-8084-0aa1929e5f54</xr:ValueId>
+			<xr:GeneratedType name="EnumList.CharacteristicKindCodesSeries" category="List">
+				<xr:TypeId>69e6bfe7-2662-4c9d-bd57-a7026eb28a3f</xr:TypeId>
+				<xr:ValueId>5d6a3cc7-f34e-46c4-b15c-b2d5ee6e93ad</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>LinkByType</Name>
+			<Name>CharacteristicKindCodesSeries</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Link by type</v8:content>
+					<v8:content>Characteristic kind codes series</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Связь по типу</v8:content>
+					<v8:content>Серии кодов плана видов характеристик</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -42,33 +42,33 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
-			<EnumValue uuid="11f382a3-58f9-4121-9f16-99599f62410d">
+			<EnumValue uuid="2de7d628-f539-4f68-84ff-84c045a9f869">
 				<Properties>
-					<Name>DataPath</Name>
+					<Name>WholeCharacteristicKind</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Data path</v8:content>
+							<v8:content>Whole characteristic kind</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Путь к данным</v8:content>
+							<v8:content>Во всем плане видов характеристик</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="4f4fa5ac-512d-4384-88f2-57a34ba6c1dd">
+			<EnumValue uuid="2ed3b422-c00c-40b9-a96c-1b22e30112e1">
 				<Properties>
-					<Name>LinkItem</Name>
+					<Name>WithinSubordination</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Link item</v8:content>
+							<v8:content>Within subordination</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Элемент связи</v8:content>
+							<v8:content>В пределах подчинения</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
