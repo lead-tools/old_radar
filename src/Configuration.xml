@@ -195,6 +195,7 @@
 			<Catalog>FunctionalOptions</Catalog>
 			<Catalog>FunctionalOptionsParameters</Catalog>
 			<Catalog>Handlers</Catalog>
+			<Catalog>HTTPServices</Catalog>
 			<Catalog>InformationRegisters</Catalog>
 			<Catalog>Languages</Catalog>
 			<Catalog>Locations</Catalog>
