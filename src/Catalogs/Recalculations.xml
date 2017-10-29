@@ -1,38 +1,38 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
-	<Catalog uuid="ce158c88-c223-467d-bb20-b6861ec0df78">
+	<Catalog uuid="cf1d1e97-3ace-4a70-b7a1-30e5903624dc">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.Sequences" category="Object">
-				<xr:TypeId>00314adc-7580-4df7-a568-3c8721a98c66</xr:TypeId>
-				<xr:ValueId>f94fd892-a861-43c9-a065-811d14672151</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.Recalculations" category="Object">
+				<xr:TypeId>73ff3dea-6c09-4c3d-876e-571b3d89e0d4</xr:TypeId>
+				<xr:ValueId>643ab70b-b6d6-415a-9328-b4b8fc77b163</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.Sequences" category="Ref">
-				<xr:TypeId>9624aa09-28e0-4432-82a4-1ec16b868ac4</xr:TypeId>
-				<xr:ValueId>747e9a0c-e80b-4fc2-abbc-790cce33a5ad</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.Recalculations" category="Ref">
+				<xr:TypeId>bf6c4a6f-aea6-4834-ad4d-7a7a75c6772c</xr:TypeId>
+				<xr:ValueId>969dbb5b-718d-482e-85ad-280a19d33c41</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.Sequences" category="Selection">
-				<xr:TypeId>a51d7003-8b97-43c2-a117-13de1760eb46</xr:TypeId>
-				<xr:ValueId>857debcb-a55c-4421-9f59-f5817154d1f9</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.Recalculations" category="Selection">
+				<xr:TypeId>80dad32e-9732-43fa-a86a-9745fb636c94</xr:TypeId>
+				<xr:ValueId>0fd6b68e-6960-447b-a6dc-ac09c2427450</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.Sequences" category="List">
-				<xr:TypeId>08d3128f-b9c8-4fe3-beec-a02704a54cc3</xr:TypeId>
-				<xr:ValueId>bbd94c72-5bf7-4333-9e6b-414605b376fb</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.Recalculations" category="List">
+				<xr:TypeId>79308c6d-6cea-4cba-86da-3f96d57eb0b8</xr:TypeId>
+				<xr:ValueId>24c55a24-b783-45c3-8ffe-81925b7d0c29</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.Sequences" category="Manager">
-				<xr:TypeId>edc0743b-2735-4d2d-8e30-e21d151f5ad8</xr:TypeId>
-				<xr:ValueId>69a586c4-05fe-4543-8ee6-0349d88c493f</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.Recalculations" category="Manager">
+				<xr:TypeId>89c81f05-8d31-44c9-941b-135d337267ee</xr:TypeId>
+				<xr:ValueId>f64ca76e-d5ed-44ff-8399-d5e5f0de3be6</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Sequences</Name>
+			<Name>Recalculations</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Sequences</v8:content>
+					<v8:content>Recalculations</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Последовательности</v8:content>
+					<v8:content>Перерасчеты</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -43,7 +43,7 @@
 			<FoldersOnTop>true</FoldersOnTop>
 			<UseStandardCommands>true</UseStandardCommands>
 			<Owners>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Configurations</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CalculationRegisters</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
@@ -296,8 +296,8 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.Sequences.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.Sequences.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.Recalculations.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Recalculations.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
@@ -327,7 +327,7 @@
 			<DataHistory>DontUse</DataHistory>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="de7dffc6-1b5c-4ad3-bef9-9c133a9d13db">
+			<Attribute uuid="98e7a2f4-8c62-47b6-8cdc-19cc7bdd84c2">
 				<Properties>
 					<Name>Comment</Name>
 					<Synonym>
@@ -375,7 +375,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="2c336c45-60de-46a6-9bbf-cffb602e8ea8">
+			<Attribute uuid="dc478df0-25ec-4fbc-9487-1579f635d8e4">
 				<Properties>
 					<Name>DataLockControlMode</Name>
 					<Synonym>
@@ -419,51 +419,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="108d1582-8520-445c-8013-cee0e6fbde27">
-				<Properties>
-					<Name>MoveBoundaryOnPosting</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Move boundary on posting</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Перемещение границы при проведении</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:EnumRef.MoveBoundaryOnPosting</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="bbdc5dbb-5fe8-4908-89b1-ea7451f4dbac">
+			<Attribute uuid="1b2ff126-1b93-4204-8ad0-f4fb0f846c1d">
 				<Properties>
 					<Name>RecordSetModule</Name>
 					<Synonym>
@@ -507,7 +463,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="e850d516-e6dd-4bdf-8cd2-ea0374dbdb5f">
+			<Attribute uuid="7e182947-2c33-486b-8400-d9af01c57c07">
 				<Properties>
 					<Name>Synonym</Name>
 					<Synonym>
@@ -551,15 +507,15 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<TabularSection uuid="666d5a10-6f3f-4156-ae08-4a6626ba4dc2">
+			<TabularSection uuid="f01c2045-9c64-43a9-87e6-75d38eb27eaf">
 				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.Sequences.AttributeOrder" category="TabularSection">
-						<xr:TypeId>1c22a1c7-c793-48f2-b18a-c3643999a3b8</xr:TypeId>
-						<xr:ValueId>b713ef80-e4bc-48d6-b0e3-15e73d7c3001</xr:ValueId>
+					<xr:GeneratedType name="CatalogTabularSection.Recalculations.AttributeOrder" category="TabularSection">
+						<xr:TypeId>d5532800-bc41-4d23-a250-7046397c8633</xr:TypeId>
+						<xr:ValueId>2e77383b-0e99-42b1-ac16-2a660bc25563</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.Sequences.AttributeOrder" category="TabularSectionRow">
-						<xr:TypeId>af92ba66-7096-4792-a75d-29061416add0</xr:TypeId>
-						<xr:ValueId>1a4cc5a6-6add-4b2f-ac1a-df60d340d3b2</xr:ValueId>
+					<xr:GeneratedType name="CatalogTabularSectionRow.Recalculations.AttributeOrder" category="TabularSectionRow">
+						<xr:TypeId>c197eb2c-3873-4993-b04e-391ca36ed7e4</xr:TypeId>
+						<xr:ValueId>0c53630e-8ae6-49b7-a498-c8ac1d726cd9</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
@@ -608,7 +564,7 @@
 					<Use>ForItem</Use>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="dca3c345-125d-4be0-99a8-c9c98bcb0916">
+					<Attribute uuid="584cb080-a87f-4a32-809c-645675ad3525">
 						<Properties>
 							<Name>Attribute</Name>
 							<Synonym>

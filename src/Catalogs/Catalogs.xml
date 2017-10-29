@@ -2526,36 +2526,6 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<TabularSection uuid="850448fe-2ef7-4304-8aca-2543b1d405b5">
-				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.Catalogs.PredefinedData" category="TabularSection">
-						<xr:TypeId>d25448e7-400f-49bb-babf-b7554b844f0f</xr:TypeId>
-						<xr:ValueId>17a22773-9c33-4121-a68c-77a88161020a</xr:ValueId>
-					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.Catalogs.PredefinedData" category="TabularSectionRow">
-						<xr:TypeId>368be12a-a207-4e71-8e62-51b53e86ed3f</xr:TypeId>
-						<xr:ValueId>17a32790-ac92-428a-bf52-17660a9bbcf4</xr:ValueId>
-					</xr:GeneratedType>
-				</InternalInfo>
-				<Properties>
-					<Name>PredefinedData</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Predefined data</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Предопределенные данные</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<ToolTip/>
-					<FillChecking>DontCheck</FillChecking>
-					<Use>ForItem</Use>
-				</Properties>
-				<ChildObjects/>
-			</TabularSection>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

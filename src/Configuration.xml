@@ -160,6 +160,7 @@
 			<CommonForm>MainPage</CommonForm>
 			<Catalog>AccountingFlags</Catalog>
 			<Catalog>AccountingRegisters</Catalog>
+			<Catalog>AccumulationRegisterAggregates</Catalog>
 			<Catalog>AccumulationRegisters</Catalog>
 			<Catalog>Aggregates</Catalog>
 			<Catalog>Attributes</Catalog>
@@ -179,6 +180,7 @@
 			<Catalog>Configurations</Catalog>
 			<Catalog>Constants</Catalog>
 			<Catalog>DataProcessors</Catalog>
+			<Catalog>DefinedTypes</Catalog>
 			<Catalog>DocumentJournals</Catalog>
 			<Catalog>DocumentNumerators</Catalog>
 			<Catalog>Documents</Catalog>
@@ -188,18 +190,22 @@
 			<Catalog>EventSubscriptions</Catalog>
 			<Catalog>ExchangePlans</Catalog>
 			<Catalog>ExtDimensionAccountingFlags</Catalog>
+			<Catalog>ExternalDataSources</Catalog>
 			<Catalog>Files</Catalog>
 			<Catalog>FilterCriteria</Catalog>
 			<Catalog>Forms</Catalog>
 			<Catalog>FunctionalOptions</Catalog>
 			<Catalog>FunctionalOptionsParameters</Catalog>
 			<Catalog>Handlers</Catalog>
+			<Catalog>HTTPServices</Catalog>
 			<Catalog>InformationRegisters</Catalog>
 			<Catalog>Languages</Catalog>
 			<Catalog>Locations</Catalog>
 			<Catalog>Modules</Catalog>
 			<Catalog>Pictures</Catalog>
+			<Catalog>PredefinedData</Catalog>
 			<Catalog>Projects</Catalog>
+			<Catalog>Recalculations</Catalog>
 			<Catalog>Reports</Catalog>
 			<Catalog>Roles</Catalog>
 			<Catalog>ScheduledJobs</Catalog>
@@ -207,6 +213,7 @@
 			<Catalog>SessionParameters</Catalog>
 			<Catalog>SettingsStorages</Catalog>
 			<Catalog>Strings</Catalog>
+			<Catalog>StyleItems</Catalog>
 			<Catalog>Subsystems</Catalog>
 			<Catalog>TabularSections</Catalog>
 			<Catalog>Tasks</Catalog>
@@ -218,6 +225,8 @@
 			<Catalog>WebServices</Catalog>
 			<Catalog>WSReferences</Catalog>
 			<Catalog>XDTOPackages</Catalog>
+			<Enum>AccumulationRegisterAggregatePeriodicity</Enum>
+			<Enum>AccumulationRegisterAggregateUse</Enum>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeKinds</Enum>
@@ -267,12 +276,14 @@
 			<Enum>SearchStringModeOnInputByString</Enum>
 			<Enum>SequenceFilling</Enum>
 			<Enum>SessionReuseMode</Enum>
+			<Enum>StyleElementType</Enum>
 			<Enum>SubordinationUse</Enum>
 			<Enum>TaskNumberAutoPrefix</Enum>
 			<Enum>TemplateType</Enum>
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UsePurposes</Enum>
 			<Enum>UseQuickChoice</Enum>
+			<InformationRegister>AccumulationRegisterAggregateDimensions</InformationRegister>
 			<InformationRegister>BaseCalculationTypes</InformationRegister>
 			<InformationRegister>BasedOn</InformationRegister>
 			<InformationRegister>Characteristics</InformationRegister>
@@ -283,6 +294,7 @@
 			<InformationRegister>JobQueue</InformationRegister>
 			<InformationRegister>ModulesData</InformationRegister>
 			<InformationRegister>Owners</InformationRegister>
+			<InformationRegister>PredefinedData</InformationRegister>
 			<InformationRegister>RegisterRecords</InformationRegister>
 			<InformationRegister>Rights</InformationRegister>
 			<InformationRegister>SubordinateSubsystems</InformationRegister>
