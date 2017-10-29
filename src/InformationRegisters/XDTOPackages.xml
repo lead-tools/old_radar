@@ -1,46 +1,46 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
-	<InformationRegister uuid="5134b43f-0114-42ee-a01c-29653fb17004">
+	<InformationRegister uuid="a330dc52-08bd-4624-8c99-489b30202d49">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.Content" category="Record">
-				<xr:TypeId>d517bf0f-af83-4acf-86d4-8b560b17a41e</xr:TypeId>
-				<xr:ValueId>20728908-2c17-49e7-9082-f94e252a89df</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecord.XDTOPackages" category="Record">
+				<xr:TypeId>e65a01e5-c009-435c-a74b-02c47a06f81f</xr:TypeId>
+				<xr:ValueId>03faa00c-5a42-4129-92ce-1bad6dfa56e6</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.Content" category="Manager">
-				<xr:TypeId>197fd6e4-5567-4e38-88c1-7fc436fad14d</xr:TypeId>
-				<xr:ValueId>2b4da9e7-7166-422b-af78-a97863d984a3</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterManager.XDTOPackages" category="Manager">
+				<xr:TypeId>e1ae54ff-35b5-43f7-9190-34dc5c36c52b</xr:TypeId>
+				<xr:ValueId>68e0c8eb-fa8a-4ea9-b34e-0df9e7f5e611</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.Content" category="Selection">
-				<xr:TypeId>d0a63926-dbf4-452b-bd51-4759af0de4a4</xr:TypeId>
-				<xr:ValueId>ce74a445-4c83-437b-8331-cf298c2954bc</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterSelection.XDTOPackages" category="Selection">
+				<xr:TypeId>fbaa6149-9db8-4bb2-b3a0-8ecd7b240f9f</xr:TypeId>
+				<xr:ValueId>ef011144-72ba-4852-8ef7-f84905b9c8ad</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.Content" category="List">
-				<xr:TypeId>432a5fc9-2765-4dff-a72c-b2b23a5db308</xr:TypeId>
-				<xr:ValueId>992340cd-60d7-4952-8af1-f4b9c0cab60c</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterList.XDTOPackages" category="List">
+				<xr:TypeId>586ae45d-45e2-481a-b438-d664c049f534</xr:TypeId>
+				<xr:ValueId>0e34d0f7-dd4b-4e2d-93b5-a7ca3ff4b98c</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.Content" category="RecordSet">
-				<xr:TypeId>43575bc8-18e7-4b46-bd75-9ca08c3b13ac</xr:TypeId>
-				<xr:ValueId>0dca92fd-e499-40a9-b47e-318750d48b77</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordSet.XDTOPackages" category="RecordSet">
+				<xr:TypeId>b447124e-0d97-48b5-8291-18fce56146c5</xr:TypeId>
+				<xr:ValueId>b5780e14-9e70-4590-af05-2490873b64d4</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.Content" category="RecordKey">
-				<xr:TypeId>03206dcc-96ba-47f8-af97-f8d64fbeb133</xr:TypeId>
-				<xr:ValueId>85be3a7e-1024-4279-84ea-414671e5fd4c</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordKey.XDTOPackages" category="RecordKey">
+				<xr:TypeId>1f009705-60e4-4f14-9ac9-a543ef7c304a</xr:TypeId>
+				<xr:ValueId>011dbf67-37aa-4ee3-8c98-2705b902f923</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.Content" category="RecordManager">
-				<xr:TypeId>c0dd8fbb-7bfb-43e0-a30d-48de5695036c</xr:TypeId>
-				<xr:ValueId>3496a3e0-a2ff-41aa-b80c-bf94fa5fa7bc</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordManager.XDTOPackages" category="RecordManager">
+				<xr:TypeId>51932589-fd34-4348-96eb-bba8f714a4c4</xr:TypeId>
+				<xr:ValueId>15e4faf5-a644-4d0e-bbbf-56d6fb0a63ec</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Content</Name>
+			<Name>XDTOPackages</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Content</v8:content>
+					<v8:content>XDTO packages</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Состав</v8:content>
+					<v8:content>Пакеты XDTO</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -66,7 +66,7 @@
 			<DataHistory>DontUse</DataHistory>
 		</Properties>
 		<ChildObjects>
-			<Dimension uuid="b117287a-8df0-4302-af59-4a40f5974759">
+			<Dimension uuid="5ecc0d4e-fd95-4f88-ab28-7c5fc05ff2e7">
 				<Properties>
 					<Name>Ref</Name>
 					<Synonym>
@@ -74,20 +74,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Ref</v8:content>
 						</v8:item>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Ссылка</v8:content>
-						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.FilterCriteria</v8:Type>
-						<v8:Type>cfg:CatalogRef.FunctionalOptions</v8:Type>
-						<v8:Type>cfg:CatalogRef.ExchangePlans</v8:Type>
-						<v8:Type>cfg:CatalogRef.DocumentJournals</v8:Type>
-						<v8:Type>cfg:CatalogRef.Sequences</v8:Type>
-						<v8:Type>cfg:CatalogRef.CommonAttributes</v8:Type>
-						<v8:Type>cfg:CatalogRef.Subsystems</v8:Type>
+						<v8:Type>cfg:CatalogRef.WebServices</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -118,53 +108,22 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="b106d2fc-60cf-4a12-95e4-09dc9f74be6c">
+			<Dimension uuid="30cf3468-d9b3-4db2-8a5d-8dee6482a2dc">
 				<Properties>
-					<Name>Object</Name>
+					<Name>Package</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Object</v8:content>
+							<v8:content>Package</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Объект</v8:content>
+							<v8:content>Пакет</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Pictures</v8:Type>
-						<v8:Type>cfg:CatalogRef.AccumulationRegisters</v8:Type>
-						<v8:Type>cfg:CatalogRef.Tasks</v8:Type>
-						<v8:Type>cfg:CatalogRef.FunctionalOptions</v8:Type>
-						<v8:Type>cfg:CatalogRef.Reports</v8:Type>
-						<v8:Type>cfg:CatalogRef.Documents</v8:Type>
-						<v8:Type>cfg:CatalogRef.SessionParameters</v8:Type>
-						<v8:Type>cfg:CatalogRef.Commands</v8:Type>
-						<v8:Type>cfg:CatalogRef.Roles</v8:Type>
-						<v8:Type>cfg:CatalogRef.SettingsStorages</v8:Type>
-						<v8:Type>cfg:CatalogRef.Forms</v8:Type>
-						<v8:Type>cfg:CatalogRef.ExchangePlans</v8:Type>
-						<v8:Type>cfg:CatalogRef.ChartsOfCharacteristicTypes</v8:Type>
-						<v8:Type>cfg:CatalogRef.AccountingFlags</v8:Type>
-						<v8:Type>cfg:CatalogRef.ScheduledJobs</v8:Type>
-						<v8:Type>cfg:CatalogRef.ChartsOfAccounts</v8:Type>
-						<v8:Type>cfg:CatalogRef.Constants</v8:Type>
-						<v8:Type>cfg:CatalogRef.Templates</v8:Type>
-						<v8:Type>cfg:CatalogRef.DocumentJournals</v8:Type>
-						<v8:Type>cfg:CatalogRef.Catalogs</v8:Type>
-						<v8:Type>cfg:CatalogRef.CommonAttributes</v8:Type>
-						<v8:Type>cfg:CatalogRef.Subsystems</v8:Type>
-						<v8:Type>cfg:CatalogRef.DataProcessors</v8:Type>
-						<v8:Type>cfg:CatalogRef.Attributes</v8:Type>
-						<v8:Type>cfg:CatalogRef.ChartsOfCalculationTypes</v8:Type>
-						<v8:Type>cfg:CatalogRef.ExtDimensionAccountingFlags</v8:Type>
-						<v8:Type>cfg:CatalogRef.InformationRegisters</v8:Type>
-						<v8:Type>cfg:CatalogRef.BusinessProcesses</v8:Type>
-						<v8:Type>cfg:CatalogRef.Enums</v8:Type>
-						<v8:Type>cfg:CatalogRef.TabularSections</v8:Type>
-						<v8:Type>cfg:CatalogRef.AccountingRegisters</v8:Type>
-						<v8:Type>cfg:CatalogRef.CalculationRegisters</v8:Type>
+						<v8:Type>cfg:CatalogRef.XDTOPackages</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

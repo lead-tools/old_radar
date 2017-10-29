@@ -1,38 +1,38 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
-	<Catalog uuid="9345c644-ceed-490f-84a0-68d191df3604">
+	<Catalog uuid="087b38ef-31b0-4d7d-a516-1b2e1013d63f">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.DocumentNumerators" category="Object">
-				<xr:TypeId>98da1354-b6af-4dc6-a0fb-9bde15c8e8bb</xr:TypeId>
-				<xr:ValueId>7bd0ad26-5bb5-4290-843b-90fef84df505</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.WSReferences" category="Object">
+				<xr:TypeId>d50a2d71-bcd2-4671-9758-7cb825a3a9cd</xr:TypeId>
+				<xr:ValueId>37529038-4f80-4af5-b2e5-16667dc61a89</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.DocumentNumerators" category="Ref">
-				<xr:TypeId>784ea848-74b9-4589-950b-8b7d91374c12</xr:TypeId>
-				<xr:ValueId>6f42f8a8-0c6f-4f92-b2cb-c4016600d3c1</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.WSReferences" category="Ref">
+				<xr:TypeId>9bdbd8a7-4407-4267-9672-ae77ec1f3dfe</xr:TypeId>
+				<xr:ValueId>cfaecb60-bafa-47f9-9f89-5dc83cd98f56</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.DocumentNumerators" category="Selection">
-				<xr:TypeId>013ab7a1-1675-44c0-b97c-fe641b062076</xr:TypeId>
-				<xr:ValueId>b7bedbf3-afe9-41a3-83ce-608e09b87b3e</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.WSReferences" category="Selection">
+				<xr:TypeId>08fbbe2f-1099-4001-a33a-c3cb65972c36</xr:TypeId>
+				<xr:ValueId>1566c2e5-45e9-48c3-90fc-6a607dd95ae2</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.DocumentNumerators" category="List">
-				<xr:TypeId>cb9d4586-7156-4424-89ec-27376f668a80</xr:TypeId>
-				<xr:ValueId>cdccac92-af14-4a61-956f-bba5f30ab2d7</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.WSReferences" category="List">
+				<xr:TypeId>8b0cc443-bf65-4997-8dac-9e73a0532b84</xr:TypeId>
+				<xr:ValueId>b7b6b138-6ccc-4a56-a1de-eb8fde1cba9c</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.DocumentNumerators" category="Manager">
-				<xr:TypeId>43c77961-40b5-4022-ab7c-2624116a229b</xr:TypeId>
-				<xr:ValueId>fbcb79cd-7c51-4a76-8ae6-0b8b74fa6555</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.WSReferences" category="Manager">
+				<xr:TypeId>7c26770c-1c8c-43f2-ab9d-56bb6aa989bd</xr:TypeId>
+				<xr:ValueId>1773b57c-4a9c-4dce-9ea6-1d00168b82fb</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>DocumentNumerators</Name>
+			<Name>WSReferences</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>en</v8:lang>
-					<v8:content>Document numerators</v8:content>
+					<v8:content>WS-references</v8:content>
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Нумераторы документов</v8:content>
+					<v8:content>WS-ссылки</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -296,8 +296,8 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.DocumentNumerators.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.DocumentNumerators.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.WSReferences.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.WSReferences.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
@@ -327,51 +327,7 @@
 			<DataHistory>DontUse</DataHistory>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="6df5ca9b-0dc0-4b9c-b81b-710448042b58">
-				<Properties>
-					<Name>CheckUnique</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Check unique</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Контроль уникальности</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:EnumRef.Boolean</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="c6adc673-1b62-4080-bbd9-8bf2a4f59311">
+			<Attribute uuid="f77657ca-23e6-4e49-ae3f-10f5b22db23b">
 				<Properties>
 					<Name>Comment</Name>
 					<Synonym>
@@ -419,22 +375,26 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="1e02f92c-2325-4147-8eda-cf00809bc68f">
+			<Attribute uuid="90b66058-230c-4e6b-b259-2913afacfc2e">
 				<Properties>
-					<Name>NumberAllowedLength</Name>
+					<Name>LocationURL</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Number allowed length</v8:content>
+							<v8:content>Location URL</v8:content>
 						</v8:item>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Допустимая длина номера</v8:content>
+							<v8:content>URL источника</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.AllowedLength</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -447,7 +407,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
+					<FillValue xsi:type="xs:string"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -463,144 +423,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="eca3d784-005b-49b2-af19-e178761f5824">
-				<Properties>
-					<Name>NumberLength</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Number length</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Длина номера</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>10</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="f347ab87-b61d-425d-9b5c-e2fa8ad0d521">
-				<Properties>
-					<Name>NumberPeriodicity</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Number periodicity</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Периодичность</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:EnumRef.DocumentNumberPeriodicity</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="f62c361a-5f61-4a15-bf59-dd1ff13d1d49">
-				<Properties>
-					<Name>NumberType</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Number type</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Тип номера</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:EnumRef.BusinessProcessNumberType</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="7af063f6-b106-4230-9c35-f64f87b11c27">
+			<Attribute uuid="a22ab5eb-870a-43d6-987e-8ddeba27c45f">
 				<Properties>
 					<Name>Synonym</Name>
 					<Synonym>
@@ -644,18 +467,22 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="e27790f1-5a76-4054-8db5-dc45e9c62a97">
+			<Attribute uuid="d30bba6f-fa07-4cbf-8cef-7575632bc8a3">
 				<Properties>
-					<Name>UUID</Name>
+					<Name>WSDefinition</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>UUID</v8:content>
+							<v8:content>WS-definition</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>WS-определение</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>v8:UUID</v8:Type>
+						<v8:Type>v8:ValueStorage</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -680,7 +507,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Use>ForItem</Use>
 					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>DontUse</FullTextSearch>
+					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
