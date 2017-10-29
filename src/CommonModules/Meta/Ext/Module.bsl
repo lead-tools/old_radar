@@ -20,7 +20,11 @@ EndFunction // AttributeTypes()
 &AtServer
 Function TypeManager(Type) Export
 	
-	Return Meta_sr.TypeManagers()[Type];
+	Try
+		Return Meta_sr.TypeManagers()[Type];
+	Except
+		Raise StrTemplate("Unknown type `%1`", Type);
+	EndTry;
 	
 EndFunction // TypeManager() 
 
@@ -67,7 +71,11 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 		
 		If Not SkipProperties.Property(Name) Then
 			Try
-				XDTOValue = XDTOProperties[Name];
+				If Name = "IsPredefined" Then
+					XDTOValue = XDTOProperties.Predefined;
+				Else
+					XDTOValue = XDTOProperties[Name];
+				EndIf; 
 			Except
 				Message(StrTemplate("Property `%1` not found", Name));
 				Continue;
@@ -91,7 +99,43 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 		ElsIf Type = Type("CatalogRef.Tasks") Then
 			
 		ElsIf Type = Type("CatalogRef.ChartsOfCharacteristicTypes") Then
-		
+			
+		ElsIf Type = Type("CatalogRef.Catalogs") And Name = "CharacteristicExtValues" Then	
+			
+		ElsIf Type = Type("CatalogRef.Types") Then
+			
+		ElsIf Type = Type("CatalogRef.ChoiceParameterLinks") Then
+			
+		ElsIf Type = Type("CatalogRef.ChoiceParameters") Then	
+			
+		ElsIf Type = Type("CatalogRef.TypeLinks") Then	
+			
+		ElsIf Type = Type("CatalogRef.Values") Then	
+			
+		ElsIf Type = Type("CatalogRef.DocumentNumerators") Then
+			
+		ElsIf Type = Type("CatalogRef.Events") Then
+			
+		ElsIf Type = Type("CatalogRef.Handlers") Then
+			
+		ElsIf Type = Type("CatalogRef.Locations") Then
+			
+		ElsIf Type = Type("CatalogRef.SettingsStorages") Then
+			
+		ElsIf Type = Type("CatalogRef.CommandInterfaces") Then
+			
+		ElsIf Type = Type("CatalogRef.Pictures") Then
+			
+		ElsIf Type = Type("ValueStorage") And Name = "Flowchart" Then
+			
+		ElsIf Type = Type("ValueStorage") And Name = "Schedule" Then
+			
+		ElsIf Type = Type("CatalogRef.InformationRegisters") Then
+			
+		ElsIf Type = Type("CatalogRef.SessionParameters") Then
+			
+		ElsIf Type = Type("CatalogRef.Attributes") Then	
+			
 		ElsIf Type = Type("EnumRef.DataHistoryUse") Then	
 			// 8.3.11
 		ElsIf Type = Type("UUID") Then	

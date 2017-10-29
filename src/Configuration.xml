@@ -180,7 +180,7 @@
 			<Catalog>Constants</Catalog>
 			<Catalog>DataProcessors</Catalog>
 			<Catalog>DocumentJournals</Catalog>
-			<Catalog>DocumentNumerator</Catalog>
+			<Catalog>DocumentNumerators</Catalog>
 			<Catalog>Documents</Catalog>
 			<Catalog>Enums</Catalog>
 			<Catalog>EnumValues</Catalog>
@@ -196,6 +196,7 @@
 			<Catalog>Handlers</Catalog>
 			<Catalog>InformationRegisters</Catalog>
 			<Catalog>Languages</Catalog>
+			<Catalog>Locations</Catalog>
 			<Catalog>Modules</Catalog>
 			<Catalog>Pictures</Catalog>
 			<Catalog>Projects</Catalog>
@@ -209,6 +210,7 @@
 			<Catalog>TabularSections</Catalog>
 			<Catalog>Tasks</Catalog>
 			<Catalog>Templates</Catalog>
+			<Catalog>TypeLinks</Catalog>
 			<Catalog>Types</Catalog>
 			<Catalog>Values</Catalog>
 			<Catalog>Versions</Catalog>
@@ -223,6 +225,7 @@
 			<Enum>CatalogCodesSeries</Enum>
 			<Enum>CatalogCodeType</Enum>
 			<Enum>CatalogMainPresentation</Enum>
+			<Enum>CharacteristicKindCodesSeries</Enum>
 			<Enum>CharOfAccountCodeSeries</Enum>
 			<Enum>ChartOfCalculationTypesBaseUse</Enum>
 			<Enum>ChartOfCalculationTypesCodeType</Enum>
@@ -248,7 +251,6 @@
 			<Enum>HierarchyType</Enum>
 			<Enum>Indexing</Enum>
 			<Enum>InformationRegisterPeriodicity</Enum>
-			<Enum>LinkByType</Enum>
 			<Enum>Posting</Enum>
 			<Enum>PredefinedDataUpdate</Enum>
 			<Enum>RealTimePosting</Enum>

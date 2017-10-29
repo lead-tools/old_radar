@@ -42,7 +42,9 @@
 			<LevelCount>2</LevelCount>
 			<FoldersOnTop>true</FoldersOnTop>
 			<UseStandardCommands>true</UseStandardCommands>
-			<Owners/>
+			<Owners>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Configurations</xr:Item>
+			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
 			<DescriptionLength>80</DescriptionLength>
@@ -471,7 +473,7 @@
 			</Attribute>
 			<Attribute uuid="f17712b2-94f4-4ca9-974e-b7b1e458b243">
 				<Properties>
-					<Name>Predefined</Name>
+					<Name>IsPredefined</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>

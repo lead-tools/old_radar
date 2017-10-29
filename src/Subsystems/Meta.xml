@@ -29,7 +29,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.InformationRegisters</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Roles</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TabularSections</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.DocumentNumerator</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.DocumentNumerators</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonModules</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.SessionParameters</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.SettingsStorages</xr:Item>
