@@ -66,6 +66,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Meta</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Meta_sr</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Sequences</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.XDTOPackages</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
