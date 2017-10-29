@@ -189,6 +189,7 @@
 			<Catalog>EventSubscriptions</Catalog>
 			<Catalog>ExchangePlans</Catalog>
 			<Catalog>ExtDimensionAccountingFlags</Catalog>
+			<Catalog>ExternalDataSources</Catalog>
 			<Catalog>Files</Catalog>
 			<Catalog>FilterCriteria</Catalog>
 			<Catalog>Forms</Catalog>

@@ -73,6 +73,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.DefinedTypes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.StyleItems</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.HTTPServices</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ExternalDataSources</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
