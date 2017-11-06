@@ -90,13 +90,102 @@
 
 		<objectType name="Configuration" base="tns:MDObjectBase">
 			<property name="Properties">
-				<typeDef xsi:type="ObjectType" open="true">
-
+				<typeDef xsi:type="ObjectType" ordered="false" open="true">
+					<property name="Name"                                            type="xs:string"/>
+					<property name="Synonym"                                         type="cr:LocalStringType"/>
+					<property name="Comment"                                         type="xs:string"/>
+					<property name="NamePrefix"                                      type="xs:string"/>
+					<property name="ConfigurationExtensionCompatibilityMode"         type="cc:EnumRef.CompatibilityMode"/>
+					<property name="DefaultRunMode"                                  type="app:ClientRunMode"/>
+					<property name="UsePurposes"                                     type="cr:FixedArray"/>
+					<property name="ScriptVariant"                                   type="cc:EnumRef.ScriptVariant"/>
+					<property name="DefaultRoles"                                    type="re:MDListType"/>
+					<property name="Vendor"                                          type="xs:string"/>
+					<property name="Version"                                         type="xs:string"/>
+					<property name="UpdateCatalogAddress"                            type="xs:string"/>
+					<property name="IncludeHelpInContents"                           type="xs:boolean"/>
+					<property name="UseManagedFormInOrdinaryApplication"             type="xs:boolean"/>
+					<property name="UseOrdinaryFormInManagedApplication"             type="xs:boolean"/>
+					<property name="AdditionalFullTextSearchDictionaries"            type="re:MDListType"/>
+					<property name="CommonSettingsStorage"                           type="re:MDObjectRef"/>
+					<property name="ReportsUserSettingsStorage"                      type="re:MDObjectRef"/>
+					<property name="ReportsVariantsStorage"                          type="re:MDObjectRef"/>
+					<property name="FormDataSettingsStorage"                         type="re:MDObjectRef"/>
+					<property name="DynamicListsUserSettingsStorage"                 type="re:MDObjectRef"/>
+					<property name="Content"                                         type="re:MDListType"/>
+					<property name="DefaultReportForm"                               type="re:MDObjectRef"/>
+					<property name="DefaultReportVariantForm"                        type="re:MDObjectRef"/>
+					<property name="DefaultReportSettingsForm"                       type="re:MDObjectRef"/>
+					<property name="DefaultDynamicListSettingsForm"                  type="re:MDObjectRef"/>
+					<property name="DefaultSearchForm"                               type="re:MDObjectRef"/>
+					<property name="RequiredMobileApplicationPermissions"            type="cr:FixedMap"/>
+					<property name="MainClientApplicationWindowMode"                 type="cr:MainClientApplicationWindowMode"/>
+					<property name="DefaultInterface"                                type="re:MDObjectRef"/>
+					<property name="DefaultStyle"                                    type="re:MDObjectRef"/>
+					<property name="DefaultLanguage"                                 type="re:MDObjectRef"/>
+					<property name="BriefInformation"                                type="cr:LocalStringType"/>
+					<property name="DetailedInformation"                             type="cr:LocalStringType"/>
+					<property name="Copyright"                                       type="cr:LocalStringType"/>
+					<property name="VendorInformationAddress"                        type="cr:LocalStringType"/>
+					<property name="ConfigurationInformationAddress"                 type="cr:LocalStringType"/>
+					<property name="DataLockControlMode"                             type="cc:EnumRef.DefaultDataLockControlMode"/>
+					<property name="ObjectAutonumerationMode"                        type="cc:EnumRef.ObjectAutonumerationMode"/>
+					<property name="ModalityUseMode"                                 type="cc:EnumRef.ModalityUseMode"/>
+					<property name="SynchronousPlatformExtensionAndAddInCallUseMode" type="cc:EnumRef.SynchronousPlatformExtensionAndAddInCallUseMode" lowerBound="0"/>
+					<property name="SynchronousExtensionAndAddInCallUseMode"         type="cc:EnumRef.SynchronousPlatformExtensionAndAddInCallUseMode" lowerBound="0"/>
+					<property name="InterfaceCompatibilityMode"                      type="cc:EnumRef.InterfaceCompatibilityMode"/>
+					<property name="CompatibilityMode"                               type="cc:EnumRef.CompatibilityMode"/>
+					<property name="DefaultConstantsForm"                            type="re:MDObjectRef" lowerBound="0"/>
+					<property name="DefaultConstantForm"                             type="re:MDObjectRef" lowerBound="0"/>
 				</typeDef>
 			</property>
 			<property name="ChildObjects">
 				<typeDef xsi:type="ObjectType" ordered="false" open="true">
-					<property name="Catalog" type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="Language"                   type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="Subsystem"                  type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="StyleItem"                  type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="Style"                      type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="CommonPicture"              type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="Interface"                  type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="SessionParameter"           type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="Role"                       type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="CommonTemplate"             type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="FilterCriterion"            type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="CommonModule"               type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="CommonAttribute"            type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="ExchangePlan"               type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="XDTOPackage"                type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="WebService"                 type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="HTTPService"                type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="WSReference"                type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="EventSubscription"          type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="ScheduledJob"               type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="SettingsStorage"            type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="FunctionalOption"           type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="FunctionalOptionsParameter" type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="DefinedType"                type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="CommonCommand"              type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="CommandGroup"               type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="Constant"                   type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="CommonForm"                 type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="Catalog"                    type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="Document"                   type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="DocumentNumerator"          type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="Sequence"                   type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="DocumentJournal"            type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="Enum"                       type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="Report"                     type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="DataProcessor"              type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="InformationRegister"        type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="AccumulationRegister"       type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="ChartOfCharacteristicTypes" type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="ChartOfAccounts"            type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="AccountingRegister"         type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="ChartOfCalculationTypes"    type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="CalculationRegister"        type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="BusinessProcess"            type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="Task"                       type="xs:string" lowerBound="0" upperBound="-1"/>
+					<property name="ExternalDataSource"         type="xs:string" lowerBound="0" upperBound="-1"/>
 				</typeDef>
 			</property>
 		</objectType>

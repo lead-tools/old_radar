@@ -255,6 +255,7 @@
 			<Enum>CommonAttributeDataSeparation</Enum>
 			<Enum>CommonAttributeSeparatedDataUse</Enum>
 			<Enum>CommonAttributeUsersSeparation</Enum>
+			<Enum>CompatibilityMode</Enum>
 			<Enum>CreateOnInput</Enum>
 			<Enum>DataHistoryUse</Enum>
 			<Enum>DefaultDataLockControlMode</Enum>
@@ -266,7 +267,11 @@
 			<Enum>HierarchyType</Enum>
 			<Enum>Indexing</Enum>
 			<Enum>InformationRegisterPeriodicity</Enum>
+			<Enum>InterfaceCompatibilityMode</Enum>
+			<Enum>LinkedValueChangeMode</Enum>
+			<Enum>ModalityUseMode</Enum>
 			<Enum>MoveBoundaryOnPosting</Enum>
+			<Enum>ObjectAutonumerationMode</Enum>
 			<Enum>Posting</Enum>
 			<Enum>PredefinedDataUpdate</Enum>
 			<Enum>RealTimePosting</Enum>
@@ -275,18 +280,19 @@
 			<Enum>RegisterWriteMode</Enum>
 			<Enum>ReturnValuesReuse</Enum>
 			<Enum>Rights</Enum>
+			<Enum>ScriptVariant</Enum>
 			<Enum>SearchStringModeOnInputByString</Enum>
 			<Enum>SequenceFilling</Enum>
 			<Enum>SessionReuseMode</Enum>
 			<Enum>StyleElementType</Enum>
 			<Enum>SubordinationUse</Enum>
+			<Enum>SynchronousPlatformExtensionAndAddInCallUseMode</Enum>
 			<Enum>TaskNumberAutoPrefix</Enum>
 			<Enum>TemplateType</Enum>
 			<Enum>TypeCategories</Enum>
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UsePurposes</Enum>
 			<Enum>UseQuickChoice</Enum>
-			<Enum>LinkedValueChangeMode</Enum>
 			<InformationRegister>AccumulationRegisterAggregateDimensions</InformationRegister>
 			<InformationRegister>BaseCalculationTypes</InformationRegister>
 			<InformationRegister>BasedOn</InformationRegister>
