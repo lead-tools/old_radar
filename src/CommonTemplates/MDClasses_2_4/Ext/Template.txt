@@ -212,7 +212,7 @@
 					<property name="CheckUnique"                      type="cc:EnumRef.Boolean"/>
 					<property name="Autonumbering"                    type="cc:EnumRef.Boolean"/>
 					<property name="DefaultPresentation"              type="cc:EnumRef.CatalogMainPresentation"/>
-					<property name="StandardAttributes"               type="re:StandardAttributeDescriptions"/>
+					<property name="StandardAttributes"               type="re:StandardAttributeDescriptions" lowerBound="0"/>
 					<property name="Characteristics"                  type="re:CharacteristicsDescriptions"/>
 					<property name="PredefinedDataUpdate"             type="cc:EnumRef.PredefinedDataUpdate"/>
 					<property name="EditType"                         type="cc:EnumRef.EditType"/>
@@ -233,7 +233,7 @@
 					<property name="AuxiliaryChoiceForm"              type="re:MDObjectRef"/>
 					<property name="AuxiliaryFolderChoiceForm"        type="re:MDObjectRef"/>
 					<property name="IncludeHelpInContents"            type="cc:EnumRef.Boolean"/>
-					<property name="BasedOn"                          type="re:FieldList"/>
+					<property name="BasedOn"                          type="re:MDListType"/>
 					<property name="DataLockFields"                   type="re:FieldList"/>
 					<property name="DataLockControlMode"              type="cc:EnumRef.DefaultDataLockControlMode"/>
 					<property name="FullTextSearch"                   type="cc:EnumRef.UseFullTextSearch"/>
@@ -302,7 +302,7 @@
 		</objectType>
 
 		<objectType name="CharacteristicsDescriptions">
-			<property name="Characteristic" type="tns:StandardAttributeDescription" lowerBound="0" upperBound="-1"/>
+			<property name="Characteristic" type="tns:CharacteristicsDescription" lowerBound="0" upperBound="-1"/>
 		</objectType>
 
 		<objectType name="ChoiceParameterLink">

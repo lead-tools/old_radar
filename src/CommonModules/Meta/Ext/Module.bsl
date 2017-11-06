@@ -15,18 +15,7 @@ Function AttributeTypes(MetadataObject) Export
 	
 	Return Meta_sr.AttributeTypes(MetadataObject.FullName());
 	
-EndFunction // AttributeTypes()
-
-&AtServer
-Function TypeManager(Type) Export
-	
-	Try
-		Return Meta_sr.TypeManagers()[Type];
-	Except
-		Raise StrTemplate("Unknown type `%1`", Type);
-	EndTry;
-	
-EndFunction // TypeManager() 
+EndFunction // AttributeTypes() 
 
 &AtServer
 Procedure GenericLoad(Configuration, Path, MetadataObject, Ref = Undefined) Export
@@ -93,7 +82,7 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 		ElsIf Type = Type("CatalogRef.Modules") Then
 			
 		ElsIf Type = Type("CatalogRef.Strings") Then
-			UpdateString(Configuration, Object[Name], XDTOValue.Sequence())
+			UpdateString(Configuration, Object[Name], XDTOValue)
 		ElsIf Type = Type("CatalogRef.ChartsOfAccounts") Then
 			
 		ElsIf Type = Type("CatalogRef.Tasks") Then
@@ -141,8 +130,10 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 		ElsIf Type = Type("UUID") Then	
 			// skip
 		Else
-			TypeEnum = TypeManager(Type);
-			Object[Name] = TypeEnum[XDTOValue];
+			Object[Name] = XDTOValue;
+			If Object[Name] <> XDTOValue Then
+				Raise "assignment failed: " + XDTOValue;
+			EndIf; 
 		EndIf;
 		
 	EndDo;
@@ -150,7 +141,7 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 EndProcedure // FillAttributesByXDTOProperties()
 
 &AtServer
-Procedure UpdateString(Configuration, String, XDTOSequence)
+Procedure UpdateString(Configuration, String, XDTOValue)
 	
 	If ValueIsFilled(String) Then
 		StringObject = String.GetObject();
@@ -159,16 +150,16 @@ Procedure UpdateString(Configuration, String, XDTOSequence)
 		EndIf; 
 		StringObject.Values.Clear();
 	Else
-		If XDTOSequence.Count() = 0 Then
+		If XDTOValue.item.Count() = 0 Then
 			Return;
 		EndIf; 
 		StringObject = Catalogs.Strings.CreateItem();
 		StringObject.Owner = Configuration;
 	EndIf;
 	
-	For Index = 0 To XDTOSequence.Count() - 1 Do
+	For Index = 0 To XDTOValue.item.Count() - 1 Do
 		
-		XDTODataObject = XDTOSequence.GetValue(Index);
+		XDTODataObject = XDTOValue.item[Index];
 		
 		Item = StringObject.Values.Add();
 		Item.Language = Meta_sr.LanguageByCode(Configuration, XDTODataObject.Lang);

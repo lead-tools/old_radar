@@ -136,7 +136,12 @@ Function ReadMetadataXML(Path) Export
 	
 	XMLReader = New XMLReader;
 	XMLReader.OpenStream(MemoryStream);
-	XDTOObject = MyXDTOFactory.ReadXML(XMLReader, Type);
+	Try
+		XDTOObject = MyXDTOFactory.ReadXML(XMLReader, Type);
+	Except
+		Message("Error path:" + Path);
+		Raise;
+	EndTry;
 	XMLReader.Close();
 	
 	Return XDTOObject;

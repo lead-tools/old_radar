@@ -141,20 +141,14 @@ Procedure Load(Configuration, Path) Export
 	
 EndProcedure // Load()
 
-Procedure LoadMetadata(Configuration, Path, Name, List)
+Procedure LoadMetadata(Configuration, Path, Name, XDTOList)
 	
 	MetadataPath = Abc.JoinPath(Path, Name);
 	MetadataManager = Catalogs[Name];
 	
-	If TypeOf(List) = Type("String") Then
-		MetadataManager.Load(Configuration, Abc.JoinPath(MetadataPath, List));
-	ElsIf TypeOf(List) = Type("XDTOList") Then
-		For Each Item In List Do
-			MetadataManager.Load(Configuration, Abc.JoinPath(MetadataPath, Item));
-		EndDo; 
-	Else
-		Raise "Call in violation of protocol";
-	EndIf; 
+	For Each Item In XDTOList Do
+		MetadataManager.Load(Configuration, Abc.JoinPath(MetadataPath, Item));
+	EndDo;
 	
 EndProcedure // LoadMetadata()
  
