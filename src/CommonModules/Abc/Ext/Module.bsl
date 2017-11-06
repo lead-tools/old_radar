@@ -86,12 +86,60 @@ Function GetDataProcessor(Name) Export
 EndFunction // GetDataProcessor()
 
 &AtServer
+Function BinFind(BinaryDataBuffer, SearchData, InitPos = 0) Export
+	
+	// naive search
+	
+	For Pos = InitPos To BinaryDataBuffer.Size - 1 Do
+		
+		Offset = 0;
+		
+		While Offset < SearchData.Size
+			And BinaryDataBuffer[Pos + Offset] = SearchData[Offset] Do
+			Offset = Offset + 1;
+		EndDo; 
+		
+		If Offset = SearchData.Size Then
+			Return Pos;
+		EndIf; 
+		
+	EndDo; 
+	
+	Return Undefined;
+	
+EndFunction // BinFind() 
+
+&AtServer
 Function ReadMetadataXML(Path) Export
 	
-	XMLReader = New XMLReader;
-	XMLReader.OpenFile(Path);
+	DataReader = New DataReader(Path, TextEncoding.UTF8); 
+	BinaryDataBuffer = DataReader.ReadIntoBinaryDataBuffer();
 	
-	Return XDTOFactory.ReadXML(XMLReader);
+	MDClassesPos = BinFind(BinaryDataBuffer, GetBinaryDataBufferFromString("http://v8.1c.ru/8.3/MDClasses"));
+	BinaryDataBuffer.Write(MDClassesPos, GetBinaryDataBufferFromString("http://Lead-Bullets/MDClasses"));
+	
+	ReadablePos = BinFind(BinaryDataBuffer, GetBinaryDataBufferFromString("http://v8.1c.ru/8.3/xcf/readable"));
+	BinaryDataBuffer.Write(ReadablePos, GetBinaryDataBufferFromString("http://Lead-Bullets/xcf/readable"));
+	
+	MemoryStream = New MemoryStream(BinaryDataBuffer);
+	
+	XMLReader = New XMLReader;
+	XMLReader.SetString(GetCommonTemplate("MDClasses_2_4").GetText());
+	XDTOModel = XDTOFactory.ReadXML(XMLReader);
+	XMLReader.Close();
+	
+	Packages = New Array;
+	Packages.Add(XDTOFactory.Packages.Get("http://v8.1c.ru/8.1/data/enterprise/current-config"));
+	
+	MyXDTOFactory = New XDTOFactory(XDTOModel, Packages);
+	Type = MyXDTOFactory.Type("http://Lead-Bullets/MDClasses", "MetaDataObject");  
+	
+	XMLReader = New XMLReader;
+	XMLReader.OpenStream(MemoryStream);
+	XDTOObject = MyXDTOFactory.ReadXML(XMLReader, Type);
+	XMLReader.Close();
+	
+	Return XDTOObject;
 	
 EndFunction // ReadMetadataXML()
 

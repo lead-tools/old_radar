@@ -145,6 +145,7 @@
 			<Subsystem>Meta</Subsystem>
 			<Subsystem>Radar</Subsystem>
 			<Role>Admin</Role>
+			<CommonTemplate>MDClasses_2_4</CommonTemplate>
 			<CommonModule>Abc</CommonModule>
 			<CommonModule>Abc_sc</CommonModule>
 			<CommonModule>Abc_sr</CommonModule>
@@ -230,6 +231,7 @@
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
 			<Enum>AttributeKinds</Enum>
+			<Enum>AttributeUse</Enum>
 			<Enum>Boolean</Enum>
 			<Enum>BusinessProcessNumberPeriodicity</Enum>
 			<Enum>BusinessProcessNumberType</Enum>
@@ -280,9 +282,11 @@
 			<Enum>SubordinationUse</Enum>
 			<Enum>TaskNumberAutoPrefix</Enum>
 			<Enum>TemplateType</Enum>
+			<Enum>TypeCategories</Enum>
 			<Enum>UseFullTextSearch</Enum>
 			<Enum>UsePurposes</Enum>
 			<Enum>UseQuickChoice</Enum>
+			<Enum>LinkedValueChangeMode</Enum>
 			<InformationRegister>AccumulationRegisterAggregateDimensions</InformationRegister>
 			<InformationRegister>BaseCalculationTypes</InformationRegister>
 			<InformationRegister>BasedOn</InformationRegister>

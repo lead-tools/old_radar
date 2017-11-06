@@ -98,7 +98,7 @@
 		<ChildObjects>
 			<EnumValue uuid="34955a49-5e96-4fa6-aab7-0e5c1ffedb3e">
 				<Properties>
-					<Name>True</Name>
+					<Name>true</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -114,7 +114,7 @@
 			</EnumValue>
 			<EnumValue uuid="c9470510-cb36-4b74-b4f9-24d7cb97e64e">
 				<Properties>
-					<Name>False</Name>
+					<Name>false</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
