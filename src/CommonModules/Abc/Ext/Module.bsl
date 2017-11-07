@@ -110,45 +110,6 @@ Function BinFind(BinaryDataBuffer, SearchData, InitPos = 0) Export
 EndFunction // BinFind() 
 
 &AtServer
-Function ReadMetadataXML(Path) Export
-	
-	DataReader = New DataReader(Path, TextEncoding.UTF8); 
-	BinaryDataBuffer = DataReader.ReadIntoBinaryDataBuffer();
-	
-	MDClassesPos = BinFind(BinaryDataBuffer, GetBinaryDataBufferFromString("http://v8.1c.ru/8.3/MDClasses"));
-	BinaryDataBuffer.Write(MDClassesPos, GetBinaryDataBufferFromString("http://Lead-Bullets/MDClasses"));
-	
-	ReadablePos = BinFind(BinaryDataBuffer, GetBinaryDataBufferFromString("http://v8.1c.ru/8.3/xcf/readable"));
-	BinaryDataBuffer.Write(ReadablePos, GetBinaryDataBufferFromString("http://Lead-Bullets/xcf/readable"));
-	
-	MemoryStream = New MemoryStream(BinaryDataBuffer);
-	
-	XMLReader = New XMLReader;
-	XMLReader.SetString(GetCommonTemplate("MDClasses_2_4").GetText());
-	XDTOModel = XDTOFactory.ReadXML(XMLReader);
-	XMLReader.Close();
-	
-	Packages = New Array;
-	Packages.Add(XDTOFactory.Packages.Get("http://v8.1c.ru/8.1/data/enterprise/current-config"));
-	
-	MyXDTOFactory = New XDTOFactory(XDTOModel, Packages);
-	Type = MyXDTOFactory.Type("http://Lead-Bullets/MDClasses", "MetaDataObject");  
-	
-	XMLReader = New XMLReader;
-	XMLReader.OpenStream(MemoryStream);
-	Try
-		XDTOObject = MyXDTOFactory.ReadXML(XMLReader, Type);
-	Except
-		Message("Error path:" + Path);
-		Raise;
-	EndTry;
-	XMLReader.Close();
-	
-	Return XDTOObject;
-	
-EndFunction // ReadMetadataXML()
-
-&AtServer
 Procedure RefreshAllReusableValues() Export
 	RefreshReusableValues();
 EndProcedure // RefreshAllReusableValues() 

@@ -13,7 +13,7 @@ EndFunction // AttributeValues()
 
 Procedure Load(Configuration, Path) Export
 		
-	Data = Abc.ReadMetadataXML(Abc.JoinPath(Path, "Configuration.xml"));
+	Data = Meta.ReadMetadataXML(Abc.JoinPath(Path, "Configuration.xml"));
 	
 	ChildObjects = Data.Configuration.ChildObjects;
 	Items = New Structure;
@@ -23,9 +23,9 @@ Procedure Load(Configuration, Path) Export
 	
 	List = Undefined;
 	
-	//If Items.Property("Language", List) Then
-	//	LoadMetadata(Configuration, Path, "Languages", ChildObjects.Language);
-	//EndIf; 
+	If Items.Property("Language", List) Then
+		LoadMetadata(Configuration, Path, "Languages", ChildObjects.Language);
+	EndIf; 
 	//
 	//If Items.Property("AccountingRegister", List) Then
 	//	LoadMetadata(Configuration, Path, "AccountingRegisters", ChildObjects.AccountingRegister);

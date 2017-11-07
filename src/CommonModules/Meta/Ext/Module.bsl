@@ -22,7 +22,7 @@ Procedure GenericLoad(Configuration, Path, MetadataObject, Ref = Undefined) Expo
 	
 	Manager = Catalogs[MetadataObject.Name];
 	
-	Data = Abc.ReadMetadataXML(Path + ".xml");
+	Data = ReadMetadataXML(Path + ".xml");
 	XDTOObject = Data.Sequence().GetValue(0);
 	XDTOProperties = XDTOObject.Properties;
 	UUID = New UUID(XDTOObject.UUID);
@@ -171,6 +171,45 @@ Procedure UpdateString(Configuration, String, XDTOValue)
 	String = StringObject.Ref;
 	
 EndProcedure // UpdateString()
+
+&AtServer
+Function ReadMetadataXML(Path) Export
+	
+	DataReader = New DataReader(Path, TextEncoding.UTF8); 
+	BinaryDataBuffer = DataReader.ReadIntoBinaryDataBuffer();
+	
+	MDClassesPos = Abc.BinFind(BinaryDataBuffer, GetBinaryDataBufferFromString("http://v8.1c.ru/8.3/MDClasses"));
+	BinaryDataBuffer.Write(MDClassesPos, GetBinaryDataBufferFromString("http://Lead-Bullets/MDClasses"));
+	
+	ReadablePos = Abc.BinFind(BinaryDataBuffer, GetBinaryDataBufferFromString("http://v8.1c.ru/8.3/xcf/readable"));
+	BinaryDataBuffer.Write(ReadablePos, GetBinaryDataBufferFromString("http://Lead-Bullets/xcf/readable"));
+	
+	MemoryStream = New MemoryStream(BinaryDataBuffer);
+	
+	XMLReader = New XMLReader;
+	XMLReader.SetString(GetCommonTemplate("MDClasses_2_4").GetText());
+	XDTOModel = XDTOFactory.ReadXML(XMLReader);
+	XMLReader.Close();
+	
+	Packages = New Array;
+	Packages.Add(XDTOFactory.Packages.Get("http://v8.1c.ru/8.1/data/enterprise/current-config"));
+	
+	MyXDTOFactory = New XDTOFactory(XDTOModel, Packages);
+	Type = MyXDTOFactory.Type("http://Lead-Bullets/MDClasses", "MetaDataObject");  
+	
+	XMLReader = New XMLReader;
+	XMLReader.OpenStream(MemoryStream);
+	Try
+		XDTOObject = MyXDTOFactory.ReadXML(XMLReader, Type);
+	Except
+		Message("Error path:" + Path);
+		Raise;
+	EndTry;
+	XMLReader.Close();
+	
+	Return XDTOObject;
+	
+EndFunction // ReadMetadataXML()
 
 #EndRegion // Server
 

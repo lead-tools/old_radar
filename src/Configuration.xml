@@ -200,6 +200,7 @@
 			<Catalog>Handlers</Catalog>
 			<Catalog>HTTPServices</Catalog>
 			<Catalog>InformationRegisters</Catalog>
+			<Catalog>Interface</Catalog>
 			<Catalog>Languages</Catalog>
 			<Catalog>Locations</Catalog>
 			<Catalog>Modules</Catalog>
@@ -230,6 +231,7 @@
 			<Enum>AccumulationRegisterAggregateUse</Enum>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
+			<Enum>ApplicationUsePurpose</Enum>
 			<Enum>AttributeKinds</Enum>
 			<Enum>AttributeUse</Enum>
 			<Enum>Boolean</Enum>
@@ -247,6 +249,7 @@
 			<Enum>ChoiceDataGetModeOnInputByString</Enum>
 			<Enum>ChoiceHistoryOnInput</Enum>
 			<Enum>ChoiceMode</Enum>
+			<Enum>ClientRunMode</Enum>
 			<Enum>CommandGroupCategory</Enum>
 			<Enum>CommandParameterUseMode</Enum>
 			<Enum>CommonAttributeAuthenticationSeparation</Enum>
@@ -269,6 +272,7 @@
 			<Enum>InformationRegisterPeriodicity</Enum>
 			<Enum>InterfaceCompatibilityMode</Enum>
 			<Enum>LinkedValueChangeMode</Enum>
+			<Enum>MainClientApplicationWindowMode</Enum>
 			<Enum>ModalityUseMode</Enum>
 			<Enum>MoveBoundaryOnPosting</Enum>
 			<Enum>ObjectAutonumerationMode</Enum>
@@ -299,6 +303,7 @@
 			<InformationRegister>Characteristics</InformationRegister>
 			<InformationRegister>Content</InformationRegister>
 			<InformationRegister>DataLockFields</InformationRegister>
+			<InformationRegister>DefaultRoles</InformationRegister>
 			<InformationRegister>Help</InformationRegister>
 			<InformationRegister>InputByString</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
@@ -308,7 +313,9 @@
 			<InformationRegister>RegisterRecords</InformationRegister>
 			<InformationRegister>Rights</InformationRegister>
 			<InformationRegister>SubordinateSubsystems</InformationRegister>
+			<InformationRegister>UsePurposes</InformationRegister>
 			<InformationRegister>XDTOPackages</InformationRegister>
+			<InformationRegister>AdditionalFullTextSearchDictionaries</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

@@ -20,6 +20,7 @@
 		<objectType name="MetaDataObject" ordered="false" sequenced="true">
 			<property name="version" type="xs:decimal" form="Attribute"/> <!-- 2.4 -->
 			<property name="Configuration" type="tns:Configuration" lowerBound="0"/>
+			<property name="Language"      type="tns:Language"      lowerBound="0"/>
 			<property name="Catalog"       type="tns:Catalog"       lowerBound="0"/>
 		</objectType>
 
@@ -96,16 +97,16 @@
 					<property name="Comment"                                         type="xs:string"/>
 					<property name="NamePrefix"                                      type="xs:string"/>
 					<property name="ConfigurationExtensionCompatibilityMode"         type="cc:EnumRef.CompatibilityMode"/>
-					<property name="DefaultRunMode"                                  type="app:ClientRunMode"/>
+					<property name="DefaultRunMode"                                  type="cc:EnumRef.ClientRunMode"/>
 					<property name="UsePurposes"                                     type="cr:FixedArray"/>
 					<property name="ScriptVariant"                                   type="cc:EnumRef.ScriptVariant"/>
 					<property name="DefaultRoles"                                    type="re:MDListType"/>
 					<property name="Vendor"                                          type="xs:string"/>
 					<property name="Version"                                         type="xs:string"/>
 					<property name="UpdateCatalogAddress"                            type="xs:string"/>
-					<property name="IncludeHelpInContents"                           type="xs:boolean"/>
-					<property name="UseManagedFormInOrdinaryApplication"             type="xs:boolean"/>
-					<property name="UseOrdinaryFormInManagedApplication"             type="xs:boolean"/>
+					<property name="IncludeHelpInContents"                           type="cc:EnumRef.Boolean"/>
+					<property name="UseManagedFormInOrdinaryApplication"             type="cc:EnumRef.Boolean"/>
+					<property name="UseOrdinaryFormInManagedApplication"             type="cc:EnumRef.Boolean"/>
 					<property name="AdditionalFullTextSearchDictionaries"            type="re:MDListType"/>
 					<property name="CommonSettingsStorage"                           type="re:MDObjectRef"/>
 					<property name="ReportsUserSettingsStorage"                      type="re:MDObjectRef"/>
@@ -132,11 +133,9 @@
 					<property name="ObjectAutonumerationMode"                        type="cc:EnumRef.ObjectAutonumerationMode"/>
 					<property name="ModalityUseMode"                                 type="cc:EnumRef.ModalityUseMode"/>
 					<property name="SynchronousPlatformExtensionAndAddInCallUseMode" type="cc:EnumRef.SynchronousPlatformExtensionAndAddInCallUseMode" lowerBound="0"/>
-					<property name="SynchronousExtensionAndAddInCallUseMode"         type="cc:EnumRef.SynchronousPlatformExtensionAndAddInCallUseMode" lowerBound="0"/>
 					<property name="InterfaceCompatibilityMode"                      type="cc:EnumRef.InterfaceCompatibilityMode"/>
 					<property name="CompatibilityMode"                               type="cc:EnumRef.CompatibilityMode"/>
 					<property name="DefaultConstantsForm"                            type="re:MDObjectRef" lowerBound="0"/>
-					<property name="DefaultConstantForm"                             type="re:MDObjectRef" lowerBound="0"/>
 				</typeDef>
 			</property>
 			<property name="ChildObjects">
@@ -186,6 +185,17 @@
 					<property name="BusinessProcess"            type="xs:string" lowerBound="0" upperBound="-1"/>
 					<property name="Task"                       type="xs:string" lowerBound="0" upperBound="-1"/>
 					<property name="ExternalDataSource"         type="xs:string" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="Language" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"         type="xs:string"/>
+					<property name="Synonym"      type="cr:LocalStringType"/>
+					<property name="Comment"      type="xs:string"/>
+					<property name="LanguageCode" type="xs:string"/>
 				</typeDef>
 			</property>
 		</objectType>
