@@ -297,7 +297,9 @@
 			<Enum>StyleElementType</Enum>
 			<Enum>SubordinationUse</Enum>
 			<Enum>SynchronousPlatformExtensionAndAddInCallUseMode</Enum>
+			<Enum>TaskMainPresentation</Enum>
 			<Enum>TaskNumberAutoPrefix</Enum>
+			<Enum>TaskNumberType</Enum>
 			<Enum>TemplateType</Enum>
 			<Enum>TypeCategories</Enum>
 			<Enum>UsePurposes</Enum>

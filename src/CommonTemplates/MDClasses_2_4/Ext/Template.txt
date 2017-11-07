@@ -45,6 +45,10 @@
 			<property name="Report"                     type="tns:Report"                     lowerBound="0"/>
 			<property name="Role"                       type="tns:Role"                       lowerBound="0"/>
 			<property name="ScheduledJob"               type="tns:ScheduledJob"               lowerBound="0"/>
+			<property name="SessionParameter"           type="tns:SessionParameter"           lowerBound="0"/>
+			<property name="SettingsStorage"            type="tns:SettingsStorage"            lowerBound="0"/>
+			<property name="Subsystem"                  type="tns:Subsystem"                  lowerBound="0"/>
+			<property name="Task"                       type="tns:Task"                       lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -278,6 +282,41 @@
 					<property name="Name"    type="xs:string"/>
 					<property name="Synonym" type="cr:LocalStringType"/>
 					<property name="Comment" type="xs:string"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="AddressingAttribute" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType" ordered="false" open="true">
+					<property name="Name"                  type="xs:string"                       lowerBound="0"/>
+					<property name="Synonym"               type="cr:LocalStringType"              lowerBound="0"/>
+					<property name="Comment"               type="xs:string"                       lowerBound="0"/>
+					<property name="Type"                  type="cr:TypeDescription"              lowerBound="0"/>
+					<property name="PasswordMode"          type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="Format"                type="cr:LocalStringType"              lowerBound="0"/>
+					<property name="EditFormat"            type="cr:LocalStringType"              lowerBound="0"/>
+					<property name="ToolTip"               type="cr:LocalStringType"              lowerBound="0"/>
+					<property name="MarkNegatives"         type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="Mask"                  type="xs:string"                       lowerBound="0"/>
+					<property name="MultiLine"             type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="ExtendedEdit"          type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="MinValue"                                                     lowerBound="0" nillable="true"/>
+					<property name="MaxValue"                                                     lowerBound="0" nillable="true"/>
+					<property name="FillFromFillingValue"  type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="FillValue"                                                    lowerBound="0" nillable="true"/>
+					<property name="FillChecking"          type="cr:FillChecking"                 lowerBound="0"/>
+					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"   lowerBound="0"/>
+					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"         lowerBound="0"/>
+					<property name="ChoiceParameters"      type="app:ChoiceParameters"            lowerBound="0"/>
+					<property name="QuickChoice"           type="cc:EnumRef.UseQuickChoice"       lowerBound="0"/>
+					<property name="CreateOnInput"         type="cc:EnumRef.CreateOnInput"        lowerBound="0"/>
+					<property name="ChoiceForm"            type="re:MDObjectRef"                  lowerBound="0"/>
+					<property name="LinkByType"            type="re:TypeLink"                     lowerBound="0"/>
+					<property name="ChoiceHistoryOnInput"  type="cc:EnumRef.ChoiceHistoryOnInput" lowerBound="0"/>
+					<property name="Indexing"              type="cc:EnumRef.Indexing"             lowerBound="0"/>
+					<property name="AddressingDimension"   type="re:MDObjectRef"/>
+					<property name="FullTextSearch"        type="cc:EnumRef.FullTextSearchUsing"  lowerBound="0"/>
 				</typeDef>
 			</property>
 		</objectType>
@@ -1215,6 +1254,114 @@
 					<property name="Predefined"               type="cc:EnumRef.Boolean"/>
 					<property name="RestartCountOnFailure"    type="xs:decimal"/>
 					<property name="RestartIntervalOnFailure" type="xs:decimal"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="SessionParameter" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"    type="xs:string"/>
+					<property name="Synonym" type="cr:LocalStringType"/>
+					<property name="Comment" type="xs:string"/>
+					<property name="Type"    type="cr:TypeDescription"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="SettingsStorage" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"              type="xs:string"/>
+					<property name="Synonym"           type="cr:LocalStringType"/>
+					<property name="Comment"           type="xs:string"/>
+					<property name="DefaultSaveForm"   type="re:MDObjectRef"/>
+					<property name="DefaultLoadForm"   type="re:MDObjectRef"/>
+					<property name="AuxiliarySaveForm" type="re:MDObjectRef"/>
+					<property name="AuxiliaryLoadForm" type="re:MDObjectRef"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Form"      type="xs:string"     lowerBound="0" upperBound="-1"/>
+					<property name="Template"  type="xs:string"     lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="Subsystem" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                      type="xs:string"/>
+					<property name="Synonym"                   type="cr:LocalStringType"/>
+					<property name="Comment"                   type="xs:string"/>
+					<property name="IncludeHelpInContents"     type="cc:EnumRef.Boolean"/>
+					<property name="IncludeInCommandInterface" type="cc:EnumRef.Boolean"/>
+					<property name="Explanation"               type="cr:LocalStringType"/>
+					<property name="Picture"                                               nillable="true"/>
+					<property name="Content"                   type="re:MDListType"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Subsystem" type="xs:string" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="Task" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                             type="xs:string"/>
+					<property name="Synonym"                          type="cr:LocalStringType"/>
+					<property name="Comment"                          type="xs:string"/>
+					<property name="UseStandardCommands"              type="cc:EnumRef.Boolean"/>
+					<property name="NumberType"                       type="cc:EnumRef.TaskNumberType"/>
+					<property name="NumberLength"                     type="xs:decimal"/>
+					<property name="NumberAllowedLength"              type="cc:EnumRef.AllowedLength"/>
+					<property name="CheckUnique"                      type="cc:EnumRef.Boolean"/>
+					<property name="Autonumbering"                    type="cc:EnumRef.Boolean"/>
+					<property name="TaskNumberAutoPrefix"             type="cc:EnumRef.TaskNumberAutoPrefix"/>
+					<property name="DescriptionLength"                type="xs:decimal"/>
+					<property name="Addressing"                       type="re:MDObjectRef"/>
+					<property name="MainAddressingAttribute"          type="re:MDObjectRef"/>
+					<property name="CurrentPerformer"                 type="re:MDObjectRef"/>
+					<property name="BasedOn"                          type="re:MDListType"/>
+					<property name="StandardAttributes"               type="re:StandardAttributeDescriptions"/>
+					<property name="Characteristics"                  type="re:CharacteristicsDescriptions"/>
+					<property name="DefaultPresentation"              type="cc:EnumRef.TaskMainPresentation"/>
+					<property name="EditType"                         type="cc:EnumRef.EditType"/>
+					<property name="InputByString"                    type="re:FieldList"/>
+					<property name="SearchStringModeOnInputByString"  type="cc:EnumRef.SearchStringModeOnInputByString"/>
+					<property name="FullTextSearchOnInputByString"    type="cc:EnumRef.FullTextSearchOnInputByString"/>
+					<property name="ChoiceDataGetModeOnInputByString" type="cc:EnumRef.ChoiceDataGetModeOnInputByString"/>
+					<property name="CreateOnInput"                    type="cc:EnumRef.CreateOnInput"/>
+					<property name="DefaultObjectForm"                type="re:MDObjectRef"/>
+					<property name="DefaultListForm"                  type="re:MDObjectRef"/>
+					<property name="DefaultChoiceForm"                type="re:MDObjectRef"/>
+					<property name="AuxiliaryObjectForm"              type="re:MDObjectRef"/>
+					<property name="AuxiliaryListForm"                type="re:MDObjectRef"/>
+					<property name="AuxiliaryChoiceForm"              type="re:MDObjectRef"/>
+					<property name="ChoiceHistoryOnInput"             type="cc:EnumRef.ChoiceHistoryOnInput"/>
+					<property name="IncludeHelpInContents"            type="cc:EnumRef.Boolean"/>
+					<property name="DataLockFields"                   type="re:FieldList"/>
+					<property name="DataLockControlMode"              type="cc:EnumRef.DefaultDataLockControlMode"/>
+					<property name="FullTextSearch"                   type="cc:EnumRef.FullTextSearchUsing"/>
+					<property name="ObjectPresentation"               type="cr:LocalStringType"/>
+					<property name="ExtendedObjectPresentation"       type="cr:LocalStringType"/>
+					<property name="ListPresentation"                 type="cr:LocalStringType"/>
+					<property name="ExtendedListPresentation"         type="cr:LocalStringType"/>
+					<property name="Explanation"                      type="cr:LocalStringType"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Attribute"           type="tns:Attribute"           lowerBound="0" upperBound="-1"/>
+					<property name="TabularSection"      type="tns:TabularSection"      lowerBound="0" upperBound="-1"/>
+					<property name="Form"                type="xs:string"               lowerBound="0" upperBound="-1"/>
+					<property name="Template"            type="xs:string"               lowerBound="0" upperBound="-1"/>
+					<property name="AddressingAttribute" type="tns:AddressingAttribute" lowerBound="0" upperBound="-1"/>
+					<property name="Command"             type="tns:Command"             lowerBound="0" upperBound="-1"/>
 				</typeDef>
 			</property>
 		</objectType>
