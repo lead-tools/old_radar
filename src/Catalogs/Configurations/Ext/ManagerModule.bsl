@@ -95,18 +95,18 @@ Procedure Load(Configuration, Path) Export
 	//	LoadMetadata(Configuration, Path, "ExchangePlans", List);
 	//EndIf;
 	
-	If Items.Property("FilterCriterion", List) Then
-		LoadMetadata(Configuration, Path, "FilterCriteria", List);
-	EndIf;
+	//If Items.Property("FilterCriterion", List) Then
+	//	LoadMetadata(Configuration, Path, "FilterCriteria", List);
+	//EndIf;
 	
 	//If Items.Property("FunctionalOption", List) Then
 	//	LoadMetadata(Configuration, Path, "FunctionalOptions", List);
 	//EndIf;
-	//
-	//If Items.Property("FunctionalOptionsParameter", List) Then
-	//	LoadMetadata(Configuration, Path, "FunctionalOptionsParameters", List);
-	//EndIf;
-	//
+	
+	If Items.Property("FunctionalOptionsParameter", List) Then
+		LoadMetadata(Configuration, Path, "FunctionalOptionsParameters", List);
+	EndIf;
+	
 	//If Items.Property("InformationRegister", List) Then
 	//	LoadMetadata(Configuration, Path, "InformationRegisters", List);
 	//EndIf;

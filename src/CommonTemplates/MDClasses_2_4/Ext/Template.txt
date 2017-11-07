@@ -39,6 +39,8 @@
 			<property name="EventSubscription"          type="tns:EventSubscription"          lowerBound="0"/>
 			<property name="ExchangePlan"               type="tns:ExchangePlan"               lowerBound="0"/>
 			<property name="FilterCriterion"            type="tns:FilterCriterion"            lowerBound="0"/>
+			<property name="FunctionalOption"           type="tns:FunctionalOption"           lowerBound="0"/>
+			<property name="FunctionalOptionsParameter" type="tns:FunctionalOptionsParameter" lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -1091,6 +1093,30 @@
 			</property>
 		</objectType>
 
+		<objectType name="FunctionalOption" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"              type="xs:string"/>
+					<property name="Synonym"           type="cr:LocalStringType"/>
+					<property name="Comment"           type="xs:string"/>
+					<property name="Location"          type="re:MDObjectRef"/>
+					<property name="PrivilegedGetMode" type="cc:EnumRef.Boolean"/>
+					<property name="Content"           type="re:FuncOptionContentType"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="FunctionalOptionsParameter" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"    type="xs:string"/>
+					<property name="Synonym" type="cr:LocalStringType"/>
+					<property name="Comment" type="xs:string"/>
+					<property name="Use"     type="re:MDListType"/>
+				</typeDef>
+			</property>
+		</objectType>
+
 	</package>
 
 	<package targetNamespace="http://Lead-Bullets/xcf/readable" elementFormQualified="true" attributeFormQualified="false"
@@ -1222,6 +1248,10 @@
 
 		<objectType name="StandardTabularSectionDescriptions">
 			<property name="StandardTabularSection" type="tns:StandardTabularSectionDescription" lowerBound="0" upperBound="-1"/>
+		</objectType>
+
+		<objectType name="FuncOptionContentType">
+			<property name="Object" type="tns:MDObjectRef" lowerBound="0" upperBound="-1"/>
 		</objectType>
 
 	</package>
