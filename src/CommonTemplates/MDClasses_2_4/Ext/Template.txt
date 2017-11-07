@@ -38,6 +38,7 @@
 			<property name="Enum"                       type="tns:Enum"                       lowerBound="0"/>
 			<property name="EventSubscription"          type="tns:EventSubscription"          lowerBound="0"/>
 			<property name="ExchangePlan"               type="tns:ExchangePlan"               lowerBound="0"/>
+			<property name="FilterCriterion"            type="tns:FilterCriterion"            lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -1062,6 +1063,30 @@
 					<property name="Form"           type="xs:string"          lowerBound="0" upperBound="-1"/>
 					<property name="Template"       type="xs:string"          lowerBound="0" upperBound="-1"/>
 					<property name="Command"        type="tns:Command"        lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="FilterCriterion" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                     type="xs:string"/>
+					<property name="Synonym"                  type="cr:LocalStringType"/>
+					<property name="Comment"                  type="xs:string"/>
+					<property name="Type"                     type="cr:TypeDescription"/>
+					<property name="UseStandardCommands"      type="cc:EnumRef.Boolean"/>
+					<property name="Content"                  type="re:MDListType"/>
+					<property name="DefaultForm"              type="re:MDObjectRef"/>
+					<property name="AuxiliaryForm"            type="re:MDObjectRef"/>
+					<property name="ListPresentation"         type="cr:LocalStringType"/>
+					<property name="ExtendedListPresentation" type="cr:LocalStringType"/>
+					<property name="Explanation"              type="cr:LocalStringType"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Form"      type="xs:string"     lowerBound="0" upperBound="-1"/>
+					<property name="Command"   type="tns:Command"   lowerBound="0" upperBound="-1"/>
 				</typeDef>
 			</property>
 		</objectType>
