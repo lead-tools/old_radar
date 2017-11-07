@@ -47,14 +47,14 @@ Procedure Load(Configuration, Path) Export
 	//	LoadMetadata(Configuration, Path, "Catalogs", ChildObjects.Catalog);
 	//EndIf;
 	
-	If Items.Property("ChartOfAccounts", List) Then
-		LoadMetadata(Configuration, Path, "ChartsOfAccounts", List);
+	//If Items.Property("ChartOfAccounts", List) Then
+	//	LoadMetadata(Configuration, Path, "ChartsOfAccounts", List);
+	//EndIf;
+	
+	If Items.Property("ChartOfCalculationTypes", List) Then
+		LoadMetadata(Configuration, Path, "ChartsOfCalculationTypes", List);
 	EndIf;
 	
-	//If Items.Property("ChartOfCalculationTypes", List) Then
-	//	LoadMetadata(Configuration, Path, "ChartsOfCalculationTypes", List);
-	//EndIf;
-	//
 	//If Items.Property("ChartOfCharacteristicTypes", List) Then
 	//	LoadMetadata(Configuration, Path, "ChartsOfCharacteristicTypes", List);
 	//EndIf;

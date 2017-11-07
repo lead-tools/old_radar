@@ -18,15 +18,16 @@
 		</objectType>
 
 		<objectType name="MetaDataObject" ordered="false" sequenced="true">
-			<property name="version" type="xs:decimal" form="Attribute"/> <!-- 2.4 -->
-			<property name="Configuration"        type="tns:Configuration"        lowerBound="0"/>
-			<property name="Language"             type="tns:Language"             lowerBound="0"/>
-			<property name="AccountingRegister"   type="tns:AccountingRegister"   lowerBound="0"/>
-			<property name="AccumulationRegister" type="tns:AccumulationRegister" lowerBound="0"/>
-			<property name="BusinessProcess"      type="tns:BusinessProcess"      lowerBound="0"/>
-			<property name="CalculationRegister"  type="tns:CalculationRegister"  lowerBound="0"/>
-			<property name="Catalog"              type="tns:Catalog"              lowerBound="0"/>
-			<property name="ChartOfAccounts"      type="tns:ChartOfAccounts"      lowerBound="0"/>
+			<property name="version"                 type="xs:decimal" form="Attribute"/> <!-- 2.4 -->
+			<property name="Configuration"           type="tns:Configuration"           lowerBound="0"/>
+			<property name="Language"                type="tns:Language"                lowerBound="0"/>
+			<property name="AccountingRegister"      type="tns:AccountingRegister"      lowerBound="0"/>
+			<property name="AccumulationRegister"    type="tns:AccumulationRegister"    lowerBound="0"/>
+			<property name="BusinessProcess"         type="tns:BusinessProcess"         lowerBound="0"/>
+			<property name="CalculationRegister"     type="tns:CalculationRegister"     lowerBound="0"/>
+			<property name="Catalog"                 type="tns:Catalog"                 lowerBound="0"/>
+			<property name="ChartOfAccounts"         type="tns:ChartOfAccounts"         lowerBound="0"/>
+			<property name="ChartOfCalculationTypes" type="tns:ChartOfCalculationTypes" lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -637,7 +638,64 @@
 				</typeDef>
 			</property>
 		</objectType>
-
+		
+		<objectType name="ChartOfCalculationTypes" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                             type="xs:string"/>
+					<property name="Synonym"                          type="cr:LocalStringType"/>
+					<property name="Comment"                          type="xs:string"/>
+					<property name="UseStandardCommands"              type="cc:EnumRef.Boolean"/>
+					<property name="CodeLength"                       type="xs:decimal"/>
+					<property name="DescriptionLength"                type="xs:decimal"/>
+					<property name="CodeType"                         type="cc:EnumRef.ChartOfCalculationTypesCodeType"/>
+					<property name="CodeAllowedLength"                type="cr:AllowedLength"/>
+					<property name="DefaultPresentation"              type="cc:EnumRef.CalculationTypeMainPresentation"/>
+					<property name="EditType"                         type="cc:EnumRef.EditType"/>
+					<property name="QuickChoice"                      type="cc:EnumRef.Boolean"/>
+					<property name="ChoiceMode"                       type="cc:EnumRef.ChoiceMode"/>
+					<property name="InputByString"                    type="re:FieldList"/>
+					<property name="SearchStringModeOnInputByString"  type="cc:EnumRef.SearchStringModeOnInputByString"/>
+					<property name="FullTextSearchOnInputByString"    type="cc:EnumRef.FullTextSearchOnInputByString"/>
+					<property name="ChoiceDataGetModeOnInputByString" type="cc:EnumRef.ChoiceDataGetModeOnInputByString"/>
+					<property name="CreateOnInput"                    type="cc:EnumRef.CreateOnInput"/>
+					<property name="ChoiceHistoryOnInput"             type="cc:EnumRef.ChoiceHistoryOnInput"/>
+					<property name="DefaultObjectForm"                type="re:MDObjectRef"/>
+					<property name="DefaultListForm"                  type="re:MDObjectRef"/>
+					<property name="DefaultChoiceForm"                type="re:MDObjectRef"/>
+					<property name="AuxiliaryObjectForm"              type="re:MDObjectRef"/>
+					<property name="AuxiliaryListForm"                type="re:MDObjectRef"/>
+					<property name="AuxiliaryChoiceForm"              type="re:MDObjectRef"/>
+					<property name="BasedOn"                          type="re:MDListType"/>
+					<property name="DependenceOnCalculationTypes"     type="cc:EnumRef.ChartOfCalculationTypesBaseUse"/>
+					<property name="BaseCalculationTypes"             type="re:MDListType"/>
+					<property name="ActionPeriodUse"                  type="cc:EnumRef.Boolean"/>
+					<property name="StandardAttributes"               type="re:StandardAttributeDescriptions"/>
+					<property name="Characteristics"                  type="re:CharacteristicsDescriptions"/>
+					<property name="StandardTabularSections"          type="re:StandardTabularSectionDescriptions"/>
+					<property name="PredefinedDataUpdate"             type="cc:EnumRef.PredefinedDataUpdate"/>
+					<property name="IncludeHelpInContents"            type="cc:EnumRef.Boolean"/>
+					<property name="DataLockFields"                   type="re:FieldList"/>
+					<property name="DataLockControlMode"              type="cc:EnumRef.DefaultDataLockControlMode"/>
+					<property name="FullTextSearch"                   type="cc:EnumRef.FullTextSearchUsing"/>
+					<property name="ObjectPresentation"               type="cr:LocalStringType"/>
+					<property name="ExtendedObjectPresentation"       type="cr:LocalStringType"/>
+					<property name="ListPresentation"                 type="cr:LocalStringType"/>
+					<property name="ExtendedListPresentation"         type="cr:LocalStringType"/>
+					<property name="Explanation"                      type="cr:LocalStringType"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Attribute"      type="tns:Attribute"      lowerBound="0" upperBound="-1"/>
+					<property name="TabularSection" type="tns:TabularSection" lowerBound="0" upperBound="-1"/>
+					<property name="Form"           type="xs:string"          lowerBound="0" upperBound="-1"/>
+					<property name="Template"       type="xs:string"          lowerBound="0" upperBound="-1"/>
+					<property name="Command"        type="tns:Command"        lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+		
 	</package>
 
 	<package targetNamespace="http://Lead-Bullets/xcf/readable" elementFormQualified="true" attributeFormQualified="false"

@@ -240,6 +240,7 @@
 			<Enum>BusinessProcessNumberType</Enum>
 			<Enum>ButtonRepresentation</Enum>
 			<Enum>CalculationRegisterPeriodicity</Enum>
+			<Enum>CalculationTypeMainPresentation</Enum>
 			<Enum>CatalogCodesSeries</Enum>
 			<Enum>CatalogCodeType</Enum>
 			<Enum>CatalogMainPresentation</Enum>
