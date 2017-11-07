@@ -52,6 +52,7 @@
 			<property name="Report"                     type="tns:Report"                     lowerBound="0"/>
 			<property name="Role"                       type="tns:Role"                       lowerBound="0"/>
 			<property name="ScheduledJob"               type="tns:ScheduledJob"               lowerBound="0"/>
+			<property name="Sequence"                   type="tns:Sequence"                   lowerBound="0"/>
 			<property name="SessionParameter"           type="tns:SessionParameter"           lowerBound="0"/>
 			<property name="SettingsStorage"            type="tns:SettingsStorage"            lowerBound="0"/>
 			<property name="Subsystem"                  type="tns:Subsystem"                  lowerBound="0"/>
@@ -1386,13 +1387,32 @@
 					<property name="Name"                     type="xs:string"/>
 					<property name="Synonym"                  type="cr:LocalStringType"/>
 					<property name="Comment"                  type="xs:string"/>
-					<property name="MethodName"              type="re:MDMethodRef"/>
+					<property name="MethodName"               type="re:MDMethodRef"/>
 					<property name="Description"              type="xs:string"/>
 					<property name="Key"                      type="xs:string"/>
 					<property name="Use"                      type="cc:EnumRef.Boolean"/>
 					<property name="Predefined"               type="cc:EnumRef.Boolean"/>
 					<property name="RestartCountOnFailure"    type="xs:decimal"/>
 					<property name="RestartIntervalOnFailure" type="xs:decimal"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="Sequence" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                  type="xs:string"/>
+					<property name="Synonym"               type="cr:LocalStringType"/>
+					<property name="Comment"               type="xs:string"/>
+					<property name="MoveBoundaryOnPosting" type="cc:EnumRef.MoveBoundaryOnPosting"/>
+					<property name="Documents"             type="re:MDListType"/>
+					<property name="RegisterRecords"       type="re:MDListType"/>
+					<property name="DataLockControlMode"   type="cc:EnumRef.DefaultDataLockControlMode"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Dimension" type="tns:Dimension" lowerBound="0" upperBound="-1"/>
 				</typeDef>
 			</property>
 		</objectType>

@@ -131,11 +131,11 @@ Procedure Load(Configuration, Path) Export
 	//If Items.Property("FunctionalOptionsParameter", List) Then
 	//	LoadMetadata(Configuration, Path, "FunctionalOptionsParameters", List);
 	//EndIf;
-	
-	If Items.Property("HTTPService", List) Then
-		LoadMetadata(Configuration, Path, "HTTPServices", List);
-	EndIf;
-	
+	//
+	//If Items.Property("HTTPService", List) Then
+	//	LoadMetadata(Configuration, Path, "HTTPServices", List);
+	//EndIf;
+	//
 	//If Items.Property("InformationRegister", List) Then
 	//	LoadMetadata(Configuration, Path, "InformationRegisters", List);
 	//EndIf;
@@ -151,7 +151,11 @@ Procedure Load(Configuration, Path) Export
 	//If Items.Property("ScheduledJob", List) Then
 	//	LoadMetadata(Configuration, Path, "ScheduledJobs", List);
 	//EndIf;
-	//
+	
+	If Items.Property("Sequence", List) Then
+		LoadMetadata(Configuration, Path, "Sequences", List);
+	EndIf;
+	
 	//If Items.Property("SessionParameter", List) Then
 	//	LoadMetadata(Configuration, Path, "SessionParameters", List);
 	//EndIf;
