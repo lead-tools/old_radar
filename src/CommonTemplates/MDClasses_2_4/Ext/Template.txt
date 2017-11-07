@@ -36,6 +36,7 @@
 			<property name="DocumentNumerator"          type="tns:DocumentNumerator"          lowerBound="0"/>
 			<property name="Document"                   type="tns:Document"                   lowerBound="0"/>
 			<property name="Enum"                       type="tns:Enum"                       lowerBound="0"/>
+			<property name="EventSubscription"          type="tns:EventSubscription"          lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -995,6 +996,19 @@
 					<property name="Form"      type="xs:string"     lowerBound="0" upperBound="-1"/>
 					<property name="Template"  type="xs:string"     lowerBound="0" upperBound="-1"/>
 					<property name="Command"   type="tns:Command"   lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="EventSubscription" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"    type="xs:string"/>
+					<property name="Synonym" type="cr:LocalStringType"/>
+					<property name="Comment" type="xs:string"/>
+					<property name="Source"  type="cr:TypeDescription"/>
+					<property name="Event"   type="re:AliasedStringType"/>
+					<property name="Handler" type="re:MDMethodRef"/>
 				</typeDef>
 			</property>
 		</objectType>
