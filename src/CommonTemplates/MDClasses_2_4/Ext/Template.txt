@@ -54,6 +54,7 @@
 			<property name="CommonCommand"              type="tns:CommonCommand"              lowerBound="0"/>
 			<property name="CommonForm"                 type="tns:CommonForm"                 lowerBound="0"/>
 			<property name="CommonPicture"              type="tns:CommonPicture"              lowerBound="0"/>
+			<property name="CommonTemplate"             type="tns:CommonTemplate"             lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -1463,7 +1464,7 @@
 				</typeDef>
 			</property>
 		</objectType>
-		
+
 		<objectType name="CommonPicture" base="tns:MDObjectBase">
 			<property name="Properties">
 				<typeDef xsi:type="ObjectType">
@@ -1473,7 +1474,18 @@
 				</typeDef>
 			</property>
 		</objectType>
-		
+
+		<objectType name="CommonTemplate" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"         type="xs:string"/>
+					<property name="Synonym"      type="cr:LocalStringType"/>
+					<property name="Comment"      type="xs:string"/>
+					<property name="TemplateType" type="cc:EnumRef.TemplateType"/>
+				</typeDef>
+			</property>
+		</objectType>
+
 	</package>
 
 	<package targetNamespace="http://Lead-Bullets/xcf/readable" elementFormQualified="true" attributeFormQualified="false"

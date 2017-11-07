@@ -74,9 +74,13 @@ Procedure Load(Configuration, Path) Export
 	//If Items.Property("CommonForm", List) Then
 	//	LoadMetadata(Configuration, Path, "Forms", List, "CommonForms");
 	//EndIf;
+	//
+	//If Items.Property("CommonPicture", List) Then
+	//	LoadMetadata(Configuration, Path, "Pictures", List, "CommonPictures");
+	//EndIf;
 	
-	If Items.Property("CommonPicture", List) Then
-		LoadMetadata(Configuration, Path, "Pictures", List, "CommonPictures");
+	If Items.Property("CommonTemplate", List) Then
+		LoadMetadata(Configuration, Path, "Templates", List, "CommonTemplates");
 	EndIf;
 	
 	//If Items.Property("CommonModule", List) Then

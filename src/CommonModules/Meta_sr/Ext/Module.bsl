@@ -35,6 +35,7 @@ Function SkipProperties() Export
 		"Flowchart,"
 		"Schedule,"
 		"CommandInterface,"
+		"File,"
 		"UUID,"
 	);
 	
