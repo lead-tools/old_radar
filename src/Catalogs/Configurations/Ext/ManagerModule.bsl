@@ -75,17 +75,18 @@ Procedure Load(Configuration, Path) Export
 	//	LoadMetadata(Configuration, Path, "Forms", List, "CommonForms");
 	//EndIf;
 	//
-	//If Items.Property("CommonPicture", List) Then
-	//	LoadMetadata(Configuration, Path, "Pictures", List, "CommonPictures");
-	//EndIf;
-	
-	If Items.Property("CommonTemplate", List) Then
-		LoadMetadata(Configuration, Path, "Templates", List, "CommonTemplates");
-	EndIf;
-	
 	//If Items.Property("CommonModule", List) Then
 	//	LoadMetadata(Configuration, Path, "CommonModules", List);
 	//EndIf;
+	//
+	//If Items.Property("CommonPicture", List) Then
+	//	LoadMetadata(Configuration, Path, "Pictures", List, "CommonPictures");
+	//EndIf;
+	//
+	//If Items.Property("CommonTemplate", List) Then
+	//	LoadMetadata(Configuration, Path, "Templates", List, "CommonTemplates");
+	//EndIf;
+	//
 	//
 	//If Items.Property("Constant", List) Then
 	//	LoadMetadata(Configuration, Path, "Constants", List);
@@ -130,7 +131,11 @@ Procedure Load(Configuration, Path) Export
 	//If Items.Property("FunctionalOptionsParameter", List) Then
 	//	LoadMetadata(Configuration, Path, "FunctionalOptionsParameters", List);
 	//EndIf;
-	//
+	
+	If Items.Property("HTTPService", List) Then
+		LoadMetadata(Configuration, Path, "HTTPServices", List);
+	EndIf;
+	
 	//If Items.Property("InformationRegister", List) Then
 	//	LoadMetadata(Configuration, Path, "InformationRegisters", List);
 	//EndIf;
