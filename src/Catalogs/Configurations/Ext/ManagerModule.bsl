@@ -115,14 +115,14 @@ Procedure Load(Configuration, Path) Export
 	//	LoadMetadata(Configuration, Path, "Reports", List);
 	//EndIf;	
 	
-	If Items.Property("Role", List) Then
-		LoadMetadata(Configuration, Path, "Roles", List);
+	//If Items.Property("Role", List) Then
+	//	LoadMetadata(Configuration, Path, "Roles", List);
+	//EndIf;
+	
+	If Items.Property("ScheduledJob", List) Then
+		LoadMetadata(Configuration, Path, "ScheduledJobs", List);
 	EndIf;
 	
-	//If Items.Property("ScheduledJob", List) Then
-	//	LoadMetadata(Configuration, Path, "ScheduledJobs", List);
-	//EndIf;
-	//
 	//If Items.Property("SessionParameter", List) Then
 	//	LoadMetadata(Configuration, Path, "SessionParameters", List);
 	//EndIf;
