@@ -32,6 +32,7 @@
 			<property name="CommonModule"               type="tns:CommonModule"               lowerBound="0"/>
 			<property name="Constant"                   type="tns:Constant"                   lowerBound="0"/>
 			<property name="DataProcessor"              type="tns:DataProcessor"              lowerBound="0"/>
+			<property name="DocumentJournal"            type="tns:DocumentJournal"            lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -243,6 +244,18 @@
 			<property name="ChildObjects">
 				<typeDef xsi:type="ObjectType">
 					<property name="Attribute" type="tns:Attribute" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="Column" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"       type="xs:string"/>
+					<property name="Synonym"    type="cr:LocalStringType"/>
+					<property name="Comment"    type="xs:string"/>
+					<property name="Indexing"   type="cc:EnumRef.Indexing"/>
+					<property name="References" type="re:MDListType"/>
 				</typeDef>
 			</property>
 		</objectType>
@@ -837,6 +850,33 @@
 					<property name="Form"           type="xs:string"          lowerBound="0" upperBound="-1"/>
 					<property name="Template"       type="xs:string"          lowerBound="0" upperBound="-1"/>
 					<property name="Command"        type="tns:Command"        lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="DocumentJournal" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                     type="xs:string"/>
+					<property name="Synonym"                  type="cr:LocalStringType"/>
+					<property name="Comment"                  type="xs:string"/>
+					<property name="DefaultForm"              type="re:MDObjectRef"/>
+					<property name="AuxiliaryForm"            type="re:MDObjectRef"/>
+					<property name="UseStandardCommands"      type="cc:EnumRef.Boolean"/>
+					<property name="RegisteredDocuments"      type="re:MDListType"/>
+					<property name="IncludeHelpInContents"    type="cc:EnumRef.Boolean"/>
+					<property name="StandardAttributes"       type="re:StandardAttributeDescriptions" lowerBound="0"/>
+					<property name="ListPresentation"         type="cr:LocalStringType"/>
+					<property name="ExtendedListPresentation" type="cr:LocalStringType"/>
+					<property name="Explanation"              type="cr:LocalStringType"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Column"    type="tns:Column"    lowerBound="0" upperBound="-1"/>
+					<property name="Form"      type="xs:string"     lowerBound="0" upperBound="-1"/>
+					<property name="Template"  type="xs:string"     lowerBound="0" upperBound="-1"/>
+					<property name="Command"   type="tns:Command"   lowerBound="0" upperBound="-1"/>
 				</typeDef>
 			</property>
 		</objectType>
