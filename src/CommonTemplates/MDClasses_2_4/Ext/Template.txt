@@ -19,9 +19,10 @@
 
 		<objectType name="MetaDataObject" ordered="false" sequenced="true">
 			<property name="version" type="xs:decimal" form="Attribute"/> <!-- 2.4 -->
-			<property name="Configuration" type="tns:Configuration" lowerBound="0"/>
-			<property name="Language"      type="tns:Language"      lowerBound="0"/>
-			<property name="Catalog"       type="tns:Catalog"       lowerBound="0"/>
+			<property name="Configuration"      type="tns:Configuration"      lowerBound="0"/>
+			<property name="Language"           type="tns:Language"           lowerBound="0"/>
+			<property name="AccountingRegister" type="tns:AccountingRegister" lowerBound="0"/>
+			<property name="Catalog"            type="tns:Catalog"            lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -53,9 +54,125 @@
 					<property name="LinkByType"            type="re:TypeLink"                     lowerBound="0"/>
 					<property name="ChoiceHistoryOnInput"  type="cc:EnumRef.ChoiceHistoryOnInput" lowerBound="0"/>
 					<property name="Indexing"              type="cc:EnumRef.Indexing"             lowerBound="0"/>
-					<property name="FullTextSearch"        type="cc:EnumRef.UseFullTextSearch"    lowerBound="0"/>
+					<property name="FullTextSearch"        type="cc:EnumRef.FullTextSearchUsing"  lowerBound="0"/>
 					<property name="Use"                   type="cc:EnumRef.AttributeUse"         lowerBound="0"/>
 					<property name="ScheduleLink"          type="re:MDObjectRef"                  lowerBound="0"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="Dimension" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType" ordered="false">
+					<property name="Name"                  type="xs:string"                       lowerBound="0"/>
+					<property name="Synonym"               type="cr:LocalStringType"              lowerBound="0"/>
+					<property name="Comment"               type="xs:string"                       lowerBound="0"/>
+					<property name="Type"                  type="cr:TypeDescription"              lowerBound="0"/>
+					<property name="PasswordMode"          type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="Format"                type="cr:LocalStringType"              lowerBound="0"/>
+					<property name="EditFormat"            type="cr:LocalStringType"              lowerBound="0"/>
+					<property name="ToolTip"               type="cr:LocalStringType"              lowerBound="0"/>
+					<property name="MarkNegatives"         type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="Mask"                  type="xs:string"                       lowerBound="0"/>
+					<property name="MultiLine"             type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="ExtendedEdit"          type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="MinValue"                                                     lowerBound="0" nillable="true"/>
+					<property name="MaxValue"                                                     lowerBound="0" nillable="true"/>
+					<property name="FillChecking"          type="cr:FillChecking"                 lowerBound="0"/>
+					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"   lowerBound="0"/>
+					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"         lowerBound="0"/>
+					<property name="ChoiceParameters"      type="app:ChoiceParameters"            lowerBound="0"/>
+					<property name="QuickChoice"           type="cc:EnumRef.UseQuickChoice"       lowerBound="0"/>
+					<property name="CreateOnInput"         type="cc:EnumRef.CreateOnInput"        lowerBound="0"/>
+					<property name="ChoiceForm"            type="re:MDObjectRef"                  lowerBound="0"/>
+					<property name="LinkByType"            type="re:TypeLink"                     lowerBound="0"/>
+					<property name="ChoiceHistoryOnInput"  type="cc:EnumRef.ChoiceHistoryOnInput" lowerBound="0"/>
+					<property name="Balance"               type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="AccountingFlag"        type="re:MDObjectRef"                  lowerBound="0"/>
+					<property name="DenyIncompleteValues"  type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="Indexing"              type="cc:EnumRef.Indexing"             lowerBound="0"/>
+					<property name="FullTextSearch"        type="cc:EnumRef.FullTextSearchUsing"  lowerBound="0"/>
+					<property name="UseInTotals"           type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="RegisterDimension"     type="re:MDObjectRef"                  lowerBound="0"/>
+					<property name="LeadingRegisterData"   type="re:MDListType"                   lowerBound="0"/>
+					<property name="FillFromFillingValue"  type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="FillValue"                                                    lowerBound="0" nillable="true"/>
+					<property name="Master"                type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="MainFilter"            type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="BaseDimension"         type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="ScheduleLink"          type="re:MDObjectRef"                  lowerBound="0"/>
+					<property name="DocumentMap"           type="re:MDListType"                   lowerBound="0"/>
+					<property name="RegisterRecordsMap"    type="re:MDListType"                   lowerBound="0"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="Resource" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType" ordered="false">
+					<property name="Name"                       type="xs:string"/>
+					<property name="Synonym"                    type="cr:LocalStringType"/>
+					<property name="Comment"                    type="xs:string"/>
+					<property name="Type"                       type="cr:TypeDescription"              lowerBound="0"/>
+					<property name="PasswordMode"               type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="Format"                     type="cr:LocalStringType"              lowerBound="0"/>
+					<property name="EditFormat"                 type="cr:LocalStringType"              lowerBound="0"/>
+					<property name="ToolTip"                    type="cr:LocalStringType"              lowerBound="0"/>
+					<property name="MarkNegatives"              type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="Mask"                       type="xs:string"                       lowerBound="0"/>
+					<property name="MultiLine"                  type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="ExtendedEdit"               type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="MinValue"                                                          lowerBound="0" nillable="true"/>
+					<property name="MaxValue"                                                          lowerBound="0" nillable="true"/>
+					<property name="FillChecking"               type="cr:FillChecking"                 lowerBound="0"/>
+					<property name="ChoiceFoldersAndItems"      type="cc:EnumRef.FoldersAndItemsUse"   lowerBound="0"/>
+					<property name="ChoiceParameterLinks"       type="re:ChoiceParameterLinks"         lowerBound="0"/>
+					<property name="ChoiceParameters"           type="app:ChoiceParameters"            lowerBound="0"/>
+					<property name="QuickChoice"                type="cc:EnumRef.UseQuickChoice"       lowerBound="0"/>
+					<property name="CreateOnInput"              type="cc:EnumRef.CreateOnInput"        lowerBound="0"/>
+					<property name="ChoiceForm"                 type="re:MDObjectRef"                  lowerBound="0"/>
+					<property name="LinkByType"                 type="re:TypeLink"                     lowerBound="0"/>
+					<property name="ChoiceHistoryOnInput"       type="cc:EnumRef.ChoiceHistoryOnInput" lowerBound="0"/>
+					<property name="FullTextSearch"             type="cc:EnumRef.FullTextSearchUsing"  lowerBound="0"/>
+					<property name="Balance"                    type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="AccountingFlag"             type="re:MDObjectRef"                  lowerBound="0"/>
+					<property name="ExtDimensionAccountingFlag" type="re:MDObjectRef"                  lowerBound="0"/>
+					<property name="NameInDataSource"           type="xs:string"                       lowerBound="0"/>
+					<property name="FillFromFillingValue"       type="cc:EnumRef.Boolean"              lowerBound="0"/>
+					<property name="FillValue"                                                         lowerBound="0" nillable="true"/>
+					<property name="Indexing"                   type="cc:EnumRef.Indexing"             lowerBound="0"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="AccountingFlagProperties" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                  type="xs:string"/>
+					<property name="Synonym"               type="cr:LocalStringType"/>
+					<property name="Comment"               type="xs:string"/>
+					<property name="Type"                  type="cr:TypeDescription"/>
+					<property name="PasswordMode"          type="cc:EnumRef.Boolean"/>
+					<property name="Format"                type="cr:LocalStringType"/>
+					<property name="EditFormat"            type="cr:LocalStringType"/>
+					<property name="ToolTip"               type="cr:LocalStringType"/>
+					<property name="MarkNegatives"         type="cc:EnumRef.Boolean"/>
+					<property name="Mask"                  type="xs:string"/>
+					<property name="MultiLine"             type="cc:EnumRef.Boolean"/>
+					<property name="ExtendedEdit"          type="cc:EnumRef.Boolean"/>
+					<property name="MinValue"                                        nillable="true"/>
+					<property name="MaxValue"                                        nillable="true"/>
+					<property name="FillFromFillingValue"  type="cc:EnumRef.Boolean"/>
+					<property name="FillValue"                                       nillable="true"/>
+					<property name="FillChecking"          type="cr:FillChecking"/>
+					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"/>
+					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"/>
+					<property name="ChoiceParameters"      type="app:ChoiceParameters"/>
+					<property name="QuickChoice"           type="cc:EnumRef.UseQuickChoice"/>
+					<property name="CreateOnInput"         type="cc:EnumRef.CreateOnInput"/>
+					<property name="ChoiceForm"            type="re:MDObjectRef"/>
+					<property name="LinkByType"            type="re:TypeLink"/>
+					<property name="ChoiceHistoryOnInput"  type="cc:EnumRef.ChoiceHistoryOnInput"/>
 				</typeDef>
 			</property>
 		</objectType>
@@ -200,6 +317,40 @@
 			</property>
 		</objectType>
 
+		<objectType name="AccountingRegister" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                     type="xs:string"/>
+					<property name="Synonym"                  type="cr:LocalStringType"/>
+					<property name="Comment"                  type="xs:string"/>
+					<property name="UseStandardCommands"      type="cc:EnumRef.Boolean"/>
+					<property name="IncludeHelpInContents"    type="cc:EnumRef.Boolean"/>
+					<property name="ChartOfAccounts"          type="re:MDObjectRef"/>
+					<property name="Correspondence"           type="cc:EnumRef.Boolean"/>
+					<property name="PeriodAdjustmentLength"   type="xs:decimal"/>
+					<property name="DefaultListForm"          type="re:MDObjectRef"/>
+					<property name="AuxiliaryListForm"        type="re:MDObjectRef"/>
+					<property name="StandardAttributes"       type="re:StandardAttributeDescriptions"/>
+					<property name="DataLockControlMode"      type="cc:EnumRef.DefaultDataLockControlMode"/>
+					<property name="EnableTotalsSplitting"    type="cc:EnumRef.Boolean"/>
+					<property name="FullTextSearch"           type="cc:EnumRef.FullTextSearchUsing"/>
+					<property name="ListPresentation"         type="cr:LocalStringType"/>
+					<property name="ExtendedListPresentation" type="cr:LocalStringType"/>
+					<property name="Explanation"              type="cr:LocalStringType"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Dimension" type="tns:Dimension" lowerBound="0" upperBound="-1"/>
+					<property name="Resource"  type="tns:Resource"  lowerBound="0" upperBound="-1"/>
+					<property name="Attribute" type="tns:Attribute" lowerBound="0" upperBound="-1"/>
+					<property name="Form"      type="xs:string"     lowerBound="0" upperBound="-1"/>
+					<property name="Template"  type="xs:string"     lowerBound="0" upperBound="-1"/>
+					<property name="Command"   type="tns:Command"   lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
 		<objectType name="Catalog" base="tns:MDObjectBase">
 			<property name="Properties">
 				<typeDef xsi:type="ObjectType">
@@ -246,7 +397,7 @@
 					<property name="BasedOn"                          type="re:MDListType"/>
 					<property name="DataLockFields"                   type="re:FieldList"/>
 					<property name="DataLockControlMode"              type="cc:EnumRef.DefaultDataLockControlMode"/>
-					<property name="FullTextSearch"                   type="cc:EnumRef.UseFullTextSearch"/>
+					<property name="FullTextSearch"                   type="cc:EnumRef.FullTextSearchUsing"/>
 					<property name="ObjectPresentation"               type="cr:LocalStringType"/>
 					<property name="ExtendedObjectPresentation"       type="cr:LocalStringType"/>
 					<property name="ListPresentation"                 type="cr:LocalStringType"/>
@@ -368,7 +519,7 @@
 			<property name="ChoiceParameterLinks" type="tns:ChoiceParameterLinks"        lowerBound="0"/>
 			<property name="ChoiceParameters"     type="app:ChoiceParameters"            lowerBound="0"/>
 			<property name="LinkByType"                                                  lowerBound="0"/>
-			<property name="FullTextSearch"       type="cc:EnumRef.UseFullTextSearch"    lowerBound="0"/>
+			<property name="FullTextSearch"       type="cc:EnumRef.FullTextSearchUsing"  lowerBound="0"/>
 			<property name="PasswordMode"         type="cc:EnumRef.Boolean"              lowerBound="0"/>
 			<property name="Format"               type="cr:LocalStringType"              lowerBound="0"/>
 			<property name="EditFormat"           type="cr:LocalStringType"              lowerBound="0"/>

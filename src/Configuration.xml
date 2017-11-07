@@ -294,10 +294,11 @@
 			<Enum>TaskNumberAutoPrefix</Enum>
 			<Enum>TemplateType</Enum>
 			<Enum>TypeCategories</Enum>
-			<Enum>UseFullTextSearch</Enum>
+			<Enum>FullTextSearchUsing</Enum>
 			<Enum>UsePurposes</Enum>
 			<Enum>UseQuickChoice</Enum>
 			<InformationRegister>AccumulationRegisterAggregateDimensions</InformationRegister>
+			<InformationRegister>AdditionalFullTextSearchDictionaries</InformationRegister>
 			<InformationRegister>BaseCalculationTypes</InformationRegister>
 			<InformationRegister>BasedOn</InformationRegister>
 			<InformationRegister>Characteristics</InformationRegister>
@@ -315,7 +316,6 @@
 			<InformationRegister>SubordinateSubsystems</InformationRegister>
 			<InformationRegister>UsePurposes</InformationRegister>
 			<InformationRegister>XDTOPackages</InformationRegister>
-			<InformationRegister>AdditionalFullTextSearchDictionaries</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
