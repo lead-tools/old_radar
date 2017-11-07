@@ -35,6 +35,7 @@
 			<property name="DocumentJournal"            type="tns:DocumentJournal"            lowerBound="0"/>
 			<property name="DocumentNumerator"          type="tns:DocumentNumerator"          lowerBound="0"/>
 			<property name="Document"                   type="tns:Document"                   lowerBound="0"/>
+			<property name="Enum"                       type="tns:Enum"                       lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -258,6 +259,16 @@
 					<property name="Comment"    type="xs:string"/>
 					<property name="Indexing"   type="cc:EnumRef.Indexing"/>
 					<property name="References" type="re:MDListType"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="EnumValue" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"    type="xs:string"/>
+					<property name="Synonym" type="cr:LocalStringType"/>
+					<property name="Comment" type="xs:string"/>
 				</typeDef>
 			</property>
 		</objectType>
@@ -953,6 +964,37 @@
 					<property name="TabularSection" type="tns:TabularSection" lowerBound="0" upperBound="-1"/>
 					<property name="Template"       type="xs:string"          lowerBound="0" upperBound="-1"/>
 					<property name="Command"        type="tns:Command"        lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="Enum" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                     type="xs:string"/>
+					<property name="Synonym"                  type="cr:LocalStringType"/>
+					<property name="Comment"                  type="xs:string"/>
+					<property name="UseStandardCommands"      type="cc:EnumRef.Boolean"/>
+					<property name="StandardAttributes"       type="re:StandardAttributeDescriptions" lowerBound="0"/>
+					<property name="Characteristics"          type="re:CharacteristicsDescriptions"/>
+					<property name="QuickChoice"              type="cc:EnumRef.Boolean"/>
+					<property name="ChoiceMode"               type="cc:EnumRef.ChoiceMode"/>
+					<property name="DefaultListForm"          type="re:MDObjectRef"/>
+					<property name="DefaultChoiceForm"        type="re:MDObjectRef"/>
+					<property name="AuxiliaryListForm"        type="re:MDObjectRef"/>
+					<property name="AuxiliaryChoiceForm"      type="re:MDObjectRef"/>
+					<property name="ListPresentation"         type="cr:LocalStringType"/>
+					<property name="ExtendedListPresentation" type="cr:LocalStringType"/>
+					<property name="Explanation"              type="cr:LocalStringType"/>
+					<property name="ChoiceHistoryOnInput"     type="cc:EnumRef.ChoiceHistoryOnInput"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="EnumValue" type="tns:EnumValue" lowerBound="0" upperBound="-1"/>
+					<property name="Form"      type="xs:string"     lowerBound="0" upperBound="-1"/>
+					<property name="Template"  type="xs:string"     lowerBound="0" upperBound="-1"/>
+					<property name="Command"   type="tns:Command"   lowerBound="0" upperBound="-1"/>
 				</typeDef>
 			</property>
 		</objectType>
