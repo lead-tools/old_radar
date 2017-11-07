@@ -51,6 +51,7 @@
 			<property name="Task"                       type="tns:Task"                       lowerBound="0"/>
 			<property name="CommandGroup"               type="tns:CommandGroup"               lowerBound="0"/>
 			<property name="CommonAttribute"            type="tns:CommonAttribute"            lowerBound="0"/>
+			<property name="CommonCommand"              type="tns:CommonCommand"              lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -1422,6 +1423,25 @@
 					<property name="ConfigurationExtensionsSeparation" type="cc:EnumRef.CommonAttributeConfigurationExtensionsSeparation"/>
 					<property name="Indexing"                          type="cc:EnumRef.Indexing"/>
 					<property name="FullTextSearch"                    type="cc:EnumRef.FullTextSearchUsing"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="CommonCommand" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                  type="xs:string"/>
+					<property name="Synonym"               type="cr:LocalStringType"/>
+					<property name="Comment"               type="xs:string"/>
+					<property name="Group"                 type="re:IncludeInCommandCategoriesType"/>
+					<property name="Representation"        type="cc:EnumRef.ButtonRepresentation"/>
+					<property name="ToolTip"               type="cr:LocalStringType"/>
+					<property name="Picture"                                              nillable="true"/>
+					<property name="Shortcut"                                             nillable="true"/>
+					<property name="IncludeHelpInContents" type="cc:EnumRef.Boolean"/>
+					<property name="CommandParameterType"  type="cr:TypeDescription"/>
+					<property name="ParameterUseMode"      type="cc:EnumRef.CommandParameterUseMode"/>
+					<property name="ModifiesData"          type="cc:EnumRef.Boolean"/>
 				</typeDef>
 			</property>
 		</objectType>

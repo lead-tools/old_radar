@@ -62,9 +62,13 @@ Procedure Load(Configuration, Path) Export
 	//If Items.Property("CommandGroup", List) Then
 	//	LoadMetadata(Configuration, Path, "CommandGroups", List);
 	//EndIf;
+	//
+	//If Items.Property("CommonAttribute", List) Then
+	//	LoadMetadata(Configuration, Path, "CommonAttributes", List);
+	//EndIf;
 	
-	If Items.Property("CommonAttribute", List) Then
-		LoadMetadata(Configuration, Path, "CommonAttributes", List);
+	If Items.Property("CommonCommand", List) Then
+		LoadMetadata(Configuration, Path, "Commands", List, "CommonCommands");
 	EndIf;
 	
 	//If Items.Property("CommonModule", List) Then
@@ -149,9 +153,13 @@ Procedure Load(Configuration, Path) Export
 	
 EndProcedure // Load()
 
-Procedure LoadMetadata(Configuration, Path, Name, XDTOList)
+Procedure LoadMetadata(Configuration, Path, Name, XDTOList, FolderName = Undefined)
 	
-	MetadataPath = Abc.JoinPath(Path, Name);
+	If FolderName = Undefined Then
+		FolderName = Name;
+	EndIf; 
+	
+	MetadataPath = Abc.JoinPath(Path, FolderName);
 	MetadataManager = Catalogs[Name];
 	
 	For Each Item In XDTOList Do
