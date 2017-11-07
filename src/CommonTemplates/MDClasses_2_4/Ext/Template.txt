@@ -30,6 +30,7 @@
 			<property name="ChartOfCalculationTypes"    type="tns:ChartOfCalculationTypes"    lowerBound="0"/>
 			<property name="ChartOfCharacteristicTypes" type="tns:ChartOfCharacteristicTypes" lowerBound="0"/>
 			<property name="CommonModule"               type="tns:CommonModule"               lowerBound="0"/>
+			<property name="Constant"                   type="tns:Constant"                   lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -776,6 +777,40 @@
 					<property name="ServerCall"                type="cc:EnumRef.Boolean"/>
 					<property name="Privileged"                type="cc:EnumRef.Boolean"/>
 					<property name="ReturnValuesReuse"         type="cc:EnumRef.ReturnValuesReuse"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="Constant" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                  type="xs:string"/>
+					<property name="Synonym"               type="cr:LocalStringType"/>
+					<property name="Comment"               type="xs:string"/>
+					<property name="Type"                  type="cr:TypeDescription"/>
+					<property name="UseStandardCommands"   type="cc:EnumRef.Boolean"/>
+					<property name="DefaultForm"           type="re:MDObjectRef"/>
+					<property name="ExtendedPresentation"  type="cr:LocalStringType"/>
+					<property name="Explanation"           type="cr:LocalStringType"/>
+					<property name="PasswordMode"          type="cc:EnumRef.Boolean"/>
+					<property name="Format"                type="cr:LocalStringType"/>
+					<property name="EditFormat"            type="cr:LocalStringType"/>
+					<property name="ToolTip"               type="cr:LocalStringType"/>
+					<property name="MarkNegatives"         type="cc:EnumRef.Boolean"/>
+					<property name="Mask"                  type="xs:string"/>
+					<property name="MultiLine"             type="cc:EnumRef.Boolean"/>
+					<property name="ExtendedEdit"          type="cc:EnumRef.Boolean"/>
+					<property name="MinValue"                                         nillable="true"/>
+					<property name="MaxValue"                                         nillable="true"/>
+					<property name="FillChecking"          type="cc:EnumRef.FillChecking"/>
+					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"/>
+					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"/>
+					<property name="ChoiceParameters"      type="app:ChoiceParameters"/>
+					<property name="QuickChoice"           type="cc:EnumRef.UseQuickChoice"/>
+					<property name="ChoiceForm"            type="re:MDObjectRef"/>
+					<property name="LinkByType"            type="re:TypeLink"/>
+					<property name="ChoiceHistoryOnInput"  type="cc:EnumRef.ChoiceHistoryOnInput"/>
+					<property name="DataLockControlMode"   type="cc:EnumRef.DefaultDataLockControlMode"/>
 				</typeDef>
 			</property>
 		</objectType>
