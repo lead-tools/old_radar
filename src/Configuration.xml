@@ -232,7 +232,6 @@
 			<Enum>AccumulationRegisterAggregateUse</Enum>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
-			<Enum>ApplicationUsePurpose</Enum>
 			<Enum>AttributeKinds</Enum>
 			<Enum>AttributeUse</Enum>
 			<Enum>Boolean</Enum>
@@ -271,6 +270,7 @@
 			<Enum>EditType</Enum>
 			<Enum>FillChecking</Enum>
 			<Enum>FoldersAndItemsUse</Enum>
+			<Enum>FormType</Enum>
 			<Enum>FullTextSearchOnInputByString</Enum>
 			<Enum>FullTextSearchUsing</Enum>
 			<Enum>HierarchyType</Enum>

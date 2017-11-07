@@ -81,6 +81,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
+						<v8:Type>cfg:CatalogRef.Forms</v8:Type>
 						<v8:Type>cfg:CatalogRef.Configurations</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
@@ -114,16 +115,20 @@
 			</Dimension>
 			<Dimension uuid="33a15ee9-95e2-4429-beb2-e90ea56f92ff">
 				<Properties>
-					<Name>ApplicationUsePurpose</Name>
+					<Name>UsePurpose</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>en</v8:lang>
-							<v8:content>Application use purpose</v8:content>
+							<v8:content>Use purpose</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Назначение использования</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.ApplicationUsePurpose</v8:Type>
+						<v8:Type>cfg:EnumRef.UsePurposes</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

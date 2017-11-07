@@ -52,6 +52,7 @@
 			<property name="CommandGroup"               type="tns:CommandGroup"               lowerBound="0"/>
 			<property name="CommonAttribute"            type="tns:CommonAttribute"            lowerBound="0"/>
 			<property name="CommonCommand"              type="tns:CommonCommand"              lowerBound="0"/>
+			<property name="CommonForm"                 type="tns:CommonForm"                 lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -1442,6 +1443,22 @@
 					<property name="CommandParameterType"  type="cr:TypeDescription"/>
 					<property name="ParameterUseMode"      type="cc:EnumRef.CommandParameterUseMode"/>
 					<property name="ModifiesData"          type="cc:EnumRef.Boolean"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="CommonForm" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                  type="xs:string"/>
+					<property name="Synonym"               type="cr:LocalStringType"/>
+					<property name="Comment"               type="xs:string"/>
+					<property name="FormType"              type="cc:EnumRef.FormType"/>
+					<property name="IncludeHelpInContents" type="cc:EnumRef.Boolean"/>
+					<property name="UsePurposes"           type="cr:FixedArray"/>
+					<property name="UseStandardCommands"   type="cc:EnumRef.Boolean"/>
+					<property name="ExtendedPresentation"  type="cr:LocalStringType"/>
+					<property name="Explanation"           type="cr:LocalStringType"/>
 				</typeDef>
 			</property>
 		</objectType>
