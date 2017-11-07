@@ -245,6 +245,7 @@
 			<Enum>CatalogCodeType</Enum>
 			<Enum>CatalogMainPresentation</Enum>
 			<Enum>CharacteristicKindCodesSeries</Enum>
+			<Enum>CharacteristicTypeMainPresentation</Enum>
 			<Enum>CharOfAccountCodeSeries</Enum>
 			<Enum>ChartOfCalculationTypesBaseUse</Enum>
 			<Enum>ChartOfCalculationTypesCodeType</Enum>
