@@ -70,9 +70,13 @@ Procedure Load(Configuration, Path) Export
 	//If Items.Property("CommonCommand", List) Then
 	//	LoadMetadata(Configuration, Path, "Commands", List, "CommonCommands");
 	//EndIf;
+	//
+	//If Items.Property("CommonForm", List) Then
+	//	LoadMetadata(Configuration, Path, "Forms", List, "CommonForms");
+	//EndIf;
 	
-	If Items.Property("CommonForm", List) Then
-		LoadMetadata(Configuration, Path, "Forms", List, "CommonForms");
+	If Items.Property("CommonPicture", List) Then
+		LoadMetadata(Configuration, Path, "Pictures", List, "CommonPictures");
 	EndIf;
 	
 	//If Items.Property("CommonModule", List) Then

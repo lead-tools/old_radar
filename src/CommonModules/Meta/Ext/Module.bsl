@@ -127,6 +127,8 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 			
 		ElsIf Type = Type("CatalogRef.Constants") Then	
 			
+		ElsIf Type = Type("CatalogRef.Files") Then	
+			
 		ElsIf Type = Type("EnumRef.DataHistoryUse") Then	
 			// 8.3.11
 		ElsIf Type = Type("UUID") Then	
