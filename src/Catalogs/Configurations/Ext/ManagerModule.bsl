@@ -55,14 +55,14 @@ Procedure Load(Configuration, Path) Export
 	//	LoadMetadata(Configuration, Path, "ChartsOfCalculationTypes", List);
 	//EndIf;
 	
-	If Items.Property("ChartOfCharacteristicTypes", List) Then
-		LoadMetadata(Configuration, Path, "ChartsOfCharacteristicTypes", List);
+	//If Items.Property("ChartOfCharacteristicTypes", List) Then
+	//	LoadMetadata(Configuration, Path, "ChartsOfCharacteristicTypes", List);
+	//EndIf;
+	
+	If Items.Property("CommonModule", List) Then
+		LoadMetadata(Configuration, Path, "CommonModules", List);
 	EndIf;
 	
-	//If Items.Property("CommonModule", List) Then
-	//	LoadMetadata(Configuration, Path, "CommonModules", List);
-	//EndIf;
-	//
 	//If Items.Property("Constant", List) Then
 	//	LoadMetadata(Configuration, Path, "Constants", List);
 	//EndIf;

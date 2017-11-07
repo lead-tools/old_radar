@@ -29,6 +29,7 @@
 			<property name="ChartOfAccounts"            type="tns:ChartOfAccounts"            lowerBound="0"/>
 			<property name="ChartOfCalculationTypes"    type="tns:ChartOfCalculationTypes"    lowerBound="0"/>
 			<property name="ChartOfCharacteristicTypes" type="tns:ChartOfCharacteristicTypes" lowerBound="0"/>
+			<property name="CommonModule"               type="tns:CommonModule"               lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -756,6 +757,25 @@
 					<property name="Form"           type="xs:string"          lowerBound="0" upperBound="-1"/>
 					<property name="Template"       type="xs:string"          lowerBound="0" upperBound="-1"/>
 					<property name="Command"        type="tns:Command"        lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="CommonModule" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                      type="xs:string"/>
+					<property name="Synonym"                   type="cr:LocalStringType"/>
+					<property name="Comment"                   type="xs:string"/>
+					<property name="Global"                    type="cc:EnumRef.Boolean"/>
+					<property name="ClientManagedApplication"  type="cc:EnumRef.Boolean"/>
+					<property name="Server"                    type="cc:EnumRef.Boolean"/>
+					<property name="ExternalConnection"        type="cc:EnumRef.Boolean"/>
+					<property name="ClientOrdinaryApplication" type="cc:EnumRef.Boolean" lowerBound="0"/>
+					<property name="Client"                    type="cc:EnumRef.Boolean" lowerBound="0"/>
+					<property name="ServerCall"                type="cc:EnumRef.Boolean"/>
+					<property name="Privileged"                type="cc:EnumRef.Boolean"/>
+					<property name="ReturnValuesReuse"         type="cc:EnumRef.ReturnValuesReuse"/>
 				</typeDef>
 			</property>
 		</objectType>
