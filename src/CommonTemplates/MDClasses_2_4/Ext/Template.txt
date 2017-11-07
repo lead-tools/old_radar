@@ -23,6 +23,7 @@
 			<property name="Language"             type="tns:Language"             lowerBound="0"/>
 			<property name="AccountingRegister"   type="tns:AccountingRegister"   lowerBound="0"/>
 			<property name="AccumulationRegister" type="tns:AccumulationRegister" lowerBound="0"/>
+			<property name="BusinessProcess"      type="tns:BusinessProcess"      lowerBound="0"/>
 			<property name="Catalog"              type="tns:Catalog"              lowerBound="0"/>
 		</objectType>
 
@@ -380,6 +381,59 @@
 					<property name="Form"      type="xs:string"     lowerBound="0" upperBound="-1"/>
 					<property name="Template"  type="xs:string"     lowerBound="0" upperBound="-1"/>
 					<property name="Command"   type="tns:Command"   lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="BusinessProcess" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                             type="xs:string"/>
+					<property name="Synonym"                          type="cr:LocalStringType"/>
+					<property name="Comment"                          type="xs:string"/>
+					<property name="UseStandardCommands"              type="cc:EnumRef.Boolean"/>
+					<property name="EditType"                         type="cc:EnumRef.EditType"/>
+					<property name="InputByString"                    type="re:FieldList"/>
+					<property name="CreateOnInput"                    type="cc:EnumRef.CreateOnInput"/>
+					<property name="SearchStringModeOnInputByString"  type="cc:EnumRef.SearchStringModeOnInputByString"/>
+					<property name="ChoiceDataGetModeOnInputByString" type="cc:EnumRef.ChoiceDataGetModeOnInputByString"/>
+					<property name="FullTextSearchOnInputByString"    type="cc:EnumRef.FullTextSearchOnInputByString"/>
+					<property name="DefaultObjectForm"                type="re:MDObjectRef"/>
+					<property name="DefaultListForm"                  type="re:MDObjectRef"/>
+					<property name="DefaultChoiceForm"                type="re:MDObjectRef"/>
+					<property name="AuxiliaryObjectForm"              type="re:MDObjectRef"/>
+					<property name="AuxiliaryListForm"                type="re:MDObjectRef"/>
+					<property name="AuxiliaryChoiceForm"              type="re:MDObjectRef"/>
+					<property name="ChoiceHistoryOnInput"             type="cc:EnumRef.ChoiceHistoryOnInput"/>
+					<property name="NumberType"                       type="cc:EnumRef.BusinessProcessNumberType"/>
+					<property name="NumberLength"                     type="xs:decimal"/>
+					<property name="NumberAllowedLength"              type="cc:EnumRef.AllowedLength"/>
+					<property name="CheckUnique"                      type="cc:EnumRef.Boolean"/>
+					<property name="StandardAttributes"               type="re:StandardAttributeDescriptions"/>
+					<property name="Characteristics"                  type="re:CharacteristicsDescriptions"/>
+					<property name="Autonumbering"                    type="cc:EnumRef.Boolean"/>
+					<property name="BasedOn"                          type="re:MDListType"/>
+					<property name="NumberPeriodicity"                type="cc:EnumRef.BusinessProcessNumberPeriodicity"/>
+					<property name="Task"                             type="re:MDObjectRef"/>
+					<property name="CreateTaskInPrivilegedMode"       type="cc:EnumRef.Boolean"/>
+					<property name="DataLockFields"                   type="re:FieldList"/>
+					<property name="DataLockControlMode"              type="cc:EnumRef.DefaultDataLockControlMode"/>
+					<property name="IncludeHelpInContents"            type="cc:EnumRef.Boolean"/>
+					<property name="FullTextSearch"                   type="cc:EnumRef.FullTextSearchUsing"/>
+					<property name="ObjectPresentation"               type="cr:LocalStringType"/>
+					<property name="ExtendedObjectPresentation"       type="cr:LocalStringType"/>
+					<property name="ListPresentation"                 type="cr:LocalStringType"/>
+					<property name="ExtendedListPresentation"         type="cr:LocalStringType"/>
+					<property name="Explanation"                      type="cr:LocalStringType"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Attribute"      type="tns:Attribute"      lowerBound="0" upperBound="-1"/>
+					<property name="TabularSection" type="tns:TabularSection" lowerBound="0" upperBound="-1"/>
+					<property name="Form"           type="xs:string"          lowerBound="0" upperBound="-1"/>
+					<property name="Template"       type="xs:string"          lowerBound="0" upperBound="-1"/>
+					<property name="Command"        type="tns:Command"        lowerBound="0" upperBound="-1"/>
 				</typeDef>
 			</property>
 		</objectType>
