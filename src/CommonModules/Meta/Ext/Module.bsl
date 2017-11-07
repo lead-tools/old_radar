@@ -186,15 +186,7 @@ Function ReadMetadataXML(Path) Export
 	
 	MemoryStream = New MemoryStream(BinaryDataBuffer);
 	
-	XMLReader = New XMLReader;
-	XMLReader.SetString(GetCommonTemplate("MDClasses_2_4").GetText());
-	XDTOModel = XDTOFactory.ReadXML(XMLReader);
-	XMLReader.Close();
-	
-	Packages = New Array;
-	Packages.Add(XDTOFactory.Packages.Get("http://v8.1c.ru/8.1/data/enterprise/current-config"));
-	
-	MyXDTOFactory = New XDTOFactory(XDTOModel, Packages);
+	MyXDTOFactory = Meta_sr.XDTOFactory();
 	Type = MyXDTOFactory.Type("http://Lead-Bullets/MDClasses", "MetaDataObject");  
 	
 	XMLReader = New XMLReader;

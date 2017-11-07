@@ -49,6 +49,7 @@
 			<property name="SettingsStorage"            type="tns:SettingsStorage"            lowerBound="0"/>
 			<property name="Subsystem"                  type="tns:Subsystem"                  lowerBound="0"/>
 			<property name="Task"                       type="tns:Task"                       lowerBound="0"/>
+			<property name="CommandGroup"               type="tns:CommandGroup"               lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -1362,6 +1363,20 @@
 					<property name="Template"            type="xs:string"               lowerBound="0" upperBound="-1"/>
 					<property name="AddressingAttribute" type="tns:AddressingAttribute" lowerBound="0" upperBound="-1"/>
 					<property name="Command"             type="tns:Command"             lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="CommandGroup" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"           type="xs:string"/>
+					<property name="Synonym"        type="cr:LocalStringType"/>
+					<property name="Comment"        type="xs:string"/>
+					<property name="Representation" type="cc:EnumRef.ButtonRepresentation"/>
+					<property name="ToolTip"        type="cr:LocalStringType"/>
+					<property name="Picture"                                                  nillable="true"/>
+					<property name="Category"       type="cc:EnumRef.CommandGroupCategory"/>
 				</typeDef>
 			</property>
 		</objectType>
