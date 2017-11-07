@@ -41,6 +41,7 @@
 			<property name="FilterCriterion"            type="tns:FilterCriterion"            lowerBound="0"/>
 			<property name="FunctionalOption"           type="tns:FunctionalOption"           lowerBound="0"/>
 			<property name="FunctionalOptionsParameter" type="tns:FunctionalOptionsParameter" lowerBound="0"/>
+			<property name="InformationRegister"        type="tns:InformationRegister"        lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -1113,6 +1114,46 @@
 					<property name="Synonym" type="cr:LocalStringType"/>
 					<property name="Comment" type="xs:string"/>
 					<property name="Use"     type="re:MDListType"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="InformationRegister" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                           type="xs:string"/>
+					<property name="Synonym"                        type="cr:LocalStringType"/>
+					<property name="Comment"                        type="xs:string"/>
+					<property name="UseStandardCommands"            type="cc:EnumRef.Boolean"/>
+					<property name="EditType"                       type="cc:EnumRef.EditType"/>
+					<property name="DefaultRecordForm"              type="re:MDObjectRef"/>
+					<property name="DefaultListForm"                type="re:MDObjectRef"/>
+					<property name="AuxiliaryRecordForm"            type="re:MDObjectRef"/>
+					<property name="AuxiliaryListForm"              type="re:MDObjectRef"/>
+					<property name="StandardAttributes"             type="re:StandardAttributeDescriptions" lowerBound="0"/>
+					<property name="InformationRegisterPeriodicity" type="cc:EnumRef.InformationRegisterPeriodicity"/>
+					<property name="WriteMode"                      type="cc:EnumRef.RegisterWriteMode"/>
+					<property name="MainFilterOnPeriod"             type="cc:EnumRef.Boolean"/>
+					<property name="IncludeHelpInContents"          type="cc:EnumRef.Boolean"/>
+					<property name="DataLockControlMode"            type="cc:EnumRef.DefaultDataLockControlMode"/>
+					<property name="FullTextSearch"                 type="cc:EnumRef.FullTextSearchUsing"/>
+					<property name="EnableTotalsSliceFirst"         type="cc:EnumRef.Boolean"/>
+					<property name="EnableTotalsSliceLast"          type="cc:EnumRef.Boolean"/>
+					<property name="RecordPresentation"             type="cr:LocalStringType"/>
+					<property name="ExtendedRecordPresentation"     type="cr:LocalStringType"/>
+					<property name="ListPresentation"               type="cr:LocalStringType"/>
+					<property name="ExtendedListPresentation"       type="cr:LocalStringType"/>
+					<property name="Explanation"                    type="cr:LocalStringType"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Resource"  type="tns:Resource"  lowerBound="0" upperBound="-1"/>
+					<property name="Attribute" type="tns:Attribute" lowerBound="0" upperBound="-1"/>
+					<property name="Dimension" type="tns:Dimension" lowerBound="0" upperBound="-1"/>
+					<property name="Form"      type="xs:string"     lowerBound="0" upperBound="-1"/>
+					<property name="Template"  type="xs:string"     lowerBound="0" upperBound="-1"/>
+					<property name="Command"   type="tns:Command"   lowerBound="0" upperBound="-1"/>
 				</typeDef>
 			</property>
 		</objectType>

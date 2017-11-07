@@ -103,14 +103,14 @@ Procedure Load(Configuration, Path) Export
 	//	LoadMetadata(Configuration, Path, "FunctionalOptions", List);
 	//EndIf;
 	
-	If Items.Property("FunctionalOptionsParameter", List) Then
-		LoadMetadata(Configuration, Path, "FunctionalOptionsParameters", List);
+	//If Items.Property("FunctionalOptionsParameter", List) Then
+	//	LoadMetadata(Configuration, Path, "FunctionalOptionsParameters", List);
+	//EndIf;
+	
+	If Items.Property("InformationRegister", List) Then
+		LoadMetadata(Configuration, Path, "InformationRegisters", List);
 	EndIf;
 	
-	//If Items.Property("InformationRegister", List) Then
-	//	LoadMetadata(Configuration, Path, "InformationRegisters", List);
-	//EndIf;
-	//
 	//If Items.Property("Report", List) Then
 	//	LoadMetadata(Configuration, Path, "Reports", List);
 	//EndIf;	
