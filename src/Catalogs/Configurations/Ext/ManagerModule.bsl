@@ -75,14 +75,14 @@ Procedure Load(Configuration, Path) Export
 	//	LoadMetadata(Configuration, Path, "DocumentJournals", List);
 	//EndIf;
 	
-	If Items.Property("DocumentNumerator", List) Then
-		LoadMetadata(Configuration, Path, "DocumentNumerators", List);
+	//If Items.Property("DocumentNumerator", List) Then
+	//	LoadMetadata(Configuration, Path, "DocumentNumerators", List);
+	//EndIf;
+	
+	If Items.Property("Document", List) Then
+		LoadMetadata(Configuration, Path, "Documents", List);
 	EndIf;
 	
-	//If Items.Property("Document", List) Then
-	//	LoadMetadata(Configuration, Path, "Documents", List);
-	//EndIf;
-	//
 	//If Items.Property("Enum", List) Then
 	//	LoadMetadata(Configuration, Path, "Enums", List);
 	//EndIf;
