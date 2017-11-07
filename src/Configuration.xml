@@ -263,6 +263,7 @@
 			<Enum>CommonAttributeUsersSeparation</Enum>
 			<Enum>CompatibilityMode</Enum>
 			<Enum>CreateOnInput</Enum>
+			<Enum>DataExchangeMainPresentation</Enum>
 			<Enum>DataHistoryUse</Enum>
 			<Enum>DefaultDataLockControlMode</Enum>
 			<Enum>DocumentNumberPeriodicity</Enum>

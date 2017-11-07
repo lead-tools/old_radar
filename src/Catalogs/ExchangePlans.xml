@@ -967,7 +967,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.CatalogMainPresentation</v8:Type>
+						<v8:Type>cfg:EnumRef.DataExchangeMainPresentation</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

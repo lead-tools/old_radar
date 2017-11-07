@@ -87,14 +87,14 @@ Procedure Load(Configuration, Path) Export
 	//	LoadMetadata(Configuration, Path, "Enums", List);
 	//EndIf;
 	
-	If Items.Property("EventSubscription", List) Then
-		LoadMetadata(Configuration, Path, "EventSubscriptions", List);
+	//If Items.Property("EventSubscription", List) Then
+	//	LoadMetadata(Configuration, Path, "EventSubscriptions", List);
+	//EndIf;
+	
+	If Items.Property("ExchangePlan", List) Then
+		LoadMetadata(Configuration, Path, "ExchangePlans", List);
 	EndIf;
 	
-	//If Items.Property("ExchangePlan", List) Then
-	//	LoadMetadata(Configuration, Path, "ExchangePlans", List);
-	//EndIf;
-	//
 	//If Items.Property("FilterCriterion", List) Then
 	//	LoadMetadata(Configuration, Path, "FilterCriteria", List);
 	//EndIf;
