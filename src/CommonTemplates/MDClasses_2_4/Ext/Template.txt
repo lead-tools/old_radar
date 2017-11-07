@@ -33,6 +33,7 @@
 			<property name="Constant"                   type="tns:Constant"                   lowerBound="0"/>
 			<property name="DataProcessor"              type="tns:DataProcessor"              lowerBound="0"/>
 			<property name="DocumentJournal"            type="tns:DocumentJournal"            lowerBound="0"/>
+			<property name="DocumentNumerator"          type="tns:DocumentNumerator"          lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -877,6 +878,21 @@
 					<property name="Form"      type="xs:string"     lowerBound="0" upperBound="-1"/>
 					<property name="Template"  type="xs:string"     lowerBound="0" upperBound="-1"/>
 					<property name="Command"   type="tns:Command"   lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="DocumentNumerator" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                type="xs:string"/>
+					<property name="Synonym"             type="cr:LocalStringType"/>
+					<property name="Comment"             type="xs:string"/>
+					<property name="NumberType"          type="cc:EnumRef.DocumentNumberType"/>
+					<property name="NumberLength"        type="xs:decimal"/>
+					<property name="NumberAllowedLength" type="cc:EnumRef.AllowedLength"/>
+					<property name="NumberPeriodicity"   type="cc:EnumRef.DocumentNumberPeriodicity"/>
+					<property name="CheckUnique"         type="cc:EnumRef.Boolean"/>
 				</typeDef>
 			</property>
 		</objectType>

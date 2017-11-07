@@ -266,6 +266,7 @@
 			<Enum>DataHistoryUse</Enum>
 			<Enum>DefaultDataLockControlMode</Enum>
 			<Enum>DocumentNumberPeriodicity</Enum>
+			<Enum>DocumentNumberType</Enum>
 			<Enum>EditType</Enum>
 			<Enum>FillChecking</Enum>
 			<Enum>FoldersAndItemsUse</Enum>
