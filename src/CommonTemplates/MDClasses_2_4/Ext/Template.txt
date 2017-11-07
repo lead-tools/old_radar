@@ -42,6 +42,7 @@
 			<property name="FunctionalOption"           type="tns:FunctionalOption"           lowerBound="0"/>
 			<property name="FunctionalOptionsParameter" type="tns:FunctionalOptionsParameter" lowerBound="0"/>
 			<property name="InformationRegister"        type="tns:InformationRegister"        lowerBound="0"/>
+			<property name="Report"                     type="tns:Report"                     lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -1154,6 +1155,37 @@
 					<property name="Form"      type="xs:string"     lowerBound="0" upperBound="-1"/>
 					<property name="Template"  type="xs:string"     lowerBound="0" upperBound="-1"/>
 					<property name="Command"   type="tns:Command"   lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="Report" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                      type="xs:string"/>
+					<property name="Synonym"                   type="cr:LocalStringType"/>
+					<property name="Comment"                   type="xs:string"/>
+					<property name="UseStandardCommands"       type="cc:EnumRef.Boolean"/>
+					<property name="DefaultForm"               type="re:MDObjectRef"/>
+					<property name="AuxiliaryForm"             type="re:MDObjectRef"/>
+					<property name="MainDataCompositionSchema" type="re:MDObjectRef"/>
+					<property name="DefaultSettingsForm"       type="re:MDObjectRef"/>
+					<property name="AuxiliarySettingsForm"     type="re:MDObjectRef"/>
+					<property name="DefaultVariantForm"        type="re:MDObjectRef"/>
+					<property name="VariantsStorage"           type="re:MDObjectRef"/>
+					<property name="SettingsStorage"           type="re:MDObjectRef"/>
+					<property name="IncludeHelpInContents"     type="cc:EnumRef.Boolean"/>
+					<property name="ExtendedPresentation"      type="cr:LocalStringType"/>
+					<property name="Explanation"               type="cr:LocalStringType"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Attribute"      type="tns:Attribute"      lowerBound="0" upperBound="-1"/>
+					<property name="TabularSection" type="tns:TabularSection" lowerBound="0" upperBound="-1"/>
+					<property name="Form"           type="xs:string"          lowerBound="0" upperBound="-1"/>
+					<property name="Template"       type="xs:string"          lowerBound="0" upperBound="-1"/>
+					<property name="Command"        type="tns:Command"        lowerBound="0" upperBound="-1"/>
 				</typeDef>
 			</property>
 		</objectType>
