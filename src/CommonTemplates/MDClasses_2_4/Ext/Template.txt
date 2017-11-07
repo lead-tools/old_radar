@@ -31,6 +31,7 @@
 			<property name="ChartOfCharacteristicTypes" type="tns:ChartOfCharacteristicTypes" lowerBound="0"/>
 			<property name="CommonModule"               type="tns:CommonModule"               lowerBound="0"/>
 			<property name="Constant"                   type="tns:Constant"                   lowerBound="0"/>
+			<property name="DataProcessor"              type="tns:DataProcessor"              lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -811,6 +812,31 @@
 					<property name="LinkByType"            type="re:TypeLink"/>
 					<property name="ChoiceHistoryOnInput"  type="cc:EnumRef.ChoiceHistoryOnInput"/>
 					<property name="DataLockControlMode"   type="cc:EnumRef.DefaultDataLockControlMode"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="DataProcessor" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                  type="xs:string"/>
+					<property name="Synonym"               type="cr:LocalStringType"/>
+					<property name="Comment"               type="xs:string"/>
+					<property name="UseStandardCommands"   type="cc:EnumRef.Boolean"/>
+					<property name="DefaultForm"           type="re:MDObjectRef"/>
+					<property name="AuxiliaryForm"         type="re:MDObjectRef"/>
+					<property name="IncludeHelpInContents" type="cc:EnumRef.Boolean"/>
+					<property name="ExtendedPresentation"  type="cr:LocalStringType"/>
+					<property name="Explanation"           type="cr:LocalStringType"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Attribute"      type="tns:Attribute"      lowerBound="0" upperBound="-1"/>
+					<property name="TabularSection" type="tns:TabularSection" lowerBound="0" upperBound="-1"/>
+					<property name="Form"           type="xs:string"          lowerBound="0" upperBound="-1"/>
+					<property name="Template"       type="xs:string"          lowerBound="0" upperBound="-1"/>
+					<property name="Command"        type="tns:Command"        lowerBound="0" upperBound="-1"/>
 				</typeDef>
 			</property>
 		</objectType>

@@ -63,14 +63,14 @@ Procedure Load(Configuration, Path) Export
 	//	LoadMetadata(Configuration, Path, "CommonModules", List);
 	//EndIf;
 	
-	If Items.Property("Constant", List) Then
-		LoadMetadata(Configuration, Path, "Constants", List);
+	//If Items.Property("Constant", List) Then
+	//	LoadMetadata(Configuration, Path, "Constants", List);
+	//EndIf;
+	
+	If Items.Property("DataProcessor", List) Then
+		LoadMetadata(Configuration, Path, "DataProcessors", List);
 	EndIf;
 	
-	//If Items.Property("DataProcessor", List) Then
-	//	LoadMetadata(Configuration, Path, "DataProcessors", List);
-	//EndIf;
-	//
 	//If Items.Property("DocumentJournal", List) Then
 	//	LoadMetadata(Configuration, Path, "DocumentJournals", List);
 	//EndIf;
