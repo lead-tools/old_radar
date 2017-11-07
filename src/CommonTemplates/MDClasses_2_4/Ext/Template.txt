@@ -50,6 +50,7 @@
 			<property name="Subsystem"                  type="tns:Subsystem"                  lowerBound="0"/>
 			<property name="Task"                       type="tns:Task"                       lowerBound="0"/>
 			<property name="CommandGroup"               type="tns:CommandGroup"               lowerBound="0"/>
+			<property name="CommonAttribute"            type="tns:CommonAttribute"            lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -1381,6 +1382,50 @@
 			</property>
 		</objectType>
 
+		<objectType name="CommonAttribute" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                              type="xs:string"/>
+					<property name="Synonym"                           type="cr:LocalStringType"/>
+					<property name="Comment"                           type="xs:string"/>
+					<property name="Type"                              type="cr:TypeDescription"/>
+					<property name="PasswordMode"                      type="cc:EnumRef.Boolean"/>
+					<property name="Format"                            type="cr:LocalStringType"/>
+					<property name="EditFormat"                        type="cr:LocalStringType"/>
+					<property name="ToolTip"                           type="cr:LocalStringType"/>
+					<property name="MarkNegatives"                     type="cc:EnumRef.Boolean"/>
+					<property name="Mask"                              type="xs:string"/>
+					<property name="MultiLine"                         type="cc:EnumRef.Boolean"/>
+					<property name="ExtendedEdit"                      type="cc:EnumRef.Boolean"/>
+					<property name="MinValue"                                             nillable="true"/>
+					<property name="MaxValue"                                             nillable="true"/>
+					<property name="FillFromFillingValue"              type="cc:EnumRef.Boolean"/>
+					<property name="FillValue"                                            nillable="true"/>
+					<property name="FillChecking"                      type="cc:EnumRef.FillChecking"/>
+					<property name="ChoiceFoldersAndItems"             type="cc:EnumRef.FoldersAndItemsUse"/>
+					<property name="ChoiceParameterLinks"              type="re:ChoiceParameterLinks"/>
+					<property name="ChoiceParameters"                  type="app:ChoiceParameters"/>
+					<property name="QuickChoice"                       type="cc:EnumRef.UseQuickChoice"/>
+					<property name="CreateOnInput"                     type="cc:EnumRef.CreateOnInput"/>
+					<property name="ChoiceForm"                        type="re:MDObjectRef"/>
+					<property name="LinkByType"                        type="re:TypeLink"/>
+					<property name="ChoiceHistoryOnInput"              type="cc:EnumRef.ChoiceHistoryOnInput"/>
+					<property name="Content"                           type="re:CommonAttributeContent"/>
+					<property name="AutoUse"                           type="cc:EnumRef.CommonAttributeAutoUse"/>
+					<property name="DataSeparation"                    type="cc:EnumRef.CommonAttributeDataSeparation"/>
+					<property name="SeparatedDataUse"                  type="cc:EnumRef.CommonAttributeSeparatedDataUse"/>
+					<property name="DataSeparationValue"               type="re:MDObjectRef"/>
+					<property name="DataSeparationUse"                 type="re:MDObjectRef"/>
+					<property name="ConditionalSeparation"             type="re:MDObjectRef"/>
+					<property name="UsersSeparation"                   type="cc:EnumRef.CommonAttributeUsersSeparation"/>
+					<property name="AuthenticationSeparation"          type="cc:EnumRef.CommonAttributeAuthenticationSeparation"/>
+					<property name="ConfigurationExtensionsSeparation" type="cc:EnumRef.CommonAttributeConfigurationExtensionsSeparation"/>
+					<property name="Indexing"                          type="cc:EnumRef.Indexing"/>
+					<property name="FullTextSearch"                    type="cc:EnumRef.FullTextSearchUsing"/>
+				</typeDef>
+			</property>
+		</objectType>
+
 	</package>
 
 	<package targetNamespace="http://Lead-Bullets/xcf/readable" elementFormQualified="true" attributeFormQualified="false"
@@ -1516,6 +1561,16 @@
 
 		<objectType name="FuncOptionContentType">
 			<property name="Object" type="tns:MDObjectRef" lowerBound="0" upperBound="-1"/>
+		</objectType>
+
+		<objectType name="CommonAttributeContent">
+			<property name="Item" type="tns:CommonAttributeContentItem" lowerBound="0" upperBound="-1"/>
+		</objectType>
+
+		<objectType name="CommonAttributeContentItem">
+			<property name="Metadata"              type="tns:MDObjectRef"/>
+			<property name="Use"                   type="cc:EnumRef.Using"/>
+			<property name="ConditionalSeparation" type="tns:MDObjectRef"/>
 		</objectType>
 
 	</package>
