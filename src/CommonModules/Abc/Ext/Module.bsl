@@ -87,19 +87,19 @@ EndFunction // GetDataProcessor()
 
 &AtServer
 Function BinFind(BinaryDataBuffer, SearchData, InitPos = 0) Export
-	
+		
 	// naive search
 	
-	For Pos = InitPos To BinaryDataBuffer.Size - 1 Do
+	For Pos = InitPos To BinaryDataBuffer.Size - SearchData.Size Do
 		
-		Offset = 0;
+		Offset = SearchData.Size - 1;
 		
-		While Offset < SearchData.Size
+		While Offset >= 0
 			And BinaryDataBuffer[Pos + Offset] = SearchData[Offset] Do
-			Offset = Offset + 1;
+			Offset = Offset - 1;
 		EndDo; 
 		
-		If Offset = SearchData.Size Then
+		If Offset = -1 Then
 			Return Pos;
 		EndIf; 
 		

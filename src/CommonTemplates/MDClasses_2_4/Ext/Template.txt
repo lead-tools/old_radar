@@ -29,7 +29,13 @@
 			<property name="ChartOfAccounts"            type="tns:ChartOfAccounts"            lowerBound="0"/>
 			<property name="ChartOfCalculationTypes"    type="tns:ChartOfCalculationTypes"    lowerBound="0"/>
 			<property name="ChartOfCharacteristicTypes" type="tns:ChartOfCharacteristicTypes" lowerBound="0"/>
+			<property name="CommandGroup"               type="tns:CommandGroup"               lowerBound="0"/>
+			<property name="CommonAttribute"            type="tns:CommonAttribute"            lowerBound="0"/>
+			<property name="CommonCommand"              type="tns:CommonCommand"              lowerBound="0"/>
+			<property name="CommonForm"                 type="tns:CommonForm"                 lowerBound="0"/>
 			<property name="CommonModule"               type="tns:CommonModule"               lowerBound="0"/>
+			<property name="CommonPicture"              type="tns:CommonPicture"              lowerBound="0"/>
+			<property name="CommonTemplate"             type="tns:CommonTemplate"             lowerBound="0"/>
 			<property name="Constant"                   type="tns:Constant"                   lowerBound="0"/>
 			<property name="DataProcessor"              type="tns:DataProcessor"              lowerBound="0"/>
 			<property name="DocumentJournal"            type="tns:DocumentJournal"            lowerBound="0"/>
@@ -41,14 +47,19 @@
 			<property name="FilterCriterion"            type="tns:FilterCriterion"            lowerBound="0"/>
 			<property name="FunctionalOption"           type="tns:FunctionalOption"           lowerBound="0"/>
 			<property name="FunctionalOptionsParameter" type="tns:FunctionalOptionsParameter" lowerBound="0"/>
+			<property name="HTTPService"                type="tns:HTTPService"                lowerBound="0"/>
 			<property name="InformationRegister"        type="tns:InformationRegister"        lowerBound="0"/>
 			<property name="Report"                     type="tns:Report"                     lowerBound="0"/>
 			<property name="Role"                       type="tns:Role"                       lowerBound="0"/>
 			<property name="ScheduledJob"               type="tns:ScheduledJob"               lowerBound="0"/>
+			<property name="Sequence"                   type="tns:Sequence"                   lowerBound="0"/>
 			<property name="SessionParameter"           type="tns:SessionParameter"           lowerBound="0"/>
 			<property name="SettingsStorage"            type="tns:SettingsStorage"            lowerBound="0"/>
 			<property name="Subsystem"                  type="tns:Subsystem"                  lowerBound="0"/>
 			<property name="Task"                       type="tns:Task"                       lowerBound="0"/>
+			<property name="WebService"                 type="tns:WebService"                 lowerBound="0"/>
+			<property name="WSReference"                type="tns:WSReference"                lowerBound="0"/>
+			<property name="XDTOPackage"                type="tns:XDTOPackage"                lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -837,6 +848,99 @@
 			</property>
 		</objectType>
 
+		<objectType name="CommandGroup" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"           type="xs:string"/>
+					<property name="Synonym"        type="cr:LocalStringType"/>
+					<property name="Comment"        type="xs:string"/>
+					<property name="Representation" type="cc:EnumRef.ButtonRepresentation"/>
+					<property name="ToolTip"        type="cr:LocalStringType"/>
+					<property name="Picture"                                                  nillable="true"/>
+					<property name="Category"       type="cc:EnumRef.CommandGroupCategory"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="CommonAttribute" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                              type="xs:string"/>
+					<property name="Synonym"                           type="cr:LocalStringType"/>
+					<property name="Comment"                           type="xs:string"/>
+					<property name="Type"                              type="cr:TypeDescription"/>
+					<property name="PasswordMode"                      type="cc:EnumRef.Boolean"/>
+					<property name="Format"                            type="cr:LocalStringType"/>
+					<property name="EditFormat"                        type="cr:LocalStringType"/>
+					<property name="ToolTip"                           type="cr:LocalStringType"/>
+					<property name="MarkNegatives"                     type="cc:EnumRef.Boolean"/>
+					<property name="Mask"                              type="xs:string"/>
+					<property name="MultiLine"                         type="cc:EnumRef.Boolean"/>
+					<property name="ExtendedEdit"                      type="cc:EnumRef.Boolean"/>
+					<property name="MinValue"                                             nillable="true"/>
+					<property name="MaxValue"                                             nillable="true"/>
+					<property name="FillFromFillingValue"              type="cc:EnumRef.Boolean"/>
+					<property name="FillValue"                                            nillable="true"/>
+					<property name="FillChecking"                      type="cc:EnumRef.FillChecking"/>
+					<property name="ChoiceFoldersAndItems"             type="cc:EnumRef.FoldersAndItemsUse"/>
+					<property name="ChoiceParameterLinks"              type="re:ChoiceParameterLinks"/>
+					<property name="ChoiceParameters"                  type="app:ChoiceParameters"/>
+					<property name="QuickChoice"                       type="cc:EnumRef.UseQuickChoice"/>
+					<property name="CreateOnInput"                     type="cc:EnumRef.CreateOnInput"/>
+					<property name="ChoiceForm"                        type="re:MDObjectRef"/>
+					<property name="LinkByType"                        type="re:TypeLink"/>
+					<property name="ChoiceHistoryOnInput"              type="cc:EnumRef.ChoiceHistoryOnInput"/>
+					<property name="Content"                           type="re:CommonAttributeContent"/>
+					<property name="AutoUse"                           type="cc:EnumRef.CommonAttributeAutoUse"/>
+					<property name="DataSeparation"                    type="cc:EnumRef.CommonAttributeDataSeparation"/>
+					<property name="SeparatedDataUse"                  type="cc:EnumRef.CommonAttributeSeparatedDataUse"/>
+					<property name="DataSeparationValue"               type="re:MDObjectRef"/>
+					<property name="DataSeparationUse"                 type="re:MDObjectRef"/>
+					<property name="ConditionalSeparation"             type="re:MDObjectRef"/>
+					<property name="UsersSeparation"                   type="cc:EnumRef.CommonAttributeUsersSeparation"/>
+					<property name="AuthenticationSeparation"          type="cc:EnumRef.CommonAttributeAuthenticationSeparation"/>
+					<property name="ConfigurationExtensionsSeparation" type="cc:EnumRef.CommonAttributeConfigurationExtensionsSeparation"/>
+					<property name="Indexing"                          type="cc:EnumRef.Indexing"/>
+					<property name="FullTextSearch"                    type="cc:EnumRef.FullTextSearchUsing"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="CommonCommand" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                  type="xs:string"/>
+					<property name="Synonym"               type="cr:LocalStringType"/>
+					<property name="Comment"               type="xs:string"/>
+					<property name="Group"                 type="re:IncludeInCommandCategoriesType"/>
+					<property name="Representation"        type="cc:EnumRef.ButtonRepresentation"/>
+					<property name="ToolTip"               type="cr:LocalStringType"/>
+					<property name="Picture"                                              nillable="true"/>
+					<property name="Shortcut"                                             nillable="true"/>
+					<property name="IncludeHelpInContents" type="cc:EnumRef.Boolean"/>
+					<property name="CommandParameterType"  type="cr:TypeDescription"/>
+					<property name="ParameterUseMode"      type="cc:EnumRef.CommandParameterUseMode"/>
+					<property name="ModifiesData"          type="cc:EnumRef.Boolean"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="CommonForm" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                  type="xs:string"/>
+					<property name="Synonym"               type="cr:LocalStringType"/>
+					<property name="Comment"               type="xs:string"/>
+					<property name="FormType"              type="cc:EnumRef.FormType"/>
+					<property name="IncludeHelpInContents" type="cc:EnumRef.Boolean"/>
+					<property name="UsePurposes"           type="cr:FixedArray"/>
+					<property name="UseStandardCommands"   type="cc:EnumRef.Boolean"/>
+					<property name="ExtendedPresentation"  type="cr:LocalStringType"/>
+					<property name="Explanation"           type="cr:LocalStringType"/>
+				</typeDef>
+			</property>
+		</objectType>
+
 		<objectType name="CommonModule" base="tns:MDObjectBase">
 			<property name="Properties">
 				<typeDef xsi:type="ObjectType">
@@ -852,6 +956,27 @@
 					<property name="ServerCall"                type="cc:EnumRef.Boolean"/>
 					<property name="Privileged"                type="cc:EnumRef.Boolean"/>
 					<property name="ReturnValuesReuse"         type="cc:EnumRef.ReturnValuesReuse"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="CommonPicture" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"    type="xs:string"/>
+					<property name="Synonym" type="cr:LocalStringType"/>
+					<property name="Comment" type="xs:string"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="CommonTemplate" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"         type="xs:string"/>
+					<property name="Synonym"      type="cr:LocalStringType"/>
+					<property name="Comment"      type="xs:string"/>
+					<property name="TemplateType" type="cc:EnumRef.TemplateType"/>
 				</typeDef>
 			</property>
 		</objectType>
@@ -1160,6 +1285,24 @@
 			</property>
 		</objectType>
 
+		<objectType name="HTTPService" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"          type="xs:string"/>
+					<property name="Synonym"       type="cr:LocalStringType"/>
+					<property name="Comment"       type="xs:string"/>
+					<property name="RootURL"       type="xs:string"/>
+					<property name="ReuseSessions" type="cc:EnumRef.SessionReuseMode"/>
+					<property name="SessionMaxAge" type="xs:decimal"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="URLTemplate"            lowerBound="0" upperBound="-1" nillable="true"/>
+				</typeDef>
+			</property>
+		</objectType>
+
 		<objectType name="InformationRegister" base="tns:MDObjectBase">
 			<property name="Properties">
 				<typeDef xsi:type="ObjectType">
@@ -1247,13 +1390,32 @@
 					<property name="Name"                     type="xs:string"/>
 					<property name="Synonym"                  type="cr:LocalStringType"/>
 					<property name="Comment"                  type="xs:string"/>
-					<property name="MethodName"              type="re:MDMethodRef"/>
+					<property name="MethodName"               type="re:MDMethodRef"/>
 					<property name="Description"              type="xs:string"/>
 					<property name="Key"                      type="xs:string"/>
 					<property name="Use"                      type="cc:EnumRef.Boolean"/>
 					<property name="Predefined"               type="cc:EnumRef.Boolean"/>
 					<property name="RestartCountOnFailure"    type="xs:decimal"/>
 					<property name="RestartIntervalOnFailure" type="xs:decimal"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="Sequence" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                  type="xs:string"/>
+					<property name="Synonym"               type="cr:LocalStringType"/>
+					<property name="Comment"               type="xs:string"/>
+					<property name="MoveBoundaryOnPosting" type="cc:EnumRef.MoveBoundaryOnPosting"/>
+					<property name="Documents"             type="re:MDListType"/>
+					<property name="RegisterRecords"       type="re:MDListType"/>
+					<property name="DataLockControlMode"   type="cc:EnumRef.DefaultDataLockControlMode"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Dimension" type="tns:Dimension" lowerBound="0" upperBound="-1"/>
 				</typeDef>
 			</property>
 		</objectType>
@@ -1362,6 +1524,48 @@
 					<property name="Template"            type="xs:string"               lowerBound="0" upperBound="-1"/>
 					<property name="AddressingAttribute" type="tns:AddressingAttribute" lowerBound="0" upperBound="-1"/>
 					<property name="Command"             type="tns:Command"             lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="WebService" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"               type="xs:string"/>
+					<property name="Synonym"            type="cr:LocalStringType"/>
+					<property name="Comment"            type="xs:string"/>
+					<property name="Namespace"          type="xs:string"/>
+					<property name="XDTOPackages"       type="re:ValueList"/>
+					<property name="DescriptorFileName" type="xs:string"/>
+					<property name="ReuseSessions"      type="cc:EnumRef.SessionReuseMode"/>
+					<property name="SessionMaxAge"      type="xs:decimal"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Operation"                        lowerBound="0" upperBound="-1" nillable="true"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="WSReference" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"        type="xs:string"/>
+					<property name="Synonym"     type="cr:LocalStringType"/>
+					<property name="Comment"     type="xs:string"/>
+					<property name="LocationURL" type="xs:string"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="XDTOPackage" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"        type="xs:string"/>
+					<property name="Synonym"     type="cr:LocalStringType"/>
+					<property name="Comment"     type="xs:string"/>
+					<property name="Namespace"   type="xs:string"/>
 				</typeDef>
 			</property>
 		</objectType>
@@ -1501,6 +1705,26 @@
 
 		<objectType name="FuncOptionContentType">
 			<property name="Object" type="tns:MDObjectRef" lowerBound="0" upperBound="-1"/>
+		</objectType>
+
+		<objectType name="CommonAttributeContent">
+			<property name="Item" type="tns:CommonAttributeContentItem" lowerBound="0" upperBound="-1"/>
+		</objectType>
+
+		<objectType name="CommonAttributeContentItem">
+			<property name="Metadata"              type="tns:MDObjectRef"/>
+			<property name="Use"                   type="cc:EnumRef.Using"/>
+			<property name="ConditionalSeparation" type="tns:MDObjectRef"/>
+		</objectType>
+
+		<objectType name="ValueList">
+			<property name="Item" type="tns:ValueListItem" lowerBound="0" upperBound="-1"/>
+		</objectType>
+
+		<objectType name="ValueListItem">
+			<property name="Presentation" type="xs:string"/>
+			<property name="CheckState"   type="xs:decimal"/>
+			<property name="Value"/>
 		</objectType>
 
 	</package>

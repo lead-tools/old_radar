@@ -125,6 +125,10 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 			
 		ElsIf Type = Type("CatalogRef.Attributes") Then	
 			
+		ElsIf Type = Type("CatalogRef.Constants") Then	
+			
+		ElsIf Type = Type("CatalogRef.Files") Then	
+			
 		ElsIf Type = Type("EnumRef.DataHistoryUse") Then	
 			// 8.3.11
 		ElsIf Type = Type("UUID") Then	
@@ -186,15 +190,7 @@ Function ReadMetadataXML(Path) Export
 	
 	MemoryStream = New MemoryStream(BinaryDataBuffer);
 	
-	XMLReader = New XMLReader;
-	XMLReader.SetString(GetCommonTemplate("MDClasses_2_4").GetText());
-	XDTOModel = XDTOFactory.ReadXML(XMLReader);
-	XMLReader.Close();
-	
-	Packages = New Array;
-	Packages.Add(XDTOFactory.Packages.Get("http://v8.1c.ru/8.1/data/enterprise/current-config"));
-	
-	MyXDTOFactory = New XDTOFactory(XDTOModel, Packages);
+	MyXDTOFactory = Meta_sr.XDTOFactory();
 	Type = MyXDTOFactory.Type("http://Lead-Bullets/MDClasses", "MetaDataObject");  
 	
 	XMLReader = New XMLReader;
