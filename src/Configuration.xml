@@ -227,6 +227,7 @@
 			<Catalog>WebServices</Catalog>
 			<Catalog>WSReferences</Catalog>
 			<Catalog>XDTOPackages</Catalog>
+			<Enum>AccountMainPresentation</Enum>
 			<Enum>AccumulationRegisterAggregatePeriodicity</Enum>
 			<Enum>AccumulationRegisterAggregateUse</Enum>
 			<Enum>AccumulationRegisterType</Enum>
@@ -267,6 +268,7 @@
 			<Enum>FillChecking</Enum>
 			<Enum>FoldersAndItemsUse</Enum>
 			<Enum>FullTextSearchOnInputByString</Enum>
+			<Enum>FullTextSearchUsing</Enum>
 			<Enum>HierarchyType</Enum>
 			<Enum>Indexing</Enum>
 			<Enum>InformationRegisterPeriodicity</Enum>
@@ -294,7 +296,6 @@
 			<Enum>TaskNumberAutoPrefix</Enum>
 			<Enum>TemplateType</Enum>
 			<Enum>TypeCategories</Enum>
-			<Enum>FullTextSearchUsing</Enum>
 			<Enum>UsePurposes</Enum>
 			<Enum>UseQuickChoice</Enum>
 			<InformationRegister>AccumulationRegisterAggregateDimensions</InformationRegister>

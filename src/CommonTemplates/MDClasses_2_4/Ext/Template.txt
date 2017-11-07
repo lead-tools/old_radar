@@ -26,6 +26,7 @@
 			<property name="BusinessProcess"      type="tns:BusinessProcess"      lowerBound="0"/>
 			<property name="CalculationRegister"  type="tns:CalculationRegister"  lowerBound="0"/>
 			<property name="Catalog"              type="tns:Catalog"              lowerBound="0"/>
+			<property name="ChartOfAccounts"      type="tns:ChartOfAccounts"      lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -148,7 +149,39 @@
 			</property>
 		</objectType>
 
-		<objectType name="AccountingFlagProperties" base="tns:MDObjectBase">
+		<objectType name="AccountingFlag" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                  type="xs:string"/>
+					<property name="Synonym"               type="cr:LocalStringType"/>
+					<property name="Comment"               type="xs:string"/>
+					<property name="Type"                  type="cr:TypeDescription"/>
+					<property name="PasswordMode"          type="cc:EnumRef.Boolean"/>
+					<property name="Format"                type="cr:LocalStringType"/>
+					<property name="EditFormat"            type="cr:LocalStringType"/>
+					<property name="ToolTip"               type="cr:LocalStringType"/>
+					<property name="MarkNegatives"         type="cc:EnumRef.Boolean"/>
+					<property name="Mask"                  type="xs:string"/>
+					<property name="MultiLine"             type="cc:EnumRef.Boolean"/>
+					<property name="ExtendedEdit"          type="cc:EnumRef.Boolean"/>
+					<property name="MinValue"                                        nillable="true"/>
+					<property name="MaxValue"                                        nillable="true"/>
+					<property name="FillFromFillingValue"  type="cc:EnumRef.Boolean"/>
+					<property name="FillValue"                                       nillable="true"/>
+					<property name="FillChecking"          type="cr:FillChecking"/>
+					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"/>
+					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"/>
+					<property name="ChoiceParameters"      type="app:ChoiceParameters"/>
+					<property name="QuickChoice"           type="cc:EnumRef.UseQuickChoice"/>
+					<property name="CreateOnInput"         type="cc:EnumRef.CreateOnInput"/>
+					<property name="ChoiceForm"            type="re:MDObjectRef"/>
+					<property name="LinkByType"            type="re:TypeLink"/>
+					<property name="ChoiceHistoryOnInput"  type="cc:EnumRef.ChoiceHistoryOnInput"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="ExtDimensionAccountingFlag" base="tns:MDObjectBase">
 			<property name="Properties">
 				<typeDef xsi:type="ObjectType">
 					<property name="Name"                  type="xs:string"/>
@@ -445,17 +478,17 @@
 					<property name="Name"                     type="xs:string"/>
 					<property name="Synonym"                  type="cr:LocalStringType"/>
 					<property name="Comment"                  type="xs:string"/>
-					<property name="UseStandardCommands"      type="xs:boolean"/>
+					<property name="UseStandardCommands"      type="cc:EnumRef.Boolean"/>
 					<property name="DefaultListForm"          type="re:MDObjectRef"/>
 					<property name="AuxiliaryListForm"        type="re:MDObjectRef"/>
 					<property name="Periodicity"              type="cc:EnumRef.CalculationRegisterPeriodicity"/>
-					<property name="ActionPeriod"             type="xs:boolean"/>
-					<property name="BasePeriod"               type="xs:boolean"/>
+					<property name="ActionPeriod"             type="cc:EnumRef.Boolean"/>
+					<property name="BasePeriod"               type="cc:EnumRef.Boolean"/>
 					<property name="Schedule"                 type="re:MDObjectRef"/>
 					<property name="ScheduleValue"            type="re:MDObjectRef"/>
 					<property name="ScheduleDate"             type="re:MDObjectRef"/>
 					<property name="ChartOfCalculationTypes"  type="re:MDObjectRef"/>
-					<property name="IncludeHelpInContents"    type="xs:boolean"/>
+					<property name="IncludeHelpInContents"    type="cc:EnumRef.Boolean"/>
 					<property name="StandardAttributes"       type="re:StandardAttributeDescriptions"/>
 					<property name="DataLockControlMode"      type="cc:EnumRef.DefaultDataLockControlMode"/>
 					<property name="FullTextSearch"           type="cc:EnumRef.FullTextSearchUsing"/>
@@ -540,6 +573,67 @@
 					<property name="Form"           type="xs:string"          lowerBound="0" upperBound="-1"/>
 					<property name="Template"       type="xs:string"          lowerBound="0" upperBound="-1"/>
 					<property name="Command"        type="tns:Command"        lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="ChartOfAccounts" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                             type="xs:string"/>
+					<property name="Synonym"                          type="cr:LocalStringType"/>
+					<property name="Comment"                          type="xs:string"/>
+					<property name="UseStandardCommands"              type="cc:EnumRef.Boolean"/>
+					<property name="IncludeHelpInContents"            type="cc:EnumRef.Boolean"/>
+					<property name="BasedOn"                          type="re:MDListType"/>
+					<property name="ExtDimensionTypes"                type="re:MDObjectRef"/>
+					<property name="MaxExtDimensionCount"             type="xs:decimal"/>
+					<property name="CodeMask"                         type="xs:string"/>
+					<property name="CodeLength"                       type="xs:decimal"/>
+					<property name="DescriptionLength"                type="xs:decimal"/>
+					<property name="CodeSeries"                       type="cc:EnumRef.CharOfAccountCodeSeries"/>
+					<property name="CheckUnique"                      type="cc:EnumRef.Boolean"/>
+					<property name="DefaultPresentation"              type="cc:EnumRef.AccountMainPresentation"/>
+					<property name="StandardAttributes"               type="re:StandardAttributeDescriptions"/>
+					<property name="Characteristics"                  type="re:CharacteristicsDescriptions"/>
+					<property name="StandardTabularSections"          type="re:StandardTabularSectionDescriptions"/>
+					<property name="PredefinedDataUpdate"             type="cc:EnumRef.PredefinedDataUpdate"/>
+					<property name="EditType"                         type="cc:EnumRef.EditType"/>
+					<property name="QuickChoice"                      type="cc:EnumRef.Boolean"/>
+					<property name="ChoiceMode"                       type="cc:EnumRef.ChoiceMode"/>
+					<property name="InputByString"                    type="re:FieldList"/>
+					<property name="SearchStringModeOnInputByString"  type="cc:EnumRef.SearchStringModeOnInputByString"/>
+					<property name="FullTextSearchOnInputByString"    type="cc:EnumRef.FullTextSearchOnInputByString"/>
+					<property name="ChoiceDataGetModeOnInputByString" type="cc:EnumRef.ChoiceDataGetModeOnInputByString"/>
+					<property name="CreateOnInput"                    type="cc:EnumRef.CreateOnInput"/>
+					<property name="ChoiceHistoryOnInput"             type="cc:EnumRef.ChoiceHistoryOnInput"/>
+					<property name="DefaultObjectForm"                type="re:MDObjectRef"/>
+					<property name="DefaultListForm"                  type="re:MDObjectRef"/>
+					<property name="DefaultChoiceForm"                type="re:MDObjectRef"/>
+					<property name="AuxiliaryObjectForm"              type="re:MDObjectRef"/>
+					<property name="AuxiliaryListForm"                type="re:MDObjectRef"/>
+					<property name="AuxiliaryChoiceForm"              type="re:MDObjectRef"/>
+					<property name="AutoOrderByCode"                  type="cc:EnumRef.Boolean"/>
+					<property name="OrderLength"                      type="xs:decimal"/>
+					<property name="DataLockFields"                   type="re:FieldList"/>
+					<property name="DataLockControlMode"              type="cc:EnumRef.DefaultDataLockControlMode"/>
+					<property name="FullTextSearch"                   type="cc:EnumRef.FullTextSearchUsing"/>
+					<property name="ObjectPresentation"               type="cr:LocalStringType"/>
+					<property name="ExtendedObjectPresentation"       type="cr:LocalStringType"/>
+					<property name="ListPresentation"                 type="cr:LocalStringType"/>
+					<property name="ExtendedListPresentation"         type="cr:LocalStringType"/>
+					<property name="Explanation"                      type="cr:LocalStringType"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Attribute"                  type="tns:Attribute"                  lowerBound="0" upperBound="-1"/>
+					<property name="TabularSection"             type="tns:TabularSection"             lowerBound="0" upperBound="-1"/>
+					<property name="AccountingFlag"             type="tns:AccountingFlag"             lowerBound="0" upperBound="-1"/>
+					<property name="ExtDimensionAccountingFlag" type="tns:ExtDimensionAccountingFlag" lowerBound="0" upperBound="-1"/>
+					<property name="Form"                       type="xs:string"                      lowerBound="0" upperBound="-1"/>
+					<property name="Template"                   type="xs:string"                      lowerBound="0" upperBound="-1"/>
+					<property name="Command"                    type="tns:Command"                    lowerBound="0" upperBound="-1"/>
 				</typeDef>
 			</property>
 		</objectType>
@@ -662,6 +756,19 @@
 
 		<objectType name="StandardAttributeDescriptions">
 			<property name="StandardAttribute" type="tns:StandardAttributeDescription" lowerBound="0" upperBound="-1"/>
+		</objectType>
+
+		<objectType name="StandardTabularSectionDescription">
+			<property name="name"               type="xs:string" form="Attribute"/>
+			<property name="Synonym"            type="cr:LocalStringType"               lowerBound="0"/>
+			<property name="Comment"            type="xs:string"                        lowerBound="0"/>
+			<property name="ToolTip"            type="cr:LocalStringType"               lowerBound="0"/>
+			<property name="FillChecking"       type="cc:EnumRef.FillChecking"          lowerBound="0"/>
+			<property name="StandardAttributes" type="tns:StandardAttributeDescriptions"/>
+		</objectType>
+
+		<objectType name="StandardTabularSectionDescriptions">
+			<property name="StandardTabularSection" type="tns:StandardTabularSectionDescription" lowerBound="0" upperBound="-1"/>
 		</objectType>
 
 	</package>

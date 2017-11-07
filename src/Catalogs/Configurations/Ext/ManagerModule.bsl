@@ -39,20 +39,18 @@ Procedure Load(Configuration, Path) Export
 	//	LoadMetadata(Configuration, Path, "BusinessProcesses", ChildObjects.BusinessProcess);
 	//EndIf; 
 	
-	If Items.Property("CalculationRegister", List) Then
-		LoadMetadata(Configuration, Path, "CalculationRegisters", List);
-	EndIf;
-	
-	Return;
-	
-	If Items.Property("Catalog", List) Then
-		LoadMetadata(Configuration, Path, "Catalogs", ChildObjects.Catalog);
-	EndIf;
-	
-	//If Items.Property("ChartOfAccounts", List) Then
-	//	LoadMetadata(Configuration, Path, "ChartsOfAccounts", List);
+	//If Items.Property("CalculationRegister", List) Then
+	//	LoadMetadata(Configuration, Path, "CalculationRegisters", List);
 	//EndIf;
-	//
+	
+	//If Items.Property("Catalog", List) Then
+	//	LoadMetadata(Configuration, Path, "Catalogs", ChildObjects.Catalog);
+	//EndIf;
+	
+	If Items.Property("ChartOfAccounts", List) Then
+		LoadMetadata(Configuration, Path, "ChartsOfAccounts", List);
+	EndIf;
+	
 	//If Items.Property("ChartOfCalculationTypes", List) Then
 	//	LoadMetadata(Configuration, Path, "ChartsOfCalculationTypes", List);
 	//EndIf;
