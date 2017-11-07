@@ -145,6 +145,7 @@
 			<Subsystem>Meta</Subsystem>
 			<Subsystem>Radar</Subsystem>
 			<Role>Admin</Role>
+			<CommonTemplate>MDClasses_2_4</CommonTemplate>
 			<CommonModule>Abc</CommonModule>
 			<CommonModule>Abc_sc</CommonModule>
 			<CommonModule>Abc_sr</CommonModule>
@@ -199,6 +200,7 @@
 			<Catalog>Handlers</Catalog>
 			<Catalog>HTTPServices</Catalog>
 			<Catalog>InformationRegisters</Catalog>
+			<Catalog>Interface</Catalog>
 			<Catalog>Languages</Catalog>
 			<Catalog>Locations</Catalog>
 			<Catalog>Modules</Catalog>
@@ -225,26 +227,32 @@
 			<Catalog>WebServices</Catalog>
 			<Catalog>WSReferences</Catalog>
 			<Catalog>XDTOPackages</Catalog>
+			<Enum>AccountMainPresentation</Enum>
 			<Enum>AccumulationRegisterAggregatePeriodicity</Enum>
 			<Enum>AccumulationRegisterAggregateUse</Enum>
 			<Enum>AccumulationRegisterType</Enum>
 			<Enum>AllowedLength</Enum>
+			<Enum>ApplicationUsePurpose</Enum>
 			<Enum>AttributeKinds</Enum>
+			<Enum>AttributeUse</Enum>
 			<Enum>Boolean</Enum>
 			<Enum>BusinessProcessNumberPeriodicity</Enum>
 			<Enum>BusinessProcessNumberType</Enum>
 			<Enum>ButtonRepresentation</Enum>
 			<Enum>CalculationRegisterPeriodicity</Enum>
+			<Enum>CalculationTypeMainPresentation</Enum>
 			<Enum>CatalogCodesSeries</Enum>
 			<Enum>CatalogCodeType</Enum>
 			<Enum>CatalogMainPresentation</Enum>
 			<Enum>CharacteristicKindCodesSeries</Enum>
+			<Enum>CharacteristicTypeMainPresentation</Enum>
 			<Enum>CharOfAccountCodeSeries</Enum>
 			<Enum>ChartOfCalculationTypesBaseUse</Enum>
 			<Enum>ChartOfCalculationTypesCodeType</Enum>
 			<Enum>ChoiceDataGetModeOnInputByString</Enum>
 			<Enum>ChoiceHistoryOnInput</Enum>
 			<Enum>ChoiceMode</Enum>
+			<Enum>ClientRunMode</Enum>
 			<Enum>CommandGroupCategory</Enum>
 			<Enum>CommandParameterUseMode</Enum>
 			<Enum>CommonAttributeAuthenticationSeparation</Enum>
@@ -253,18 +261,27 @@
 			<Enum>CommonAttributeDataSeparation</Enum>
 			<Enum>CommonAttributeSeparatedDataUse</Enum>
 			<Enum>CommonAttributeUsersSeparation</Enum>
+			<Enum>CompatibilityMode</Enum>
 			<Enum>CreateOnInput</Enum>
+			<Enum>DataExchangeMainPresentation</Enum>
 			<Enum>DataHistoryUse</Enum>
 			<Enum>DefaultDataLockControlMode</Enum>
 			<Enum>DocumentNumberPeriodicity</Enum>
+			<Enum>DocumentNumberType</Enum>
 			<Enum>EditType</Enum>
 			<Enum>FillChecking</Enum>
 			<Enum>FoldersAndItemsUse</Enum>
 			<Enum>FullTextSearchOnInputByString</Enum>
+			<Enum>FullTextSearchUsing</Enum>
 			<Enum>HierarchyType</Enum>
 			<Enum>Indexing</Enum>
 			<Enum>InformationRegisterPeriodicity</Enum>
+			<Enum>InterfaceCompatibilityMode</Enum>
+			<Enum>LinkedValueChangeMode</Enum>
+			<Enum>MainClientApplicationWindowMode</Enum>
+			<Enum>ModalityUseMode</Enum>
 			<Enum>MoveBoundaryOnPosting</Enum>
+			<Enum>ObjectAutonumerationMode</Enum>
 			<Enum>Posting</Enum>
 			<Enum>PredefinedDataUpdate</Enum>
 			<Enum>RealTimePosting</Enum>
@@ -273,22 +290,28 @@
 			<Enum>RegisterWriteMode</Enum>
 			<Enum>ReturnValuesReuse</Enum>
 			<Enum>Rights</Enum>
+			<Enum>ScriptVariant</Enum>
 			<Enum>SearchStringModeOnInputByString</Enum>
 			<Enum>SequenceFilling</Enum>
 			<Enum>SessionReuseMode</Enum>
 			<Enum>StyleElementType</Enum>
 			<Enum>SubordinationUse</Enum>
+			<Enum>SynchronousPlatformExtensionAndAddInCallUseMode</Enum>
+			<Enum>TaskMainPresentation</Enum>
 			<Enum>TaskNumberAutoPrefix</Enum>
+			<Enum>TaskNumberType</Enum>
 			<Enum>TemplateType</Enum>
-			<Enum>UseFullTextSearch</Enum>
+			<Enum>TypeCategories</Enum>
 			<Enum>UsePurposes</Enum>
 			<Enum>UseQuickChoice</Enum>
 			<InformationRegister>AccumulationRegisterAggregateDimensions</InformationRegister>
+			<InformationRegister>AdditionalFullTextSearchDictionaries</InformationRegister>
 			<InformationRegister>BaseCalculationTypes</InformationRegister>
 			<InformationRegister>BasedOn</InformationRegister>
 			<InformationRegister>Characteristics</InformationRegister>
 			<InformationRegister>Content</InformationRegister>
 			<InformationRegister>DataLockFields</InformationRegister>
+			<InformationRegister>DefaultRoles</InformationRegister>
 			<InformationRegister>Help</InformationRegister>
 			<InformationRegister>InputByString</InformationRegister>
 			<InformationRegister>JobQueue</InformationRegister>
@@ -298,6 +321,7 @@
 			<InformationRegister>RegisterRecords</InformationRegister>
 			<InformationRegister>Rights</InformationRegister>
 			<InformationRegister>SubordinateSubsystems</InformationRegister>
+			<InformationRegister>UsePurposes</InformationRegister>
 			<InformationRegister>XDTOPackages</InformationRegister>
 		</ChildObjects>
 	</Configuration>

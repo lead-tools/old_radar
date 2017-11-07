@@ -15,25 +15,14 @@ Function AttributeTypes(MetadataObject) Export
 	
 	Return Meta_sr.AttributeTypes(MetadataObject.FullName());
 	
-EndFunction // AttributeTypes()
-
-&AtServer
-Function TypeManager(Type) Export
-	
-	Try
-		Return Meta_sr.TypeManagers()[Type];
-	Except
-		Raise StrTemplate("Unknown type `%1`", Type);
-	EndTry;
-	
-EndFunction // TypeManager() 
+EndFunction // AttributeTypes() 
 
 &AtServer
 Procedure GenericLoad(Configuration, Path, MetadataObject, Ref = Undefined) Export
 	
 	Manager = Catalogs[MetadataObject.Name];
 	
-	Data = Abc.ReadMetadataXML(Path + ".xml");
+	Data = ReadMetadataXML(Path + ".xml");
 	XDTOObject = Data.Sequence().GetValue(0);
 	XDTOProperties = XDTOObject.Properties;
 	UUID = New UUID(XDTOObject.UUID);
@@ -93,7 +82,7 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 		ElsIf Type = Type("CatalogRef.Modules") Then
 			
 		ElsIf Type = Type("CatalogRef.Strings") Then
-			UpdateString(Configuration, Object[Name], XDTOValue.Sequence())
+			UpdateString(Configuration, Object[Name], XDTOValue)
 		ElsIf Type = Type("CatalogRef.ChartsOfAccounts") Then
 			
 		ElsIf Type = Type("CatalogRef.Tasks") Then
@@ -141,8 +130,10 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 		ElsIf Type = Type("UUID") Then	
 			// skip
 		Else
-			TypeEnum = TypeManager(Type);
-			Object[Name] = TypeEnum[XDTOValue];
+			Object[Name] = XDTOValue;
+			If Object[Name] <> XDTOValue Then
+				Raise "assignment failed: " + XDTOValue;
+			EndIf; 
 		EndIf;
 		
 	EndDo;
@@ -150,7 +141,7 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 EndProcedure // FillAttributesByXDTOProperties()
 
 &AtServer
-Procedure UpdateString(Configuration, String, XDTOSequence)
+Procedure UpdateString(Configuration, String, XDTOValue)
 	
 	If ValueIsFilled(String) Then
 		StringObject = String.GetObject();
@@ -159,16 +150,16 @@ Procedure UpdateString(Configuration, String, XDTOSequence)
 		EndIf; 
 		StringObject.Values.Clear();
 	Else
-		If XDTOSequence.Count() = 0 Then
+		If XDTOValue.item.Count() = 0 Then
 			Return;
 		EndIf; 
 		StringObject = Catalogs.Strings.CreateItem();
 		StringObject.Owner = Configuration;
 	EndIf;
 	
-	For Index = 0 To XDTOSequence.Count() - 1 Do
+	For Index = 0 To XDTOValue.item.Count() - 1 Do
 		
-		XDTODataObject = XDTOSequence.GetValue(Index);
+		XDTODataObject = XDTOValue.item[Index];
 		
 		Item = StringObject.Values.Add();
 		Item.Language = Meta_sr.LanguageByCode(Configuration, XDTODataObject.Lang);
@@ -180,6 +171,45 @@ Procedure UpdateString(Configuration, String, XDTOSequence)
 	String = StringObject.Ref;
 	
 EndProcedure // UpdateString()
+
+&AtServer
+Function ReadMetadataXML(Path) Export
+	
+	DataReader = New DataReader(Path, TextEncoding.UTF8); 
+	BinaryDataBuffer = DataReader.ReadIntoBinaryDataBuffer();
+	
+	MDClassesPos = Abc.BinFind(BinaryDataBuffer, GetBinaryDataBufferFromString("http://v8.1c.ru/8.3/MDClasses"));
+	BinaryDataBuffer.Write(MDClassesPos, GetBinaryDataBufferFromString("http://Lead-Bullets/MDClasses"));
+	
+	ReadablePos = Abc.BinFind(BinaryDataBuffer, GetBinaryDataBufferFromString("http://v8.1c.ru/8.3/xcf/readable"));
+	BinaryDataBuffer.Write(ReadablePos, GetBinaryDataBufferFromString("http://Lead-Bullets/xcf/readable"));
+	
+	MemoryStream = New MemoryStream(BinaryDataBuffer);
+	
+	XMLReader = New XMLReader;
+	XMLReader.SetString(GetCommonTemplate("MDClasses_2_4").GetText());
+	XDTOModel = XDTOFactory.ReadXML(XMLReader);
+	XMLReader.Close();
+	
+	Packages = New Array;
+	Packages.Add(XDTOFactory.Packages.Get("http://v8.1c.ru/8.1/data/enterprise/current-config"));
+	
+	MyXDTOFactory = New XDTOFactory(XDTOModel, Packages);
+	Type = MyXDTOFactory.Type("http://Lead-Bullets/MDClasses", "MetaDataObject");  
+	
+	XMLReader = New XMLReader;
+	XMLReader.OpenStream(MemoryStream);
+	Try
+		XDTOObject = MyXDTOFactory.ReadXML(XMLReader, Type);
+	Except
+		Message("Error path:" + Path);
+		Raise;
+	EndTry;
+	XMLReader.Close();
+	
+	Return XDTOObject;
+	
+EndFunction // ReadMetadataXML()
 
 #EndRegion // Server
 

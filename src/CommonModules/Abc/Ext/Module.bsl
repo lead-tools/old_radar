@@ -86,14 +86,28 @@ Function GetDataProcessor(Name) Export
 EndFunction // GetDataProcessor()
 
 &AtServer
-Function ReadMetadataXML(Path) Export
+Function BinFind(BinaryDataBuffer, SearchData, InitPos = 0) Export
 	
-	XMLReader = New XMLReader;
-	XMLReader.OpenFile(Path);
+	// naive search
 	
-	Return XDTOFactory.ReadXML(XMLReader);
+	For Pos = InitPos To BinaryDataBuffer.Size - 1 Do
+		
+		Offset = 0;
+		
+		While Offset < SearchData.Size
+			And BinaryDataBuffer[Pos + Offset] = SearchData[Offset] Do
+			Offset = Offset + 1;
+		EndDo; 
+		
+		If Offset = SearchData.Size Then
+			Return Pos;
+		EndIf; 
+		
+	EndDo; 
 	
-EndFunction // ReadMetadataXML()
+	Return Undefined;
+	
+EndFunction // BinFind() 
 
 &AtServer
 Procedure RefreshAllReusableValues() Export

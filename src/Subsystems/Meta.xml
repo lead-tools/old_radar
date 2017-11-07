@@ -79,6 +79,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Recalculations</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccumulationRegisterAggregates</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.AccumulationRegisterAggregateDimensions</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.UsePurposes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.DefaultRoles</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.AdditionalFullTextSearchDictionaries</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Interface</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

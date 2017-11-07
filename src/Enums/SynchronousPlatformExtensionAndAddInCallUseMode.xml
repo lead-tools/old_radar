@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<Enum uuid="0001d956-e097-4318-b980-140ac4ddd206">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.SynchronousPlatformExtensionAndAddInCallUseMode" category="Ref">
+				<xr:TypeId>32839cc3-3f61-46c9-ac27-af2b83dbd471</xr:TypeId>
+				<xr:ValueId>44fc5749-e9e2-4c6a-9c57-93555230c329</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.SynchronousPlatformExtensionAndAddInCallUseMode" category="Manager">
+				<xr:TypeId>61578932-4d5c-41c6-93d2-4b64429e33da</xr:TypeId>
+				<xr:ValueId>6abb906b-7095-4632-bebc-907d36badfe3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.SynchronousPlatformExtensionAndAddInCallUseMode" category="List">
+				<xr:TypeId>130ea6bd-874b-44a3-bd1f-a5d4eeb99a98</xr:TypeId>
+				<xr:ValueId>20a57921-8c2d-4011-be8d-bd025b63ec15</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>SynchronousPlatformExtensionAndAddInCallUseMode</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Synchronous platform extension and add in call use mode</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим использования синхронных вызовов расширений платформы и внешних компонент </v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="c04d714c-7636-4249-b02a-9e2b890b0d62">
+				<Properties>
+					<Name>Use</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Use</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="75196630-8d33-43b9-bf2a-50bffa9d63df">
+				<Properties>
+					<Name>UseWithWarnings</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Use with warnings</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать с предупреждениями</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="eb248cab-c67f-4a80-a2ea-a7d326ebe618">
+				<Properties>
+					<Name>DontUse</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Dont use</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не использовать</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

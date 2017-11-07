@@ -23,18 +23,6 @@ Function AttributeTypes(MetadataObjectFullName) Export
 	
 EndFunction // AttributeTypes()
 
-Function TypeManagers() Export
-	
-	TypeManagers = New Map;
-	
-	For Each Enum In Enums Do
-		TypeManagers[TypeOf(Enum.EmptyRef())] = Enum;
-	EndDo; 
-	
-	Return New FixedMap(TypeManagers);
-	
-EndFunction // TypeManagers()
-
 Function SkipProperties() Export
 	
 	SkipProperties = New Structure(
