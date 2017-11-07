@@ -57,6 +57,9 @@
 			<property name="SettingsStorage"            type="tns:SettingsStorage"            lowerBound="0"/>
 			<property name="Subsystem"                  type="tns:Subsystem"                  lowerBound="0"/>
 			<property name="Task"                       type="tns:Task"                       lowerBound="0"/>
+			<property name="WebService"                 type="tns:WebService"                 lowerBound="0"/>
+			<property name="WSReference"                type="tns:WSReference"                lowerBound="0"/>
+			<property name="XDTOPackage"                type="tns:XDTOPackage"                lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -1525,6 +1528,48 @@
 			</property>
 		</objectType>
 
+		<objectType name="WebService" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"               type="xs:string"/>
+					<property name="Synonym"            type="cr:LocalStringType"/>
+					<property name="Comment"            type="xs:string"/>
+					<property name="Namespace"          type="xs:string"/>
+					<property name="XDTOPackages"       type="re:ValueList"/>
+					<property name="DescriptorFileName" type="xs:string"/>
+					<property name="ReuseSessions"      type="cc:EnumRef.SessionReuseMode"/>
+					<property name="SessionMaxAge"      type="xs:decimal"/>
+				</typeDef>
+			</property>
+			<property name="ChildObjects">
+				<typeDef xsi:type="ObjectType">
+					<property name="Operation"                        lowerBound="0" upperBound="-1" nillable="true"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="WSReference" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"        type="xs:string"/>
+					<property name="Synonym"     type="cr:LocalStringType"/>
+					<property name="Comment"     type="xs:string"/>
+					<property name="LocationURL" type="xs:string"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="XDTOPackage" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"        type="xs:string"/>
+					<property name="Synonym"     type="cr:LocalStringType"/>
+					<property name="Comment"     type="xs:string"/>
+					<property name="Namespace"   type="xs:string"/>
+				</typeDef>
+			</property>
+		</objectType>
+
 	</package>
 
 	<package targetNamespace="http://Lead-Bullets/xcf/readable" elementFormQualified="true" attributeFormQualified="false"
@@ -1670,6 +1715,16 @@
 			<property name="Metadata"              type="tns:MDObjectRef"/>
 			<property name="Use"                   type="cc:EnumRef.Using"/>
 			<property name="ConditionalSeparation" type="tns:MDObjectRef"/>
+		</objectType>
+
+		<objectType name="ValueList">
+			<property name="Item" type="tns:ValueListItem" lowerBound="0" upperBound="-1"/>
+		</objectType>
+
+		<objectType name="ValueListItem">
+			<property name="Presentation" type="xs:string"/>
+			<property name="CheckState"   type="xs:decimal"/>
+			<property name="Value"/>
 		</objectType>
 
 	</package>
