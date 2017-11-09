@@ -44,6 +44,16 @@
 			<UseStandardCommands>true</UseStandardCommands>
 			<Owners>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Configurations</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccountingRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Forms</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Attributes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.StandardAttributes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccumulationRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.InformationRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Catalogs</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Documents</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TabularSections</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Commands</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
@@ -303,7 +313,7 @@
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm/>
 			<DefaultFolderForm/>
-			<DefaultListForm/>
+			<DefaultListForm>Catalog.Strings.Form.ListForm</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -326,6 +336,50 @@
 			<DataHistory>DontUse</DataHistory>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="f5d30bc7-b763-4622-977e-d1e422c08646">
+				<Properties>
+					<Name>Configuration</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Configuration</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конфигурация</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Configurations</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
 			<TabularSection uuid="86211900-d572-40c1-af07-f87236b4e02f">
 				<InternalInfo>
 					<xr:GeneratedType name="CatalogTabularSection.Strings.Values" category="TabularSection">
@@ -443,6 +497,7 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Form>ListForm</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

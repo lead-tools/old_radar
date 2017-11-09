@@ -38,7 +38,43 @@ Function GetConstant(Name) Export
 	#EndIf // Server
 	
 EndFunction // GetConstant() 	
+
+Function Lines(String, Separator = Undefined, IncludeBlanks = False) Export
 	
+	If Separator = Undefined Then
+		Separator = Chars.LF;
+	EndIf; 
+	
+	Return StrSplit(String, Separator, IncludeBlanks);
+	
+EndFunction // Lines()
+
+Function Fill(Dst, Src, Keys) Export
+	Var Key;
+	
+	For Each Key In Keys Do
+		If Not Assign(Dst[Key], Src[Key]) Then
+			Raise StrTemplate("assignment failed; key: `%1`", Key);
+		EndIf; 
+	EndDo; 
+	
+EndFunction // Fill()
+
+Function Assign(Variable, Value) Export
+	
+	Variable = Value;	
+	Return Variable = Value Or Value = Undefined; 
+	
+EndFunction // Assign() 
+
+Function FileExists(FullFileName) Export
+		
+	File = New File(FullFileName);
+	
+	Return File.Exist();
+	
+EndFunction // FileExists()
+
 #EndRegion // ClientServer
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -111,7 +147,9 @@ EndFunction // BinFind()
 
 &AtServer
 Procedure RefreshAllReusableValues() Export
+	
 	RefreshReusableValues();
+	
 EndProcedure // RefreshAllReusableValues() 
 
 #EndRegion // Server

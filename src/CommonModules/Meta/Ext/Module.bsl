@@ -2,13 +2,37 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #Region ClientServer
- 
+
+Function ObjectLoadParameters() Export
+	
+	Return New Structure("Configuration, Owner, Path, Data");
+	
+EndFunction // ObjectLoadParameters() 
 
 #EndRegion // ClientServer
 
 ///////////////////////////////////////////////////////////////////////////////
 
 #Region Server
+
+&AtServer
+Function GetObject(Manager, UUID, Owner, Ref = Undefined) Export
+	
+	If Ref = Undefined Then
+		Ref = Manager.FindByAttribute("UUID", UUID,, Owner);
+	EndIf; 
+	
+	If Not ValueIsFilled(Ref) Then
+		Object = Manager.CreateItem();
+		Ref = Manager.GetRef();
+		Object.SetNewObjectRef(Ref);
+	Else
+		Object = Ref.GetObject();
+	EndIf;
+	
+	Return Object;
+	
+EndFunction // GetObject()
 
 &AtServer
 Function AttributeTypes(MetadataObject) Export
@@ -18,8 +42,8 @@ Function AttributeTypes(MetadataObject) Export
 EndFunction // AttributeTypes() 
 
 &AtServer
-Procedure GenericLoad(Configuration, Path, MetadataObject, Ref = Undefined) Export
-	
+Function GenericLoad(Configuration, Owner, Path, MetadataObject, Ref = Undefined) Export
+		
 	Manager = Catalogs[MetadataObject.Name];
 	
 	Data = ReadMetadataXML(Path + ".xml");
@@ -28,7 +52,7 @@ Procedure GenericLoad(Configuration, Path, MetadataObject, Ref = Undefined) Expo
 	UUID = New UUID(XDTOObject.UUID);
 	
 	If Ref = Undefined Then
-		Ref = Manager.FindByAttribute("UUID", UUID,, Configuration);
+		Ref = Manager.FindByAttribute("UUID", UUID,, Owner);
 	EndIf; 
 	
 	If Not ValueIsFilled(Ref) Then
@@ -38,17 +62,21 @@ Procedure GenericLoad(Configuration, Path, MetadataObject, Ref = Undefined) Expo
 	EndIf; 
 	
 	Object.UUID = UUID;
-	Object.Owner = Configuration;
+	Object.Owner = Owner;
 	Object.Description = XDTOProperties.Name;
 	
-	Meta.FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties); 
+	Meta.FillAttributesByXDTOProperties(Configuration, Owner, Object, XDTOProperties); 
 	
 	Object.Write();
 	
-EndProcedure // GenericLoad()
+	Ref = Object.Ref;
+	
+	Return Ref;
+	
+EndFunction // GenericLoad()
 
 &AtServer
-Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) Export
+Procedure FillAttributesByXDTOProperties(Configuration, Owner, Object, XDTOProperties) Export
 	
 	AttributeTypes = AttributeTypes(Object.Metadata());
 	SkipProperties = Meta_sr.SkipProperties();
@@ -82,7 +110,7 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 		ElsIf Type = Type("CatalogRef.Modules") Then
 			
 		ElsIf Type = Type("CatalogRef.Strings") Then
-			UpdateString(Configuration, Object[Name], XDTOValue)
+			UpdateString(Configuration, Owner, Object[Name], XDTOValue)
 		ElsIf Type = Type("CatalogRef.ChartsOfAccounts") Then
 			
 		ElsIf Type = Type("CatalogRef.Tasks") Then
@@ -129,6 +157,8 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 			
 		ElsIf Type = Type("CatalogRef.Files") Then	
 			
+		ElsIf Type = Type("CatalogRef.Configurations") Then	
+			
 		ElsIf Type = Type("EnumRef.DataHistoryUse") Then	
 			// 8.3.11
 		ElsIf Type = Type("UUID") Then	
@@ -145,36 +175,50 @@ Procedure FillAttributesByXDTOProperties(Configuration, Object, XDTOProperties) 
 EndProcedure // FillAttributesByXDTOProperties()
 
 &AtServer
-Procedure UpdateString(Configuration, String, XDTOValue)
+Procedure UpdateStrings(Configuration, Owner, Object, XDTODataObject, Keys) Export
+	Var Key;
+	
+	For Each Key In Keys Do
+		UpdateString(Configuration, Owner, Object[Key], XDTODataObject[Key]);
+	EndDo; 
+	
+EndProcedure // UpdateStrings() 
+
+&AtServer
+Procedure UpdateString(Configuration, Owner, String, LocalString) Export
 	
 	If ValueIsFilled(String) Then
 		StringObject = String.GetObject();
-		If StringObject.Owner <> Configuration Then
+		If StringObject.Owner <> Owner Then
 			Raise "Call in violation of protocol";
 		EndIf; 
 		StringObject.Values.Clear();
 	Else
-		If XDTOValue.item.Count() = 0 Then
+		If LocalString.item.Count() = 0 Then
 			Return;
 		EndIf; 
 		StringObject = Catalogs.Strings.CreateItem();
-		StringObject.Owner = Configuration;
+		StringObject.Owner = Owner;
+		StringObject.Configuration = Configuration;
 	EndIf;
 	
-	For Index = 0 To XDTOValue.item.Count() - 1 Do
-		
-		XDTODataObject = XDTOValue.item[Index];
+	For Each LocalStringItem In LocalString.item Do
 		
 		Item = StringObject.Values.Add();
-		Item.Language = Meta_sr.LanguageByCode(Configuration, XDTODataObject.Lang);
-		Item.Value = XDTODataObject.Content;
+		Item.Language = Meta_sr.LanguageByCode(Configuration, LocalStringItem.Lang);
+		Item.Value = LocalStringItem.Content;
 		
 	EndDo; 
 	
 	StringObject.Write();
 	String = StringObject.Ref;
 	
-EndProcedure // UpdateString()
+EndProcedure // UpdateString()  
+
+&AtServer
+Procedure UpdateForms(Object, XDTODataObject, Keys) Export
+		
+EndProcedure // UpdateForms()
 
 &AtServer
 Function ReadMetadataXML(Path) Export

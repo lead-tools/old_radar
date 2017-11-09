@@ -214,6 +214,7 @@
 			<Catalog>Sequences</Catalog>
 			<Catalog>SessionParameters</Catalog>
 			<Catalog>SettingsStorages</Catalog>
+			<Catalog>StandardAttributes</Catalog>
 			<Catalog>Strings</Catalog>
 			<Catalog>StyleItems</Catalog>
 			<Catalog>Subsystems</Catalog>
@@ -280,6 +281,7 @@
 			<Enum>LinkedValueChangeMode</Enum>
 			<Enum>MainClientApplicationWindowMode</Enum>
 			<Enum>ModalityUseMode</Enum>
+			<Enum>ModuleKinds</Enum>
 			<Enum>MoveBoundaryOnPosting</Enum>
 			<Enum>ObjectAutonumerationMode</Enum>
 			<Enum>Posting</Enum>

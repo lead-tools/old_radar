@@ -3,17 +3,21 @@ Procedure PresentationFieldsGetProcessing(Fields, StandardProcessing)
 	
 	StandardProcessing = False;
 	
-	Fields.Add("Owner");
+	Fields.Add("Configuration");
 	Fields.Add("Ref");	
 	
 EndProcedure // PresentationFieldsGetProcessing()
 
 Procedure PresentationGetProcessing(Data, Presentation, StandardProcessing)
 	
-	StandardProcessing = False;
-	
-	DefaultLanguage = Abc.AttributeValueFromCache(Data.Owner, "DefaultLanguage");
-	Presentation = Presentation(Data.Ref, DefaultLanguage);
+	If ValueIsFilled(Data.Configuration) Then
+		
+		StandardProcessing = False;
+		
+		DefaultLanguage = Abc.AttributeValueFromCache(Data.Configuration, "DefaultLanguage");
+		Presentation = Presentation(Data.Ref, DefaultLanguage);
+		
+	EndIf; 
 	
 EndProcedure // PresentationGetProcessing()
 

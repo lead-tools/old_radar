@@ -37,6 +37,7 @@ Function SkipProperties() Export
 		"CommandInterface,"
 		"File,"
 		"UUID,"
+		"Configuration,"
 	);
 	
 	Return New FixedStructure(SkipProperties);
