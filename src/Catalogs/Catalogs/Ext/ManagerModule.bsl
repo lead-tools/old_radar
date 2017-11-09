@@ -93,6 +93,13 @@ Function Load(Parameters) Export
 	
 	ChildParameters.Data = Undefined;
 	
+	// Tabular sections
+	
+	For Each TabularSectionData In ChildObjects.TabularSection Do
+		ChildParameters.Data = TabularSectionData;
+		Catalogs.TabularSections.Load(ChildParameters);
+	EndDo;
+	
 	// Forms
 	
 	Forms = New Structure;
