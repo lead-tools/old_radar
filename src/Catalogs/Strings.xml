@@ -50,6 +50,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.StandardAttributes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccumulationRegisters</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.InformationRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Catalogs</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
