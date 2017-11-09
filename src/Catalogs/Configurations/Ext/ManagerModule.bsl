@@ -26,11 +26,11 @@ Procedure Load(Configuration, Path) Export
 	//LoadMetadata(Configuration, Path, "DocumentJournals",            ChildObjects.DocumentJournal);
 	//LoadMetadata(Configuration, Path, "DocumentNumerators",          ChildObjects.DocumentNumerator);
 	//LoadMetadata(Configuration, Path, "Documents",                   ChildObjects.Document);
-	LoadMetadata(Configuration, Path, "Enums",                       ChildObjects.Enum);
+	//LoadMetadata(Configuration, Path, "Enums",                       ChildObjects.Enum);
 	//LoadMetadata(Configuration, Path, "EventSubscriptions",          ChildObjects.EventSubscription);
 	//LoadMetadata(Configuration, Path, "ExchangePlans",               ChildObjects.ExchangePlan);
 	//LoadMetadata(Configuration, Path, "FilterCriteria",              ChildObjects.FilterCriterion);
-	//LoadMetadata(Configuration, Path, "FunctionalOptions",           ChildObjects.FunctionalOption);
+	LoadMetadata(Configuration, Path, "FunctionalOptions",           ChildObjects.FunctionalOption);
 	//LoadMetadata(Configuration, Path, "FunctionalOptionsParameters", ChildObjects.FunctionalOptionsParameter);
 	//LoadMetadata(Configuration, Path, "HTTPServices",                ChildObjects.HTTPService);
 	//LoadMetadata(Configuration, Path, "InformationRegisters",        ChildObjects.InformationRegister);
