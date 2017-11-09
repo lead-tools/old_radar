@@ -18,9 +18,9 @@ Procedure Load(Configuration, Path) Export
 	//LoadMetadata(Configuration, Path, "CommonAttributes",            ChildObjects.CommonAttribute);
 	//LoadMetadata(Configuration, Path, "Commands",                    ChildObjects.CommonCommand, "CommonCommands");
 	//LoadMetadata(Configuration, Path, "Forms",                       ChildObjects.CommonForm, "CommonForms");
-	//LoadMetadata(Configuration, Path, "CommonModules",               ChildObjects.CommonModule);
+	LoadMetadata(Configuration, Path, "CommonModules",               ChildObjects.CommonModule);
 	//LoadMetadata(Configuration, Path, "Pictures",                    ChildObjects.CommonPicture, "CommonPictures");
-	LoadMetadata(Configuration, Path, "Templates",                   ChildObjects.CommonTemplate, "CommonTemplates");
+	//LoadMetadata(Configuration, Path, "Templates",                   ChildObjects.CommonTemplate, "CommonTemplates");
 	//LoadMetadata(Configuration, Path, "Constants",                   ChildObjects.Constant);
 	//LoadMetadata(Configuration, Path, "DataProcessors",              ChildObjects.DataProcessor);
 	//LoadMetadata(Configuration, Path, "DocumentJournals",            ChildObjects.DocumentJournal);
