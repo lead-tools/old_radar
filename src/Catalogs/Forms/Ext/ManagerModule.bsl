@@ -12,15 +12,16 @@ Function Load(Parameters) Export
 	
 	This = Catalogs.Forms;
 	
-	Data = Meta.ReadMetadataXML(Path + ".xml");
 	IsCommonForm = (Configuration = Owner);
+	
 	If IsCommonForm Then
-		Form = Data.CommonForm;
+		Data = Meta.ReadMetadataXML(Path + ".xml").CommonForm;
 	Else
-		Form = Data.Form;
-	EndIf; 
-	PropertyValues = Form.Properties;
-	UUID = Form.UUID; 
+		Data = Meta.ReadMetadataXML(Path + ".xml").Form;
+	EndIf;
+	
+	PropertyValues = Data.Properties;
+	UUID = Data.UUID; 
 	
 	Object = Meta.GetObject(This, UUID, Owner, Ref);  
 	

@@ -57,6 +57,7 @@
 			<property name="SettingsStorage"            type="tns:SettingsStorage"            lowerBound="0"/>
 			<property name="Subsystem"                  type="tns:Subsystem"                  lowerBound="0"/>
 			<property name="Task"                       type="tns:Task"                       lowerBound="0"/>
+			<property name="Template"                   type="tns:Template"                   lowerBound="0"/>
 			<property name="WebService"                 type="tns:WebService"                 lowerBound="0"/>
 			<property name="WSReference"                type="tns:WSReference"                lowerBound="0"/>
 			<property name="XDTOPackage"                type="tns:XDTOPackage"                lowerBound="0"/>
@@ -315,6 +316,17 @@
 					<property name="FormType"              type="cc:EnumRef.FormType"/>
 					<property name="IncludeHelpInContents" type="cc:EnumRef.Boolean"/>
 					<property name="UsePurposes"           type="cr:FixedArray"/>
+				</typeDef>
+			</property>
+		</objectType>
+
+		<objectType name="Template" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"         type="xs:string"/>
+					<property name="Synonym"      type="cr:LocalStringType"/>
+					<property name="Comment"      type="xs:string"/>
+					<property name="TemplateType" type="cc:EnumRef.TemplateType"/>
 				</typeDef>
 			</property>
 		</objectType>

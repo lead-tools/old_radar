@@ -54,6 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Documents</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TabularSections</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Commands</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Templates</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>

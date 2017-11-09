@@ -6,6 +6,6 @@ EndProcedure
 
 &AtServer
 Procedure Load(Configuration)
-	Path = Catalogs.Configurations.AttributeValue(Configuration, "Path");
+	Path = Abc.AttributeValue(Configuration, "Path");
 	Catalogs.Configurations.Load(Configuration, Path);	
 EndProcedure 
