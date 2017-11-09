@@ -60,6 +60,7 @@
 			<property name="WebService"                 type="tns:WebService"                 lowerBound="0"/>
 			<property name="WSReference"                type="tns:WSReference"                lowerBound="0"/>
 			<property name="XDTOPackage"                type="tns:XDTOPackage"                lowerBound="0"/>
+			<property name="Form"                       type="tns:Form"                       lowerBound="0"/>
 		</objectType>
 
 		<objectType name="Attribute" base="tns:MDObjectBase">
@@ -81,7 +82,7 @@
 					<property name="MaxValue"                                                     lowerBound="0" nillable="true"/>
 					<property name="FillFromFillingValue"  type="cc:EnumRef.Boolean"              lowerBound="0"/>
 					<property name="FillValue"                                                    lowerBound="0" nillable="true"/>
-					<property name="FillChecking"          type="cr:FillChecking"                 lowerBound="0"/>
+					<property name="FillChecking"          type="cc:EnumRef.FillChecking"         lowerBound="0"/>
 					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"   lowerBound="0"/>
 					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"         lowerBound="0"/>
 					<property name="ChoiceParameters"      type="app:ChoiceParameters"            lowerBound="0"/>
@@ -115,7 +116,7 @@
 					<property name="ExtendedEdit"          type="cc:EnumRef.Boolean"              lowerBound="0"/>
 					<property name="MinValue"                                                     lowerBound="0" nillable="true"/>
 					<property name="MaxValue"                                                     lowerBound="0" nillable="true"/>
-					<property name="FillChecking"          type="cr:FillChecking"                 lowerBound="0"/>
+					<property name="FillChecking"          type="cc:EnumRef.FillChecking"         lowerBound="0"/>
 					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"   lowerBound="0"/>
 					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"         lowerBound="0"/>
 					<property name="ChoiceParameters"      type="app:ChoiceParameters"            lowerBound="0"/>
@@ -161,7 +162,7 @@
 					<property name="ExtendedEdit"               type="cc:EnumRef.Boolean"              lowerBound="0"/>
 					<property name="MinValue"                                                          lowerBound="0" nillable="true"/>
 					<property name="MaxValue"                                                          lowerBound="0" nillable="true"/>
-					<property name="FillChecking"               type="cr:FillChecking"                 lowerBound="0"/>
+					<property name="FillChecking"               type="cc:EnumRef.FillChecking"         lowerBound="0"/>
 					<property name="ChoiceFoldersAndItems"      type="cc:EnumRef.FoldersAndItemsUse"   lowerBound="0"/>
 					<property name="ChoiceParameterLinks"       type="re:ChoiceParameterLinks"         lowerBound="0"/>
 					<property name="ChoiceParameters"           type="app:ChoiceParameters"            lowerBound="0"/>
@@ -201,7 +202,7 @@
 					<property name="MaxValue"                                        nillable="true"/>
 					<property name="FillFromFillingValue"  type="cc:EnumRef.Boolean"/>
 					<property name="FillValue"                                       nillable="true"/>
-					<property name="FillChecking"          type="cr:FillChecking"/>
+					<property name="FillChecking"          type="cc:EnumRef.FillChecking"/>
 					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"/>
 					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"/>
 					<property name="ChoiceParameters"      type="app:ChoiceParameters"/>
@@ -233,7 +234,7 @@
 					<property name="MaxValue"                                        nillable="true"/>
 					<property name="FillFromFillingValue"  type="cc:EnumRef.Boolean"/>
 					<property name="FillValue"                                       nillable="true"/>
-					<property name="FillChecking"          type="cr:FillChecking"/>
+					<property name="FillChecking"          type="cc:EnumRef.FillChecking"/>
 					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"/>
 					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"/>
 					<property name="ChoiceParameters"      type="app:ChoiceParameters"/>
@@ -297,6 +298,19 @@
 			</property>
 		</objectType>
 
+		<objectType name="Form" base="tns:MDObjectBase">
+			<property name="Properties">
+				<typeDef xsi:type="ObjectType">
+					<property name="Name"                  type="xs:string"/>
+					<property name="Synonym"               type="cr:LocalStringType"/>
+					<property name="Comment"               type="xs:string"/>
+					<property name="FormType"              type="cc:EnumRef.FormType"/>
+					<property name="IncludeHelpInContents" type="cc:EnumRef.Boolean"/>
+					<property name="UsePurposes"           type="cr:FixedArray"/>
+				</typeDef>
+			</property>
+		</objectType>
+
 		<objectType name="AddressingAttribute" base="tns:MDObjectBase">
 			<property name="Properties">
 				<typeDef xsi:type="ObjectType" ordered="false" open="true">
@@ -316,7 +330,7 @@
 					<property name="MaxValue"                                                     lowerBound="0" nillable="true"/>
 					<property name="FillFromFillingValue"  type="cc:EnumRef.Boolean"              lowerBound="0"/>
 					<property name="FillValue"                                                    lowerBound="0" nillable="true"/>
-					<property name="FillChecking"          type="cr:FillChecking"                 lowerBound="0"/>
+					<property name="FillChecking"          type="cc:EnumRef.FillChecking"         lowerBound="0"/>
 					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"   lowerBound="0"/>
 					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"         lowerBound="0"/>
 					<property name="ChoiceParameters"      type="app:ChoiceParameters"            lowerBound="0"/>
