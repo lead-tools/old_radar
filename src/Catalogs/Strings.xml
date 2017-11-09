@@ -48,6 +48,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Forms</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Attributes</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.StandardAttributes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.AccumulationRegisters</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>

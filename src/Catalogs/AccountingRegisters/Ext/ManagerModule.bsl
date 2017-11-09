@@ -52,26 +52,31 @@ Function Load(Parameters) Export
 	
 	// Standard attributes
 	
-	For Each StandardAttributeData In PropertyValues.StandardAttributes.StandardAttribute Do
-		ChildParameters.Data = StandardAttributeData;
-		StandardAttribute = Catalogs.StandardAttributes.Load(ChildParameters);
-	EndDo; 
+	If PropertyValues.StandardAttributes <> Undefined Then
+		For Each StandardAttributeData In PropertyValues.StandardAttributes.StandardAttribute Do
+			ChildParameters.Data = StandardAttributeData;
+			StandardAttribute = Catalogs.StandardAttributes.Load(ChildParameters);
+		EndDo; 
+	EndIf; 
 	
 	// Attributes
 	
-	For Each AttributeData In ChildObjects.Attribute Do
-		ChildParameters.Data = AttributeData;
-		Attribute = Catalogs.Attributes.Load(ChildParameters);
-	EndDo;
+	AttributeOrder = Object.AttributeOrder;
+	AttributeOrder.Clear();
 	
 	For Each DimensionData In ChildObjects.Dimension Do
 		ChildParameters.Data = DimensionData;
-		Dimension = Catalogs.Attributes.Load(ChildParameters);
+		AttributeOrder.Add().Attribute = Catalogs.Attributes.Load(ChildParameters);
 	EndDo;
 	
 	For Each ResourceData In ChildObjects.Resource Do
 		ChildParameters.Data = ResourceData;
-		Resource = Catalogs.Attributes.Load(ChildParameters);
+		AttributeOrder.Add().Attribute = Catalogs.Attributes.Load(ChildParameters);
+	EndDo;
+	
+	For Each AttributeData In ChildObjects.Attribute Do
+		ChildParameters.Data = AttributeData;
+		AttributeOrder.Add().Attribute = Catalogs.Attributes.Load(ChildParameters);
 	EndDo;
 	
 	ChildParameters.Data = Undefined;
