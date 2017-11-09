@@ -133,15 +133,16 @@ Function Load(Parameters) Export
 		
 	EndDo; 
 	
-	ChildParameters.Path = Undefined;
-	
 	// Commands
+	
+	ChildParameters.Path = Path;
 	
 	For Each CommandData In ChildObjects.Command Do
 		ChildParameters.Data = CommandData;
 		Command = Catalogs.Commands.Load(ChildParameters);
 	EndDo;	
 	
+	ChildParameters.Path = Undefined;
 	ChildParameters.Data = Undefined;
 	
 	// Templates

@@ -42,11 +42,11 @@ Procedure Load(Configuration, Path) Export
 	//If Items.Property("CalculationRegister", List) Then
 	//	LoadMetadata(Configuration, Path, "CalculationRegisters", List);
 	//EndIf;
-	//
-	//If Items.Property("Catalog", List) Then
-	//	LoadMetadata(Configuration, Path, "Catalogs", ChildObjects.Catalog);
-	//EndIf;
-	//
+	
+	If Items.Property("Catalog", List) Then
+		LoadMetadata(Configuration, Path, "Catalogs", ChildObjects.Catalog);
+	EndIf;
+	
 	//If Items.Property("ChartOfAccounts", List) Then
 	//	LoadMetadata(Configuration, Path, "ChartsOfAccounts", List);
 	//EndIf;

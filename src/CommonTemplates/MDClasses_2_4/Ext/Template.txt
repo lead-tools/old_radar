@@ -250,9 +250,17 @@
 		<objectType name="Command" base="tns:MDObjectBase">
 			<property name="Properties">
 				<typeDef xsi:type="ObjectType" open="true">
-					<property name="Name"    type="xs:string"          lowerBound="0"/>
-					<property name="Synonym" type="cr:LocalStringType" lowerBound="0"/>
-					<property name="Comment" type="xs:string"          lowerBound="0"/>
+					<property name="Name"                  type="xs:string"          lowerBound="0"/>
+					<property name="Synonym"               type="cr:LocalStringType" lowerBound="0"/>
+					<property name="Comment"               type="xs:string"          lowerBound="0"/>
+					<property name="Group"                 type="re:IncludeInCommandCategoriesType"/>
+					<property name="CommandParameterType"  type="cr:TypeDescription"/>
+					<property name="ParameterUseMode"      type="cc:EnumRef.CommandParameterUseMode"/>
+					<property name="ModifiesData"          type="cc:EnumRef.Boolean"/>
+					<property name="Representation"        type="cc:EnumRef.ButtonRepresentation"/>
+					<property name="ToolTip"               type="cr:LocalStringType"/>
+					<property name="Picture"                                              nillable="true"/>
+					<property name="Shortcut"                                             nillable="true"/>
 				</typeDef>
 			</property>
 		</objectType>
