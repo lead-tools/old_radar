@@ -1,6 +1,6 @@
 ﻿
-Procedure Load(Parameters) Export
+Function Load(Parameters) Export
 	
 	
 	
-EndProcedure // Load()
+EndFunction // Load()

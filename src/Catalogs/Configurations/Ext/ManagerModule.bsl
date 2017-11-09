@@ -26,15 +26,15 @@ Procedure Load(Configuration, Path) Export
 	//If Items.Property("Language", List) Then
 	//	LoadMetadata(Configuration, Path, "Languages", ChildObjects.Language);
 	//EndIf; 
-	
+	//
 	//If Items.Property("AccountingRegister", List) Then
 	//	LoadMetadata(Configuration, Path, "AccountingRegisters", ChildObjects.AccountingRegister);
 	//EndIf; 
-	
-	If Items.Property("AccumulationRegister", List) Then
-		LoadMetadata(Configuration, Path, "AccumulationRegisters", ChildObjects.AccumulationRegister);
-	EndIf;
-	
+	//
+	//If Items.Property("AccumulationRegister", List) Then
+	//	LoadMetadata(Configuration, Path, "AccumulationRegisters", ChildObjects.AccumulationRegister);
+	//EndIf;
+	//
 	//If Items.Property("BusinessProcess", List) Then
 	//	LoadMetadata(Configuration, Path, "BusinessProcesses", ChildObjects.BusinessProcess);
 	//EndIf; 
@@ -135,11 +135,11 @@ Procedure Load(Configuration, Path) Export
 	//If Items.Property("HTTPService", List) Then
 	//	LoadMetadata(Configuration, Path, "HTTPServices", List);
 	//EndIf;
-	//
-	//If Items.Property("InformationRegister", List) Then
-	//	LoadMetadata(Configuration, Path, "InformationRegisters", List);
-	//EndIf;
-	//
+	
+	If Items.Property("InformationRegister", List) Then
+		LoadMetadata(Configuration, Path, "InformationRegisters", List);
+	EndIf;
+	
 	//If Items.Property("Report", List) Then
 	//	LoadMetadata(Configuration, Path, "Reports", List);
 	//EndIf;	
