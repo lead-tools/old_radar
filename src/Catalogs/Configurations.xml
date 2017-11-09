@@ -1209,6 +1209,10 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Include help in contents</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включать в содержание справки</v8:content>
+						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>

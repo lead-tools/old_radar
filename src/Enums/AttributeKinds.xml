@@ -24,7 +24,7 @@
 				</v8:item>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Виды реквизитов</v8:content>
+					<v8:content>Виды атрибутов</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -96,6 +96,38 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
+			<EnumValue uuid="80bbc802-47a3-46e1-8430-9477b539c0db">
+				<Properties>
+					<Name>Dimension</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Dimension</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Измерение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e41bbc4f-9431-4691-8e30-a32ab64e74a9">
+				<Properties>
+					<Name>Resource</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Resource</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ресурс</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="4da7cdfd-f6d6-4b22-aa21-d7c2f3d2b8ed">
 				<Properties>
 					<Name>Attribute</Name>
@@ -107,54 +139,6 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Attribute</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="c6d0eb89-1fe8-4eba-ba26-c38dd7b509ef">
-				<Properties>
-					<Name>StandardAttribute</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Standard attribute</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Standard attribute</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="80bbc802-47a3-46e1-8430-9477b539c0db">
-				<Properties>
-					<Name>Dimension</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Dimension</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Dimension</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="e41bbc4f-9431-4691-8e30-a32ab64e74a9">
-				<Properties>
-					<Name>Resource</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Resource</v8:content>
-						</v8:item>
-						<v8:item>
-							<v8:lang>en</v8:lang>
-							<v8:content>Resource</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

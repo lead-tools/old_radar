@@ -26,7 +26,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ChunkSize</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Projects</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Versions</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">373dde0f-df91-4418-8980-e29f52c62892</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Git</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Git_sc</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Jobs</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Jobs_sc</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Admin</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
