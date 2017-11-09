@@ -57,6 +57,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Templates</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonModules</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Constants</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Enums</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EnumValues</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>

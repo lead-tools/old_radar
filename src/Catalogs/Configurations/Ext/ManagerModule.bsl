@@ -21,12 +21,12 @@ Procedure Load(Configuration, Path) Export
 	//LoadMetadata(Configuration, Path, "CommonModules",               ChildObjects.CommonModule);
 	//LoadMetadata(Configuration, Path, "Pictures",                    ChildObjects.CommonPicture, "CommonPictures");
 	//LoadMetadata(Configuration, Path, "Templates",                   ChildObjects.CommonTemplate, "CommonTemplates");
-	LoadMetadata(Configuration, Path, "Constants",                   ChildObjects.Constant);
+	//LoadMetadata(Configuration, Path, "Constants",                   ChildObjects.Constant);
 	//LoadMetadata(Configuration, Path, "DataProcessors",              ChildObjects.DataProcessor);
 	//LoadMetadata(Configuration, Path, "DocumentJournals",            ChildObjects.DocumentJournal);
 	//LoadMetadata(Configuration, Path, "DocumentNumerators",          ChildObjects.DocumentNumerator);
 	//LoadMetadata(Configuration, Path, "Documents",                   ChildObjects.Document);
-	//LoadMetadata(Configuration, Path, "Enums",                       ChildObjects.Enum);
+	LoadMetadata(Configuration, Path, "Enums",                       ChildObjects.Enum);
 	//LoadMetadata(Configuration, Path, "EventSubscriptions",          ChildObjects.EventSubscription);
 	//LoadMetadata(Configuration, Path, "ExchangePlans",               ChildObjects.ExchangePlan);
 	//LoadMetadata(Configuration, Path, "FilterCriteria",              ChildObjects.FilterCriterion);
