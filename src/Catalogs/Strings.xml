@@ -56,6 +56,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Commands</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Templates</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonModules</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Constants</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
