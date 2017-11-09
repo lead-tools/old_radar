@@ -30,7 +30,7 @@ Procedure Load(Configuration, Path) Export
 	//LoadMetadata(Configuration, Path, "EventSubscriptions",          ChildObjects.EventSubscription);
 	//LoadMetadata(Configuration, Path, "ExchangePlans",               ChildObjects.ExchangePlan);
 	//LoadMetadata(Configuration, Path, "FilterCriteria",              ChildObjects.FilterCriterion);
-	LoadMetadata(Configuration, Path, "FunctionalOptions",           ChildObjects.FunctionalOption);
+	//LoadMetadata(Configuration, Path, "FunctionalOptions",           ChildObjects.FunctionalOption);
 	//LoadMetadata(Configuration, Path, "FunctionalOptionsParameters", ChildObjects.FunctionalOptionsParameter);
 	//LoadMetadata(Configuration, Path, "HTTPServices",                ChildObjects.HTTPService);
 	//LoadMetadata(Configuration, Path, "InformationRegisters",        ChildObjects.InformationRegister);
@@ -41,7 +41,7 @@ Procedure Load(Configuration, Path) Export
 	//LoadMetadata(Configuration, Path, "SessionParameters",           ChildObjects.SessionParameter);
 	//LoadMetadata(Configuration, Path, "SettingsStorages",            ChildObjects.SettingsStorage);
 	//LoadMetadata(Configuration, Path, "Subsystems",                  ChildObjects.Subsystem);
-	//LoadMetadata(Configuration, Path, "Tasks",                       ChildObjects.Task);
+	LoadMetadata(Configuration, Path, "Tasks",                       ChildObjects.Task);
 	//LoadMetadata(Configuration, Path, "WebServices",                 ChildObjects.WebService);
 	//LoadMetadata(Configuration, Path, "WSReferences",                ChildObjects.WSReference);
 	//LoadMetadata(Configuration, Path, "XDTOPackages",                ChildObjects.XDTOPackage);

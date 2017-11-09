@@ -57,6 +57,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Reports</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Projects</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Commands</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.BusinessProcesses</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Tasks</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>

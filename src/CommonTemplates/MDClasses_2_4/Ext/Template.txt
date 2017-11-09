@@ -316,6 +316,7 @@
 					<property name="FormType"              type="cc:EnumRef.FormType"/>
 					<property name="IncludeHelpInContents" type="cc:EnumRef.Boolean"/>
 					<property name="UsePurposes"           type="cr:FixedArray"/>
+					<property name="ExtendedPresentation"  type="cr:LocalStringType"    lowerBound="0"/>
 				</typeDef>
 			</property>
 		</objectType>
