@@ -1,18 +1,69 @@
 ﻿
-Function AttributeValue(Ref, AttributeName) Export
+Function Load(Parameters) Export
+	Var Ref;
+	
+	Configuration = Parameters.Configuration;
+	Owner = Parameters.Owner;
+	Path = Parameters.Path;	
+	
+	// precondition:
+	// # (Configuration == Owner)
+	
+	This = Catalogs.Constants;
+	
+	Data = Meta.ReadMetadataXML(Path + ".xml").Constant;
+	PropertyValues = Data.Properties;
+	UUID = Data.UUID; 
+	
+	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	
+	// Properties
+	
+	Object.UUID = UUID;
+	Object.Owner = Owner;
+	Object.Description = PropertyValues.Name;
+	
+	Abc.Fill(Object, PropertyValues, Abc.Lines(
+		"ChoiceFoldersAndItems"
+		"ChoiceHistoryOnInput"
+		"Comment"
+		"DataLockControlMode"
+		"ExtendedEdit"
+		"FillChecking"
+		"MarkNegatives"
+		"Mask"
+		"MultiLine"
+		"PasswordMode"
+		"QuickChoice"
+		"UseStandardCommands"
+	)); 
+	
+	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
+		"EditFormat"
+		"Explanation"
+		"ExtendedPresentation"
+		"Format"
+		"Synonym"
+		"ToolTip"
+	));
 		
-	Return Abc.AttributeValue(Ref, AttributeName);
+	BeginTransaction();
 	
-EndFunction // AttributeValue() 
+	ChildParameters = Meta.ObjectLoadParameters();
+	ChildParameters.Configuration = Configuration;
+	ChildParameters.Owner = Ref;
+	ChildParameters.Path = Abc.JoinPath(Path, "Ext\ValueManagerModule.bsl");
 
-Function AttributeValues(Ref, AttributeNames) Export
+	ChildParameters.Insert("ModuleKind", Enums.ModuleKinds.ValueManagerModule);
+	ChildParameters.Insert("ModuleRef", Object.ValueManagerModule);
+		
+	Object.ValueManagerModule = Catalogs.Modules.Load(ChildParameters);
 	
-	Return Abc.AttributeValues(Ref, AttributeNames);
+	Object.Write();	
 	
-EndFunction // AttributeValues()
-
-Procedure Load(Configuration, Path, Ref = Undefined) Export
+	CommitTransaction();
 	
-	Meta.GenericLoad(Configuration, Path, EmptyRef().Metadata(), Ref);
 	
-EndProcedure // Load()
+	Return Object.Ref;
+	
+EndFunction // Load()

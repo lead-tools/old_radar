@@ -12,11 +12,10 @@ Function Load(Parameters) Export
 	
 	This = Catalogs.InformationRegisters;
 	
-	Data = Meta.ReadMetadataXML(Path + ".xml");
-	InformationRegister = Data.InformationRegister;
-	PropertyValues = InformationRegister.Properties;
-	ChildObjects = InformationRegister.ChildObjects;
-	UUID = InformationRegister.UUID; 
+	Data = Meta.ReadMetadataXML(Path + ".xml").InformationRegister;
+	PropertyValues = Data.Properties;
+	ChildObjects = Data.ChildObjects;
+	UUID = Data.UUID; 
 	
 	// Properties
 	
@@ -126,9 +125,9 @@ Function Load(Parameters) Export
 	
 	// Templates
 	
-	For Each TemplateData In ChildObjects.Template Do
-		ChildParameters.Data = TemplateData;
-		Command = Catalogs.Templates.Load(ChildParameters);
+	For Each TemplateName In ChildObjects.Template Do
+		ChildParameters.Path = Abc.JoinPath(Path, "Templates\" + TemplateName);
+		Template = Catalogs.Templates.Load(ChildParameters);
 	EndDo;
 	
 	ChildParameters.Data = Undefined;

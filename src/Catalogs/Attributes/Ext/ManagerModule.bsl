@@ -5,7 +5,6 @@ Function Load(Parameters) Export
 	Configuration = Parameters.Configuration;
 	Owner = Parameters.Owner;
 	Data = Parameters.Data;	
-	Parameters.Property("Ref", Ref);
 	
 	// precondition:
 	// # (Configuration == Owner.Owner)

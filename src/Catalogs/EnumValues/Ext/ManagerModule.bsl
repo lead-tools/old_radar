@@ -4,21 +4,12 @@ Function Load(Parameters) Export
 	
 	Configuration = Parameters.Configuration;
 	Owner = Parameters.Owner;
-	Path = Parameters.Path;
+	Data = Parameters.Data;	
 	
 	// precondition:
-	// # (Configuration == Owner) or (Configuration == Owner.Owner)
-	// # Path is folder path
+	// # (Configuration == Owner.Owner)
 	
-	This = Catalogs.Forms;
-	
-	IsCommonForm = (Configuration = Owner);
-	
-	If IsCommonForm Then
-		Data = Meta.ReadMetadataXML(Path + ".xml").CommonForm;
-	Else
-		Data = Meta.ReadMetadataXML(Path + ".xml").Form;
-	EndIf;
+	This = Catalogs.EnumValues;
 	
 	PropertyValues = Data.Properties;
 	UUID = Data.UUID; 
@@ -34,14 +25,10 @@ Function Load(Parameters) Export
 	
 	Abc.Fill(Object, PropertyValues, Abc.Lines(
 		"Comment"
-		"FormType"
-		"IncludeHelpInContents"
-		+ ?(IsCommonForm, "UseStandardCommands", "")
 	));
-	
+		
 	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
 	    "Synonym"
-		+ ?(IsCommonForm, "Explanation" "ExtendedPresentation", "")
 	));
 		
 	Object.Write();	

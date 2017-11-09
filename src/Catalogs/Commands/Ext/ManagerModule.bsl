@@ -13,6 +13,10 @@ Function Load(Parameters) Export
 	
 	This = Catalogs.Commands;
 	
+	If Configuration = Owner Then
+		Data = Meta.ReadMetadataXML(Path + ".xml").CommonCommand;
+	EndIf; 
+	
 	Command = Data;
 	PropertyValues = Command.Properties;
 	UUID = Command.UUID;
@@ -23,6 +27,7 @@ Function Load(Parameters) Export
 	
 	Object.UUID = UUID;
 	Object.Owner = Owner;
+	Object.Configuration = Configuration;
 	Object.Description = PropertyValues.Name;
 	
 	Abc.Fill(Object, PropertyValues, Abc.Lines(

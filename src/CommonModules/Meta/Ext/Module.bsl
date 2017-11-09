@@ -213,12 +213,7 @@ Procedure UpdateString(Configuration, Owner, String, LocalString) Export
 	StringObject.Write();
 	String = StringObject.Ref;
 	
-EndProcedure // UpdateString()  
-
-&AtServer
-Procedure UpdateForms(Object, XDTODataObject, Keys) Export
-		
-EndProcedure // UpdateForms()
+EndProcedure // UpdateString()
 
 &AtServer
 Function ReadMetadataXML(Path) Export

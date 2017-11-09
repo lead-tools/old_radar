@@ -1,18 +1,62 @@
 ﻿
-Function AttributeValue(Ref, AttributeName) Export
+Function Load(Parameters) Export
+	Var Ref;
+	
+	Configuration = Parameters.Configuration;
+	Owner = Parameters.Owner;
+	Path = Parameters.Path;
+	
+	// precondition:
+	// # (Configuration == Owner)
+	// # Path is folder path
+	
+	This = Catalogs.CommonModules;
+	
+	Data = Meta.ReadMetadataXML(Path + ".xml").CommonModule;
+	
+	PropertyValues = Data.Properties;
+	UUID = Data.UUID; 
+	
+	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	
+	// Properties
+	
+	Object.UUID = UUID;
+	Object.Owner = Owner;
+	Object.Description = PropertyValues.Name;
+	
+	Abc.Fill(Object, PropertyValues, Abc.Lines(
+	    "ClientManagedApplication"
+		"ClientOrdinaryApplication"
+		"Comment"
+		"ExternalConnection"
+		"Global"
+		"Privileged"
+		"ReturnValuesReuse"
+		"Server"
+		"ServerCall"
+	));
+	
+	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
+	    "Synonym"
+	));
+	
+	BeginTransaction();
+	
+	ChildParameters = Meta.ObjectLoadParameters();
+	ChildParameters.Configuration = Configuration;
+	ChildParameters.Owner = Ref;
+	ChildParameters.Path = Abc.JoinPath(Path, "Ext\Module.bsl");
+
+	ChildParameters.Insert("ModuleKind", Enums.ModuleKinds.CommonModule);
+	ChildParameters.Insert("ModuleRef", Object.Module);
 		
-	Return Abc.AttributeValue(Ref, AttributeName);
+	Object.Module = Catalogs.Modules.Load(ChildParameters);
 	
-EndFunction // AttributeValue() 
-
-Function AttributeValues(Ref, AttributeNames) Export
+	Object.Write();	
 	
-	Return Abc.AttributeValues(Ref, AttributeNames);
+	CommitTransaction();
 	
-EndFunction // AttributeValues()
-
-Procedure Load(Configuration, Path, Ref = Undefined) Export
+	Return Object.Ref;
 	
-	Meta.GenericLoad(Configuration, Path, EmptyRef().Metadata(), Ref);
-	
-EndProcedure // Load()
+EndFunction // Load()
