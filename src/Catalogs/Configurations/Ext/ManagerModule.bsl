@@ -12,8 +12,8 @@ Procedure Load(Configuration, Path) Export
 	//LoadMetadata(Configuration, Path, "CalculationRegisters",        ChildObjects.CalculationRegister);
 	//LoadMetadata(Configuration, Path, "Catalogs",                    ChildObjects.Catalog);
 	//LoadMetadata(Configuration, Path, "ChartsOfAccounts",            ChildObjects.ChartOfAccounts);
-	//LoadMetadata(Configuration, Path, "ChartsOfCalculationTypes",    ChildObjects.ChartOfCalculationTypes);
-	LoadMetadata(Configuration, Path, "ChartsOfCharacteristicTypes", ChildObjects.ChartOfCharacteristicTypes);
+	LoadMetadata(Configuration, Path, "ChartsOfCalculationTypes",    ChildObjects.ChartOfCalculationTypes);
+	//LoadMetadata(Configuration, Path, "ChartsOfCharacteristicTypes", ChildObjects.ChartOfCharacteristicTypes);
 	//LoadMetadata(Configuration, Path, "CommandGroups",               ChildObjects.CommandGroup);
 	//LoadMetadata(Configuration, Path, "CommonAttributes",            ChildObjects.CommonAttribute);
 	//LoadMetadata(Configuration, Path, "Commands",                    ChildObjects.CommonCommand, "CommonCommands");
