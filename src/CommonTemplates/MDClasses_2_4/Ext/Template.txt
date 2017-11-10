@@ -773,7 +773,7 @@
 					<property name="CodeLength"                       type="xs:decimal"/>
 					<property name="DescriptionLength"                type="xs:decimal"/>
 					<property name="CodeType"                         type="cc:EnumRef.ChartOfCalculationTypesCodeType"/>
-					<property name="CodeAllowedLength"                type="cr:AllowedLength"/>
+					<property name="CodeAllowedLength"                type="cc:EnumRef.AllowedLength"/>
 					<property name="DefaultPresentation"              type="cc:EnumRef.CalculationTypeMainPresentation"/>
 					<property name="EditType"                         type="cc:EnumRef.EditType"/>
 					<property name="QuickChoice"                      type="cc:EnumRef.Boolean"/>

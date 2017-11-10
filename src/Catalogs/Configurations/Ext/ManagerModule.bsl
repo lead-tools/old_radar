@@ -9,13 +9,13 @@ Procedure Load(Configuration, Path) Export
 	//LoadMetadata(Configuration, Path, "AccountingRegisters",         ChildObjects.AccountingRegister);
 	//LoadMetadata(Configuration, Path, "AccumulationRegisters",       ChildObjects.AccumulationRegister);
 	//LoadMetadata(Configuration, Path, "BusinessProcesses",           ChildObjects.BusinessProcess);
-	//LoadMetadata(Configuration, Path, "CalculationRegisters",        ChildObjects.CalculationRegister);
+	LoadMetadata(Configuration, Path, "CalculationRegisters",        ChildObjects.CalculationRegister);
 	//LoadMetadata(Configuration, Path, "Catalogs",                    ChildObjects.Catalog);
 	//LoadMetadata(Configuration, Path, "ChartsOfAccounts",            ChildObjects.ChartOfAccounts);
 	//LoadMetadata(Configuration, Path, "ChartsOfCalculationTypes",    ChildObjects.ChartOfCalculationTypes);
 	//LoadMetadata(Configuration, Path, "ChartsOfCharacteristicTypes", ChildObjects.ChartOfCharacteristicTypes);
 	//LoadMetadata(Configuration, Path, "CommandGroups",               ChildObjects.CommandGroup);
-	LoadMetadata(Configuration, Path, "CommonAttributes",            ChildObjects.CommonAttribute);
+	//LoadMetadata(Configuration, Path, "CommonAttributes",            ChildObjects.CommonAttribute);
 	//LoadMetadata(Configuration, Path, "Commands",                    ChildObjects.CommonCommand, "CommonCommands");
 	//LoadMetadata(Configuration, Path, "Forms",                       ChildObjects.CommonForm, "CommonForms");
 	//LoadMetadata(Configuration, Path, "CommonModules",               ChildObjects.CommonModule);

@@ -27,7 +27,6 @@ Function Load(Parameters) Export
 	
 	Abc.Fill(Object, PropertyValues, Abc.Lines(
 	    "ActionPeriodUse"
-		"CheckUnique"
 		"ChoiceDataGetModeOnInputByString"
 		"ChoiceHistoryOnInput"
 		"ChoiceMode"
