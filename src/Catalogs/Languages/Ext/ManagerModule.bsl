@@ -1,18 +1,40 @@
 ﻿
-Function AttributeValue(Ref, AttributeName) Export
-		
-	Return Abc.AttributeValue(Ref, AttributeName);
+Function Load(Parameters) Export
+	Var Ref;
 	
-EndFunction // AttributeValue() 
-
-Function AttributeValues(Ref, AttributeNames) Export
+	Configuration = Parameters.Configuration;
+	Owner = Parameters.Owner;
+	Path = Parameters.Path;
 	
-	Return Abc.AttributeValues(Ref, AttributeNames);
+	// precondition:
+	// # (Configuration == Owner)
+	// # Path is folder path
 	
-EndFunction // AttributeValues()
-
-Procedure Load(Configuration, Path, Ref = Undefined) Export
+	This = Catalogs.Languages;
 	
-	Meta.GenericLoad(Configuration, Path, EmptyRef().Metadata(), Ref);
+	Data = Meta.ReadMetadataXML(Path + ".xml").Language;
 	
-EndProcedure // Load()
+	PropertyValues = Data.Properties;
+	UUID = Data.UUID; 
+	
+	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	
+	// Properties
+	
+	Object.UUID = UUID;
+	Object.Owner = Owner;
+	Object.Description = PropertyValues.Name;
+	
+	Abc.Fill(Object, PropertyValues, Abc.Lines(
+	    "LanguageCode"
+	));
+	
+	//Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
+	//    "Synonym"
+	//));
+	
+	Object.Write();	
+	
+	Return Object.Ref;
+	
+EndFunction // Load()
