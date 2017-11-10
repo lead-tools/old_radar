@@ -80,12 +80,22 @@ Function Load(Parameters) Export
 		) Do
 		
 		FormFullName = PropertyValues[PropertyName];
-		FormName = Mid(FormFullName, StrFind(FormFullName, ".", SearchDirection.FromEnd) + 1);
 		
-		If Not IsBlankString(FormName) Then
-			If Not Forms.Property(FormName, Object[PropertyName]) Then
-				Raise "form not found";
-			EndIf; 
+		If StrStartsWith(FormFullName, "CommonForm.") Then
+			
+			// TODO
+			
+		Else
+			
+			FormName = Mid(FormFullName, StrFind(FormFullName, ".", SearchDirection.FromEnd) + 1);
+			
+			If Not IsBlankString(FormName) Then
+				If Mid(FormName, 9, 1) = "-" // UUID
+					Or Not Forms.Property(FormName, Object[PropertyName]) Then
+					Message(StrTemplate("form not found [%1; %2; %3]", Path, PropertyName, FormFullName));
+				EndIf; 
+			EndIf;
+			
 		EndIf; 
 		
 	EndDo; 

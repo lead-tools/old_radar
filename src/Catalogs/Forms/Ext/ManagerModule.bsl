@@ -36,12 +36,12 @@ Function Load(Parameters) Export
 		"Comment"
 		"FormType"
 		"IncludeHelpInContents"
-		+ ?(IsCommonForm, "UseStandardCommands", "")
+		"" + ?(IsCommonForm, "UseStandardCommands", "")
 	));
 	
 	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
 	    "Synonym"
-		+ ?(IsCommonForm, "Explanation" "ExtendedPresentation", "")
+		"" + ?(IsCommonForm, "Explanation" "ExtendedPresentation", "")
 	));
 		
 	Object.Write();	
