@@ -16,21 +16,9 @@ Function Modules(Project) Export
 	
 EndFunction // Modules()
 
-Function AttributeValue(Ref, AttributeName) Export
-	
-	Return Abc.AttributeValue(Ref, AttributeName);
-	
-EndFunction // AttributeValue() 
-
-Function AttributeValues(Ref, AttributeNames) Export
-	
-	Return Abc.AttributeValues(Ref, AttributeNames);
-	
-EndFunction // AttributeValues()
-
 Procedure LoadModules(Ref) Export
 	
-	Path = AttributeValue(Ref, "Path");
+	Path = Abc.AttributeValue(Ref, "Path");
 	Files = FindFiles(Path, "*.bsl", True);
 	
 	For Each File In Files Do

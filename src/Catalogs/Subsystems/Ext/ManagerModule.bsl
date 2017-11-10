@@ -1,18 +1,59 @@
 ﻿
-Function AttributeValue(Ref, AttributeName) Export
+Function Load(Parameters) Export
+	Var Ref, Parent;
+	
+	Configuration = Parameters.Configuration;
+	Owner = Parameters.Owner;
+	Path = Parameters.Path;
+	Parameters.Property("Parent", Parent);
+	
+	// precondition:
+	// # Parent is subsystem
+	// # Path is folder path
+	
+	This = Catalogs.Subsystems;
+	
+	Data = Meta.ReadMetadataXML(Path + ".xml").Subsystem;
+	PropertyValues = Data.Properties;
+	ChildObjects = Data.ChildObjects;
+	UUID = Data.UUID; 
+	
+	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	
+	// Properties
+	
+	Object.UUID = UUID;
+	Object.Owner = Owner;
+	Object.Parent = Parent;
+	Object.Description = PropertyValues.Name;
+	
+	Abc.Fill(Object, PropertyValues, Abc.Lines(
+	    "Comment"
+		"IncludeHelpInContents"
+		"IncludeInCommandInterface"
+	));
+	
+	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
+	    "Explanation"
+		"Synonym"
+	));
+	
+	Object.Write();
+	
+	// Operations
+	
+	ChildParameters = Meta.ObjectLoadParameters();
+	ChildParameters.Configuration = Configuration;
+	ChildParameters.Owner = Owner;
+	ChildParameters.Insert("Parent", Ref);
+	
+	For Each Subsystem In ChildObjects.Subsystem Do
 		
-	Return Abc.AttributeValue(Ref, AttributeName);
+		ChildParameters.Path = Abc.JoinPath(Path, "Subsystems\" + Subsystem);
+		This.Load(ChildParameters);
+		
+	EndDo;	
 	
-EndFunction // AttributeValue() 
-
-Function AttributeValues(Ref, AttributeNames) Export
+	Return Object.Ref;
 	
-	Return Abc.AttributeValues(Ref, AttributeNames);
-	
-EndFunction // AttributeValues()
-
-Procedure Load(Configuration, Path, Ref = Undefined) Export
-	
-	Meta.GenericLoad(Configuration, Path, EmptyRef().Metadata(), Ref);
-	
-EndProcedure // Load()
+EndFunction // Load()

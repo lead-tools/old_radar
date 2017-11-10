@@ -10,9 +10,9 @@ Function Load(Parameters) Export
 	// # (Configuration == Owner)
 	// # Path is folder path
 	
-	This = Catalogs.ScheduledJobs;
+	This = Catalogs.CommonPictures;
 	
-	Data = Meta.ReadMetadataXML(Path + ".xml").ScheduledJob;
+	Data = Meta.ReadMetadataXML(Path + ".xml").CommonPicture;
 	
 	PropertyValues = Data.Properties;
 	UUID = Data.UUID; 
@@ -27,14 +27,7 @@ Function Load(Parameters) Export
 	
 	Abc.Fill(Object, PropertyValues, Abc.Lines(
 		"Comment"
-		"Key"
-		"MethodName"
-		"RestartCountOnFailure"
-		"RestartIntervalOnFailure"
-		"Use"
 	));
-	
-	Object.IsPredefined = PropertyValues.Predefined;
 	
 	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
 	    "Synonym"

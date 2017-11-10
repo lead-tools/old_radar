@@ -1,49 +1,4 @@
 ﻿
-Function AttributeTypes(MetadataObjectFullName) Export
-	
-	MetadataObject = Metadata.FindByFullName(MetadataObjectFullName);
-	
-	AttributeTypes = New Structure;
-	
-	For Each Attribute In MetadataObject.Attributes Do
-		
-		Types = Attribute.Type.Types();
-		
-		If Types.Count() <> 1 Then
-			Raise "Composite types not supported"
-		EndIf; 
-		
-		Type = Types[0];
-		
-		AttributeTypes.Insert(Attribute.Name, Type);
-		
-	EndDo;
-	
-	Return New FixedStructure(AttributeTypes);
-	
-EndFunction // AttributeTypes()
-
-Function SkipProperties() Export
-	
-	SkipProperties = New Structure(
-		"DataHistory,"
-		"ManagerModule,"
-		"ObjectModule,"
-		"RecordSetModule,"
-		"Module,"
-		"ValueManagerModule,"
-		"Flowchart,"
-		"Schedule,"
-		"CommandInterface,"
-		"File,"
-		"UUID,"
-		"Configuration,"
-	);
-	
-	Return New FixedStructure(SkipProperties);
-	
-EndFunction // SkipProperties()
-
 Function LanguageByCode(Configuration, LanguageCode) Export
 	
 	Query = New Query;

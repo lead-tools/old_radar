@@ -4,11 +4,9 @@
 		xmlns:tns="http://Lead-Bullets/MDClasses"
 		xmlns:cc="http://v8.1c.ru/8.1/data/enterprise/current-config"
 		xmlns:re="http://Lead-Bullets/xcf/readable"
-		xmlns:cr="http://v8.1c.ru/8.1/data/core"
-		xmlns:app="http://v8.1c.ru/8.2/managed-application/core">
+		xmlns:cr="http://v8.1c.ru/8.1/data/core">
 
 		<import namespace="http://v8.1c.ru/8.1/data/core"/>
-		<import namespace="http://v8.1c.ru/8.2/managed-application/core"/>
 		<import namespace="http://v8.1c.ru/8.1/data/enterprise/current-config"/>
 		<import namespace="http://Lead-Bullets/xcf/readable"/>
 
@@ -86,7 +84,7 @@
 					<property name="FillChecking"          type="cc:EnumRef.FillChecking"         lowerBound="0"/>
 					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"   lowerBound="0"/>
 					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"         lowerBound="0"/>
-					<property name="ChoiceParameters"      type="app:ChoiceParameters"            lowerBound="0"/>
+					<property name="ChoiceParameters"                                             lowerBound="0" nillable="true"/>
 					<property name="QuickChoice"           type="cc:EnumRef.UseQuickChoice"       lowerBound="0"/>
 					<property name="CreateOnInput"         type="cc:EnumRef.CreateOnInput"        lowerBound="0"/>
 					<property name="ChoiceForm"            type="re:MDObjectRef"                  lowerBound="0"/>
@@ -120,7 +118,7 @@
 					<property name="FillChecking"          type="cc:EnumRef.FillChecking"         lowerBound="0"/>
 					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"   lowerBound="0"/>
 					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"         lowerBound="0"/>
-					<property name="ChoiceParameters"      type="app:ChoiceParameters"            lowerBound="0"/>
+					<property name="ChoiceParameters"                                             lowerBound="0" nillable="true"/>
 					<property name="QuickChoice"           type="cc:EnumRef.UseQuickChoice"       lowerBound="0"/>
 					<property name="CreateOnInput"         type="cc:EnumRef.CreateOnInput"        lowerBound="0"/>
 					<property name="ChoiceForm"            type="re:MDObjectRef"                  lowerBound="0"/>
@@ -166,7 +164,7 @@
 					<property name="FillChecking"               type="cc:EnumRef.FillChecking"         lowerBound="0"/>
 					<property name="ChoiceFoldersAndItems"      type="cc:EnumRef.FoldersAndItemsUse"   lowerBound="0"/>
 					<property name="ChoiceParameterLinks"       type="re:ChoiceParameterLinks"         lowerBound="0"/>
-					<property name="ChoiceParameters"           type="app:ChoiceParameters"            lowerBound="0"/>
+					<property name="ChoiceParameters"                                                  lowerBound="0" nillable="true"/>
 					<property name="QuickChoice"                type="cc:EnumRef.UseQuickChoice"       lowerBound="0"/>
 					<property name="CreateOnInput"              type="cc:EnumRef.CreateOnInput"        lowerBound="0"/>
 					<property name="ChoiceForm"                 type="re:MDObjectRef"                  lowerBound="0"/>
@@ -206,7 +204,7 @@
 					<property name="FillChecking"          type="cc:EnumRef.FillChecking"/>
 					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"/>
 					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"/>
-					<property name="ChoiceParameters"      type="app:ChoiceParameters"/>
+					<property name="ChoiceParameters"                                nillable="true"/>
 					<property name="QuickChoice"           type="cc:EnumRef.UseQuickChoice"/>
 					<property name="CreateOnInput"         type="cc:EnumRef.CreateOnInput"/>
 					<property name="ChoiceForm"            type="re:MDObjectRef"/>
@@ -238,7 +236,7 @@
 					<property name="FillChecking"          type="cc:EnumRef.FillChecking"/>
 					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"/>
 					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"/>
-					<property name="ChoiceParameters"      type="app:ChoiceParameters"/>
+					<property name="ChoiceParameters"                                nillable="true"/>
 					<property name="QuickChoice"           type="cc:EnumRef.UseQuickChoice"/>
 					<property name="CreateOnInput"         type="cc:EnumRef.CreateOnInput"/>
 					<property name="ChoiceForm"            type="re:MDObjectRef"/>
@@ -316,6 +314,7 @@
 					<property name="FormType"              type="cc:EnumRef.FormType"/>
 					<property name="IncludeHelpInContents" type="cc:EnumRef.Boolean"/>
 					<property name="UsePurposes"           type="cr:FixedArray"/>
+					<property name="ExtendedPresentation"  type="cr:LocalStringType"    lowerBound="0"/>
 				</typeDef>
 			</property>
 		</objectType>
@@ -353,7 +352,7 @@
 					<property name="FillChecking"          type="cc:EnumRef.FillChecking"         lowerBound="0"/>
 					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"   lowerBound="0"/>
 					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"         lowerBound="0"/>
-					<property name="ChoiceParameters"      type="app:ChoiceParameters"            lowerBound="0"/>
+					<property name="ChoiceParameters"                                             lowerBound="0" nillable="true"/>
 					<property name="QuickChoice"           type="cc:EnumRef.UseQuickChoice"       lowerBound="0"/>
 					<property name="CreateOnInput"         type="cc:EnumRef.CreateOnInput"        lowerBound="0"/>
 					<property name="ChoiceForm"            type="re:MDObjectRef"                  lowerBound="0"/>
@@ -567,7 +566,7 @@
 					<property name="NumberLength"                     type="xs:decimal"/>
 					<property name="NumberAllowedLength"              type="cc:EnumRef.AllowedLength"/>
 					<property name="CheckUnique"                      type="cc:EnumRef.Boolean"/>
-					<property name="StandardAttributes"               type="re:StandardAttributeDescriptions"/>
+					<property name="StandardAttributes"               type="re:StandardAttributeDescriptions" lowerBound="0"/>
 					<property name="Characteristics"                  type="re:CharacteristicsDescriptions"/>
 					<property name="Autonumbering"                    type="cc:EnumRef.Boolean"/>
 					<property name="BasedOn"                          type="re:MDListType"/>
@@ -772,7 +771,7 @@
 					<property name="CodeLength"                       type="xs:decimal"/>
 					<property name="DescriptionLength"                type="xs:decimal"/>
 					<property name="CodeType"                         type="cc:EnumRef.ChartOfCalculationTypesCodeType"/>
-					<property name="CodeAllowedLength"                type="cr:AllowedLength"/>
+					<property name="CodeAllowedLength"                type="cc:EnumRef.AllowedLength"/>
 					<property name="DefaultPresentation"              type="cc:EnumRef.CalculationTypeMainPresentation"/>
 					<property name="EditType"                         type="cc:EnumRef.EditType"/>
 					<property name="QuickChoice"                      type="cc:EnumRef.Boolean"/>
@@ -918,7 +917,7 @@
 					<property name="FillChecking"                      type="cc:EnumRef.FillChecking"/>
 					<property name="ChoiceFoldersAndItems"             type="cc:EnumRef.FoldersAndItemsUse"/>
 					<property name="ChoiceParameterLinks"              type="re:ChoiceParameterLinks"/>
-					<property name="ChoiceParameters"                  type="app:ChoiceParameters"/>
+					<property name="ChoiceParameters"                                     nillable="true"/>
 					<property name="QuickChoice"                       type="cc:EnumRef.UseQuickChoice"/>
 					<property name="CreateOnInput"                     type="cc:EnumRef.CreateOnInput"/>
 					<property name="ChoiceForm"                        type="re:MDObjectRef"/>
@@ -1039,7 +1038,7 @@
 					<property name="FillChecking"          type="cc:EnumRef.FillChecking"/>
 					<property name="ChoiceFoldersAndItems" type="cc:EnumRef.FoldersAndItemsUse"/>
 					<property name="ChoiceParameterLinks"  type="re:ChoiceParameterLinks"/>
-					<property name="ChoiceParameters"      type="app:ChoiceParameters"/>
+					<property name="ChoiceParameters"                                 nillable="true"/>
 					<property name="QuickChoice"           type="cc:EnumRef.UseQuickChoice"/>
 					<property name="ChoiceForm"            type="re:MDObjectRef"/>
 					<property name="LinkByType"            type="re:TypeLink"/>
@@ -1243,7 +1242,7 @@
 					<property name="AuxiliaryObjectForm"              type="re:MDObjectRef"/>
 					<property name="AuxiliaryListForm"                type="re:MDObjectRef"/>
 					<property name="AuxiliaryChoiceForm"              type="re:MDObjectRef"/>
-					<property name="StandardAttributes"               type="re:StandardAttributeDescriptions"/>
+					<property name="StandardAttributes"               type="re:StandardAttributeDescriptions" lowerBound="0"/>
 					<property name="Characteristics"                  type="re:CharacteristicsDescriptions"/>
 					<property name="BasedOn"                          type="re:MDListType"/>
 					<property name="DistributedInfoBase"              type="cc:EnumRef.Boolean"/>
@@ -1609,11 +1608,9 @@
 	<package targetNamespace="http://Lead-Bullets/xcf/readable" elementFormQualified="true" attributeFormQualified="false"
 		xmlns:tns="http://Lead-Bullets/xcf/readable"
 		xmlns:cr="http://v8.1c.ru/8.1/data/core"
-		xmlns:app="http://v8.1c.ru/8.2/managed-application/core"
 		xmlns:cc="http://v8.1c.ru/8.1/data/enterprise/current-config">
 
 		<import namespace="http://v8.1c.ru/8.1/data/core"/>
-		<import namespace="http://v8.1c.ru/8.2/managed-application/core"/>
 		<import namespace="http://v8.1c.ru/8.1/data/enterprise/current-config"/>
 
 		<valueType name="AliasedStringType"              base="xs:string"/>
@@ -1633,7 +1630,7 @@
 			<property name="from"             type="tns:MDObjectRef" lowerBound="0" form="Attribute"/>
 			<property name="KeyField"         type="tns:FiedlRef"/>
 			<property name="TypesFilterField" type="tns:FiedlRef"/>
-			<property name="TypesFilterValue"/>
+			<property name="TypesFilterValue"                       nillable="true"/>
 		</objectType>
 
 		<objectType name="CharacteristicValues">
@@ -1703,7 +1700,7 @@
 			<property name="FillValue"                                                   lowerBound="0" nillable="true"/>
 			<property name="FillFromFillingValue" type="cc:EnumRef.Boolean"              lowerBound="0"/>
 			<property name="ChoiceParameterLinks" type="tns:ChoiceParameterLinks"        lowerBound="0"/>
-			<property name="ChoiceParameters"     type="app:ChoiceParameters"            lowerBound="0"/>
+			<property name="ChoiceParameters"                                            lowerBound="0" nillable="true"/>
 			<property name="LinkByType"                                                  lowerBound="0"/>
 			<property name="FullTextSearch"       type="cc:EnumRef.FullTextSearchUsing"  lowerBound="0"/>
 			<property name="PasswordMode"         type="cc:EnumRef.Boolean"              lowerBound="0"/>

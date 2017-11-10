@@ -57,6 +57,17 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Reports</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Projects</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Commands</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.BusinessProcesses</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Tasks</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfCalculationTypes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CalculationRegisters</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.DocumentJournals</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ExchangePlans</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.FilterCriteria</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Sequences</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.SettingsStorages</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.HTTPServices</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.WebServices</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
