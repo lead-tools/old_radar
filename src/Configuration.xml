@@ -178,6 +178,7 @@
 			<Catalog>Commands</Catalog>
 			<Catalog>CommonAttributes</Catalog>
 			<Catalog>CommonModules</Catalog>
+			<Catalog>CommonPictures</Catalog>
 			<Catalog>Configurations</Catalog>
 			<Catalog>Constants</Catalog>
 			<Catalog>DataProcessors</Catalog>
@@ -204,7 +205,6 @@
 			<Catalog>Languages</Catalog>
 			<Catalog>Locations</Catalog>
 			<Catalog>Modules</Catalog>
-			<Catalog>Pictures</Catalog>
 			<Catalog>PredefinedData</Catalog>
 			<Catalog>Projects</Catalog>
 			<Catalog>Recalculations</Catalog>

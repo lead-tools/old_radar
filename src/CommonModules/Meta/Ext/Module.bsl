@@ -47,6 +47,10 @@ EndProcedure // UpdateStrings()
 &AtServer
 Procedure UpdateString(Configuration, Owner, String, LocalString) Export
 	
+	If LocalString = Undefined Then
+		Return;
+	EndIf; 
+	
 	If ValueIsFilled(String) Then
 		StringObject = String.GetObject();
 		If StringObject.Owner <> Owner Then

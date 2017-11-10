@@ -176,7 +176,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Handlers</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Locations</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Modules</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Pictures</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonPictures</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Strings</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Templates</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TypeLinks</xr:Item>

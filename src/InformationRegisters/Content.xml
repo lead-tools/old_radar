@@ -176,7 +176,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Pictures</v8:Type>
+						<v8:Type>cfg:CatalogRef.CommonPictures</v8:Type>
 						<v8:Type>cfg:CatalogRef.AccumulationRegisters</v8:Type>
 						<v8:Type>cfg:CatalogRef.Tasks</v8:Type>
 						<v8:Type>cfg:CatalogRef.FunctionalOptions</v8:Type>

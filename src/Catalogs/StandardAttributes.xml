@@ -56,7 +56,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ExchangePlans</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TabularSections</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Tasks</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Sequences</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Recalculations</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Enums</xr:Item>
 			</Owners>

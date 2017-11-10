@@ -566,7 +566,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Pictures</v8:Type>
+						<v8:Type>cfg:CatalogRef.CommonPictures</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

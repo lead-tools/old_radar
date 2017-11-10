@@ -1244,7 +1244,7 @@
 					<property name="AuxiliaryObjectForm"              type="re:MDObjectRef"/>
 					<property name="AuxiliaryListForm"                type="re:MDObjectRef"/>
 					<property name="AuxiliaryChoiceForm"              type="re:MDObjectRef"/>
-					<property name="StandardAttributes"               type="re:StandardAttributeDescriptions"/>
+					<property name="StandardAttributes"               type="re:StandardAttributeDescriptions" lowerBound="0"/>
 					<property name="Characteristics"                  type="re:CharacteristicsDescriptions"/>
 					<property name="BasedOn"                          type="re:MDListType"/>
 					<property name="DistributedInfoBase"              type="cc:EnumRef.Boolean"/>
