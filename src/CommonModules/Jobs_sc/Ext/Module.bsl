@@ -83,8 +83,8 @@ EndFunction // TakeChunk()
 
 Procedure ParseModule(Module) Export
 	
-	ModuleAttributes = Catalogs.Modules.AttributeValues(Module, "Owner, Path");
-	ProjectPath = Catalogs.Projects.AttributeValue(ModuleAttributes.Owner, "Path"); 
+	ModuleAttributes = Abc.AttributeValues(Module, "Owner, Path");
+	ProjectPath = Abc.AttributeValue(ModuleAttributes.Owner, "Path"); 
 	
 	FilePath = Abc.JoinPath(ProjectPath, ModuleAttributes.Path);
 	

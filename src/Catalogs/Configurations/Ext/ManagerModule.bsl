@@ -32,7 +32,7 @@ Procedure Load(Configuration, Path) Export
 	//LoadMetadata(Configuration, Path, "FilterCriteria",              ChildObjects.FilterCriterion);
 	//LoadMetadata(Configuration, Path, "FunctionalOptions",           ChildObjects.FunctionalOption);
 	//LoadMetadata(Configuration, Path, "FunctionalOptionsParameters", ChildObjects.FunctionalOptionsParameter);
-	LoadMetadata(Configuration, Path, "HTTPServices",                ChildObjects.HTTPService);
+	//LoadMetadata(Configuration, Path, "HTTPServices",                ChildObjects.HTTPService);
 	//LoadMetadata(Configuration, Path, "InformationRegisters",        ChildObjects.InformationRegister);
 	//LoadMetadata(Configuration, Path, "Reports",                     ChildObjects.Report);
 	//LoadMetadata(Configuration, Path, "Roles",                       ChildObjects.Role);
@@ -40,11 +40,11 @@ Procedure Load(Configuration, Path) Export
 	//LoadMetadata(Configuration, Path, "Sequences",                   ChildObjects.Sequence);
 	//LoadMetadata(Configuration, Path, "SessionParameters",           ChildObjects.SessionParameter);
 	//LoadMetadata(Configuration, Path, "SettingsStorages",            ChildObjects.SettingsStorage);
-	//LoadMetadata(Configuration, Path, "Subsystems",                  ChildObjects.Subsystem);
+	LoadMetadata(Configuration, Path, "Subsystems",                  ChildObjects.Subsystem);
 	//LoadMetadata(Configuration, Path, "Tasks",                       ChildObjects.Task);
-	LoadMetadata(Configuration, Path, "WebServices",                 ChildObjects.WebService);
-	LoadMetadata(Configuration, Path, "WSReferences",                ChildObjects.WSReference);
-	LoadMetadata(Configuration, Path, "XDTOPackages",                ChildObjects.XDTOPackage);
+	//LoadMetadata(Configuration, Path, "WebServices",                 ChildObjects.WebService);
+	//LoadMetadata(Configuration, Path, "WSReferences",                ChildObjects.WSReference);
+	//LoadMetadata(Configuration, Path, "XDTOPackages",                ChildObjects.XDTOPackage);
 	
 EndProcedure // Load()
 
