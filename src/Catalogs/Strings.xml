@@ -67,6 +67,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.BusinessProcesses</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Tasks</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfAccounts</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ChartsOfCharacteristicTypes</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>9</CodeLength>
