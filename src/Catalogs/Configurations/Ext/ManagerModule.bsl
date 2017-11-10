@@ -11,7 +11,7 @@ Procedure Load(Configuration, Path) Export
 	//LoadMetadata(Configuration, Path, "BusinessProcesses",           ChildObjects.BusinessProcess);
 	//LoadMetadata(Configuration, Path, "CalculationRegisters",        ChildObjects.CalculationRegister);
 	//LoadMetadata(Configuration, Path, "Catalogs",                    ChildObjects.Catalog);
-	//LoadMetadata(Configuration, Path, "ChartsOfAccounts",            ChildObjects.ChartOfAccounts);
+	LoadMetadata(Configuration, Path, "ChartsOfAccounts",            ChildObjects.ChartOfAccounts);
 	//LoadMetadata(Configuration, Path, "ChartsOfCalculationTypes",    ChildObjects.ChartOfCalculationTypes);
 	//LoadMetadata(Configuration, Path, "ChartsOfCharacteristicTypes", ChildObjects.ChartOfCharacteristicTypes);
 	//LoadMetadata(Configuration, Path, "CommandGroups",               ChildObjects.CommandGroup);
@@ -41,7 +41,7 @@ Procedure Load(Configuration, Path) Export
 	//LoadMetadata(Configuration, Path, "SessionParameters",           ChildObjects.SessionParameter);
 	//LoadMetadata(Configuration, Path, "SettingsStorages",            ChildObjects.SettingsStorage);
 	//LoadMetadata(Configuration, Path, "Subsystems",                  ChildObjects.Subsystem);
-	LoadMetadata(Configuration, Path, "Tasks",                       ChildObjects.Task);
+	//LoadMetadata(Configuration, Path, "Tasks",                       ChildObjects.Task);
 	//LoadMetadata(Configuration, Path, "WebServices",                 ChildObjects.WebService);
 	//LoadMetadata(Configuration, Path, "WSReferences",                ChildObjects.WSReference);
 	//LoadMetadata(Configuration, Path, "XDTOPackages",                ChildObjects.XDTOPackage);
