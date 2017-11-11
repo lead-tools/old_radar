@@ -35,49 +35,40 @@ Function GetObject(Manager, UUID, Owner, Ref = Undefined) Export
 EndFunction // GetObject()
 
 &AtServer
+Function StringCache(Configuration) Export
+	
+	Return Meta_sr.StringCache(Configuration);
+	
+EndFunction // StringCache() 
+
+&AtServer
+Function LanguageByCodeFromCache(Configuration, LanguageCode) Export
+	
+	Return Meta_sr.LanguageByCode(Configuration, LanguageCode);
+	
+EndFunction // LanguageByCode()  
+
+&AtServer
 Procedure UpdateStrings(Configuration, Owner, Object, XDTODataObject, Keys) Export
 	Var Key;
 	
+	LoadParameters = Meta.ObjectLoadParameters();
+	LoadParameters.Configuration = Configuration;
+	LoadParameters.Owner = Owner;
+	LoadParameters.Insert("LocalString");
+	LoadParameters.Insert("StringRef");
+	
 	For Each Key In Keys Do
-		UpdateString(Configuration, Owner, Object[Key], XDTODataObject[Key]);
+		LocalString = XDTODataObject[Key];
+		If LocalString <> Undefined Then
+			LoadParameters.LocalString = LocalString;
+			LoadParameters.StringRef = Object[Key];
+			Object[Key] = Catalogs.Strings.Load(LoadParameters);
+			//UpdateString(Configuration, Owner, Object[Key], LocalString);
+		EndIf; 
 	EndDo; 
 	
 EndProcedure // UpdateStrings() 
-
-&AtServer
-Procedure UpdateString(Configuration, Owner, String, LocalString) Export
-	
-	If LocalString = Undefined Then
-		Return;
-	EndIf; 
-	
-	If ValueIsFilled(String) Then
-		StringObject = String.GetObject();
-		If StringObject.Owner <> Owner Then
-			Raise "Call in violation of protocol";
-		EndIf; 
-		StringObject.Values.Clear();
-	Else
-		If LocalString.item.Count() = 0 Then
-			Return;
-		EndIf; 
-		StringObject = Catalogs.Strings.CreateItem();
-		StringObject.Owner = Owner;
-		StringObject.Configuration = Configuration;
-	EndIf;
-	
-	For Each LocalStringItem In LocalString.item Do
-		
-		Item = StringObject.Values.Add();
-		Item.Language = Meta_sr.LanguageByCode(Configuration, LocalStringItem.Lang);
-		Item.Value = LocalStringItem.Content;
-		
-	EndDo; 
-	
-	StringObject.Write();
-	String = StringObject.Ref;
-	
-EndProcedure // UpdateString()
 
 &AtServer
 Function ReadMetadataXML(Path) Export

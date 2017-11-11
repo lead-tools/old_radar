@@ -35,4 +35,24 @@ Function XDTOFactory() Export
 	
 	Return New XDTOFactory(XDTOModel, Packages);
 	
-EndFunction // XDTOFactory() 
+EndFunction // XDTOFactory()
+
+Function StringCache(Configuration) Export
+	
+	Query = New Query;
+	Query.SetParameter("Configuration", Configuration);
+	Query.Text =
+	"SELECT
+	|	Strings.Ref AS Ref,
+	|	Strings.SHA1 AS SHA1
+	|FROM
+	|	Catalog.Strings AS Strings
+	|WHERE
+	|	Strings.Configuration = &Configuration";
+	
+	StringCache = Query.Execute().Unload();
+	StringCache.Indexes.Add("Ref");
+	
+	Return StringCache;
+	
+EndFunction // StringCache()  

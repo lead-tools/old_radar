@@ -50,6 +50,8 @@ Procedure Load(Configuration, Path) Export
 	
 	Message("Configuration end: " + CurrentDate());
 	
+	Abc.RefreshAllReusableValues();
+	
 EndProcedure // Load()
 
 Procedure LoadMetadata(Configuration, Path, Name, XDTOList, FolderName = Undefined)
