@@ -122,6 +122,22 @@ Function GetDataProcessor(Name) Export
 EndFunction // GetDataProcessor()
 
 &AtServer
+Function SHA1(BinaryDataOrStream) Export
+	Var SHA1;
+	
+	// git method
+	
+	DataHashing = New DataHashing(HashFunction.SHA1);
+	DataHashing.Append("blob " + Format(BinaryDataOrStream.Size(), "NZ=0; NG=") + Char(0));
+	DataHashing.Append(BinaryDataOrStream);
+	
+	SHA1 = GetHexStringFromBinaryData(DataHashing.HashSum);
+	
+	Return SHA1;
+	
+EndFunction // SHA1()
+
+&AtServer
 Function BinFind(BinaryDataBuffer, SearchData, InitPos = 0) Export
 		
 	// naive search

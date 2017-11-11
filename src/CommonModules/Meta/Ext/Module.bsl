@@ -71,18 +71,35 @@ Procedure UpdateStrings(Configuration, Owner, Object, XDTODataObject, Keys) Expo
 EndProcedure // UpdateStrings() 
 
 &AtServer
-Function ReadMetadataXML(Path) Export
-	
+Function ReadMetadataXML(Path, SHA1 = Undefined) Export
+		
 	DataReader = New DataReader(Path, TextEncoding.UTF8); 
 	BinaryDataBuffer = DataReader.ReadIntoBinaryDataBuffer();
 	
-	MDClassesPos = Abc.BinFind(BinaryDataBuffer, GetBinaryDataBufferFromString("http://v8.1c.ru/8.3/MDClasses"));
+	MemoryStream = New MemoryStream(BinaryDataBuffer);
+	
+	If SHA1 <> Undefined Then
+		StreamSHA1 = Abc.SHA1(MemoryStream);
+		MemoryStream.Seek(0, PositionInStream.Begin);
+		If StreamSHA1 = SHA1 Then
+			Return Undefined;
+		Else
+			SHA1 = StreamSHA1;
+		EndIf; 
+	EndIf; 
+	
+	TextReader = New TextReader(Path, TextEncoding.UTF8);	
+	Offset = 3 + StrLen(TextReader.ReadLine()) + 1; // BOM + XML declaration + LF
+	MetaDataObjectTag = TextReader.ReadLine();
+	TextReader.Close();
+	
+	MDClassesPos = Offset + StrFind(MetaDataObjectTag, "http://v8.1c.ru/8.3/MDClasses");
+	//MDClassesPos = Abc.BinFind(BinaryDataBuffer, GetBinaryDataBufferFromString("http://v8.1c.ru/8.3/MDClasses"));
 	BinaryDataBuffer.Write(MDClassesPos, GetBinaryDataBufferFromString("http://Lead-Bullets/MDClasses"));
 	
-	ReadablePos = Abc.BinFind(BinaryDataBuffer, GetBinaryDataBufferFromString("http://v8.1c.ru/8.3/xcf/readable"));
+	ReadablePos = Offset + StrFind(MetaDataObjectTag, "http://v8.1c.ru/8.3/xcf/readable");
+	//ReadablePos = Abc.BinFind(BinaryDataBuffer, GetBinaryDataBufferFromString("http://v8.1c.ru/8.3/xcf/readable"));
 	BinaryDataBuffer.Write(ReadablePos, GetBinaryDataBufferFromString("http://Lead-Bullets/xcf/readable"));
-	
-	MemoryStream = New MemoryStream(BinaryDataBuffer);
 	
 	MyXDTOFactory = Meta_sr.XDTOFactory();
 	Type = MyXDTOFactory.Type("http://Lead-Bullets/MDClasses", "MetaDataObject");  
