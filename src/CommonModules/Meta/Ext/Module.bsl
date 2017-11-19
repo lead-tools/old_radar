@@ -391,7 +391,9 @@ Function GenericLoad(Context, Name, Manager, MetaName) Export
 			Object = GetObject(Manager, CacheItem);
 		EndIf; 
 		
-		If Object.Metadata().Attributes.Find("Config") <> Undefined Then
+		ObjectMetadata = Object.Metadata();
+		
+		If ObjectMetadata.Attributes.Find("Config") <> Undefined Then
 			Object.Config = Config;
 		EndIf; 
 		
@@ -407,13 +409,16 @@ Function GenericLoad(Context, Name, Manager, MetaName) Export
 		
 		Meta.UpdateStrings(Config, CacheItem.Ref, Object, Properties, ObjectDescription.LocaleStringTypeProperties); 
 		
+		If ObjectMetadata.TabularSections.Find("AttributeOrder") <> Undefined Then
+			AttributeOrder = Object.AttributeOrder;
+			Object.AttributeOrder.Clear();
+		EndIf; 
+		
 		/////////////////////////////////////////////////////////////////////////////
 		// Dimensions
 		
 		If Children.Find("Dimension") <> Undefined Then
 		
-			AttributeOrder = Object.AttributeOrder;
-			AttributeOrder.Clear();
 			For Each AttributeData In ChildObjects.Dimension Do
 				AttributeOrder.Add().Attribute = Catalogs.Attributes.Load(
 					ChildContext,
@@ -428,8 +433,6 @@ Function GenericLoad(Context, Name, Manager, MetaName) Export
 		
 		If Children.Find("Resource") <> Undefined Then
 		
-			AttributeOrder = Object.AttributeOrder;
-			AttributeOrder.Clear();
 			For Each AttributeData In ChildObjects.Resource Do
 				AttributeOrder.Add().Attribute = Catalogs.Attributes.Load(
 					ChildContext,
@@ -444,8 +447,6 @@ Function GenericLoad(Context, Name, Manager, MetaName) Export
 		
 		If Children.Find("Attribute") <> Undefined Then
 		
-			AttributeOrder = Object.AttributeOrder;
-			AttributeOrder.Clear();
 			For Each AttributeData In ChildObjects.Attribute Do
 				AttributeOrder.Add().Attribute = Catalogs.Attributes.Load(
 					ChildContext,
