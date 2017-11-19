@@ -3,18 +3,18 @@ Procedure PresentationFieldsGetProcessing(Fields, StandardProcessing)
 	
 	StandardProcessing = False;
 	
-	Fields.Add("Configuration");
+	Fields.Add("Config");
 	Fields.Add("Ref");	
 	
 EndProcedure // PresentationFieldsGetProcessing()
 
 Procedure PresentationGetProcessing(Data, Presentation, StandardProcessing)
 	
-	If ValueIsFilled(Data.Configuration) Then
+	If ValueIsFilled(Data.Config) Then
 		
 		StandardProcessing = False;
 		
-		DefaultLanguage = Abc.AttributeValueFromCache(Data.Configuration, "DefaultLanguage");
+		DefaultLanguage = Abc.AttributeValueFromCache(Data.Config, "DefaultLanguage");
 		Presentation = Presentation(Data.Ref, DefaultLanguage);
 		
 	EndIf; 
@@ -28,12 +28,12 @@ Function Presentation(Ref, Language)
 	Query.SetParameter("Language", Language);
 	Query.Text =
 	"SELECT
-	|	StringsValues.Value AS Value
+	|	LocaleStringsValues.Value AS Value
 	|FROM
-	|	Catalog.Strings.Values AS StringsValues
+	|	Catalog.LocaleStrings.Values AS LocaleStringsValues
 	|WHERE
-	|	StringsValues.Ref = &Ref
-	|	AND StringsValues.Language = &Language";
+	|	LocaleStringsValues.Ref = &Ref
+	|	AND LocaleStringsValues.Language = &Language";
 	
 	QueryResult = Query.Execute(); 
 	
@@ -48,7 +48,7 @@ EndFunction // Presentation()
 Function Load(Parameters) Export
 	Var Ref;
 	
-	Configuration = Parameters.Configuration;
+	Config = Parameters.Config;
 	Owner = Parameters.Owner;
 	Path = Parameters.Path;
 	LocalString = Parameters.LocalString;
@@ -56,7 +56,7 @@ Function Load(Parameters) Export
 	
 	SHA1 = SHA1(LocalString);
 	
-	StringCache = Meta.StringCache(Configuration);
+	StringCache = Meta.StringCache(Config);
 	
 	If ValueIsFilled(Ref) Then
 		
@@ -77,16 +77,16 @@ Function Load(Parameters) Export
 			Return Ref;
 		EndIf;
 		
-		StringObject = Catalogs.Strings.CreateItem();
+		StringObject = Catalogs.LocaleStrings.CreateItem();
 		StringObject.Owner = Owner;
-		StringObject.Configuration = Configuration;
+		StringObject.Config = Config;
 		
 	EndIf;
 	
 	For Each LocalStringItem In LocalString.item Do
 		
 		Item = StringObject.Values.Add();
-		Item.Language = Meta.LanguageByCodeFromCache(Configuration, LocalStringItem.Lang);
+		Item.Language = Meta.LanguageByCodeFromCache(Config, LocalStringItem.Lang);
 		Item.Value = LocalStringItem.Content;
 		
 	EndDo; 

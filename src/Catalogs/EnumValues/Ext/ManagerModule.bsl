@@ -1,38 +1,75 @@
 ﻿
-Function Load(Parameters) Export
+Function Load(Context, Data) Export
 	Var Ref;
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Data = Parameters.Data;	
+	Config = Context.Config;
+	Owner  = Context.Owner;
+	Cache  = Context.Cache;
 	
 	// precondition:
-	// # (Configuration == Owner.Owner)
+	// # (Config == Owner.Owner)
 	
 	This = Catalogs.EnumValues;
+	MetaName = "EnumValue";
 	
-	PropertyValues = Data.Properties;
-	UUID = Data.UUID; 
+	Properties = Data.Properties;
+	UUID = Data.UUID;
 	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	CacheItem = Meta.CacheItem(Cache, MetaName, New Structure("UUID", UUID));
+	
+	CacheItem.Owner = Owner;	
+	CacheItem.Name = Properties.Name;
+	
+	BeginTransaction();
+	
+	Object = Meta.GetObject(This, CacheItem);  
+	
+	// Cached fields  
+		
+	FillPropertyValues(Object, CacheItem, CachedFields());
 	
 	// Properties
 	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Configuration = Configuration;
-	Object.Description = PropertyValues.Name;
+	Object.Config = Config;
 	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
+	Abc.Fill(Object, Properties, Abc.Lines(
 		"Comment"
 	));
 		
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
+	Meta.UpdateStrings(Config, CacheItem.Ref, Object, Properties, Abc.Lines(
 	    "Synonym"
 	));
 		
 	Object.Write();	
 	
-	Return Object.Ref;
+	CommitTransaction();
+	
+	Return CacheItem.Ref;
 	
 EndFunction // Load()
+
+Function CachedFields() Export
+	
+	Return "UUID, Name, Owner";
+	
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
+	
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.EnumValues
+		|WHERE
+		|	Config = &Config AND NOT Deleted",
+		CachedFields()
+	);
+	
+	Table = Query.Execute().Unload();
+	
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
+	
+	Return Table;
+	
+EndFunction // Cache()

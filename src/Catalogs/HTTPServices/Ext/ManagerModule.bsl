@@ -1,63 +1,88 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref;
+Function Load(Context, Name) Export
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Path = Parameters.Path;
+	Return Meta.GenericLoad(Context, Name, Catalogs.HTTPServices, "HTTPService");
+		
+EndFunction // Load()
+
+#Region Cache
+
+Function CachedFields() Export
 	
-	// precondition:
-	// # (Configuration == Owner)
-	// # Path is folder path
+	Return "UUID, Name, Owner, SHA1";
 	
-	This = Catalogs.HTTPServices;
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
 	
-	Data = Meta.ReadMetadataXML(Path + ".xml").HTTPService;
-	PropertyValues = Data.Properties;
-	ChildObjects = Data.ChildObjects;
-	UUID = Data.UUID; 
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.HTTPServices
+		|WHERE Owner = &Config AND NOT Deleted",
+		CachedFields()
+	);
 	
-	// Properties
+	Table = Query.Execute().Unload();
 	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
 	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Description = PropertyValues.Name;
+	Return Table;
 	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
-		"Comment"
+EndFunction // Cache()
+
+#EndRegion // Cache
+
+#Region ObjectDescription
+
+Function StandardAttributes() Export
+	
+	Return Undefined;
+	
+EndFunction // StandardAttributes()
+
+Function SimpleTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "Comment"
 		"ReuseSessions"
 		"RootURL"
 		"SessionMaxAge"
-	));
+	);
 	
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
-		"Synonym"
-	));
+EndFunction // SimpleTypeProperties() 
+
+Function LocaleStringTypeProperties() Export
 	
-	// URLTemplates
+	Return Abc.Lines(
+	    "Synonym"
+	);
 	
-	For Each URLTemplate In ChildObjects.URLTemplate Do
-		// ...	
-	EndDo;
+EndFunction // LocaleStringTypeProperties() 
+
+Function FormTypeProperties() Export
 	
-	ChildParameters = Meta.ObjectLoadParameters();
-	ChildParameters.Configuration = Configuration;
-	ChildParameters.Owner = Ref;
+	Return Undefined;
 	
-	// Modules
+EndFunction // FormTypeProperties() 
+
+Function ChildObjectNames() Export
 	
-	ChildParameters.Insert("ModuleKind");
-	ChildParameters.Insert("ModuleRef");
+	Return Abc.Lines(
+		"URLTemplate"
+	);
 	
-	ChildParameters.Path = Abc.JoinPath(Path, "Ext\Module.bsl");
-	ChildParameters.ModuleKind = Enums.ModuleKinds.HTTPServiceModule;
-	ChildParameters.ModuleRef = Object.Module;
-	Object.Module = Catalogs.Modules.Load(ChildParameters);	
-		
-	Object.Write();	
-		
-	Return Object.Ref;
+EndFunction // ChildObjectNames() 
+
+Function ModuleKinds() Export
+	Var ModuleKinds;
 	
-EndFunction // Load()
+	ModuleKinds = New Array;
+	ModuleKinds.Add(Enums.ModuleKinds.HTTPServiceModule);
+	
+	Return ModuleKinds; 
+	
+EndFunction // ModuleKinds()
+
+#EndRegion // ObjectDescription

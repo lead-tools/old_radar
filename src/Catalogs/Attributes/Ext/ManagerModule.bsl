@@ -1,31 +1,41 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref;
+Function Load(Context, Data) Export
+	Var Object, CacheItem;
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Data = Parameters.Data;	
+	Config = Context.Config;
+	Owner  = Context.Owner;
+	Cache  = Context.Cache;
+	Path   = Context.Path;
 	
 	// precondition:
-	// # (Configuration == Owner.Owner)
+	// # (Config == Owner.Owner)
 	
 	This = Catalogs.Attributes;
+	MetaName = "Attribute";
 	
-	PropertyValues = Data.Properties;
+	Properties = Data.Properties;
 	UUID = Data.UUID; 
 	Kind = Enums.AttributeKinds[Data.Type().Name];
 	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	CacheItem = Meta.CacheItem(Cache, MetaName, New Structure("UUID", UUID));  
+	
+	CacheItem.Owner = Owner;	
+	CacheItem.Name = Properties.Name;
+	CacheItem.Kind = Kind;
+	
+	BeginTransaction();
+	
+	Object = Meta.GetObject(This, CacheItem);
+	
+	// Cached fields  
+		
+	FillPropertyValues(Object, CacheItem, CachedFields());
 	
 	// Properties
 	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Configuration = Configuration;
-	Object.Description = PropertyValues.Name;
-	Object.Kind = Kind;
+	Object.Config = Config;
 	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
+	Abc.Fill(Object, Properties, Abc.Lines(
 		"ChoiceFoldersAndItems"
 		"ChoiceHistoryOnInput"
 		"Comment"
@@ -43,7 +53,7 @@ Function Load(Parameters) Export
 	));
 	
 	If Kind = Enums.AttributeKinds.Dimension Then
-		Abc.Fill(Object, PropertyValues, Abc.Lines(
+		Abc.Fill(Object, Properties, Abc.Lines(
 			"Balance"
 			"BaseDimension"
 			"DenyIncompleteValues"
@@ -53,7 +63,7 @@ Function Load(Parameters) Export
 		));	
 	EndIf; 
 	
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
+	Meta.UpdateStrings(Config, CacheItem.Ref, Object, Properties, Abc.Lines(
 	    "Synonym"
 		"EditFormat"
 		"Format"
@@ -62,6 +72,37 @@ Function Load(Parameters) Export
 		
 	Object.Write();	
 	
-	Return Object.Ref;
+	CommitTransaction();
+	
+	Return CacheItem.Ref;
 	
 EndFunction // Load()
+
+Function CachedFields() Export
+	
+	Return "UUID, Name, Owner, Kind";
+	
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
+	
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT
+		|	Ref, %1
+		|FROM Catalog.Attributes
+		|WHERE
+		|	Config = &Config AND NOT Deleted",
+		CachedFields()
+	);
+	
+	Table = Query.Execute().Unload();
+	
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
+	
+	Table.Indexes.Add("UUID");
+	
+	Return Table;
+	
+EndFunction // Cache()

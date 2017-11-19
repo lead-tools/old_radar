@@ -155,6 +155,8 @@
 			<CommonModule>Jobs_sc</CommonModule>
 			<CommonModule>Meta</CommonModule>
 			<CommonModule>Meta_sr</CommonModule>
+			<EventSubscription>PresentationGetProcessing</EventSubscription>
+			<EventSubscription>PresentationFieldsGetProcessing</EventSubscription>
 			<Constant>ExternalDataProcessorsPath</Constant>
 			<Constant>MaxJobs</Constant>
 			<Constant>ChunkSize</Constant>
@@ -177,6 +179,7 @@
 			<Catalog>CommandInterfaces</Catalog>
 			<Catalog>Commands</Catalog>
 			<Catalog>CommonAttributes</Catalog>
+			<Catalog>CommonCommands</Catalog>
 			<Catalog>CommonModules</Catalog>
 			<Catalog>CommonPictures</Catalog>
 			<Catalog>Configurations</Catalog>
@@ -215,7 +218,7 @@
 			<Catalog>SessionParameters</Catalog>
 			<Catalog>SettingsStorages</Catalog>
 			<Catalog>StandardAttributes</Catalog>
-			<Catalog>Strings</Catalog>
+			<Catalog>LocaleStrings</Catalog>
 			<Catalog>StyleItems</Catalog>
 			<Catalog>Subsystems</Catalog>
 			<Catalog>TabularSections</Catalog>

@@ -1,40 +1,77 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref;
+Function Load(Context, Name) Export
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Path = Parameters.Path;
+	Return Meta.GenericLoad(Context, Name, Catalogs.Languages, "Language");
 	
-	// precondition:
-	// # (Configuration == Owner)
-	// # Path is folder path
+EndFunction // Load()  
+
+#Region Cache
+
+Function CachedFields() Export
 	
-	This = Catalogs.Languages;
+	Return "UUID, Name, Owner, SHA1, LanguageCode";
 	
-	Data = Meta.ReadMetadataXML(Path + ".xml").Language;
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
 	
-	PropertyValues = Data.Properties;
-	UUID = Data.UUID; 
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.Languages
+		|WHERE Owner = &Config AND NOT Deleted",
+		CachedFields()
+	);
 	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	Table = Query.Execute().Unload();
 	
-	// Properties
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
 	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Description = PropertyValues.Name;
+	Return Table;
 	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
+EndFunction // Cache()
+
+#EndRegion // Cache
+
+#Region ObjectDescription
+
+Function StandardAttributes() Export
+	
+	Return Undefined;
+	
+EndFunction // StandardAttributes()
+
+Function SimpleTypeProperties() Export
+	
+	Return Abc.Lines(
 	    "LanguageCode"
-	));
+	);
 	
-	//Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
-	//    "Synonym"
-	//));
+EndFunction // SimpleTypeProperties() 
+
+Function LocaleStringTypeProperties() Export
 	
-	Object.Write();	
+	Return Undefined;
 	
-	Return Object.Ref;
+EndFunction // LocaleStringTypeProperties() 
+
+Function FormTypeProperties() Export
 	
-EndFunction // Load()
+	Return Undefined;
+	
+EndFunction // FormTypeProperties() 
+
+Function ChildObjectNames() Export
+	
+	Return Undefined;
+	
+EndFunction // ChildObjectNames() 
+
+Function ModuleKinds() Export
+		
+	Return Undefined; 
+	
+EndFunction // ModuleKinds()
+
+#EndRegion // ObjectDescription

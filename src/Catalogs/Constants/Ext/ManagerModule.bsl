@@ -1,30 +1,51 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref;
+Function Load(Context, Name) Export
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Path = Parameters.Path;	
+	Return Meta.GenericLoad(Context, Name, Catalogs.Constants, "Constant");
 	
-	// precondition:
-	// # (Configuration == Owner)
+EndFunction // Load()
+
+#Region Cache
+
+Function CachedFields() Export
 	
-	This = Catalogs.Constants;
+	Return "UUID, Name, Owner, SHA1";
 	
-	Data = Meta.ReadMetadataXML(Path + ".xml").Constant;
-	PropertyValues = Data.Properties;
-	UUID = Data.UUID; 
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
 	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.Constants
+		|WHERE Owner = &Config AND NOT Deleted",
+		CachedFields()
+	);
 	
-	// Properties
+	Table = Query.Execute().Unload();
 	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Description = PropertyValues.Name;
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
 	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
-		"ChoiceFoldersAndItems"
+	Return Table;
+	
+EndFunction // Cache()
+
+#EndRegion // Cache
+
+#Region ObjectDescription
+
+Function StandardAttributes() Export
+	
+	Return Undefined;
+	
+EndFunction // StandardAttributes()
+
+Function SimpleTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "ChoiceFoldersAndItems"
 		"ChoiceHistoryOnInput"
 		"Comment"
 		"DataLockControlMode"
@@ -36,34 +57,46 @@ Function Load(Parameters) Export
 		"PasswordMode"
 		"QuickChoice"
 		"UseStandardCommands"
-	)); 
+	);
 	
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
-		"EditFormat"
+EndFunction // SimpleTypeProperties() 
+
+Function LocaleStringTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "EditFormat"
 		"Explanation"
 		"ExtendedPresentation"
 		"Format"
 		"Synonym"
 		"ToolTip"
-	));
-		
-	BeginTransaction();
+	);
 	
-	ChildParameters = Meta.ObjectLoadParameters();
-	ChildParameters.Configuration = Configuration;
-	ChildParameters.Owner = Ref;
-	ChildParameters.Path = Abc.JoinPath(Path, "Ext\ValueManagerModule.bsl");
+EndFunction // LocaleStringTypeProperties() 
 
-	ChildParameters.Insert("ModuleKind", Enums.ModuleKinds.ValueManagerModule);
-	ChildParameters.Insert("ModuleRef", Object.ValueManagerModule);
-		
-	Object.ValueManagerModule = Catalogs.Modules.Load(ChildParameters);
+Function FormTypeProperties() Export
 	
-	Object.Write();	
+	Return Abc.Lines(
+	    "ChoiceForm"
+		"DefaultForm"
+	);
 	
-	CommitTransaction();
+EndFunction // FormTypeProperties() 
+
+Function ChildObjectNames() Export
 	
+	Return Undefined;
 	
-	Return Object.Ref;
+EndFunction // ChildObjectNames() 
+
+Function ModuleKinds() Export
+	Var ModuleKinds;
 	
-EndFunction // Load()
+	ModuleKinds = New Array;
+	ModuleKinds.Add(Enums.ModuleKinds.ValueManagerModule);
+	
+	Return ModuleKinds; 
+	
+EndFunction // ModuleKinds()
+
+#EndRegion // ObjectDescription

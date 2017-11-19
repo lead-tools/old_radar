@@ -1,96 +1,89 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref;
+Function Load(Context, Name) Export
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Path = Parameters.Path;
-	
-	// precondition:
-	// # (Configuration == Owner)
-	// # Path is folder path
-	
-	This = Catalogs.SettingsStorages;
-	
-	Data = Meta.ReadMetadataXML(Path + ".xml").SettingsStorage;
-	PropertyValues = Data.Properties;
-	ChildObjects = Data.ChildObjects;
-	UUID = Data.UUID; 
-	
-	// Properties
-	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
-	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Description = PropertyValues.Name;
-	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
-		"Comment"
-	));
-	
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
-		"Synonym"
-	));
-	
-	BeginTransaction();
-	
-	ChildParameters = Meta.ObjectLoadParameters();
-	ChildParameters.Configuration = Configuration;
-	ChildParameters.Owner = Ref;
-		
-	// Forms
-	
-	Forms = New Structure;
-	
-	For Each FormName In ChildObjects.Form Do
-		ChildParameters.Path = Abc.JoinPath(Path, "Forms\" + FormName);
-		Forms.Insert(FormName, Catalogs.Forms.Load(ChildParameters));
-	EndDo; 
-	
-	For Each PropertyName In Abc.Lines(
-			"AuxiliaryLoadForm"
-			"AuxiliarySaveForm"
-			"DefaultLoadForm"
-			"DefaultSaveForm"
-		) Do
-		
-		FormFullName = PropertyValues[PropertyName];
-		FormName = Mid(FormFullName, StrFind(FormFullName, ".", SearchDirection.FromEnd) + 1);
-		
-		If Not IsBlankString(FormName) Then
-			If Not Forms.Property(FormName, Object[PropertyName]) Then
-				Raise "form not found";
-			EndIf; 
-		EndIf; 
-		
-	EndDo;	
-	
-	ChildParameters.Path = Undefined;
-	
-	// Templates
-	
-	For Each TemplateName In ChildObjects.Template Do
-		ChildParameters.Path = Abc.JoinPath(Path, "Templates\" + TemplateName);
-		Template = Catalogs.Templates.Load(ChildParameters);
-	EndDo;
-	
-	ChildParameters.Data = Undefined;
-	
-	// Modules
-	
-	ChildParameters.Insert("ModuleKind");
-	ChildParameters.Insert("ModuleRef");
-	
-	ChildParameters.Path = Abc.JoinPath(Path, "Ext\ManagerModule.bsl");
-	ChildParameters.ModuleKind = Enums.ModuleKinds.ManagerModule;
-	ChildParameters.ModuleRef = Object.ManagerModule;
-	Object.ManagerModule = Catalogs.Modules.Load(ChildParameters);	
-	
-	Object.Write();	
-	
-	CommitTransaction();
-	
-	Return Object.Ref;
+	Return Meta.GenericLoad(Context, Name, Catalogs.SettingsStorages, "SettingsStorage");
 	
 EndFunction // Load()
+
+#Region Cache
+
+Function CachedFields() Export
+	
+	Return "UUID, Name, Owner, SHA1," + StrConcat(FormTypeProperties(), ", ");
+	
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
+	
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.SettingsStorages
+		|WHERE Owner = &Config AND NOT Deleted",
+		CachedFields()
+	);
+	
+	Table = Query.Execute().Unload();
+	
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
+	
+	Return Table;
+	
+EndFunction // Cache()
+
+#EndRegion // Cache
+
+#Region ObjectDescription
+
+Function StandardAttributes() Export
+	
+	Return Undefined;
+	
+EndFunction // StandardAttributes()
+
+Function SimpleTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "Comment"
+	);
+	
+EndFunction // SimpleTypeProperties() 
+
+Function LocaleStringTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "Synonym"
+	);
+	
+EndFunction // LocaleStringTypeProperties() 
+
+Function FormTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "DefaultLoadForm"
+		"DefaultSaveForm"
+	);
+	
+EndFunction // FormTypeProperties() 
+
+Function ChildObjectNames() Export
+	
+	Return Abc.Lines(
+		"Form"
+		"Template"
+	);
+	
+EndFunction // ChildObjectNames() 
+
+Function ModuleKinds() Export
+	Var ModuleKinds;
+	
+	ModuleKinds = New Array;
+	ModuleKinds.Add(Enums.ModuleKinds.ManagerModule);
+	
+	Return ModuleKinds; 
+	
+EndFunction // ModuleKinds()
+
+#EndRegion // ObjectDescription

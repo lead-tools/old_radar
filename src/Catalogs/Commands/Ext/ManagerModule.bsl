@@ -1,68 +1,92 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref;
+Function Load(Context, Data) Export
+	Var Object, CacheItem;
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Path = Parameters.Path;
-	Data = Parameters.Data;
+	Config = Context.Config;
+	Owner  = Context.Owner;
+	Cache  = Context.Cache;
+	Path   = Context.Path;
 	
 	// precondition:
-	// # (Configuration == Owner) or (Configuration == Owner.Owner)
+	// # (Config == Owner.Owner)
 	// # Path is folder path
 	
 	This = Catalogs.Commands;
+	MetaName = "Command";
 	
-	If Configuration = Owner Then
-		Data = Meta.ReadMetadataXML(Path + ".xml").CommonCommand;
-	EndIf; 
+	Properties = Data.Properties;
+	UUID = Data.UUID;
 	
-	Command = Data;
-	PropertyValues = Command.Properties;
-	UUID = Command.UUID;
+	CacheItem = Meta.CacheItem(Cache, MetaName, New Structure("UUID", UUID));  
+	
+	CacheItem.Owner = Owner;	
+	CacheItem.Name = Properties.Name;
+	
+	BeginTransaction();
+	
+	Object = Meta.GetObject(This, CacheItem);
+	
+	// Cached fields  
 		
+	FillPropertyValues(Object, CacheItem, CachedFields());
+	
 	// Properties
 	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	Object.Config = Config;
 	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Configuration = Configuration;
-	Object.Description = PropertyValues.Name;
-	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
+	Abc.Fill(Object, Properties, Abc.Lines(
 		"Comment"
 		"Representation"
-		//"IncludeHelpInContents"
 		"ParameterUseMode"
 		"ModifiesData"
 	)); 
 	
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
+	Meta.UpdateStrings(Config, CacheItem.Ref, Object, Properties, Abc.Lines(
 	    "Synonym"
 		"ToolTip"
 	));
 	
-	BeginTransaction();
+	Object.Write();
 	
-	ChildParameters = Meta.ObjectLoadParameters();
-	ChildParameters.Configuration = Configuration;
-	ChildParameters.Owner = Ref;
+	ChildContext = Meta.LoadContext(Config, CacheItem.Ref, Cache, Abc.JoinPath(Path, "Commands\" + Properties.Name));
 	
-	// Modules
+	// Module
 	
-	ChildParameters.Insert("ModuleKind");
-	ChildParameters.Insert("ModuleRef");
-	
-	ChildParameters.Path = Abc.JoinPath(Path, StrTemplate("Commands\%1\Ext\CommandModule.bsl"));
-	ChildParameters.ModuleKind = Enums.ModuleKinds.CommandModule;
-	ChildParameters.ModuleRef = Object.CommandModule;
-	Object.CommandModule = Catalogs.Modules.Load(ChildParameters);
-	
-	Object.Write();	
+	CommandModule = Catalogs.Modules.Load(
+		ChildContext,
+		Enums.ModuleKinds.CommandModule
+	);	
 	
 	CommitTransaction();
 	
-	Return Object.Ref;
+	Return CacheItem.Ref;
 	
 EndFunction // Load()
+  
+Function CachedFields() Export
+	
+	Return "UUID, Name, Owner";
+	
+EndFunction // CachedFields() 
+
+Function Cache(Config) Export
+	
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.Commands
+		|WHERE Config = &Config AND NOT Deleted",
+		CachedFields()
+	);
+	
+	Table = Query.Execute().Unload();
+	
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
+	
+	Table.Indexes.Add("UUID");
+	
+	Return Table;
+	
+EndFunction // Cache()
+ 

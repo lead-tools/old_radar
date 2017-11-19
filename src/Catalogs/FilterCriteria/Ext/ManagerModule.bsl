@@ -1,99 +1,92 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref;
+Function Load(Context, Name) Export
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Path = Parameters.Path;
+	Return Meta.GenericLoad(Context, Name, Catalogs.FilterCriteria, "FilterCriterion");
 	
-	// precondition:
-	// # (Configuration == Owner)
-	// # Path is folder path
+EndFunction // Load()
+
+#Region Cache
+
+Function CachedFields() Export
 	
-	This = Catalogs.FilterCriteria;
+	Return "UUID, Name, Owner, SHA1," + StrConcat(FormTypeProperties(), ", ");
 	
-	Data = Meta.ReadMetadataXML(Path + ".xml").FilterCriterion;
-	PropertyValues = Data.Properties;
-	ChildObjects = Data.ChildObjects;
-	UUID = Data.UUID; 
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
 	
-	// Properties
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.FilterCriteria
+		|WHERE Owner = &Config AND NOT Deleted",
+		CachedFields()
+	);
 	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	Table = Query.Execute().Unload();
 	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Description = PropertyValues.Name;
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
 	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
-		"Comment"
+	Return Table;
+	
+EndFunction // Cache()
+
+#EndRegion // Cache
+
+#Region ObjectDescription
+
+Function StandardAttributes() Export
+	
+	Return Undefined;
+	
+EndFunction // StandardAttributes()
+
+Function SimpleTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "Comment"
 		"UseStandardCommands"
-	));
+	);
 	
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
-		"Explanation"
+EndFunction // SimpleTypeProperties() 
+
+Function LocaleStringTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "Explanation"
 		"ExtendedListPresentation"
 		"ListPresentation"
 		"Synonym"
-	));
+	);
 	
-	BeginTransaction();
+EndFunction // LocaleStringTypeProperties() 
+
+Function FormTypeProperties() Export
 	
-	ChildParameters = Meta.ObjectLoadParameters();
-	ChildParameters.Configuration = Configuration;
-	ChildParameters.Owner = Ref;
-			
-	// Forms
+	Return Abc.Lines(
+		"DefaultForm"
+	);
 	
-	Forms = New Structure;
+EndFunction // FormTypeProperties() 
+
+Function ChildObjectNames() Export
 	
-	For Each FormName In ChildObjects.Form Do
-		ChildParameters.Path = Abc.JoinPath(Path, "Forms\" + FormName);
-		Forms.Insert(FormName, Catalogs.Forms.Load(ChildParameters));
-	EndDo; 
+	Return Abc.Lines(
+		"Form"
+		"Command"
+	);
 	
-	For Each PropertyName In Abc.Lines(
-			"AuxiliaryForm"
-			"DefaultForm"
-		) Do
-		
-		FormFullName = PropertyValues[PropertyName];
-		FormName = Mid(FormFullName, StrFind(FormFullName, ".", SearchDirection.FromEnd) + 1);
-		
-		If Not IsBlankString(FormName) Then
-			If Not Forms.Property(FormName, Object[PropertyName]) Then
-				Raise "form not found";
-			EndIf; 
-		EndIf; 
-		
-	EndDo; 
+EndFunction // ChildObjectNames() 
+
+Function ModuleKinds() Export
+	Var ModuleKinds;
 	
-	// Commands
+	ModuleKinds = New Array;
+	ModuleKinds.Add(Enums.ModuleKinds.ManagerModule);
 	
-	ChildParameters.Path = Path;
+	Return ModuleKinds; 
 	
-	For Each CommandData In ChildObjects.Command Do
-		ChildParameters.Data = CommandData;
-		Command = Catalogs.Commands.Load(ChildParameters);
-	EndDo;	
-	
-	ChildParameters.Path = Undefined;
-	ChildParameters.Data = Undefined;
-		
-	// Modules
-	
-	ChildParameters.Insert("ModuleKind");
-	ChildParameters.Insert("ModuleRef");
-	
-	ChildParameters.Path = Abc.JoinPath(Path, "Ext\ManagerModule.bsl");
-	ChildParameters.ModuleKind = Enums.ModuleKinds.ManagerModule;
-	ChildParameters.ModuleRef = Object.ManagerModule;
-	Object.ManagerModule = Catalogs.Modules.Load(ChildParameters);	
-		
-	Object.Write();	
-	
-	CommitTransaction();
-	
-	Return Object.Ref;
-	
-EndFunction // Load()
+EndFunction // ModuleKinds()
+
+#EndRegion // ObjectDescription

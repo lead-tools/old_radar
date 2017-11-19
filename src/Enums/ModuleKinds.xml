@@ -66,6 +66,22 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="989995ad-3ad3-44a0-8ab8-cfb610ee59ff">
+				<Properties>
+					<Name>FormModule</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Form module</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Модуль формы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="9ed3b6d3-ddcd-4e02-94cf-9feac1c98c55">
 				<Properties>
 					<Name>HTTPServiceModule</Name>

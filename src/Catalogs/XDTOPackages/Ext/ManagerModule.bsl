@@ -1,40 +1,80 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref;
+Function Load(Context, Name) Export
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Path = Parameters.Path;
-	
-	// precondition:
-	// # (Configuration == Owner)
-	// # Path is folder path
-	
-	This = Catalogs.XDTOPackages;
-	
-	Data = Meta.ReadMetadataXML(Path + ".xml").XDTOPackage;
-	PropertyValues = Data.Properties;
-	UUID = Data.UUID; 
-	
-	// Properties
-	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
-	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Description = PropertyValues.Name;
-	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
-		"Comment"
-		"Namespace"
-	));
-	
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
-		"Synonym"
-	));	
-		
-	Object.Write();	
-		
-	Return Object.Ref;
+	Return Meta.GenericLoad(Context, Name, Catalogs.XDTOPackages, "XDTOPackage");
 	
 EndFunction // Load()
+
+#Region Cache
+
+Function CachedFields() Export
+	
+	Return "UUID, Name, Owner, SHA1";
+	
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
+	
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.XDTOPackages
+		|WHERE Owner = &Config AND NOT Deleted",
+		CachedFields()
+	);
+	
+	Table = Query.Execute().Unload();
+	
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
+	
+	Return Table;
+	
+EndFunction // Cache()
+
+#EndRegion // Cache
+
+#Region ObjectDescription
+
+Function StandardAttributes() Export
+	
+	Return Undefined;
+	
+EndFunction // StandardAttributes()
+
+Function SimpleTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "Comment"
+		"Namespace"
+	);
+	
+EndFunction // SimpleTypeProperties() 
+
+Function LocaleStringTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "Synonym"
+	);
+	
+EndFunction // LocaleStringTypeProperties() 
+
+Function FormTypeProperties() Export
+	
+	Return Undefined;
+	
+EndFunction // FormTypeProperties() 
+
+Function ChildObjectNames() Export
+	
+	Return Undefined;
+	
+EndFunction // ChildObjectNames() 
+
+Function ModuleKinds() Export
+	
+	Return Undefined; 
+	
+EndFunction // ModuleKinds()
+
+#EndRegion // ObjectDescription

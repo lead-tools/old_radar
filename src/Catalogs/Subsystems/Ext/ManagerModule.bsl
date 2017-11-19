@@ -1,59 +1,84 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref, Parent;
+Function Load(Context, Name) Export
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Path = Parameters.Path;
-	Parameters.Property("Parent", Parent);
+	Return Meta.GenericLoad(Context, Name, Catalogs.Subsystems, "Subsystem");
 	
-	// precondition:
-	// # Parent is subsystem
-	// # Path is folder path
+EndFunction // Load()
+
+#Region Cache
+
+Function CachedFields() Export
 	
-	This = Catalogs.Subsystems;
+	Return "UUID, Name, Owner, Parent, SHA1";
 	
-	Data = Meta.ReadMetadataXML(Path + ".xml").Subsystem;
-	PropertyValues = Data.Properties;
-	ChildObjects = Data.ChildObjects;
-	UUID = Data.UUID; 
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
 	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.Subsystems
+		|WHERE Owner = &Config AND NOT Deleted",
+		CachedFields()
+	);
 	
-	// Properties
+	Table = Query.Execute().Unload();
 	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Parent = Parent;
-	Object.Description = PropertyValues.Name;
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
 	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
+	Return Table;
+	
+EndFunction // Cache()
+
+#EndRegion // Cache
+
+#Region ObjectDescription
+
+Function StandardAttributes() Export
+	
+	Return Undefined;
+	
+EndFunction // StandardAttributes()
+
+Function SimpleTypeProperties() Export
+	
+	Return Abc.Lines(
 	    "Comment"
 		"IncludeHelpInContents"
 		"IncludeInCommandInterface"
-	));
+	);
 	
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
+EndFunction // SimpleTypeProperties() 
+
+Function LocaleStringTypeProperties() Export
+	
+	Return Abc.Lines(
 	    "Explanation"
 		"Synonym"
-	));
+	);
 	
-	Object.Write();
+EndFunction // LocaleStringTypeProperties() 
+
+Function FormTypeProperties() Export
 	
-	// Operations
+	Return Undefined;
 	
-	ChildParameters = Meta.ObjectLoadParameters();
-	ChildParameters.Configuration = Configuration;
-	ChildParameters.Owner = Owner;
-	ChildParameters.Insert("Parent", Ref);
+EndFunction // FormTypeProperties() 
+
+Function ChildObjectNames() Export
 	
-	For Each Subsystem In ChildObjects.Subsystem Do
-		
-		ChildParameters.Path = Abc.JoinPath(Path, "Subsystems\" + Subsystem);
-		This.Load(ChildParameters);
-		
-	EndDo;	
+	Return Abc.Lines(
+		"Subsystem"
+	);
 	
-	Return Object.Ref;
+EndFunction // ChildObjectNames() 
+
+Function ModuleKinds() Export
 	
-EndFunction // Load()
+	Return Undefined; 
+	
+EndFunction // ModuleKinds()
+
+#EndRegion // ObjectDescription

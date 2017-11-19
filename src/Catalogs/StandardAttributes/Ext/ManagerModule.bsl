@@ -1,37 +1,41 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref;
+Function Load(Context, Data) Export
+	Var Object;
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Data = Parameters.Data;
+	Config = Context.Config;
+	Owner  = Context.Owner;
+	Cache  = Context.Cache;
 	
 	// precondition:
-	// # (Configuration == Owner.Owner)
+	// # (Config == Owner.Owner)
 	
 	This = Catalogs.StandardAttributes;
+	MetaName = "StandardAttribute"; 
 	
-	PropertyValues = Data;
+	Properties = Data;
+	Name = Properties.Name;
+		
+	CacheItem = Meta.CacheItem(Cache, MetaName, New Structure("Owner, Name", Owner, Name));
 	
-	If Ref = Undefined Then
-		Ref = This.FindByDescription(PropertyValues.Name, True,, Owner);
-	EndIf; 
+	BeginTransaction();
 	
-	If Not ValueIsFilled(Ref) Then
+	If Not ValueIsFilled(CacheItem.Ref) Then
 		Object = This.CreateItem();
-		Ref = This.GetRef();
-		Object.SetNewObjectRef(Ref);
+		CacheItem.Ref = This.GetRef();
+		Object.SetNewObjectRef(CacheItem.Ref);
 	Else
-		Object = Ref.GetObject();
+		Object = CacheItem.Ref.GetObject();
 	EndIf;  
+	
+	// Cached fields  
+		
+	FillPropertyValues(Object, CacheItem, CachedFields());
 	
 	// Properties
 	
-	Object.Owner = Owner;
-	Object.Configuration = Configuration;
-	Object.Description = PropertyValues.Name;
+	Object.Config = Config;
 	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
+	Abc.Fill(Object, Properties, Abc.Lines(
 		"ChoiceHistoryOnInput"
 		"Comment"
 		"CreateOnInput"
@@ -46,7 +50,7 @@ Function Load(Parameters) Export
 		"QuickChoice"
 	)); 
 	
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
+	Meta.UpdateStrings(Config, CacheItem.Ref, Object, Properties, Abc.Lines(
 	    "Synonym"
 		"Format"
 		"ToolTip"
@@ -54,6 +58,34 @@ Function Load(Parameters) Export
 		
 	Object.Write();	
 	
-	Return Object.Ref;
+	CommitTransaction();
+	
+	Return CacheItem.Ref;
 	
 EndFunction // Load()
+
+Function CachedFields() Export
+	
+	Return "Name, Owner";
+	
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
+	
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.StandardAttributes
+		|WHERE
+		|	Config = &Config AND NOT Deleted",
+		CachedFields()
+	);
+	
+	Table = Query.Execute().Unload();
+	
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
+	
+	Return Table;
+	
+EndFunction // Cache()

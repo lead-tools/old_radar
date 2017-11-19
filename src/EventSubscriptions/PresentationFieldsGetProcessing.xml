@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<EventSubscription uuid="ecfa5a5b-31da-4a14-bd11-c09d5ddb5768">
+		<Properties>
+			<Name>PresentationFieldsGetProcessing</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Presentation fields get processing</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Source>
+				<v8:Type>cfg:CatalogManager.BusinessProcesses</v8:Type>
+				<v8:Type>cfg:CatalogManager.CommonModules</v8:Type>
+				<v8:Type>cfg:CatalogManager.FilterCriteria</v8:Type>
+				<v8:Type>cfg:CatalogManager.SessionParameters</v8:Type>
+				<v8:Type>cfg:CatalogManager.Templates</v8:Type>
+				<v8:Type>cfg:CatalogManager.Tasks</v8:Type>
+				<v8:Type>cfg:CatalogManager.Enums</v8:Type>
+				<v8:Type>cfg:CatalogManager.Constants</v8:Type>
+				<v8:Type>cfg:CatalogManager.Documents</v8:Type>
+				<v8:Type>cfg:CatalogManager.Catalogs</v8:Type>
+				<v8:Type>cfg:CatalogManager.SettingsStorages</v8:Type>
+				<v8:Type>cfg:CatalogManager.DocumentNumerators</v8:Type>
+				<v8:Type>cfg:CatalogManager.Forms</v8:Type>
+				<v8:Type>cfg:CatalogManager.FunctionalOptionsParameters</v8:Type>
+				<v8:Type>cfg:CatalogManager.TabularSections</v8:Type>
+				<v8:Type>cfg:CatalogManager.AccountingRegisters</v8:Type>
+				<v8:Type>cfg:CatalogManager.WSReferences</v8:Type>
+				<v8:Type>cfg:CatalogManager.AccumulationRegisters</v8:Type>
+				<v8:Type>cfg:CatalogManager.DocumentJournals</v8:Type>
+				<v8:Type>cfg:CatalogManager.WebServices</v8:Type>
+				<v8:Type>cfg:CatalogManager.InformationRegisters</v8:Type>
+				<v8:Type>cfg:CatalogManager.EnumValues</v8:Type>
+				<v8:Type>cfg:CatalogManager.StandardAttributes</v8:Type>
+				<v8:Type>cfg:CatalogManager.ChartsOfCharacteristicTypes</v8:Type>
+				<v8:Type>cfg:CatalogManager.Commands</v8:Type>
+				<v8:Type>cfg:CatalogManager.ChartsOfAccounts</v8:Type>
+				<v8:Type>cfg:CatalogManager.CommonAttributes</v8:Type>
+				<v8:Type>cfg:CatalogManager.HTTPServices</v8:Type>
+				<v8:Type>cfg:CatalogManager.DataProcessors</v8:Type>
+				<v8:Type>cfg:CatalogManager.ExchangePlans</v8:Type>
+				<v8:Type>cfg:CatalogManager.CommonPictures</v8:Type>
+				<v8:Type>cfg:CatalogManager.XDTOPackages</v8:Type>
+				<v8:Type>cfg:CatalogManager.Reports</v8:Type>
+				<v8:Type>cfg:CatalogManager.CommonCommands</v8:Type>
+				<v8:Type>cfg:CatalogManager.Languages</v8:Type>
+				<v8:Type>cfg:CatalogManager.Attributes</v8:Type>
+				<v8:Type>cfg:CatalogManager.CalculationRegisters</v8:Type>
+				<v8:Type>cfg:CatalogManager.ChartsOfCalculationTypes</v8:Type>
+				<v8:Type>cfg:CatalogManager.CommandGroups</v8:Type>
+				<v8:Type>cfg:CatalogManager.FunctionalOptions</v8:Type>
+				<v8:Type>cfg:CatalogManager.Sequences</v8:Type>
+				<v8:Type>cfg:CatalogManager.Roles</v8:Type>
+				<v8:Type>cfg:CatalogManager.Subsystems</v8:Type>
+				<v8:Type>cfg:CatalogManager.EventSubscriptions</v8:Type>
+				<v8:Type>cfg:CatalogManager.ScheduledJobs</v8:Type>
+			</Source>
+			<Event>PresentationFieldsGetProcessing</Event>
+			<Handler>CommonModule.Meta.PresentationFieldsGetProcessingPresentationFieldsGetProcessing</Handler>
+		</Properties>
+	</EventSubscription>
+</MetaDataObject>

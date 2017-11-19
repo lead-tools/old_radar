@@ -61,7 +61,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Owners</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.RegisterRecords</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.BaseCalculationTypes</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">9f582b33-cd2f-47d5-9ecc-35dc3f779785</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Help</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Meta</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Meta_sr</xr:Item>
@@ -177,13 +176,14 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Locations</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Modules</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonPictures</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Strings</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.LocaleStrings</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Templates</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.TypeLinks</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Types</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Values</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.AttributeKinds</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.StandardAttributes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.CommonCommands</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -1,51 +1,56 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref;
+Function Load(Context, Data) Export
+	Var Object, CacheItem;
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Data = Parameters.Data;
+	Config = Context.Config;
+	Owner  = Context.Owner;
+	Cache  = Context.Cache;
+	Path   = Context.Path;
 	
 	// precondition:
-	// # (Configuration == Owner.Owner)
+	// # (Config == Owner.Owner)
 	
 	This = Catalogs.TabularSections;
+	MetaName = "TabularSection";
 	
-	TabularSection = Data;
-	PropertyValues = TabularSection.Properties;
-	ChildObjects = TabularSection.ChildObjects;
-	UUID = TabularSection.UUID;
+	Properties = Data.Properties;
+	ChildObjects = Data.ChildObjects;
+	UUID = Data.UUID;
+	
+	CacheItem = Meta.CacheItem(Context.Cache, MetaName, New Structure("UUID", UUID));
+	
+	CacheItem.Owner = Owner;	
+	CacheItem.Name = Properties.Name;
+	
+	BeginTransaction();
+	
+	Object = Meta.GetObject(This, CacheItem);
+	
+	// Cached fields  
 		
+	FillPropertyValues(Object, CacheItem, CachedFields());
+	
 	// Properties
 	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	Object.Config = Config;
 	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Description = PropertyValues.Name;
-	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
+	Abc.Fill(Object, Properties, Abc.Lines(
 		"Comment"
 		"FillChecking"
 	)); 
 	
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
+	Meta.UpdateStrings(Config, CacheItem.Ref, Object, Properties, Abc.Lines(
 	    "Synonym"
 		"ToolTip"
 	));
 	
-	BeginTransaction();
-	
-	ChildParameters = Meta.ObjectLoadParameters();
-	ChildParameters.Configuration = Configuration;
-	ChildParameters.Owner = Ref;
+	ChildContext = Meta.LoadContext(Config, CacheItem.Ref, Cache);
 	
 	// Standard attributes
 	
-	If PropertyValues.StandardAttributes <> Undefined Then
-		For Each StandardAttributeData In PropertyValues.StandardAttributes.StandardAttribute Do
-			ChildParameters.Data = StandardAttributeData;
-			StandardAttribute = Catalogs.StandardAttributes.Load(ChildParameters);
+	If Properties.StandardAttributes <> Undefined Then
+		For Each StandardAttributeData In Properties.StandardAttributes.StandardAttribute Do
+			StandardAttribute = Catalogs.StandardAttributes.Load(ChildContext, StandardAttributeData);
 		EndDo; 
 	EndIf; 
 	
@@ -55,16 +60,40 @@ Function Load(Parameters) Export
 	AttributeOrder.Clear();
 		
 	For Each AttributeData In ChildObjects.Attribute Do
-		ChildParameters.Data = AttributeData;
-		AttributeOrder.Add().Attribute = Catalogs.Attributes.Load(ChildParameters);
+		AttributeOrder.Add().Attribute = Catalogs.Attributes.Load(ChildContext, AttributeData);
 	EndDo;
-	
-	ChildParameters.Data = Undefined;
 	
 	Object.Write();	
 	
 	CommitTransaction();
 	
-	Return Object.Ref;
+	Return CacheItem.Ref;
 	
 EndFunction // Load()
+
+Function CachedFields() Export
+	
+	Return "UUID, Name, Owner";
+	
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
+	
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.TabularSections
+		|WHERE Config = &Config AND NOT Deleted",
+		CachedFields()
+	);
+	
+	Table = Query.Execute().Unload();
+	
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
+	
+	Table.Indexes.Add("UUID");
+	
+	Return Table;
+	
+EndFunction // Cache()

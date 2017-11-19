@@ -1,72 +1,85 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref;
+Function Load(Context, Name) Export
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Path = Parameters.Path;
-	
-	// precondition:
-	// # (Configuration == Owner)
-	// # Path is folder path
-	
-	This = Catalogs.Sequences;
-	
-	Data = Meta.ReadMetadataXML(Path + ".xml").Sequence;
-	PropertyValues = Data.Properties;
-	ChildObjects = Data.ChildObjects;
-	UUID = Data.UUID; 
-	
-	// Properties
-	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
-	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Description = PropertyValues.Name;
-	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
-		"Comment"
-		"DataLockControlMode"
-		"MoveBoundaryOnPosting"
-	));
-	
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
-		"Synonym"
-	));
-	
-	BeginTransaction();
-	
-	ChildParameters = Meta.ObjectLoadParameters();
-	ChildParameters.Configuration = Configuration;
-	ChildParameters.Owner = Ref;
-		
-	// Attributes
-	
-	AttributeOrder = Object.AttributeOrder;
-	AttributeOrder.Clear();
-		
-	For Each DimensionData In ChildObjects.Dimension Do
-		ChildParameters.Data = DimensionData;
-		AttributeOrder.Add().Attribute = Catalogs.Attributes.Load(ChildParameters);
-	EndDo;
-	
-	ChildParameters.Data = Undefined;
-	
-	// Modules
-	
-	ChildParameters.Insert("ModuleKind");
-	ChildParameters.Insert("ModuleRef");
-	
-	ChildParameters.Path = Abc.JoinPath(Path, "Ext\RecordSetModule.bsl");
-	ChildParameters.ModuleKind = Enums.ModuleKinds.RecordSetModule;
-	ChildParameters.ModuleRef = Object.RecordSetModule;
-	Object.RecordSetModule = Catalogs.Modules.Load(ChildParameters);	
-		
-	Object.Write();	
-	
-	CommitTransaction();
-	
-	Return Object.Ref;
+	Return Meta.GenericLoad(Context, Name, Catalogs.Sequences, "Sequence");
 	
 EndFunction // Load()
+
+#Region Cache
+
+Function CachedFields() Export
+	
+	Return "UUID, Name, Owner, SHA1";
+	
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
+	
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.Sequences
+		|WHERE Owner = &Config AND NOT Deleted",
+		CachedFields()
+	);
+	
+	Table = Query.Execute().Unload();
+	
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
+	
+	Return Table;
+	
+EndFunction // Cache()
+
+#EndRegion // Cache
+
+#Region ObjectDescription
+
+Function StandardAttributes() Export
+	
+	Return Undefined;
+	
+EndFunction // StandardAttributes()
+
+Function SimpleTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "Comment"
+		"DataLockControlMode"
+		"MoveBoundaryOnPosting"
+	);
+	
+EndFunction // SimpleTypeProperties() 
+
+Function LocaleStringTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "Synonym"
+	);
+	
+EndFunction // LocaleStringTypeProperties() 
+
+Function FormTypeProperties() Export
+	
+	Return Undefined;
+	
+EndFunction // FormTypeProperties() 
+
+Function ChildObjectNames() Export
+	
+	Return Undefined;
+	
+EndFunction // ChildObjectNames() 
+
+Function ModuleKinds() Export
+	Var ModuleKinds;
+	
+	ModuleKinds = New Array;
+	ModuleKinds.Add(Enums.ModuleKinds.RecordSetModule);
+	
+	Return ModuleKinds; 
+	
+EndFunction // ModuleKinds()
+
+#EndRegion // ObjectDescription

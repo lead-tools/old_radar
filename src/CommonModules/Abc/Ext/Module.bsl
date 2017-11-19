@@ -53,10 +53,13 @@ Function Fill(Dst, Src, Keys) Export
 	Var Key;
 	
 	For Each Key In Keys Do
+		Key = TrimAll(Key);
 		If Not Assign(Dst[Key], Src[Key]) Then
 			Raise StrTemplate("assignment failed; key: `%1`", Key);
 		EndIf; 
 	EndDo; 
+	
+	Return Dst;
 	
 EndFunction // Fill()
 
@@ -74,6 +77,42 @@ Function FileExists(FullFileName) Export
 	Return File.Exist();
 	
 EndFunction // FileExists()
+
+Function Assert(Value, Message = Undefined) Export
+	If Value = False Or Not ValueIsFilled(Value) Then
+		If Message = Undefined Then
+			Message = NStr(
+				"en = 'Precondition violation!';
+				|ru = 'Нарушение предусловия!'"
+			)
+		EndIf; 
+		Raise Message;		
+	EndIf; 
+	Return Value;
+EndFunction // Assert() 
+
+Function FindRow(Table, Filter) Export
+	Var Rows, Count;
+	
+	Rows = Table.FindRows(Filter);
+	Count = Rows.Count();
+	
+	If Count = 1 Then
+		Return Rows[0];
+	ElsIf Count = 0 Then
+		Return Undefined;
+	Else
+		Raise "More than one row with the given filter was found"
+	EndIf; 
+	
+EndFunction // FindRow() 
+
+Function NVL(Value, ReplacementValue) Export
+	If ValueIsFilled(Value) Then
+		Return Value;
+	EndIf; 
+	Return ReplacementValue;
+EndFunction // NVL()
 
 #EndRegion // ClientServer
 

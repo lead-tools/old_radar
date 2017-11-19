@@ -1,148 +1,108 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref;
+Function Load(Context, Name) Export
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Path = Parameters.Path;
+	Return Meta.GenericLoad(Context, Name, Catalogs.AccumulationRegisters, "AccumulationRegister");
 	
-	// precondition:
-	// # (Configuration == Owner)
-	// # Path is folder path
+EndFunction // Load()
+
+#Region Cache
+
+Function CachedFields() Export
 	
-	This = Catalogs.AccumulationRegisters;
+	Return "UUID, Name, Owner, SHA1," + StrConcat(FormTypeProperties(), ", ");
 	
-	Data = Meta.ReadMetadataXML(Path + ".xml").AccumulationRegister;
-	PropertyValues = Data.Properties;
-	ChildObjects = Data.ChildObjects;
-	UUID = Data.UUID; 
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
 	
-	// Properties
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.AccumulationRegisters
+		|WHERE Owner = &Config AND NOT Deleted",
+		CachedFields()
+	);
 	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	Table = Query.Execute().Unload();
 	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Description = PropertyValues.Name;
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
 	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
-		"Comment"
+	Return Table;
+	
+EndFunction // Cache()
+
+#EndRegion // Cache
+
+#Region ObjectDescription
+
+Function StandardAttributes() Export
+	
+	Return Abc.Lines(
+	    "Period"
+		"Recorder"
+		"LineNumber"
+		"Active"
+		"RecordType"
+	);
+	
+EndFunction // StandardAttributes()
+
+Function SimpleTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "Comment"
 		"DataLockControlMode"
 		"EnableTotalsSplitting"
 		"FullTextSearch"
 		"IncludeHelpInContents"
 		"RegisterType"
 		"UseStandardCommands"
-	));
+	);
 	
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
-		"Explanation"
+EndFunction // SimpleTypeProperties() 
+
+Function LocaleStringTypeProperties() Export
+	
+	Return Abc.Lines(
+	    "Explanation"
 		"ExtendedListPresentation"
 		"ListPresentation"
 		"Synonym"
-	));
+	);
 	
-	BeginTransaction();
+EndFunction // LocaleStringTypeProperties() 
+
+Function FormTypeProperties() Export
 	
-	ChildParameters = Meta.ObjectLoadParameters();
-	ChildParameters.Configuration = Configuration;
-	ChildParameters.Owner = Ref;
+	Return Abc.Lines(
+		"DefaultListForm"
+	);
 	
-	// Standard attributes
+EndFunction // FormTypeProperties() 
+
+Function ChildObjectNames() Export
 	
-	If PropertyValues.StandardAttributes <> Undefined Then
-		For Each StandardAttributeData In PropertyValues.StandardAttributes.StandardAttribute Do
-			ChildParameters.Data = StandardAttributeData;
-			StandardAttribute = Catalogs.StandardAttributes.Load(ChildParameters);
-		EndDo; 
-	EndIf; 
+	Return Abc.Lines(
+		"Form"
+		"Attribute"
+		"Dimension"
+		"Resource"
+		"Command"
+		"Template"
+	);
 	
-	// Attributes
+EndFunction // ChildObjectNames() 
+
+Function ModuleKinds() Export
+	Var ModuleKinds;
 	
-	AttributeOrder = Object.AttributeOrder;
-	AttributeOrder.Clear();
+	ModuleKinds = New Array;
+	ModuleKinds.Add(Enums.ModuleKinds.ManagerModule);
+	ModuleKinds.Add(Enums.ModuleKinds.RecordSetModule);
 	
-	For Each DimensionData In ChildObjects.Dimension Do
-		ChildParameters.Data = DimensionData;
-		AttributeOrder.Add().Attribute = Catalogs.Attributes.Load(ChildParameters);
-	EndDo;
+	Return ModuleKinds; 
 	
-	For Each ResourceData In ChildObjects.Resource Do
-		ChildParameters.Data = ResourceData;
-		AttributeOrder.Add().Attribute = Catalogs.Attributes.Load(ChildParameters);
-	EndDo;
-	
-	For Each AttributeData In ChildObjects.Attribute Do
-		ChildParameters.Data = AttributeData;
-		AttributeOrder.Add().Attribute = Catalogs.Attributes.Load(ChildParameters);
-	EndDo;
-	
-	ChildParameters.Data = Undefined;
-	
-	// Forms
-	
-	Forms = New Structure;
-	
-	For Each FormName In ChildObjects.Form Do
-		ChildParameters.Path = Abc.JoinPath(Path, "Forms\" + FormName);
-		Forms.Insert(FormName, Catalogs.Forms.Load(ChildParameters));
-	EndDo; 
-	
-	For Each PropertyName In Abc.Lines(
-			"AuxiliaryListForm"
-			"DefaultListForm"
-		) Do
-		
-		FormFullName = PropertyValues[PropertyName];
-		FormName = Mid(FormFullName, StrFind(FormFullName, ".", SearchDirection.FromEnd) + 1);
-		
-		If Not IsBlankString(FormName) Then
-			If Not Forms.Property(FormName, Object[PropertyName]) Then
-				Raise "form not found";
-			EndIf; 
-		EndIf; 
-		
-	EndDo; 
-	
-	ChildParameters.Path = Undefined;
-	
-	// Commands
-	
-	For Each CommandData In ChildObjects.Command Do
-		ChildParameters.Data = CommandData;
-		Command = Catalogs.Commands.Load(ChildParameters);
-	EndDo;	
-	
-	ChildParameters.Data = Undefined;
-	
-	// Templates
-	
-	For Each TemplateName In ChildObjects.Template Do
-		ChildParameters.Path = Abc.JoinPath(Path, "Templates\" + TemplateName);
-		Template = Catalogs.Templates.Load(ChildParameters);
-	EndDo;
-	
-	ChildParameters.Data = Undefined;
-	
-	// Modules
-	
-	ChildParameters.Insert("ModuleKind");
-	ChildParameters.Insert("ModuleRef");
-	
-	ChildParameters.Path = Abc.JoinPath(Path, "Ext\ManagerModule.bsl");
-	ChildParameters.ModuleKind = Enums.ModuleKinds.ManagerModule;
-	ChildParameters.ModuleRef = Object.ManagerModule;
-	Object.ManagerModule = Catalogs.Modules.Load(ChildParameters);	
-	
-	ChildParameters.Path = Abc.JoinPath(Path, "Ext\RecordSetModule.bsl");
-	ChildParameters.ModuleKind = Enums.ModuleKinds.RecordSetModule;
-	ChildParameters.ModuleRef = Object.RecordSetModule;
-	Object.RecordSetModule = Catalogs.Modules.Load(ChildParameters);
-	
-	Object.Write();	
-	
-	CommitTransaction();
-	
-	Return Object.Ref;
-	
-EndFunction // Load()
+EndFunction // ModuleKinds()
+
+#EndRegion // ObjectDescription

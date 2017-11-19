@@ -1,43 +1,82 @@
 ﻿
-Function Load(Parameters) Export
-	Var Ref;
+Function Load(Context, Name) Export
 	
-	Configuration = Parameters.Configuration;
-	Owner = Parameters.Owner;
-	Path = Parameters.Path;
+	Return Meta.GenericLoad(Context, Name, Catalogs.CommandGroups, "CommandGroup");
 	
-	// precondition:
-	// # (Configuration == Owner)
-	// # Path is folder path
+EndFunction // Load()
+
+#Region Cache
+
+Function CachedFields() Export
 	
-	This = Catalogs.CommandGroups;
+	Return "UUID, Name, Owner, SHA1";
 	
-	Data = Meta.ReadMetadataXML(Path + ".xml").CommandGroup;
+EndFunction // CachedFields()
+
+Function Cache(Config) Export
 	
-	PropertyValues = Data.Properties;
-	UUID = Data.UUID; 
+	Query = New Query;
+	Query.SetParameter("Config", Config);
+	Query.Text = StrTemplate(
+		"SELECT Ref, %1
+		|FROM Catalog.CommandGroups
+		|WHERE Owner = &Config AND NOT Deleted",
+		CachedFields()
+	);
 	
-	Object = Meta.GetObject(This, UUID, Owner, Ref);  
+	Table = Query.Execute().Unload();
 	
-	// Properties
+	Table.Columns.Add("Mark", New TypeDescription("Boolean"));
 	
-	Object.UUID = UUID;
-	Object.Owner = Owner;
-	Object.Description = PropertyValues.Name;
+	Return Table;
 	
-	Abc.Fill(Object, PropertyValues, Abc.Lines(
+EndFunction // Cache()
+
+#EndRegion // Cache
+
+#Region ObjectDescription
+
+Function StandardAttributes() Export
+	
+	Return Undefined;
+	
+EndFunction // StandardAttributes()
+
+Function SimpleTypeProperties() Export
+	
+	Return Abc.Lines(
 	    "Category"
 		"Comment"
 		"Representation"
-	));
+	);
 	
-	Meta.UpdateStrings(Configuration, Ref, Object, PropertyValues, Abc.Lines(
+EndFunction // SimpleTypeProperties() 
+
+Function LocaleStringTypeProperties() Export
+	
+	Return Abc.Lines(
 	    "Synonym"
 		"ToolTip"
-	));
-		
-	Object.Write();	
-		
-	Return Object.Ref;
+	);
 	
-EndFunction // Load()
+EndFunction // LocaleStringTypeProperties() 
+
+Function FormTypeProperties() Export
+	
+	Return Undefined;
+	
+EndFunction // FormTypeProperties() 
+
+Function ChildObjectNames() Export
+	
+	Return Undefined;
+	
+EndFunction // ChildObjectNames() 
+
+Function ModuleKinds() Export
+	
+	Return Undefined; 
+	
+EndFunction // ModuleKinds()
+
+#EndRegion // ObjectDescription
